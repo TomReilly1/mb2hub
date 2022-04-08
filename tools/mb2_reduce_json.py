@@ -55,9 +55,11 @@ if __name__ == "__main__":
 	# Get current working directory
 	cwd = os.getcwd()
 
-	# CHANGE THE BELOW PREFIX TO THE CORRESPONDING VERSION
-	prefix = Path(cwd + "/1.7.2beta/json/")
+	# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
+	VERSION = '1.7.2beta'
 
+
+	prefix = Path(f"{cwd}/{VERSION}/json/")
 	
 	reduceJSON(prefix, "head_armors.json")
 	reduceJSON(prefix, "shoulder_armors.json")

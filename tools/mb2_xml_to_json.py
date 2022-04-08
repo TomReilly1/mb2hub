@@ -23,10 +23,12 @@ if __name__ == "__main__":
 	# Get current working directory
 	cwd = os.getcwd()
 
-	# CHANGE THE BELOW PREFIX TO THE CORRESPONDING VERSION
-	prefix = Path(cwd + "/1.7.2beta/modified/")
-
+	# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
+	VERSION = '1.7.2beta'
 	
+	
+	prefix = Path(f"{cwd}/{VERSION}/modified/")
+
 	convertToJSON(prefix, "head_armors.xml")
 	convertToJSON(prefix, "shoulder_armors.xml")
 	convertToJSON(prefix, "body_armors.xml")
