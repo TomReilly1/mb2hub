@@ -59,8 +59,8 @@ if __name__ == "__main__":
 	prefix = Path(cwd + "/1.7.2beta/json/")
 
 	
-	# reduceJSON(prefix, "head_armors.json")
+	reduceJSON(prefix, "head_armors.json")
 	reduceJSON(prefix, "shoulder_armors.json")
-	# reduceJSON(prefix, "body_armors.xml")
-	# reduceJSON(prefix, "arm_armors.xml")
-	# reduceJSON(prefix, "leg_armors.xml")
+	reduceJSON(prefix, "body_armors.json")
+	reduceJSON(prefix, "arm_armors.json")
+	reduceJSON(prefix, "leg_armors.json")

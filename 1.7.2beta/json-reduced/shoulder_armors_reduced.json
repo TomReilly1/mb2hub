@@ -1,0 +1,964 @@
+[
+    {
+        "id": "southern_shawl",
+        "name": "{=1EhlbySK}Short Cloak",
+        "culture": "aserai",
+        "weight": "0.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_fabric_shoulderpad",
+        "name": "{=EyQTfFS6}Woven Shoulder Pad",
+        "culture": "aserai",
+        "weight": "1.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_horseman_shoulder",
+        "name": "{=5gsp0xUN}Ringmail Shoulder Guard",
+        "culture": "aserai",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leopard_pelt",
+        "name": "{=QxzcuhmA}Leopard Pelt",
+        "culture": "aserai",
+        "weight": "2.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_leather_shoulderpad",
+        "name": "{=9w40yGlZ}Leather Shoulder Guard",
+        "culture": "aserai",
+        "weight": "1.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_scale_shoulders",
+        "name": "{=sbbNL1qF}Reinforced Scale Pouldrons",
+        "culture": "aserai",
+        "weight": "4.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_a",
+        "name": "{=FQdTo5ay}Scale Shoulder Guards",
+        "culture": "aserai",
+        "weight": "4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_b",
+        "name": "{=U0zBG3F9}Scale Pauldrons",
+        "culture": "aserai",
+        "weight": "2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_c",
+        "name": "{=imHoaCGi}Bronze Scale Shoulder Guards",
+        "culture": "aserai",
+        "weight": "4.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_d",
+        "name": "{=SIdCIRfG}Brass Scale Pauldrons",
+        "culture": "aserai",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_e",
+        "name": "{=LePDTpFD}Reinforced Bronze Scale Shoulder Guards",
+        "culture": "aserai",
+        "weight": "6.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "20",
+            "arm": "12",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_shoulder_strap",
+        "name": "{=y1YTxkmn}Shoulder Harness",
+        "culture": "battania",
+        "weight": "1.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_shoulder_strap_cloak",
+        "name": "{=vRBg9ICF}Tartan Shoulder Harness",
+        "culture": "battania",
+        "weight": "1.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_cloak",
+        "name": "{=NZjbiEXg}Tartan Cloak",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_battania_cloak_a",
+        "name": "{=Jm3AiUo3}Simple Cape",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "1",
+            "arm": "1",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "wolf_shoulder",
+        "name": "{=beg6guIH}Wolf Pelt Cape",
+        "culture": "battania",
+        "weight": "1.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_woodland_cloak",
+        "name": "{=rOnXuNM7}Woodland Cloak",
+        "culture": "battania",
+        "weight": "1.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "bearskin",
+        "name": "{=s7WRzaf2}Bear Pelt",
+        "culture": "battania",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "armored_bearskin",
+        "name": "{=FOx5vZSJ}Armored Bearskin",
+        "culture": "battania",
+        "weight": "7.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_cloak_furr",
+        "name": "{=B58Ocaxw}Chained Fur Cloak",
+        "culture": "battania",
+        "weight": "1.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_warlord_pauldrons",
+        "name": "{=yrCoCgJf}Heavy Warlord Pauldrons",
+        "culture": "battania",
+        "weight": "4.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "20",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_civil_cloak",
+        "name": "{=HEFOuVyd}Fringed Cloak",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_cloak_b",
+        "name": "{=lVtoBMhp}Tartan Cape",
+        "culture": "battania",
+        "weight": "0.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_scarf_a",
+        "name": "{=Ur3Q4U5x}Heavy Tartan Cape",
+        "culture": "battania",
+        "weight": "0.55",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_shoulder_furr",
+        "name": "{=4ryhrb9p}Reinforced Harness with Cape",
+        "culture": "battania",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "9",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "rough_bearskin",
+        "name": "{=KKWEkA4P}Rough Bearskin",
+        "culture": "battania",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_civil_cape",
+        "name": "{=EjoS05rb}Woodland Fur Cape",
+        "culture": "battania",
+        "weight": "4.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_chainmail_shoulder_b",
+        "name": "{=qdMP2qWG}Mail Shoulder Reinforcements",
+        "culture": "battania",
+        "weight": "4.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_chainmail_shoulder_a",
+        "name": "{=M0n609ut}Mail Shoulder Pieces",
+        "culture": "battania",
+        "weight": "4.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_leather_shoulder_a",
+        "name": "{=ICsecuVv}Cured Leather Shoulder Pieces",
+        "culture": "battania",
+        "weight": "1.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "bolted_leather_strips",
+        "name": "{=qGzZ78bM}Bolted Leather Strips",
+        "culture": "khuzait",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "steppe_leather_shoulders",
+        "name": "{=Oub0aVl3}Cured Leather Pouldrons",
+        "culture": "khuzait",
+        "weight": "0.7",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "reinforced_suede_shoulders",
+        "name": "{=uIov9Yo9}Reinforced Suede Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "0.9",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "eastern_studded_shoulders",
+        "name": "{=t6pQ6Vxc}Reinforced Studded Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "17",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_khuzait_leather_shoulder_b_a",
+        "name": "{=*}Cured Studded Leather Shoulders",
+        "culture": "khuzait",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "10",
+            "arm": "5",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_khuzait_leather_shoulder_b_b",
+        "name": "{=Q19xluDy}Reinforced Studded Neckguard",
+        "culture": "khuzait",
+        "weight": "1.9",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "17",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "khuzait_leather_pauldron",
+        "name": "{=UTXWsY1Y}Reinforced Leather Pauldrons",
+        "culture": "khuzait",
+        "weight": "1.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "lamellar_shoulders",
+        "name": "{=vo9kYKNQ}Lamellar Shoulder Pieces",
+        "culture": "khuzait",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_metal_lamellar_armor_shoulder_a",
+        "name": "{=Uo2t80GH}Decorated Steel Lamellar Shoulder Pieces",
+        "culture": "khuzait",
+        "weight": "2.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "brass_lamellar_shoulder",
+        "name": "{=RmPPVmgJ}Bronze Lamellar Shoulder Pieces",
+        "culture": "khuzait",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_a",
+        "name": "{=NuWovN18}Bronze Lamellar Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "5",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_b",
+        "name": "{=XpzvP7hE}Reinforced Lamellar Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "3.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "brass_lamellar_shoulder_white",
+        "name": "{=DbEzJcbD}Lamellar Pauldrons",
+        "culture": "sturgia",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_white_a",
+        "name": "{=QlpyR6uc}Lamellar Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_white_b",
+        "name": "{=XpzvP7hE}Reinforced Lamellar Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "green_hood",
+        "name": "{=UvOa4elc}Green Hood",
+        "culture": "vlandia",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_lamellar_shoulders",
+        "name": "{=AHQQp0O0}Leather Lamellar Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_leather_lamellar_armor_shoulder_a",
+        "name": "{=zf2GUNfh}Decorated Lamellar Leather Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "1.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "hood",
+        "name": "{=lbVB6KPl}Hood",
+        "culture": "vlandia",
+        "weight": "0.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "padded_leather_shoulders",
+        "name": "{=Bl72Ribb}Padded Leather Shoulders",
+        "culture": "vlandia",
+        "weight": "1.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "stitched_leather_shoulders",
+        "name": "{=WrwO8xsN}Stitched Leather Shoulders",
+        "culture": "sturgia",
+        "weight": "1.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "mail_shoulders",
+        "name": "{=W9bsRAfD}Mail Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "2.7",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "brass_scale_shoulders",
+        "name": "{=*}Decorated Scale Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pauldron_cape_a",
+        "name": "{=pGmYxauO}Legionary Cape",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_pauldron_cape_b",
+        "name": "{=URZVE5aK}Bronze Pauldrons with Neck Guard",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "13",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_pauldron_cape_c",
+        "name": "{=jQKVnVNR}Bronze Pauldrons ",
+        "culture": "empire",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_shoulder",
+        "name": "{=WDNKhjca}Legionary Padded Straps",
+        "culture": "empire",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "9",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "woven_leather_shoulders",
+        "name": "{=c7UNJSNi}Woven Leather Shoulders",
+        "culture": "empire",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_studded_strip_shoulders",
+        "name": "{=s7siCSsh}Legionary Reinforced Studded Harness",
+        "culture": "empire",
+        "weight": "3.9",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_empire_plated_shoulder_a",
+        "name": "{=TS7NjgyH}Legionary Studded Harness",
+        "culture": "empire",
+        "weight": "3.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_empire_plated_shoulder_b",
+        "name": "{=gA8mOXrC}Plate Pauldrons",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_basic",
+        "name": "{=*}Decorated Leather Harness",
+        "culture": "empire",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_royal",
+        "name": "{=*}Caped Leather Harness",
+        "culture": "empire",
+        "weight": "2.7",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_padded",
+        "name": "{=*}Decorated Leather Harness with Padding",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "10",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_lamellar_shoulders",
+        "name": "{=Ie0EazLn}Heavy Lamellar Pouldrons",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "17",
+            "arm": "9",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "studded_imperial_neckguard",
+        "name": "{=*}Neckguard with Bronze Plate Pauldrons",
+        "culture": "empire",
+        "weight": "3.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_plate_armor_shoulder_a",
+        "name": "{=P96J2c61}Bronze Plate Pouldrons",
+        "culture": "empire",
+        "weight": "2.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_plate_armor_shoulder_b",
+        "name": "{=27GO9o9K}Iron Plate Pouldrons",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_mail",
+        "name": "{=*}Decorated Leather Harness over Mail",
+        "culture": "empire",
+        "weight": "13.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_scale",
+        "name": "{=*}Decorated Leather Harness over Scale",
+        "culture": "empire",
+        "weight": "14",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "19",
+            "arm": "12",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "female_hood",
+        "name": "{=gGhrQa29}Woman's Hood",
+        "culture": "neutral_culture",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "female_scarf",
+        "name": "{=PhodGU5y}Woman's Scarf",
+        "culture": "neutral_culture",
+        "weight": "0.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "scarf",
+        "name": "{=GNdVXMue}Scarf",
+        "culture": "neutral_culture",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "wrapped_scarf",
+        "name": "{=h1bcf5zn}Shawl",
+        "culture": "neutral_culture",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    }
+]
