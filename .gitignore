@@ -10,7 +10,9 @@ web-scratch/
 MB2_Troops/
 /original
 original/
+armor_send_to_psql.py
+*psql*
 # 1.7.2*/
 # /1.7.2*
-
+.env
 

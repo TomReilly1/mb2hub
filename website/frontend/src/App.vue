@@ -4,16 +4,14 @@
     <router-link to="/about">About</router-link>
   </nav> -->
   <GlobalHeader />
-  <router-view/>
-  <Button />
+  <router-view />
+  <!-- <GlobalFooter /> -->
+
 </template>
 
 <script setup>
-import GlobalHeader from "@/components/GlobalHeader.vue";
-// import axios from "axios";
-
-
-
+import GlobalHeader from "@/components/GlobalHeader";
+// import GlobalFooter from "@/components/GlobalFooter";
 
 </script>
 
@@ -23,7 +21,10 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--yellow-400);
+  background-color: var(--bluegray-900);
+  height: 65rem;
+  position: relative;
 }
 
 nav {
@@ -32,10 +33,11 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: var(--yellow-400);
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: var(--yellow-600);
 }
+
 </style>

@@ -6,11 +6,14 @@ import ArmorTable from "@/components/ArmorTable.vue";
 
 <template>
   <div class="armor">
-    <h1>This is an Armor page</h1>
+    <h1>Armor</h1>
     <ArmorTable />
   </div>
 </template>
 
 <style scoped>
-
+  h1 {
+    font-size: 3.5rem;
+    text-decoration: underline;
+  }
 </style>
