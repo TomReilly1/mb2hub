@@ -21,7 +21,7 @@ import GlobalHeader from "@/components/GlobalHeader";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: var(--yellow-400);
+  color: var(--yellow-300);
   background-color: var(--bluegray-900);
   height: 65rem;
   position: relative;

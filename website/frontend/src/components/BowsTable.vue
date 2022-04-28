@@ -7,25 +7,18 @@ import InputText from 'primevue/inputtext';
 
 
 onMounted(() => {
-    tableService.value.getArmorData()
+    tableService.value.getBowsAndCrossbowsData()
     .then(data => {
-        armor.value = data;
+        bows.value = data;
         loading.value = false;
         console.log(data);
-        console.log(armor.value)
+        console.log(bows.value)
     });
 })
 
-// tableService.value.getArmorData()
-// .then(data => {
-//     armor.value = data;
-//     loading.value = false;
-//     console.log(data);
-//     console.log(armor.value)
-// });
 
 
-const armor = ref();
+const bows = ref();
 const tableService = ref(new TableService());
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
@@ -81,7 +74,7 @@ const initFilters = () => {
 
 <template>
 <div class="card">
-    <DataTable :value="armor" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
+    <DataTable :value="bows" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -92,10 +85,10 @@ const initFilters = () => {
             </div>
         </template>
         <template #empty>
-            No armor found.
+            No bows found.
         </template>
         <template #loading>
-            Loading armor data. Please wait.
+            Loading bows data. Please wait.
         </template>
         <Column field="id" header="ID" sortable>
             <template #body="{data}">
@@ -130,10 +123,20 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />
             </template>
         </Column>
-        <Column field="head_ar" header="Head AR" sortable></Column>
-        <Column field="body_ar" header="Body AR" sortable></Column>
-        <Column field="arm_ar" header="Arm AR" sortable></Column>
-        <Column field="leg_ar" header="Leg AR" sortable></Column>
+        <Column field="subtype" header="Subtype" sortable>
+            <template #body="{data}">
+                {{data.subtype}}
+            </template>
+            <template #filter="{filterModel, filterCallback}">
+                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by subtype - `" />
+            </template>
+        </Column>
+        <Column field="difficulty" header="Difficulty" sortable></Column>
+        <Column field="speed_rating" header="Speed Rating" sortable></Column>
+        <Column field="missile_speed" header="Missile Speed" sortable></Column>
+        <Column field="accuracy" header="Accuracy" sortable></Column>
+        <Column field="fire_on_mount" header="Can Fire on Mount (t/f)" sortable></Column>
+        <Column field="reload_on_mount" header="Can Reload on Mount (t/f)" sortable></Column>
     </DataTable>
 </div>
 </template>

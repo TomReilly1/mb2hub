@@ -1,13 +1,13 @@
 <script setup>
 
-import ArmorTable from "@/components/ArmorTable.vue";
+import BowsTable from "@/components/BowsTable.vue";
 
 </script>
 
 <template>
-  <div class="armor">
-    <h1>Armor</h1>
-    <ArmorTable />
+  <div class="bows">
+    <h1>Bows and Crossbows</h1>
+    <BowsTable />
   </div>
 </template>
 
