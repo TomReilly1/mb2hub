@@ -3,11 +3,11 @@ const db = require('./db');
 const router = express.Router();
 
 // NOTE: exclude any dummy armor
-const SQL_STR = "SELECT * FROM armor WHERE id NOT LIKE '%dummy%' ORDER BY head_ar DESC LIMIT 20;"
+const armor_sql = "SELECT * FROM armor WHERE id NOT LIKE '%dummy%' ORDER BY head_ar DESC LIMIT 20;"
 
 // Get Armor
 router.get('/armor', async (req, res) => {
-    await db.any(SQL_STR)
+    await db.any(armor_sql)
     .then(rows => {
         console.log('Fetched Armor Successfully');
         res.json(rows);
@@ -18,6 +18,19 @@ router.get('/armor', async (req, res) => {
     })
 })
 
+// Get Bows and Crossbows
+const bows_sql = "SELECT * FROM bows_and_crossbows ORDER BY difficulty DESC LIMIT 20;"
+router.get('/bows', async (req, res) => {
+    await db.any(bows_sql)
+    .then(rows => {
+        console.log('Fetched Bows and Crossbows Successfully');
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log('Fetch Bows and Crossbows Unsuccessful');
+        console.log(error)
+    })
+})
 
 
 // Get Troops

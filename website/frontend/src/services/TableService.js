@@ -1,7 +1,12 @@
 export default class TableService {
 
-    getArmorData() {
+    async getArmorData() {
         return fetch('http://localhost:5100/api/armor')
+        .then(res => res.json())
+    }
+
+    async getBowsAndCrossbowsData() {
+        return fetch('http://localhost:5100/api/bows')
         .then(res => res.json())
     }
 
