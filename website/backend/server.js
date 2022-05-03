@@ -9,6 +9,7 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
+app.options('*', cors())
 app.use(compression())
 
 
@@ -18,7 +19,7 @@ app.use('/api/', apiRouter);
 
 
 // Port
-const PORT = process.env.PORT || 5100;
+const PORT = 5100;
 
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}`)

@@ -34,6 +34,8 @@ if __name__ == "__main__":
 
 	# convertToJSON(prefix, "spnpccharacters.xml")
 
-	convertToJSON(prefix, "sandboxcore_skill_sets.xml")
+	# convertToJSON(prefix, "sandboxcore_skill_sets.xml")
+
+	# convertToJSON(prefix, "weapons.xml")
 
 
