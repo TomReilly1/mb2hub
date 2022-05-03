@@ -3,7 +3,6 @@ const pgp = require('pg-promise')();
 
 require('dotenv').config()
 
-
 const user = process.env.MB2_DB_USER;
 const pass = process.env.MB2_DB_PASS;
 const ip = process.env.MB2_DB_IP;

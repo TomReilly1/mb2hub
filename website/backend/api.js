@@ -34,6 +34,19 @@ router.get('/bows', async (req, res) => {
 
 
 // Get Troops
+const npcs_sql = "SELECT * FROM npcs ORDER BY culture, level DESC LIMIT 20;"
+router.get('/npcs', async (req, res) => {
+    await db.any(npcs_sql)
+    .then(rows => {
+        console.log('Fetched Npcs Successfully');
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log('Fetch Npcs Unsuccessful');
+        console.log(error)
+    })
+})
+
 
 // Get Weapons
 

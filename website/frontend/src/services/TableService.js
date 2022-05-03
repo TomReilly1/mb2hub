@@ -1,24 +1,37 @@
 export default class TableService {
 
+    // async getArmorData() {
+    //     return await fetch('http://localhost:5100/api/armor')
+    //     .then(res => res.json())
+    // }
+
     async getArmorData() {
-        return fetch('http://localhost:5100/api/armor')
-        .then(res => res.json())
+        const response = await fetch('http://localhost:5100/api/armor', {
+            method: 'GET',
+            mode: 'cors',
+            credentials: 'same-origin'
+        });
+
+        if (response.ok) { 
+            let json = await response.json();
+            return json;
+        } else {
+            alert("HTTP-Error: " + response.status);
+        }
     }
 
     async getBowsAndCrossbowsData() {
-        return fetch('http://localhost:5100/api/bows')
+        return await fetch('http://localhost:5100/api/bows')
         .then(res => res.json())
+        .catch(e => console.log(e));
     }
 
-//     getProductsSmall() {
-// 		return fetch('demo/data/products-small.json').then(res => res.json()).then(d => d.data);
-// 	}
-
-// 	getProducts() {
-// 		return fetch('demo/data/products.json').then(res => res.json()).then(d => d.data);
-//     }
-
-//     getProductsWithOrdersSmall() {
-// 		return fetch('demo/data/products-orders-small.json').then(res => res.json()).then(d => d.data);
-// 	}
+    async getNpcsData() {
+        return await fetch('http://api.mb2hub.com/api/npcs')
+        .then(res => res.json())
+        .catch(e => {
+            console.log('ERROR IN FETCH:')
+            console.log(e)
+        });
+    }
 }

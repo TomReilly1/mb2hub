@@ -18,8 +18,9 @@
                         <li class="nav-item">
                             <router-link to="/bows" class="nav-link">Bows</router-link>
                         </li>
-                        <li>
-                            <a class="nav-link" href="#">Troops</a>
+                        <li class="nav-item">
+                            <router-link to="/troops" class="nav-link">Troops
+                            </router-link>
                         </li>
                         <li>
                             <a class="nav-link" href="#">Kingdoms</a>

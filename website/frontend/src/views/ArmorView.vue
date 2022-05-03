@@ -1,6 +1,7 @@
 <script setup>
 
 import ArmorTable from "@/components/ArmorTable.vue";
+import ArmorHighestCard from "@/components/ArmorHighestCard.vue";
 
 </script>
 
@@ -8,6 +9,7 @@ import ArmorTable from "@/components/ArmorTable.vue";
   <div class="armor">
     <h1>Armor</h1>
     <ArmorTable />
+    <!-- <ArmorHighestCard /> -->
   </div>
 </template>
 

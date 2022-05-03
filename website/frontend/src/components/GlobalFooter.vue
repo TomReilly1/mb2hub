@@ -3,10 +3,9 @@
         <div class="footer">
             <ul>
                 <li>
-                    <span>&#169; MB2 Hub</span>
-                </li>
-                <li>
-                    <i class="pi pi-github" style="font-size: 2rem"></i>
+                    <a href="https://www.github.com/TomReilly1">
+                        <i class="pi pi-github" style="font-size: 2rem"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -23,9 +22,11 @@
 
 <style scoped>
     footer {
-        position: absoulte;
+        position: absolute;
+        right: 0;
         bottom: 0;
-        background-color: lightgreen;
+        left: 0;
+        background-color: var(--bluegrey-900);
         height: 10rem;
         width: 100%;
     }
@@ -50,6 +51,14 @@
     li {
         font-size: 1.5rem;
         padding: 1rem 0;
+    }
+
+    a {
+        color: var(--yellow-400);
+    }
+
+    a:hover {
+        color: var(--yellow-300);
     }
 
     

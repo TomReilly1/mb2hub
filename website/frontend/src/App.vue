@@ -5,13 +5,13 @@
   </nav> -->
   <GlobalHeader />
   <router-view />
-  <!-- <GlobalFooter /> -->
+  <GlobalFooter />
 
 </template>
 
 <script setup>
 import GlobalHeader from "@/components/GlobalHeader";
-// import GlobalFooter from "@/components/GlobalFooter";
+import GlobalFooter from "@/components/GlobalFooter";
 
 </script>
 
@@ -23,8 +23,9 @@ import GlobalHeader from "@/components/GlobalHeader";
   text-align: center;
   color: var(--yellow-300);
   background-color: var(--bluegray-900);
-  height: 65rem;
+  min-height: 100vh;
   position: relative;
+  padding-bottom: 10rem;
 }
 
 nav {
