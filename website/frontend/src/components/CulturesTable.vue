@@ -1,22 +1,16 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import TableService from "@/services/TableService";
+import cultureData from "@/data/cultures.json";
 
 
 onMounted(() => {
-    tableService.value.getCulturesData()
-    .then(data => {
-        cultures.value = data;
-        loading.value = false;
-        console.log(data);
-        console.log(cultures.value)
-    });
+    cultures.value = cultureData;
+    loading.value = false;
 })
 
 
 
 const cultures = ref();
-const tableService = ref(new TableService());
 const loading = ref(true);
 
 

@@ -1,22 +1,16 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import TableService from "@/services/TableService";
+import kingdomData from "@/data/kingdoms.json";
 
 
 onMounted(() => {
-    tableService.value.getKingdomsData()
-    .then(data => {
-        kingdoms.value = data;
-        loading.value = false;
-        console.log(data);
-        console.log(kingdoms.value)
-    });
+    kingdoms.value = kingdomData;
+    loading.value = false;
 })
 
 
 
 const kingdoms = ref();
-const tableService = ref(new TableService());
 const loading = ref(true);
 
 
