@@ -1,32 +1,19 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import TableService from "@/services/TableService";
+import troopsData from "@/data/npcs.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext';
 
 
 
 onMounted(() => {
-    tableService.value.getNpcsData()
-    .then(data => {
-        troops.value = data;
-        loading.value = false;
-        console.log(data);
-        console.log(troops.value)
-    });
+    troops.value = troopsData;
+    loading.value = false;
 })
-
-// tableService.value.getArmorData()
-// .then(data => {
-//     armor.value = data;
-//     loading.value = false;
-//     console.log(data);
-//     console.log(armor.value)
-// });
 
 
 const troops = ref();
-const tableService = ref(new TableService());
+const loading = ref(true);
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
     'id': {
@@ -51,12 +38,12 @@ const filters = ref({
     }
 });
 
-const loading = ref(true);
 
 const clearFilters = () => {
     initFilters();
 }
-        
+
+
 const initFilters = () => {
     filters.value = {
         'global': {value: null, matchMode: FilterMatchMode.CONTAINS},

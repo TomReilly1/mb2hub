@@ -1,25 +1,20 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import TableService from "@/services/TableService";
+import bowsData from "@/data/bows_and_crossbows.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext';
 
 
 
 onMounted(() => {
-    tableService.value.getBowsAndCrossbowsData()
-    .then(data => {
-        bows.value = data;
-        loading.value = false;
-        console.log(data);
-        console.log(bows.value)
-    });
+    bows.value = bowsData;
+    loading.value = false;
 })
 
 
 
 const bows = ref();
-const tableService = ref(new TableService());
+const loading = ref(true);
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
     'id': {
@@ -40,7 +35,6 @@ const filters = ref({
     }
 });
 
-const loading = ref(true);
 
 const clearFilters = () => {
     initFilters();
