@@ -19,16 +19,16 @@
                             <router-link to="/bows" class="nav-link">Bows</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/troops" class="nav-link">Troops
-                            </router-link>
+                            <router-link to="/troops" class="nav-link">Troops</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/kingdoms" class="nav-link">Kingdoms
-                            </router-link>
+                            <router-link to="/skills" class="nav-link">Skills</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/cultures" class="nav-link">Cultures
-                            </router-link>
+                            <router-link to="/kingdoms" class="nav-link">Kingdoms</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/cultures" class="nav-link">Cultures</router-link>
                         </li>
                     </ul>
                 </div>

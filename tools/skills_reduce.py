@@ -36,14 +36,14 @@ def getReducedSkills(file_path):
 			output_object = {
 				'id': npc['@id'],
 				'name': npc['@name'].split('}')[1],
-				'OneHanded': '0',
-				'TwoHanded': '0',
-				'Polearm': '0',
-				'Bow': '0',
-				'Crossbow': '0',
-				'Throwing': '0',
-				'Riding': '0',
-				'Athletics': '0'
+				'oneHanded': '0',
+				'twoHanded': '0',
+				'polearm': '0',
+				'bow': '0',
+				'crossbow': '0',
+				'throwing': '0',
+				'riding': '0',
+				'athletics': '0'
 
 			}
 
@@ -52,13 +52,14 @@ def getReducedSkills(file_path):
 				npc_object_skills = getSkillTemplate(skill_template_name)
 
 				for skill in npc_object_skills:
-					output_object[skill['@id']] = skill['@value']
+					skill_id = skill['@id'][0].lower() + skill['@id'][1:]	# un-capitalize
+					output_object[skill_id] = skill['@value']
 			else:
 				npc_object_skills = npc['skills']['skill']
 				
-
 				for skill in npc_object_skills:
-					output_object[skill['@id']] = skill['@value']
+					skill_id = skill['@id'][0].lower() + skill['@id'][1:]	# un-capitalize
+					output_object[skill_id] = skill['@value']
 
 			output_array.append(output_object)
 
