@@ -28,7 +28,7 @@ const filters = ref({
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
-    'default_group': {
+    'group': {
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
@@ -59,7 +59,7 @@ const initFilters = () => {
             operator: FilterOperator.AND,
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
-        'default_group': {
+        'group': {
             operator: FilterOperator.AND,
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
