@@ -1,0 +1,8166 @@
+[
+    {
+        "id": "headscarf_d",
+        "name": "Hijab",
+        "culture": "aserai",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "3",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "open_head_scarf",
+        "name": "Open Head Scarf",
+        "culture": "aserai",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "woven_turban",
+        "name": "Woven Turban",
+        "culture": "aserai",
+        "weight": "0.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "turban",
+        "name": "Turban",
+        "culture": "aserai",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "4",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_cap",
+        "name": "Wrapped Cap",
+        "culture": "aserai",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "wrapped_desert_cap",
+        "name": "Wrapped Leather Cap",
+        "culture": "aserai",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "12",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_villager_female_headdress",
+        "name": "Rural Headdress",
+        "culture": "aserai",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "3",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "tuareg",
+        "name": "Tribal Turban",
+        "culture": "aserai",
+        "weight": "0.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "7",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "head_scarf",
+        "name": "Colored Hijab",
+        "culture": "aserai",
+        "weight": "0.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "2",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_headdress",
+        "name": "Desert Headdress",
+        "culture": "aserai",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "female_head_wrap",
+        "name": "Female Head Wrap",
+        "culture": "aserai",
+        "weight": "0.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "2",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_female_civil_hscarf",
+        "name": "Desert Headscarf",
+        "culture": "aserai",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "3",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_female_civil_hscarf_b",
+        "name": "Headscarf with Fez",
+        "culture": "aserai",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "4",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_civil_c_head",
+        "name": "Kefiyyeh with Silken Band",
+        "culture": "aserai",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "4",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_civil_f_cape",
+        "name": "Bandit Leather Hood",
+        "culture": "aserai",
+        "weight": "0.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "5",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_civil_d_hscarf",
+        "name": "Colored Turban",
+        "culture": "aserai",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "5",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_civil_e_hscarf",
+        "name": "Colored Kefiyyeh",
+        "culture": "aserai",
+        "weight": "0.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "5",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_civil_hscarf_b",
+        "name": "Roughspun Kefiyyeh",
+        "culture": "aserai",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_civil_hscarf_a",
+        "name": "Kefiyyeh with Brown Band",
+        "culture": "aserai",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "4",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "tied_head_wrapping",
+        "name": "Tied Head Wrapping",
+        "culture": "aserai",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "5",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "tight_head_scarf",
+        "name": "Tight Head Scarf",
+        "culture": "aserai",
+        "weight": "0.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "7",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "closed_head_scarf",
+        "name": "Closed Head Scarf",
+        "culture": "aserai",
+        "weight": "0.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "open_desert_helmet",
+        "name": "Spiked Helmet with Open Turban",
+        "culture": "aserai",
+        "weight": "1.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "22",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "closed_desert_helmet",
+        "name": "Spiked Helmet with Closed Turban ",
+        "culture": "aserai",
+        "weight": "2.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "23",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "loose_wrapped_desert_helmet",
+        "name": "Helmet with Open Turban ",
+        "culture": "aserai",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "26",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "trailed_desert_helmet",
+        "name": "Helmet with Turban and Coif",
+        "culture": "aserai",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "20",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_helmet_with_mail",
+        "name": "Mameluke Helmet with Mail",
+        "culture": "aserai",
+        "weight": "2.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "45",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_helmet",
+        "name": "Steel Cap",
+        "culture": "aserai",
+        "weight": "1.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "18",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pointed_skullcap_over_mail",
+        "name": "Pointed Skullcap over Gambeson",
+        "culture": "aserai",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "32",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pointed_skullcap_over_laced_coif",
+        "name": "Pointed Skullcap over Laced Coif",
+        "culture": "aserai",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "32",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pointed_skullcap_over_cloth_headwrap",
+        "name": "Pointed Skullcap over Cloth Headwrap",
+        "culture": "aserai",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "30",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_crown",
+        "name": "Luxury Turban Over Helmet",
+        "culture": "aserai",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pointed_skullcap_over_mail_coif",
+        "name": "Pointed Skullcap over Mail Coif",
+        "culture": "aserai",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "37",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "closed_desert_helmet_with_mail",
+        "name": "Closed Steel Cap",
+        "culture": "aserai",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "52",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "emirs_helmet",
+        "name": "Emir Helmet",
+        "culture": "aserai",
+        "weight": "3.0",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_mail_coif",
+        "name": "Wrapped Helmet with Mail Coif",
+        "culture": "aserai",
+        "weight": "3.0",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_lord_helmet_a",
+        "name": "Sultans' Crowned Lord Helmet",
+        "culture": "aserai",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "45",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "southern_noble_helmet",
+        "name": "Sultans' Steel Cap",
+        "culture": "aserai",
+        "weight": "3.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "southern_lord_helmet",
+        "name": "Lordly Steel Cap",
+        "culture": "aserai",
+        "weight": "2.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pointed_skullcap_with_mail",
+        "name": "Pointed Skullcap with Mail",
+        "culture": "aserai",
+        "weight": "2.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "35",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_battle_crown",
+        "name": "Ornate Desert Battle Crown",
+        "culture": "aserai",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "44",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "thinhide_coif",
+        "name": "Thinhide Coif",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "9",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "wrapped_headcloth",
+        "name": "Wrapped Headcloth",
+        "culture": "battania",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "5",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_studdedhelm",
+        "name": "Leather Studded Helm",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "8",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_civil_hood",
+        "name": "Cloth Hood",
+        "culture": "battania",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "wolfhead",
+        "name": "Wolf Head",
+        "culture": "battania",
+        "weight": "1.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "16",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_fur_helmet",
+        "name": "Cap with Fur Coif",
+        "culture": "battania",
+        "weight": "1.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "20",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "bearhead",
+        "name": "Bear Head",
+        "culture": "battania",
+        "weight": "1.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "24",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_studdedhelm_over_thinhide",
+        "name": "Leather Studdedhelm over Thinhide",
+        "culture": "battania",
+        "weight": "0.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "12",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_studdedhelm_over_headcloth",
+        "name": "Leather Studdedhelm over Headcloth",
+        "culture": "battania",
+        "weight": "0.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "10",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roughscale_helmet",
+        "name": "Roughscale Helmet",
+        "culture": "battania",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "26",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_crown",
+        "name": "Highland Ceremonial Crown",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "8",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ridged_northernhelm",
+        "name": "Ridged Helm",
+        "culture": "battania",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_studdedhelm_over_roughscale",
+        "name": "Leather Studdedhelm over Roughscale",
+        "culture": "battania",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "22",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_crowned_helmet",
+        "name": "Highland Crowned Helmet",
+        "culture": "battania",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "50",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_noble_helmet_with_feather",
+        "name": "Warlord Helmet ",
+        "culture": "battania",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "53",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_plated_noble_helmet",
+        "name": "Warlord Helmet with Feather",
+        "culture": "battania",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_a",
+        "name": "Fringed Steel Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_a_brnz",
+        "name": "Fringed Bronze Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "35",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_b",
+        "name": "Steel Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "2.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "32",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_b_brnz",
+        "name": "Bronze Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "31",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_c",
+        "name": "Fringed Decorated Steel Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "38",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_c_brnz",
+        "name": "Fringed Decorated Bronze Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "37",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_c_cpr",
+        "name": "Decorated Bronze Helmet with Cheek Guards",
+        "culture": "battania",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "35",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_d",
+        "name": "Ridged Decorated Steel Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "41",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_earmuff_helmet_d_brnz",
+        "name": "Ridged Decorated Bronze Cap with Cheek Guards",
+        "culture": "battania",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "40",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_battle_crown",
+        "name": "Two Pronged Bronze Crown",
+        "culture": "battania",
+        "weight": "2.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "40",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "upturned_fur_cap",
+        "name": "Upturned Fur Cap",
+        "culture": "khuzait",
+        "weight": "0.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "10",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "fur_hood",
+        "name": "Thick Fur Hood",
+        "culture": "khuzait",
+        "weight": "0.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "12",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "peaked_fur_hood",
+        "name": "Peaked Fur Hood",
+        "culture": "khuzait",
+        "weight": "0.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "13",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nomad_cap",
+        "name": "Nomad Cap",
+        "culture": "khuzait",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "4",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "decorated_nomad_cap",
+        "name": "Decorated Nomad Cap",
+        "culture": "khuzait",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "eastern_cap",
+        "name": "Cap with Neck Flap",
+        "culture": "khuzait",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "fur_hat",
+        "name": "Nomad Fur Cap",
+        "culture": "khuzait",
+        "weight": "0.35",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "7",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nomad_padded_hood",
+        "name": "Nomad Padded Hood",
+        "culture": "khuzait",
+        "weight": "0.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "12",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "khuzait_crown",
+        "name": "Ornate Steel Cap",
+        "culture": "khuzait",
+        "weight": "1.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "22",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "plumed_fur_lined_helmet",
+        "name": "Plumed Fur Lined Helmet",
+        "culture": "khuzait",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "24",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nomad_helmet",
+        "name": "Nomad Helmet",
+        "culture": "khuzait",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "31",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "plumed_nomad_helmet",
+        "name": "Plumed Nomad Helmet",
+        "culture": "khuzait",
+        "weight": "2.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "32",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "steppe_helmet",
+        "name": "Infantry Steel Helmet",
+        "culture": "khuzait",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "33",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "plumed_lamellar_helmet",
+        "name": "Plumed Lamellar Helmet",
+        "culture": "khuzait",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "spiked_helmet_with_facemask",
+        "name": "Spiked Helmet with Facemask",
+        "culture": "khuzait",
+        "weight": "4.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "spiked_helmet",
+        "name": "Spiked Helmet",
+        "culture": "khuzait",
+        "weight": "3.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "eastern_vendel_helmet",
+        "name": "Heavy Lancer Helmet",
+        "culture": "khuzait",
+        "weight": "4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "khuzait_noble_helmet_with_feathers",
+        "name": "Noble Lancer Helmet",
+        "culture": "khuzait",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "khuzait_noble_helmet_with_fur",
+        "name": "Furred Noble Lancer Helmet",
+        "culture": "khuzait",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "45",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "khuzait_noble_helmet_with_neckguard",
+        "name": "Furred Noble Lancer Helmet with Neckguard",
+        "culture": "khuzait",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "khuzait_battle_crown",
+        "name": "Khuzait Battle Crown",
+        "culture": "khuzait",
+        "weight": "2.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "arming_cap",
+        "name": "Padded Coif",
+        "culture": "vlandia",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "18",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "padded_coif",
+        "name": "Padded Half Coif",
+        "culture": "vlandia",
+        "weight": "0.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "14",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "laced_coif",
+        "name": "Laced Coif",
+        "culture": "vlandia",
+        "weight": "0.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "14",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "cloth_headwrap",
+        "name": "Cloth Headwrap",
+        "culture": "vlandia",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "padded_cap",
+        "name": "Padded Cap",
+        "culture": "vlandia",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "11",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "arming_coif",
+        "name": "Leather Coif",
+        "culture": "vlandia",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "9",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "open_padded_coif",
+        "name": "Open Padded Coif",
+        "culture": "vlandia",
+        "weight": "0.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "14",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "head_piece",
+        "name": "Female Rural Scarf",
+        "culture": "vlandia",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "3",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "head_wrapped",
+        "name": "Female Rural Head Wrap",
+        "culture": "vlandia",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "1",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "headscarf",
+        "name": "Loose Head Scarf",
+        "culture": "vlandia",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "3",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "headscarf_c",
+        "name": "Luxurious Head Scarf",
+        "culture": "vlandia",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "3",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "womens_headwrap_c",
+        "name": "Rural Head Wrap",
+        "culture": "vlandia",
+        "weight": "0.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "1",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "head_wrapping",
+        "name": "Peasant Head Wrapping",
+        "culture": "vlandia",
+        "weight": "0.05",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "1",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "cervelliere_over_arming_coif",
+        "name": "Cervelliere over Arming Coif",
+        "culture": "vlandia",
+        "weight": "1.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "19",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_with_leather",
+        "name": "Kettle Helmet with Leather",
+        "culture": "vlandia",
+        "weight": "2.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "33",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_over_padded_coif",
+        "name": "Kettle Helmet over Padded Coif",
+        "culture": "vlandia",
+        "weight": "2.68",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_over_laced_coif",
+        "name": "Kettle Helmet over Laced Coif",
+        "culture": "vlandia",
+        "weight": "2.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "35",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_over_padded_cap",
+        "name": "Kettle Helmet over Padded Cap",
+        "culture": "vlandia",
+        "weight": "2.25",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "33",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_over_padded_cloth",
+        "name": "Kettle Helmet over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "2.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "33",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_hat_over_padded_coif",
+        "name": "Kettle Hat over Padded Coif",
+        "culture": "vlandia",
+        "weight": "2.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "guards_kettle_over_padded_coif",
+        "name": "Kettle over Padded Coif",
+        "culture": "vlandia",
+        "weight": "3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "34",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "guards_kettle_over_laced_coif",
+        "name": "Kettle over Laced Coif",
+        "culture": "vlandia",
+        "weight": "3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "33",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_over_padded_coif",
+        "name": "Nasal Helmet over Padded Coif",
+        "culture": "vlandia",
+        "weight": "2.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_over_laced_coif",
+        "name": "Nasal Helmet over Laced Coif",
+        "culture": "vlandia",
+        "weight": "2.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "32",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_over_cloth_headwrap",
+        "name": "Nasal Helmet over Cloth Headwrap",
+        "culture": "vlandia",
+        "weight": "2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "26",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_over_padded_cloth",
+        "name": "Nasal Helmet over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "29",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_skullcap_over_padded_coif",
+        "name": "Segmented Skullcap over Padded Coif",
+        "culture": "vlandia",
+        "weight": "2.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "29",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_skullcap_over_laced_coif",
+        "name": "Segmented Skullcap over Laced Coif",
+        "culture": "vlandia",
+        "weight": "1.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "17",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_skullcap_over_padded_cloth",
+        "name": "Segmented Skullcap over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "2.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "28",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "peaked_helmet_over_laced_coif",
+        "name": "Peaked Helmet over Laced Coif",
+        "culture": "vlandia",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "37",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "peaked_helmet_over_padded_cloth",
+        "name": "Peaked Helmet over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "2.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_cervelliere_over_padded_cloth",
+        "name": "Segmented Cervelliere over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "28",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "cervelliere_over_cloth_headwrap",
+        "name": "Cervelliere over Cloth Headwrap",
+        "culture": "vlandia",
+        "weight": "2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "20",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "cervelliere_over_laced_coif",
+        "name": "Cervelliere over Laced Coif",
+        "culture": "vlandia",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "29",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "cervelliere_over_padded_cap",
+        "name": "Cervelliere over Padded Cap",
+        "culture": "vlandia",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "20",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_cervelliere_over_padded_coif",
+        "name": "Nasal Cervelliere over Padded Coif",
+        "culture": "vlandia",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "25",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_cervelliere_over_laced_coif",
+        "name": "Nasal Cervelliere over Laced Coif",
+        "culture": "vlandia",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "28",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_cervelliere_over_padded_cap",
+        "name": "Nasal Cervelliere over Padded Cap",
+        "culture": "vlandia",
+        "weight": "2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "22",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "padded_leather_cape",
+        "name": "Padded Leather Cape",
+        "culture": "vlandia",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "11",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_over_arming_coif",
+        "name": "Kettle Helmet over Arming Coif",
+        "culture": "vlandia",
+        "weight": "2.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "32",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "peaked_helmet_over_mail_coif",
+        "name": "Peaked Helmet over Mail Coif",
+        "culture": "vlandia",
+        "weight": "3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_cervelliere_over_mail_coif",
+        "name": "Nasal Cervelliere over Mail Coif",
+        "culture": "vlandia",
+        "weight": "2.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "guards_kettle_over_mail_coif",
+        "name": "Kettle over Mail Coif",
+        "culture": "vlandia",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "38",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "full_helm_over_arming_coif",
+        "name": "Full Helm over Arming Coif",
+        "culture": "vlandia",
+        "weight": "3.0",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "visored_helmet_over_padded_cloth",
+        "name": "Visored Helmet over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "visored_helmet_over_padded_coif",
+        "name": "Visored Helmet over Padded Coif",
+        "culture": "vlandia",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_cervelliere_over_laced_coif",
+        "name": "Segmented Cervelliere over Laced Coif",
+        "culture": "vlandia",
+        "weight": "2.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "24",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_hat_over_padded_cloth",
+        "name": "Kettle Hat over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "2.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "34",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_hat_over_mail_coif",
+        "name": "Kettle Hat over Mail Coif",
+        "culture": "vlandia",
+        "weight": "2.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "visored_helmet_over_mail_coif",
+        "name": "Visored Helmet over Mail Coif",
+        "culture": "vlandia",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "52",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "visored_helmet_over_laced_coif",
+        "name": "Visored Helmet over Laced Coif",
+        "culture": "vlandia",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_over_mail_coif",
+        "name": "Nasal Helmet over Mail Coif",
+        "culture": "vlandia",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "38",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "full_helm_over_mail_coif",
+        "name": "Full Helm over Mail Coif",
+        "culture": "vlandia",
+        "weight": "3.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "50",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "full_helm_over_laced_coif",
+        "name": "Full Helm over Laced Coif",
+        "culture": "vlandia",
+        "weight": "3.25",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "full_helm_over_cloth_headwrap",
+        "name": "Full Helm over Cloth Headwrap",
+        "culture": "vlandia",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "full_helm_over_padded_cap",
+        "name": "Full Helm over Padded Cap",
+        "culture": "vlandia",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "full_helm_over_padded_cloth",
+        "name": "Full Helm over Padded Cloth",
+        "culture": "vlandia",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_cervelliere_over_mail_coif",
+        "name": "Segmented Cevelliere over Mail Coif",
+        "culture": "vlandia",
+        "weight": "2.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "28",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_over_mail",
+        "name": "Kettle Helmet over Mail",
+        "culture": "vlandia",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "40",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_over_mail",
+        "name": "Nasal Helmet over Mail",
+        "culture": "vlandia",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_skullcap_over_mail_coif",
+        "name": "Segmented Skullcap over Mail Coif",
+        "culture": "vlandia",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "peaked_helmet_over_mail",
+        "name": "Peaked Helmet over Mail",
+        "culture": "vlandia",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "40",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "segmented_cervelliere_over_mail",
+        "name": "Segmented Cevelliere over Mail",
+        "culture": "vlandia",
+        "weight": "2.85",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "26",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "western_crowned_helmet",
+        "name": "Crowned Helmet",
+        "culture": "vlandia",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "western_plated_helmet",
+        "name": "Plated Helmet with Sideguards",
+        "culture": "vlandia",
+        "weight": "3.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "52",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "vlandia_lord_helmet_b2",
+        "name": "Plated Helmet",
+        "culture": "vlandia",
+        "weight": "3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "30",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "western_crowned_plated_helmet",
+        "name": "Crowned Plate Helmet",
+        "culture": "vlandia",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "kettle_helmet_with_mail",
+        "name": "Kettle Helmet with Mail",
+        "culture": "vlandia",
+        "weight": "2.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "vlandian_faceguard_helmet_a",
+        "name": "Closed Knight Helmet",
+        "culture": "vlandia",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "45",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "vlandian_faceguard_helmet_b",
+        "name": "Knight Helmet with Bronze Faceguard",
+        "culture": "vlandia",
+        "weight": "2.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "44",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "womens_headwrap_b",
+        "name": "Head Scarf",
+        "culture": "sturgia",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "1",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nordic_leather_cap",
+        "name": "Fur Cap with Ear Flaps",
+        "culture": "sturgia",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "7",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nordic_fur_cap",
+        "name": "Fur Rimmed Cap",
+        "culture": "sturgia",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "8",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "northern_fur_cap",
+        "name": "Fur Cap",
+        "culture": "sturgia",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "9",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roughhide_cap",
+        "name": "Roughhide Cap",
+        "culture": "sturgia",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "7",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "goggled_helmet_over_leather",
+        "name": "Goggled Helmet over Leather",
+        "culture": "sturgia",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasalhelm_over_leather",
+        "name": "Nasalhelm over Leather",
+        "culture": "sturgia",
+        "weight": "1.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "23",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgia_heavy_cavalary_helmet",
+        "name": "Heavy Cavalry Helmet",
+        "culture": "sturgia",
+        "weight": "3.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet",
+        "name": "Steel Cap with Nose Guard",
+        "culture": "sturgia",
+        "weight": "1.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "22",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "spangenhelm_with_leather",
+        "name": "Spangenhelm with Leather",
+        "culture": "sturgia",
+        "weight": "1.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "20",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_with_leather",
+        "name": "Nasal Helmet with Leather",
+        "culture": "sturgia",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "37",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasal_helmet_with_mail",
+        "name": "Nasal Helmet with Mail",
+        "culture": "sturgia",
+        "weight": "2.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "39",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "spangenhelm_with_padded_cloth",
+        "name": "Spangenhelm with Padded Cloth",
+        "culture": "sturgia",
+        "weight": "1.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "18",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_crown",
+        "name": "Jeweled Fur Rimmed Helmet",
+        "culture": "sturgia",
+        "weight": "2.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "41",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nordic_helmet",
+        "name": "Closed Mail Goggled Helmet",
+        "culture": "sturgia",
+        "weight": "3.65",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "decorated_goggled_helmet",
+        "name": "Reinforced Closed Goggled Helmet",
+        "culture": "sturgia",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "52",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "closed_goggled_helmet",
+        "name": "Plumed Closed Warlord Helmet",
+        "culture": "sturgia",
+        "weight": "3.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "goggled_helmet_over_full_mail",
+        "name": "Closed Huscarl Helmet",
+        "culture": "sturgia",
+        "weight": "4.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "lendman_helmet_over_full_mail",
+        "name": "Warlord Helmet over Full Mail",
+        "culture": "sturgia",
+        "weight": "3.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "54",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "northern_warlord_helmet",
+        "name": "Warlord Helmet with Cheek Guards",
+        "culture": "sturgia",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "47",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_lord_helmet_a",
+        "name": "Ridged Warlord Helmet",
+        "culture": "sturgia",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "50",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_lord_helmet_b",
+        "name": "Warlord Helmet with Nose Guard",
+        "culture": "sturgia",
+        "weight": "3.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_lord_helmet_c",
+        "name": "Plated Warlord Helmet",
+        "culture": "sturgia",
+        "weight": "3.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "53",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "nasalhelm_over_mail",
+        "name": "Nasalhelm over Mail",
+        "culture": "sturgia",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "33",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "goggled_helmet_over_mail",
+        "name": "Goggled Helmet over Mail",
+        "culture": "sturgia",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "50",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "lendman_helmet_over_mail",
+        "name": "Warlord Helmet over Mail",
+        "culture": "sturgia",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "northern_goggled_helmet",
+        "name": "Sea Raider Goggled Helmet",
+        "culture": "sturgia",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "50",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_helmet_closed",
+        "name": "Closed Warlord Helmet",
+        "culture": "sturgia",
+        "weight": "3.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "53",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_helmet_open",
+        "name": "Mailed Nasal Helmet",
+        "culture": "sturgia",
+        "weight": "3.15",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "49",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_helmet_base",
+        "name": "Steel Nasal Cap",
+        "culture": "sturgia",
+        "weight": "2.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "35",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_helmet_b_open",
+        "name": "Plumed Decorated Mailed Nasal Helmet",
+        "culture": "sturgia",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "49",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_helmet_b_close",
+        "name": "Closed Decorated Goggled Helmet",
+        "culture": "sturgia",
+        "weight": "3.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "54",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgian_battle_crown",
+        "name": "Battle Crown",
+        "culture": "sturgia",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "47",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_padded_coif",
+        "name": "Lightweight Padded Coif",
+        "culture": "empire",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "14",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "laced_cloth_coif",
+        "name": "Laced Cloth Coif",
+        "culture": "empire",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_leather_coif",
+        "name": "Leather Coif",
+        "culture": "empire",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_cloth_coif",
+        "name": "Cloth Coif",
+        "culture": "empire",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "2",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_cap",
+        "name": "Leather Cap",
+        "culture": "empire",
+        "weight": "0.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "8",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pilgrim_hood",
+        "name": "Pilgrim Hood",
+        "culture": "empire",
+        "weight": "0.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "3",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "tall_helmet",
+        "name": "Tall Helmet",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "38",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_mail_coif",
+        "name": "Mail Coif",
+        "culture": "empire",
+        "weight": "1.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "19",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_nasal_helm",
+        "name": "Legionary Helm",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leatherlame_nasalhelm_over_imperial_leather",
+        "name": "Iron Nasalhelm over Leather",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "43",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leatherlame_feathered_spangenhelm_over_leather",
+        "name": "Spangenhelm over Leather",
+        "culture": "empire",
+        "weight": "2.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "40",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leatherlame_roundkettle",
+        "name": "Roundkettle Helmet",
+        "culture": "empire",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roundkettle_over_imperial_padding",
+        "name": "Roundkettle over Padding",
+        "culture": "empire",
+        "weight": "2.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "31",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roundkettle_over_laced_cloth",
+        "name": "Roundkettle over Laced Cloth",
+        "culture": "empire",
+        "weight": "2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "26",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roundkettle_over_imperial_leather",
+        "name": "Light Roundkettle over Leather",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "22",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leatherlame_roundkettle_over_imperial_leather",
+        "name": "Roundkettle over Leather",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "30",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roundkettle_over_imperial_cloth",
+        "name": "Roundkettle over Cloth",
+        "culture": "empire",
+        "weight": "2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "28",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "spiked_kettle_over_imperial_padding",
+        "name": "Spiked Kettle over Padding",
+        "culture": "empire",
+        "weight": "2.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "39",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_open_mail_coif",
+        "name": "Open Mail Coif",
+        "culture": "empire",
+        "weight": "1.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "20",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "mail_coif",
+        "name": "Mail Coif with Helmet Padding",
+        "culture": "empire",
+        "weight": "1.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "18",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "open_mail_coif",
+        "name": "Open Mail Coif",
+        "culture": "empire",
+        "weight": "1.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "18",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_roundkettle_over_imperial_leather",
+        "name": "Iron Roundkettle over Leather",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "30",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_crown",
+        "name": "Jeweled Crown",
+        "culture": "empire",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "34",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_crown_v2",
+        "name": "Imperial Jeweled Band",
+        "culture": "empire",
+        "weight": "0.85",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "7",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_crown_north",
+        "name": "Golden Laurel Crown",
+        "culture": "empire",
+        "weight": "0.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "5",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_crown_west",
+        "name": "Imperial Jeweled Band",
+        "culture": "empire",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "6",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "vlandia_crown",
+        "name": "Austere Crown",
+        "culture": "empire",
+        "weight": "0.35",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "4",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_goggled_helmet",
+        "name": "Goggled Cataphract Helmet",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "52",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "heavy_nasalhelm_over_imperial_mail",
+        "name": "Heavy Nasalhelm over Mail",
+        "culture": "empire",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_nasalhelm_over_imperial_coif",
+        "name": "Iron Nasalhelm over Coif",
+        "culture": "empire",
+        "weight": "3.6",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leatherlame_nasalhelm_over_imperial_mail",
+        "name": "Bronze Nasalhelm over Mail",
+        "culture": "empire",
+        "weight": "3.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "38",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_nasalhelm_over_imperial_mail",
+        "name": "Iron Nasalhelm over Mail",
+        "culture": "empire",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_feathered_spangenhelm",
+        "name": "Feathered Spangenhelm",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "26",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "feathered_spangenhelm_over_imperial_coif",
+        "name": "Feathered Spangenhelm over Coif",
+        "culture": "empire",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leatherlame_feathered_spangenhelm_over_mail",
+        "name": "Feathered Spangenhelm over Mail",
+        "culture": "empire",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_feathered_spangenhelm_over_mail",
+        "name": "Spangenhelm over Mail",
+        "culture": "empire",
+        "weight": "3.3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roundkettle_over_imperial_mail",
+        "name": "Roundkettle over Mail",
+        "culture": "empire",
+        "weight": "2.8",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "34",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "helmet_with_faceguard",
+        "name": "Helmet with Faceguard",
+        "culture": "empire",
+        "weight": "2.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "25",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "heavy_nasalhelm_over_imperial_padding",
+        "name": "Heavy Nasalhelm over Padding",
+        "culture": "empire",
+        "weight": "3",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "heavy_nasalhelm_over_laced_cloth",
+        "name": "Heavy Nasalhelm over Laced Cloth",
+        "culture": "empire",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "heavy_nasalhelm_over_imperial_leather",
+        "name": "Heavy Nasalhelm over Leather",
+        "culture": "empire",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_feathered_spangenhelm_over_leather",
+        "name": "Feathered Spangenhelm over Leather",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leatherlame_roundkettle_over_imperial_mail",
+        "name": "Roundkettle over Mail",
+        "culture": "empire",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "42",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_roundkettle_over_imperial_mail",
+        "name": "Iron Roundkettle over Mail",
+        "culture": "empire",
+        "weight": "2.85",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "36",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "spiked_kettle_over_imperial_mail",
+        "name": "Spiked Kettle over Mail",
+        "culture": "empire",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "27",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_spiked_kettle_over_mail",
+        "name": "Iron Spiked Kettle over Mail",
+        "culture": "empire",
+        "weight": "2.85",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "33",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_lord_helmet",
+        "name": "Palatine Guard Helmet",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_guarded_lord_helmet",
+        "name": "Royal Cataphract Helmet",
+        "culture": "empire",
+        "weight": "3.7",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "51",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_jewelled_helmet",
+        "name": "Imperial Jewelled Helmet",
+        "culture": "empire",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "47",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_helmet_with_metal_strips",
+        "name": "Lords Helmet with Metal Strips",
+        "culture": "empire",
+        "weight": "3.4",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "47",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_nasalhelm_over_imperial_padding",
+        "name": "Iron Nasalhelm over Padding",
+        "culture": "empire",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ironlame_nasalhelm_over_imperial_cloth",
+        "name": "Iron Legionary Helm over Cloth",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "46",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "plumed_helmet",
+        "name": "Plumed Helmet",
+        "culture": "empire",
+        "weight": "2.9",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "47",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_battle_crown_west",
+        "name": "Imperial Plumed Helmet",
+        "culture": "empire",
+        "weight": "3.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "48",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_battle_crown_north",
+        "name": "Jeweled Plumed Battle Crown",
+        "culture": "empire",
+        "weight": "2.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "45",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "vlandia_bandit_cape_a",
+        "name": "Rough Padded Cap",
+        "culture": "looters",
+        "weight": "0.5",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "12",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "vlandia_bandit_cape_b",
+        "name": "Hide Cap",
+        "culture": "looters",
+        "weight": "0.45",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "8",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "merchants_hat",
+        "name": "Merchant Hat",
+        "culture": "neutral_culture",
+        "weight": "0.1",
+        "type": "HeadArmor",
+        "armor": {
+            "head": "1",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "southern_shawl",
+        "name": "Short Cloak",
+        "culture": "aserai",
+        "weight": "0.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_fabric_shoulderpad",
+        "name": "Woven Shoulder Pad",
+        "culture": "aserai",
+        "weight": "1.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "aserai_horseman_shoulder",
+        "name": "Ringmail Shoulder Guard",
+        "culture": "aserai",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leopard_pelt",
+        "name": "Leopard Pelt",
+        "culture": "aserai",
+        "weight": "2.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_leather_shoulderpad",
+        "name": "Leather Shoulder Guard",
+        "culture": "aserai",
+        "weight": "1.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "desert_scale_shoulders",
+        "name": "Reinforced Scale Pouldrons",
+        "culture": "aserai",
+        "weight": "4.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_a",
+        "name": "Scale Shoulder Guards",
+        "culture": "aserai",
+        "weight": "4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_b",
+        "name": "Scale Pauldrons",
+        "culture": "aserai",
+        "weight": "2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_c",
+        "name": "Bronze Scale Shoulder Guards",
+        "culture": "aserai",
+        "weight": "4.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_d",
+        "name": "Brass Scale Pauldrons",
+        "culture": "aserai",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_aserai_scale_b_shoulder_e",
+        "name": "Reinforced Bronze Scale Shoulder Guards",
+        "culture": "aserai",
+        "weight": "6.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "20",
+            "arm": "12",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_shoulder_strap",
+        "name": "Shoulder Harness",
+        "culture": "battania",
+        "weight": "1.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_shoulder_strap_cloak",
+        "name": "Tartan Shoulder Harness",
+        "culture": "battania",
+        "weight": "1.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_cloak",
+        "name": "Tartan Cloak",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_battania_cloak_a",
+        "name": "Simple Cape",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "1",
+            "arm": "1",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "wolf_shoulder",
+        "name": "Wolf Pelt Cape",
+        "culture": "battania",
+        "weight": "1.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_woodland_cloak",
+        "name": "Woodland Cloak",
+        "culture": "battania",
+        "weight": "1.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "bearskin",
+        "name": "Bear Pelt",
+        "culture": "battania",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "armored_bearskin",
+        "name": "Armored Bearskin",
+        "culture": "battania",
+        "weight": "7.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_cloak_furr",
+        "name": "Chained Fur Cloak",
+        "culture": "battania",
+        "weight": "1.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_warlord_pauldrons",
+        "name": "Heavy Warlord Pauldrons",
+        "culture": "battania",
+        "weight": "4.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "20",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_civil_cloak",
+        "name": "Fringed Cloak",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_cloak_b",
+        "name": "Tartan Cape",
+        "culture": "battania",
+        "weight": "0.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_scarf_a",
+        "name": "Heavy Tartan Cape",
+        "culture": "battania",
+        "weight": "0.55",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_shoulder_furr",
+        "name": "Reinforced Harness with Cape",
+        "culture": "battania",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "9",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "rough_bearskin",
+        "name": "Rough Bearskin",
+        "culture": "battania",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_civil_cape",
+        "name": "Woodland Fur Cape",
+        "culture": "battania",
+        "weight": "4.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_chainmail_shoulder_b",
+        "name": "Mail Shoulder Reinforcements",
+        "culture": "battania",
+        "weight": "4.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_chainmail_shoulder_a",
+        "name": "Mail Shoulder Pieces",
+        "culture": "battania",
+        "weight": "4.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battanian_leather_shoulder_a",
+        "name": "Cured Leather Shoulder Pieces",
+        "culture": "battania",
+        "weight": "1.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "bolted_leather_strips",
+        "name": "Bolted Leather Strips",
+        "culture": "khuzait",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "steppe_leather_shoulders",
+        "name": "Cured Leather Pouldrons",
+        "culture": "khuzait",
+        "weight": "0.7",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "reinforced_suede_shoulders",
+        "name": "Reinforced Suede Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "0.9",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "eastern_studded_shoulders",
+        "name": "Reinforced Studded Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "17",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_khuzait_leather_shoulder_b_a",
+        "name": "Cured Studded Leather Shoulders",
+        "culture": "khuzait",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "10",
+            "arm": "5",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_khuzait_leather_shoulder_b_b",
+        "name": "Reinforced Studded Neckguard",
+        "culture": "khuzait",
+        "weight": "1.9",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "17",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "khuzait_leather_pauldron",
+        "name": "Reinforced Leather Pauldrons",
+        "culture": "khuzait",
+        "weight": "1.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "lamellar_shoulders",
+        "name": "Lamellar Shoulder Pieces",
+        "culture": "khuzait",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_metal_lamellar_armor_shoulder_a",
+        "name": "Decorated Steel Lamellar Shoulder Pieces",
+        "culture": "khuzait",
+        "weight": "2.8",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "brass_lamellar_shoulder",
+        "name": "Bronze Lamellar Shoulder Pieces",
+        "culture": "khuzait",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_a",
+        "name": "Bronze Lamellar Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "5",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_b",
+        "name": "Reinforced Lamellar Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "3.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "brass_lamellar_shoulder_white",
+        "name": "Lamellar Pauldrons",
+        "culture": "sturgia",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_white_a",
+        "name": "Lamellar Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_brass_lamellar_shoulder_white_b",
+        "name": "Reinforced Lamellar Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "5.0",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "green_hood",
+        "name": "Green Hood",
+        "culture": "vlandia",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_lamellar_shoulders",
+        "name": "Leather Lamellar Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "2.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_leather_lamellar_armor_shoulder_a",
+        "name": "Decorated Lamellar Leather Shoulder Guards",
+        "culture": "khuzait",
+        "weight": "1.3",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "hood",
+        "name": "Hood",
+        "culture": "vlandia",
+        "weight": "0.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "padded_leather_shoulders",
+        "name": "Padded Leather Shoulders",
+        "culture": "vlandia",
+        "weight": "1.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "stitched_leather_shoulders",
+        "name": "Stitched Leather Shoulders",
+        "culture": "sturgia",
+        "weight": "1.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "mail_shoulders",
+        "name": "Mail Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "2.7",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "brass_scale_shoulders",
+        "name": "Decorated Scale Shoulder Guards",
+        "culture": "sturgia",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "pauldron_cape_a",
+        "name": "Legionary Cape",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_pauldron_cape_b",
+        "name": "Bronze Pauldrons with Neck Guard",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "13",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_pauldron_cape_c",
+        "name": "Bronze Pauldrons ",
+        "culture": "empire",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_shoulder",
+        "name": "Legionary Padded Straps",
+        "culture": "empire",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "9",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "woven_leather_shoulders",
+        "name": "Woven Leather Shoulders",
+        "culture": "empire",
+        "weight": "1.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_studded_strip_shoulders",
+        "name": "Legionary Reinforced Studded Harness",
+        "culture": "empire",
+        "weight": "3.9",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_empire_plated_shoulder_a",
+        "name": "Legionary Studded Harness",
+        "culture": "empire",
+        "weight": "3.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "a_empire_plated_shoulder_b",
+        "name": "Plate Pauldrons",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_basic",
+        "name": "Decorated Leather Harness",
+        "culture": "empire",
+        "weight": "2.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_royal",
+        "name": "Caped Leather Harness",
+        "culture": "empire",
+        "weight": "2.7",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_padded",
+        "name": "Decorated Leather Harness with Padding",
+        "culture": "empire",
+        "weight": "3.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "10",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "imperial_lamellar_shoulders",
+        "name": "Heavy Lamellar Pouldrons",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "17",
+            "arm": "9",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "studded_imperial_neckguard",
+        "name": "Neckguard with Bronze Plate Pauldrons",
+        "culture": "empire",
+        "weight": "3.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_plate_armor_shoulder_a",
+        "name": "Bronze Plate Pouldrons",
+        "culture": "empire",
+        "weight": "2.4",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "empire_plate_armor_shoulder_b",
+        "name": "Iron Plate Pouldrons",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_mail",
+        "name": "Decorated Leather Harness over Mail",
+        "culture": "empire",
+        "weight": "13.2",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "10",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "varangian_bra_scale",
+        "name": "Decorated Leather Harness over Scale",
+        "culture": "empire",
+        "weight": "14",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "19",
+            "arm": "12",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "female_hood",
+        "name": "Woman's Hood",
+        "culture": "neutral_culture",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "female_scarf",
+        "name": "Woman's Scarf",
+        "culture": "neutral_culture",
+        "weight": "0.6",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "scarf",
+        "name": "Scarf",
+        "culture": "neutral_culture",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "wrapped_scarf",
+        "name": "Shawl",
+        "culture": "neutral_culture",
+        "weight": "0.5",
+        "type": "Cape",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "long_desert_robe",
+        "name": "Long Simple Robe",
+        "culture": "aserai",
+        "weight": "1.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "layered_robe",
+        "name": "Layered Robe",
+        "culture": "aserai",
+        "weight": "2.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "desert_robe",
+        "name": "Simple Kaftan",
+        "culture": "aserai",
+        "weight": "1.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "aserai_tunic_waistcoat",
+        "name": "Luxury Kaftan",
+        "culture": "aserai",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "thick_sleeved_robe",
+        "name": "Thick Sleeved Robe",
+        "culture": "aserai",
+        "weight": "1.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "aserai_villager_female_dress",
+        "name": "Villager Short Dress",
+        "culture": "aserai",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "fine_southern_dress",
+        "name": "Tailored Dress",
+        "culture": "aserai",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "aserai_female_civil_a",
+        "name": "Feminine Kaftan",
+        "culture": "aserai",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "aserai_female_civil_b",
+        "name": "Kaftan with Waistband",
+        "culture": "aserai",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "aserai_civil_a",
+        "name": "Luxury Kaftan with Waistband",
+        "culture": "aserai",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "4",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "aserai_civil_b",
+        "name": "Kaftan with Leather Belt",
+        "culture": "aserai",
+        "weight": "1.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "aserai_civil_c",
+        "name": "Colored Kaftan",
+        "culture": "aserai",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "aserai_civil_d",
+        "name": "Colored Bisht",
+        "culture": "aserai",
+        "weight": "1.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "aserai_civil_e",
+        "name": "Thawb",
+        "culture": "aserai",
+        "weight": "1.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "aserai_civil_f",
+        "name": "Simple Peasant Robe",
+        "culture": "aserai",
+        "weight": "1.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "tassled_southern_robes",
+        "name": "Tassled Robes",
+        "culture": "aserai",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "eastern_silk_clothing",
+        "name": "Silk Kaftan",
+        "culture": "aserai",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "short_padded_robe",
+        "name": "Short Padded Robe",
+        "culture": "aserai",
+        "weight": "1.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "2",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "desert_padded_cloth",
+        "name": "Light Long Padded Armor",
+        "culture": "aserai",
+        "weight": "1.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "6",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "studded_leather_coat",
+        "name": "Studded Leather Coat",
+        "culture": "aserai",
+        "weight": "1.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "10",
+            "arm": "2",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "leather_strips_over_padded_robe",
+        "name": "Leather Strips over Padded Robe",
+        "culture": "aserai",
+        "weight": "5.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "36",
+            "arm": "7",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "aserai_robe_c_chain",
+        "name": "Robe over Mail Shirt",
+        "culture": "aserai",
+        "weight": "8.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "25",
+            "arm": "12",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "long_padded_robe",
+        "name": "Long Padded Robe",
+        "culture": "aserai",
+        "weight": "3.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "2",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "aserai_horseman_armor",
+        "name": "Ring Mail",
+        "culture": "aserai",
+        "weight": "4.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "13",
+            "arm": "3",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "ringed_desert_armor",
+        "name": "Heavy Ring Mail",
+        "culture": "aserai",
+        "weight": "10.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "20",
+            "arm": "8",
+            "leg": "10"
+        }
+    },
+    {
+        "id": "aserai_archer_armor",
+        "name": "Gambeson over Mail Armor",
+        "culture": "aserai",
+        "weight": "11.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "29",
+            "arm": "8",
+            "leg": "15"
+        }
+    },
+    {
+        "id": "desert_robe_over_mail",
+        "name": "Robe over Mail Hauberk",
+        "culture": "aserai",
+        "weight": "8.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "25",
+            "arm": "12",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "desert_lamellar",
+        "name": "Light Lamellar Armor",
+        "culture": "aserai",
+        "weight": "16.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "48",
+            "arm": "14",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "sturgia_cavalry_armor",
+        "name": "Cavalry Lamellar Armor",
+        "culture": "aserai",
+        "weight": "18",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "46",
+            "arm": "14",
+            "leg": "16"
+        }
+    },
+    {
+        "id": "desert_scale_armor",
+        "name": "Luxury Scale Armor",
+        "culture": "aserai",
+        "weight": "20.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "47",
+            "arm": "14",
+            "leg": "23"
+        }
+    },
+    {
+        "id": "stitched_leather_over_mail",
+        "name": "Stitched Leather over Mail",
+        "culture": "aserai",
+        "weight": "15.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "36",
+            "arm": "14",
+            "leg": "14"
+        }
+    },
+    {
+        "id": "southern_lamellar_armor",
+        "name": "Bronze Lamellar Vest over Gambeson",
+        "culture": "aserai",
+        "weight": "9.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "37",
+            "arm": "2",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "aserai_armor_02",
+        "name": "Aserai Chain Mail",
+        "culture": "aserai",
+        "weight": "17.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "25",
+            "arm": "13",
+            "leg": "13"
+        }
+    },
+    {
+        "id": "aserai_armor_02_b",
+        "name": "Southern Decorated Chain Mail",
+        "culture": "aserai",
+        "weight": "18.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "27",
+            "arm": "13",
+            "leg": "13"
+        }
+    },
+    {
+        "id": "aserai_scale_armor_on_cloth",
+        "name": "Mastercrafted Southern Scale Mail",
+        "culture": "aserai",
+        "weight": "18.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "35",
+            "arm": "7",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "aserai_full_scale_armor_on_chain",
+        "name": "Mastercrafted Southern Scale over Chain Hauberk",
+        "culture": "aserai",
+        "weight": "28.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "51",
+            "arm": "16",
+            "leg": "25"
+        }
+    },
+    {
+        "id": "aserai_scale_armor_on_chain",
+        "name": "Mastercrafted Southern Scale over Chain Mail",
+        "culture": "aserai",
+        "weight": "22.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "51",
+            "arm": "16",
+            "leg": "16"
+        }
+    },
+    {
+        "id": "baggy_trunks",
+        "name": "Baggy Trunks",
+        "culture": "battania",
+        "weight": "0.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "armored_baggy_trunks",
+        "name": "Armored Baggy Trunks",
+        "culture": "battania",
+        "weight": "0.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "sleeveless_studded_fur_armor",
+        "name": "Sleeveless Studded Fur Armor",
+        "culture": "battania",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "studded_fur_armor",
+        "name": "Studded Fur Armor",
+        "culture": "looters",
+        "weight": "1.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "3",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "burlap_waistcoat",
+        "name": "Burlap Waistcoat",
+        "culture": "battania",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "battania_woodland_outfit",
+        "name": "Woodland Garments",
+        "culture": "battania",
+        "weight": "1.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "4",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "battania_dress_a",
+        "name": "Plaid Dress",
+        "culture": "battania",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "battania_dress_b",
+        "name": "Woodland Commoner Dress",
+        "culture": "battania",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "battania_dress_c",
+        "name": "Tartan Long Dress",
+        "culture": "battania",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "battania_civil_a",
+        "name": "Tartan Tunic",
+        "culture": "battania",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "battania_civil_b",
+        "name": "Villager Leather Tunic",
+        "culture": "battania",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "10",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "battania_civil_c",
+        "name": "Townsman Luxury Coat",
+        "culture": "battania",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "6",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "battania_female_civil_a",
+        "name": "Tartan Dress",
+        "culture": "battania",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "battania_female_civil_b",
+        "name": "Villager Thick Dress",
+        "culture": "battania",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "fur_armor_with_strap",
+        "name": "Fur Armor with Strap",
+        "culture": "battania",
+        "weight": "3.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "2",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "fur_armor",
+        "name": "Fur Armor",
+        "culture": "battania",
+        "weight": "4.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "long_fur_coat",
+        "name": "Long Fur Coat",
+        "culture": "battania",
+        "weight": "2.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "2",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "highland_cloth",
+        "name": "Woodland Cloth Armor",
+        "culture": "battania",
+        "weight": "1.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "9",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "battanian_savage_armor",
+        "name": "Wildling Armor",
+        "culture": "battania",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "western_scale_mail",
+        "name": "Rough Scale Mail",
+        "culture": "battania",
+        "weight": "15",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "32",
+            "arm": "14",
+            "leg": "16"
+        }
+    },
+    {
+        "id": "kilt_over_plated_leather",
+        "name": "Kilt over Plated Leather",
+        "culture": "battania",
+        "weight": "16",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "42",
+            "arm": "3",
+            "leg": "23"
+        }
+    },
+    {
+        "id": "battania_woodland_chainmail",
+        "name": "Heavy Mail Shirt with Wide Belt",
+        "culture": "battania",
+        "weight": "14",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "31",
+            "arm": "10",
+            "leg": "13"
+        }
+    },
+    {
+        "id": "ranger_mail",
+        "name": "Ranger Mail",
+        "culture": "battania",
+        "weight": "12.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "32",
+            "arm": "8",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "battania_mercenary_armor",
+        "name": "Luxury Brigandine",
+        "culture": "battania",
+        "weight": "24",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "53",
+            "arm": "10",
+            "leg": "18"
+        }
+    },
+    {
+        "id": "scale_armor",
+        "name": "Rugged Scale Armor",
+        "culture": "battania",
+        "weight": "10.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "31",
+            "arm": "0",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "battanian_chainmail_armor_a",
+        "name": "Heavy Mail Vest",
+        "culture": "battania",
+        "weight": "10.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "28",
+            "arm": "2",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "battanian_chainmail_armor_b",
+        "name": "Highland Mail Shirt",
+        "culture": "battania",
+        "weight": "10.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "23",
+            "arm": "4",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "battanian_chainmail_armor_c",
+        "name": "Highland Reinforced Mail over Tartan",
+        "culture": "battania",
+        "weight": "14.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "32",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "battanian_chainmail_armor_d",
+        "name": "Highland Reinforced Mail",
+        "culture": "battania",
+        "weight": "16.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "34",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "battania_noble_armor",
+        "name": "Highborn Mail Armor",
+        "culture": "battania",
+        "weight": "23.00",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "48",
+            "arm": "12",
+            "leg": "22"
+        }
+    },
+    {
+        "id": "battania_warlord_armor",
+        "name": "Scale Warlord Armor",
+        "culture": "battania",
+        "weight": "19",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "37",
+            "arm": "16",
+            "leg": "18"
+        }
+    },
+    {
+        "id": "battanian_scale_armor_a",
+        "name": "Highland Scale Armor over Mail Armor",
+        "culture": "battania",
+        "weight": "22.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "42",
+            "arm": "12",
+            "leg": "15"
+        }
+    },
+    {
+        "id": "battanian_scale_armor_b",
+        "name": "Highland Scale Armor over Cloth",
+        "culture": "battania",
+        "weight": "11.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "31",
+            "arm": "3",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "battania_light_armor_a",
+        "name": "Highland Tartan with Chest Plate",
+        "culture": "battania",
+        "weight": "6.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "15",
+            "arm": "3",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "battania_light_armor_b",
+        "name": "Highland Tartan",
+        "culture": "battania",
+        "weight": "3.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "battania_light_armor_c",
+        "name": "Highland Long Tartan",
+        "culture": "battania",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "0",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "battania_light_armor_d",
+        "name": "Highland Kilt over Tartan Trousers",
+        "culture": "battania",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "battania_light_armor_e",
+        "name": "Tartan Toga",
+        "culture": "battania",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "9"
+        }
+    },
+    {
+        "id": "steppe_armor",
+        "name": "Striped Coat",
+        "culture": "khuzait",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "steppe_robe",
+        "name": "Steppe Robe",
+        "culture": "khuzait",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "studded_leather_waistcoat",
+        "name": "Studded Leather Waistcoat",
+        "culture": "khuzait",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "0",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "khuzait_dress",
+        "name": "Aproned Feminine Coat",
+        "culture": "khuzait",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "khuzait_dress_b",
+        "name": "Dress with Fur",
+        "culture": "khuzait",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "steppe_dress",
+        "name": "Envelope Dress",
+        "culture": "khuzait",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "4",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "khuzait_civil_coat",
+        "name": "Luxury Coat",
+        "culture": "khuzait",
+        "weight": "2.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "khuzait_civil_coat_b",
+        "name": "Luxury Thick Coat",
+        "culture": "khuzait",
+        "weight": "2.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "reinforced_suede_armor",
+        "name": "Reinforced Suede Armor",
+        "culture": "khuzait",
+        "weight": "2.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "2",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "studded_steppe_leather",
+        "name": "Studded Leather Armor",
+        "culture": "khuzait",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "6",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "belted_leather_cuirass",
+        "name": "Belted Leather Cuirass",
+        "culture": "khuzait",
+        "weight": "1.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "19",
+            "arm": "3",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "crude_leather_armor",
+        "name": "Crude Hide Armor",
+        "culture": "khuzait",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "13",
+            "arm": "6",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "khuzait_belt_leather",
+        "name": "Coat with Mirrored Belt",
+        "culture": "khuzait",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "khuzait_fortified_armor",
+        "name": "Reinforced Mirror Armor",
+        "culture": "khuzait",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "2",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "khuzait_sturdy_armor",
+        "name": "Mirrored Leather Armor",
+        "culture": "khuzait",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "15",
+            "arm": "2",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "eastern_stitched_leather_coat",
+        "name": "Stitched Cured Leather Coat",
+        "culture": "khuzait",
+        "weight": "8.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "20",
+            "arm": "6",
+            "leg": "10"
+        }
+    },
+    {
+        "id": "leather_lamellar_armor",
+        "name": "Cured Leather Lamellar Armor",
+        "culture": "khuzait",
+        "weight": "14",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "24",
+            "arm": "6",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "studded_leather_over_aketon",
+        "name": "Studded Leather over Aketon",
+        "culture": "khuzait",
+        "weight": "4.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "7",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "eastern_lamellar_armor",
+        "name": "Lancer Lamellar Armor",
+        "culture": "khuzait",
+        "weight": "13",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "39",
+            "arm": "7",
+            "leg": "10"
+        }
+    },
+    {
+        "id": "khuzait_lamellar_strapped",
+        "name": "Reinforced Leather Armor",
+        "culture": "khuzait",
+        "weight": "11.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "24",
+            "arm": "2",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "eastern_plated_leather_vest",
+        "name": "Brigandine Vest",
+        "culture": "khuzait",
+        "weight": "14.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "34",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "brass_lamellar_over_mail",
+        "name": "Bronze Lamellar over Mail",
+        "culture": "khuzait",
+        "weight": "22",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "46",
+            "arm": "14",
+            "leg": "14"
+        }
+    },
+    {
+        "id": "eastern_plated_leather",
+        "name": "Mirrored Brigandine Armor",
+        "culture": "khuzait",
+        "weight": "18.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "36",
+            "arm": "14",
+            "leg": "14"
+        }
+    },
+    {
+        "id": "sackcloth_tunic",
+        "name": "Sackcloth Tunic",
+        "culture": "vlandia",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "cloth_tunic",
+        "name": "Simple Cloth Tunic",
+        "culture": "vlandia",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "long_hemp_tunic",
+        "name": "Long Hemp Tunic",
+        "culture": "vlandia",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "long_woolen_tunic",
+        "name": "Long Woolen Tunic",
+        "culture": "vlandia",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "vlandian_noble_woman_dress",
+        "name": "Silken Noble Dress",
+        "culture": "vlandia",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "vlandian_woman_dress",
+        "name": "Aproned Dress",
+        "culture": "vlandia",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "vlandian_corset_dress",
+        "name": "Corseted Dress",
+        "culture": "vlandia",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "monk_robe",
+        "name": "Scholar Robe",
+        "culture": "vlandia",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "padded_leather_shirt",
+        "name": "Padded Leather Shirt",
+        "culture": "vlandia",
+        "weight": "1.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "padded_coat",
+        "name": "Padded Footman Coat",
+        "culture": "vlandia",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "7",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "leather_coat_over_cloth",
+        "name": "Leather Coat over Cloth",
+        "culture": "vlandia",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "gambeson_b",
+        "name": "Heavy Aketon",
+        "culture": "vlandia",
+        "weight": "2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "9",
+            "leg": "9"
+        }
+    },
+    {
+        "id": "aketon",
+        "name": "Aketon",
+        "culture": "vlandia",
+        "weight": "3.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "13",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "leather_coat",
+        "name": "Leather Tunic",
+        "culture": "vlandia",
+        "weight": "2.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "10",
+            "arm": "3",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "sleeveless_padded_short_coat",
+        "name": "Sleeveless Padded Short Coat",
+        "culture": "vlandia",
+        "weight": "2.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "15",
+            "arm": "2",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "sleeveless_padded_coat",
+        "name": "Sleeveless Padded Coat",
+        "culture": "vlandia",
+        "weight": "2.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "2",
+            "leg": "9"
+        }
+    },
+    {
+        "id": "padded_short_coat",
+        "name": "Padded Short Coat",
+        "culture": "vlandia",
+        "weight": "2.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "15",
+            "arm": "7",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "leather_scale_armor",
+        "name": "Leather Scale Armor",
+        "culture": "vlandia",
+        "weight": "6.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "6",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "woven_leather_vest",
+        "name": "Woven Leather Vest",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "3",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "vlandia_chainmail",
+        "name": "Heavy Mail Hauberk",
+        "culture": "vlandia",
+        "weight": "12",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "28",
+            "arm": "14",
+            "leg": "14"
+        }
+    },
+    {
+        "id": "hauberk",
+        "name": "Heavy Mail Shirt",
+        "culture": "vlandia",
+        "weight": "9.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "27",
+            "arm": "12",
+            "leg": "14"
+        }
+    },
+    {
+        "id": "white_coat_over_mail",
+        "name": "White Tabard over Mail Hauberk",
+        "culture": "vlandia",
+        "weight": "15",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "34",
+            "arm": "12",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "red_coat_over_mail",
+        "name": "Red Tabard over Mail Hauberk",
+        "culture": "vlandia",
+        "weight": "15",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "34",
+            "arm": "12",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "veteran_mercenary_armor",
+        "name": "Fortified Mercenary Armor",
+        "culture": "vlandia",
+        "weight": "8.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "24",
+            "arm": "12",
+            "leg": "13"
+        }
+    },
+    {
+        "id": "mail_shirt",
+        "name": "Mail Shirt",
+        "culture": "vlandia",
+        "weight": "7.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "25",
+            "arm": "11",
+            "leg": "13"
+        }
+    },
+    {
+        "id": "plated_leather_coat",
+        "name": "Rough Brigandine",
+        "culture": "vlandia",
+        "weight": "19.00",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "38",
+            "arm": "19",
+            "leg": "19"
+        }
+    },
+    {
+        "id": "coat_of_plates_over_mail",
+        "name": "Brigandine over Mail",
+        "culture": "vlandia",
+        "weight": "23.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "50",
+            "arm": "14",
+            "leg": "16"
+        }
+    },
+    {
+        "id": "banded_leather_over_mail",
+        "name": "Banded Leather over Mail",
+        "culture": "vlandia",
+        "weight": "8.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "29",
+            "arm": "8",
+            "leg": "10"
+        }
+    },
+    {
+        "id": "northern_tunic",
+        "name": "Varyag Tunic",
+        "culture": "sturgia",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "nordic_tunic",
+        "name": "Luxury Tunic",
+        "culture": "sturgia",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "tundra_tunic",
+        "name": "Belted Tunic",
+        "culture": "sturgia",
+        "weight": "0.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "roughcloth_shortcoat",
+        "name": "Roughcloth Shortcoat",
+        "culture": "sturgia",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "northern_dress",
+        "name": "Cold Weather Dress",
+        "culture": "sturgia",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "laced_dress",
+        "name": "Laced Dress",
+        "culture": "sturgia",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "cut_dress",
+        "name": "Frilled Dress",
+        "culture": "sturgia",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "1",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "cut_dress_with_pouch",
+        "name": "Cut Dress with Pouch",
+        "culture": "sturgia",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "dress_with_overall",
+        "name": "Dress",
+        "culture": "sturgia",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "plain_dress",
+        "name": "Plain Dress",
+        "culture": "sturgia",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "heavy_nordic_tunic",
+        "name": "Heavy Tunic",
+        "culture": "sturgia",
+        "weight": "1.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "light_tunic",
+        "name": "Light Tunic",
+        "culture": "sturgia",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "fur_trimmed_tunic",
+        "name": "Fur Trimmed Tunic",
+        "culture": "sturgia",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "fur_trimmed_short_tunic",
+        "name": "Fur Trimmed Short Tunic",
+        "culture": "sturgia",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "decorated_short_tunic",
+        "name": "Decorated Thick Tunic",
+        "culture": "sturgia",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "sturgia_light_tunic",
+        "name": "Long Tunic",
+        "culture": "sturgia",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "nordic_sloven_leather",
+        "name": "Sloven Leather",
+        "culture": "sturgia",
+        "weight": "2.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "3",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "heavy_nordic_coat",
+        "name": "Sleeved Heavy Tunic",
+        "culture": "sturgia",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "northern_padded_gambeson",
+        "name": "Short Gambeson over Tunic",
+        "culture": "sturgia",
+        "weight": "1.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "3",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "northern_padded_cloth",
+        "name": "Light Padded Armor",
+        "culture": "sturgia",
+        "weight": "1.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "15",
+            "arm": "7",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "nordic_padded_cloth",
+        "name": "Reinforced Thick Tunic",
+        "culture": "sturgia",
+        "weight": "1.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "northern_leather_vest",
+        "name": "Tunic with Leather Vest",
+        "culture": "sturgia",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "9",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "stitched_leather_vest",
+        "name": "Stitched Leather Vest",
+        "culture": "sturgia",
+        "weight": "1.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "3",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "nordic_sloven",
+        "name": "Leather Armor over Heavy Cloth",
+        "culture": "sturgia",
+        "weight": "1.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "3",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "layered_leather_tunic",
+        "name": "Layered Leather Tunic",
+        "culture": "sturgia",
+        "weight": "1.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "11",
+            "arm": "2",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "northern_leather_tabard",
+        "name": "Leather Tabard",
+        "culture": "sturgia",
+        "weight": "4.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "6",
+            "leg": "9"
+        }
+    },
+    {
+        "id": "northern_lamellar_armor",
+        "name": "Cured Leather Lamellar Shirt ",
+        "culture": "sturgia",
+        "weight": "8.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "26",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "decorated_nordic_hauberk",
+        "name": "Huscarl Decorated Mail Shirt",
+        "culture": "sturgia",
+        "weight": "10.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "25",
+            "arm": "8",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "nordic_sloven_over_mail",
+        "name": "Leather Tabard over Mail",
+        "culture": "sturgia",
+        "weight": "10",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "30",
+            "arm": "12",
+            "leg": "14"
+        }
+    },
+    {
+        "id": "nordic_hauberk",
+        "name": "Huscarl Mail Shirt",
+        "culture": "sturgia",
+        "weight": "10.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "24",
+            "arm": "10",
+            "leg": "10"
+        }
+    },
+    {
+        "id": "leather_and_iron_plate_armor",
+        "name": "Leather Armor with Iron Plates",
+        "culture": "sturgia",
+        "weight": "9.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "22",
+            "arm": "4",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "northern_coat_of_plates",
+        "name": "Coat Of Plates",
+        "culture": "sturgia",
+        "weight": "21",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "45",
+            "arm": "6",
+            "leg": "19"
+        }
+    },
+    {
+        "id": "nordic_lamellar_armor",
+        "name": "Bronze Scale Vest over Gambeson",
+        "culture": "sturgia",
+        "weight": "15",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "28",
+            "arm": "6",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "nordic_lamellar_vest",
+        "name": "Bronze Scale Vest",
+        "culture": "sturgia",
+        "weight": "14",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "28",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "sturgian_fortified_armor",
+        "name": "Brigandine over Hauberk",
+        "culture": "sturgia",
+        "weight": "28.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "49",
+            "arm": "20",
+            "leg": "25"
+        }
+    },
+    {
+        "id": "northern_brass_lamellar_over_mail",
+        "name": "Heavy Lamellar over Mail",
+        "culture": "sturgia",
+        "weight": "23.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "51",
+            "arm": "16",
+            "leg": "16"
+        }
+    },
+    {
+        "id": "sturgian_lamellar_base",
+        "name": "Heavy Lamellar over Mail Armor",
+        "culture": "sturgia",
+        "weight": "24",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "50",
+            "arm": "7",
+            "leg": "21"
+        }
+    },
+    {
+        "id": "sturgian_lamellar_fortified",
+        "name": "Heavy Lamellar over Hauberk",
+        "culture": "sturgia",
+        "weight": "28",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "50",
+            "arm": "15",
+            "leg": "25"
+        }
+    },
+    {
+        "id": "sturgian_chainmale_longsleeve",
+        "name": "Decorated Hauberk",
+        "culture": "sturgia",
+        "weight": "14.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "32",
+            "arm": "15",
+            "leg": "15"
+        }
+    },
+    {
+        "id": "sturgian_chainmale_shortsleeve",
+        "name": "Huscarls Hauberk",
+        "culture": "sturgia",
+        "weight": "8.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "25",
+            "arm": "10",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "sturgian_lamellar_gambeson_heavy",
+        "name": "Heavy Lamellar Vest",
+        "culture": "sturgia",
+        "weight": "8.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "35",
+            "arm": "2",
+            "leg": "18"
+        }
+    },
+    {
+        "id": "sturgian_lamellar_gambeson",
+        "name": "Heavy Lamellar Vest",
+        "culture": "sturgia",
+        "weight": "6.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "28",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "peasant_costume",
+        "name": "Commoner Clothes",
+        "culture": "empire",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "fine_town_tunic",
+        "name": "Rich Tunic",
+        "culture": "empire",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "hemp_tunic",
+        "name": "Hemp Tunic",
+        "culture": "empire",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "tied_cloth_tunic",
+        "name": "Tied Cloth Tunic",
+        "culture": "empire",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "vlandian_dress",
+        "name": "Rich Dress",
+        "culture": "empire",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "empire_dress",
+        "name": "Ladies Dress",
+        "culture": "empire",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "7",
+            "arm": "2",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "empire_dress_b",
+        "name": "Red Dress",
+        "culture": "empire",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "footmans_tunic",
+        "name": "Military Tunic",
+        "culture": "empire",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "tunic_with_shoulder_pads",
+        "name": "Tunic with Shoulder Pads",
+        "culture": "empire",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "5",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "tunic_with_rolled_cloth",
+        "name": "Tunic with Rolled Cloth",
+        "culture": "empire",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "imperial_robes",
+        "name": "Toga",
+        "culture": "empire",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "4",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "padded_cloth_with_strips",
+        "name": "Padded Cloth with Strips",
+        "culture": "empire",
+        "weight": "2.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "2",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "leather_tunic",
+        "name": "Leather Tunic",
+        "culture": "empire",
+        "weight": "2.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "2",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "patched_gambeson",
+        "name": "Patched Gambeson",
+        "culture": "empire",
+        "weight": "2.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "3",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "imperial_padded_cloth",
+        "name": "Infantryman Rough Gambeson",
+        "culture": "empire",
+        "weight": "2.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "6",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "khuzait_leather_stitched",
+        "name": "Thick Brigandine Vest",
+        "culture": "empire",
+        "weight": "4.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "34",
+            "arm": "2",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_a",
+        "name": "Infantryman Gambeson",
+        "culture": "empire",
+        "weight": "2.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "15",
+            "arm": "4",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_c",
+        "name": "Infantryman Gambeson with Skirts",
+        "culture": "empire",
+        "weight": "2.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_d",
+        "name": "Infantryman Gambeson with Straps",
+        "culture": "empire",
+        "weight": "1.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_e",
+        "name": "Infantryman Long Gambeson",
+        "culture": "empire",
+        "weight": "1.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "5",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_f",
+        "name": "Auxiliary Armor",
+        "culture": "empire",
+        "weight": "1.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "17",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_g",
+        "name": "Auxiliary Armor with Straps",
+        "culture": "empire",
+        "weight": "2.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "eastern_studded_leather",
+        "name": "Cured Studded Leather Armor",
+        "culture": "empire",
+        "weight": "3.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "18",
+            "arm": "6",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "basic_imperial_leather_armor",
+        "name": "Leather Armor",
+        "culture": "empire",
+        "weight": "3.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "22",
+            "arm": "6",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "woven_leather_coat",
+        "name": "Boarskin Leather Coat",
+        "culture": "empire",
+        "weight": "5.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "4",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "empire_warrior_padded_armor_b",
+        "name": "Infantryman Gambeson over Leather Jacket",
+        "culture": "empire",
+        "weight": "1.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "16",
+            "arm": "4",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "imperial_mail_over_stripped_leather",
+        "name": "Infantryman Mail over Striped Leather",
+        "culture": "empire",
+        "weight": "10.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "31",
+            "arm": "6",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "empire_horseman_armor",
+        "name": "Cavalryman Mail Shirt",
+        "culture": "empire",
+        "weight": "8.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "27",
+            "arm": "10",
+            "leg": "11"
+        }
+    },
+    {
+        "id": "imperial_mail_over_leather",
+        "name": "Infantryman Mail over Leather",
+        "culture": "empire",
+        "weight": "8.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "31",
+            "arm": "6",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "imperial_mail_vest",
+        "name": "Infantryman Mail Vest",
+        "culture": "empire",
+        "weight": "9.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "26",
+            "arm": "12",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "imperial_scale_armor",
+        "name": "Heavy Scale Armor over Mail Hauberk",
+        "culture": "empire",
+        "weight": "21.40",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "57",
+            "arm": "16",
+            "leg": "20"
+        }
+    },
+    {
+        "id": "imperial_lamellar_over_leather",
+        "name": "Luxury Lamellar Vest over Leather",
+        "culture": "empire",
+        "weight": "15.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "33",
+            "arm": "6",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "lamellar_with_scale_skirt",
+        "name": "Lamellar with Scale Skirt",
+        "culture": "empire",
+        "weight": "24.10",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "52",
+            "arm": "16",
+            "leg": "23"
+        }
+    },
+    {
+        "id": "legionary_mail",
+        "name": "Legionary Mail",
+        "culture": "empire",
+        "weight": "19",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "34",
+            "arm": "15",
+            "leg": "18"
+        }
+    },
+    {
+        "id": "imperial_lamellar",
+        "name": "Cataphract Lamellar Armor",
+        "culture": "empire",
+        "weight": "22.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "48",
+            "arm": "14",
+            "leg": "24"
+        }
+    },
+    {
+        "id": "empire_legion_a",
+        "name": "Decorated Legionary Mail",
+        "culture": "empire",
+        "weight": "22.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "30",
+            "arm": "8",
+            "leg": "18"
+        }
+    },
+    {
+        "id": "empire_legion_b",
+        "name": "Ornate Legionary Scale Mail",
+        "culture": "empire",
+        "weight": "28.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "36",
+            "arm": "8",
+            "leg": "18"
+        }
+    },
+    {
+        "id": "dummy_armor_min",
+        "name": "Dummy Min Armor",
+        "culture": "looters",
+        "weight": "10",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "dummy_armor_lower_average",
+        "name": "Dummy Lower Average",
+        "culture": "looters",
+        "weight": "20",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "12",
+            "body": "12",
+            "arm": "12",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "dummy_armor_higher_average",
+        "name": "Dummy Higher Average",
+        "culture": "looters",
+        "weight": "30",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "37",
+            "body": "37",
+            "arm": "37",
+            "leg": "37"
+        }
+    },
+    {
+        "id": "dummy_armor_max",
+        "name": "Dummy Max Armor",
+        "culture": "looters",
+        "weight": "40",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "55",
+            "body": "55",
+            "arm": "55",
+            "leg": "55"
+        }
+    },
+    {
+        "id": "burlap_sack_dress",
+        "name": "Burlap Dress",
+        "culture": "looters",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "tattered_rags",
+        "name": "Tattered Rags",
+        "culture": "looters",
+        "weight": "0.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "0",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "bandit_leather_water_flask",
+        "name": "Commoner Shirt",
+        "culture": "looters",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "torn_bandit_clothes",
+        "name": "Torn Padded Garments",
+        "culture": "looters",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "bandit_envelope_dress_v1",
+        "name": "Commoner Tunic",
+        "culture": "looters",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "bandit_envelope_dress_v2",
+        "name": "Sleeveless Enveloped Padded Garments",
+        "culture": "looters",
+        "weight": "0.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "bandit_fur_a",
+        "name": "Old Fur Armor",
+        "culture": "looters",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "bandit_fur_b",
+        "name": "Old Fur Coat",
+        "culture": "looters",
+        "weight": "1.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "empire_short_dress",
+        "name": "Short Tunic",
+        "culture": "empire",
+        "weight": "1.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "0",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "fur_skirt",
+        "name": "Fur Skirt",
+        "culture": "looters",
+        "weight": "0.6",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "2",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "fur_skirt_with_tunic",
+        "name": "Fur Skirt with Tunic",
+        "culture": "looters",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "ragged_robes",
+        "name": "Ragged Robes",
+        "culture": "looters",
+        "weight": "0.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "fur_waistcoat_over_tunic",
+        "name": "Fur Waistcoat over Tunic",
+        "culture": "looters",
+        "weight": "2.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "6",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "sleeveless_fur_coat",
+        "name": "Sleeveless Fur Coat",
+        "culture": "looters",
+        "weight": "1.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "2",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "fur_coat_over_tunic",
+        "name": "Fur Coat over Tunic",
+        "culture": "looters",
+        "weight": "2.1",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "12",
+            "arm": "2",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "bandit_gambeson",
+        "name": "Rugged Gambeson",
+        "culture": "looters",
+        "weight": "2.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "3",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "rough_fur_armor",
+        "name": "Rough Fur Armor",
+        "culture": "looters",
+        "weight": "1.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "3",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "padded_leather_overcoat",
+        "name": "Padded Leather Overcoat",
+        "culture": "looters",
+        "weight": "3.2",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "3",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "vlandia_bandit_a",
+        "name": "Cheap Paddings",
+        "culture": "looters",
+        "weight": "2.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "14",
+            "arm": "2",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "vlandia_bandit_b",
+        "name": "Cheap Colored Clothes",
+        "culture": "looters",
+        "weight": "1.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "vlandia_bandit_c",
+        "name": "Torn Robe",
+        "culture": "looters",
+        "weight": "0.4",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "1",
+            "arm": "0",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "rough_fur_over_chain",
+        "name": "Rough Fur over Mail",
+        "culture": "looters",
+        "weight": "14.0",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "36",
+            "arm": "8",
+            "leg": "10"
+        }
+    },
+    {
+        "id": "buckled_wildsman_armor",
+        "name": "Buckled Mail Armor",
+        "culture": "looters",
+        "weight": "12.3",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "28",
+            "arm": "8",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "cloth_apron",
+        "name": "Cloth Apron",
+        "culture": "neutral_culture",
+        "weight": "0.8",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "2",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "half_apron",
+        "name": "Half Apron",
+        "culture": "neutral_culture",
+        "weight": "0.7",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "3",
+            "arm": "1",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "merchants_fur_coat",
+        "name": "Merchant Fur Coat",
+        "culture": "neutral_culture",
+        "weight": "2.9",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "8",
+            "arm": "4",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "leather_apron",
+        "name": "Leather Apron",
+        "culture": "neutral_culture",
+        "weight": "2.5",
+        "type": "BodyArmor",
+        "armor": {
+            "head": "0",
+            "body": "4",
+            "arm": "2",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "guarded_padded_vambrace",
+        "name": "Guarded Padded Vambraces",
+        "culture": "aserai",
+        "weight": "0.6",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "9",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "ragged_armwraps",
+        "name": "Ragged Armwraps",
+        "culture": "battania",
+        "weight": "0.4",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "armwraps",
+        "name": "Armwraps",
+        "culture": "battania",
+        "weight": "0.2",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "guarded_armwraps",
+        "name": "Guarded Armwraps",
+        "culture": "battania",
+        "weight": "0.4",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "rough_tied_bracers",
+        "name": "Rough Tied Bracers",
+        "culture": "battania",
+        "weight": "0.6",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "9",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "buttoned_leather_bracers",
+        "name": "Buttoned Leather Bracers",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "strapped_leather_bracers",
+        "name": "Strapped Leather Bracers",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "5",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "roughtied_leather_bracers",
+        "name": "Roughtied Leather Bracers",
+        "culture": "battania",
+        "weight": "0.5",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_noble_bracers",
+        "name": "Fian Bracers",
+        "culture": "battania",
+        "weight": "0.6",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "18",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "highland_gloves",
+        "name": "Fur Rimmed Leather Gloves",
+        "culture": "battania",
+        "weight": "0.8",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "8",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "battania_warlord_bracers",
+        "name": "Scale Warlord Bracers",
+        "culture": "battania",
+        "weight": "1.5",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "25",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "eastern_wrapped_armguards",
+        "name": "Wrapped Armguards",
+        "culture": "khuzait",
+        "weight": "0.3",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "3",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "steppe_leather_vambraces",
+        "name": "Leather Vambraces",
+        "culture": "khuzait",
+        "weight": "0.5",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "12",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "studded_leather_vambraces",
+        "name": "Studded Leather Vambraces",
+        "culture": "khuzait",
+        "weight": "0.9",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "11",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "studded_vambraces",
+        "name": "Studded Vambraces",
+        "culture": "khuzait",
+        "weight": "0.7",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "5",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "eastern_plated_leather_vambraces",
+        "name": "Plated Leather Vambraces",
+        "culture": "khuzait",
+        "weight": "1.7",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "24",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "mail_mitten",
+        "name": "Mail Mittens",
+        "culture": "vlandia",
+        "weight": "1.4",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "20",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "reinforced_mail_mitten",
+        "name": "Reinforced Mail Mittens",
+        "culture": "vlandia",
+        "weight": "1.6",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "23",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "lordly_mail_mitten",
+        "name": "Heavy Mail Mittens",
+        "culture": "vlandia",
+        "weight": "1.7",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "24",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "reinforced_leather_vambraces",
+        "name": "Splint Vambraces",
+        "culture": "vlandia",
+        "weight": "1.0",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "20",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "northern_plated_gloves",
+        "name": "Plate Reinforced Gloves",
+        "culture": "sturgia",
+        "weight": "1.5",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "18",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "northern_brass_bracers",
+        "name": "Bronze Bracers",
+        "culture": "sturgia",
+        "weight": "1.3",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "22",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "woven_leather_bracers",
+        "name": "Woven Leather Bracers",
+        "culture": "empire",
+        "weight": "0.8",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "6",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "padded_mitten",
+        "name": "Padded Mittens",
+        "culture": "empire",
+        "weight": "0.6",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "9",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "plated_strip_gauntlets",
+        "name": "Plated Striped Gauntlets",
+        "culture": "empire",
+        "weight": "1.4",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "22",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "lamellar_plate_gauntlets",
+        "name": "Lamellar Plate Gauntlets",
+        "culture": "empire",
+        "weight": "1.8",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "23",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "decorated_imperial_gauntlets",
+        "name": "Decorated Imperial Gauntlets",
+        "culture": "empire",
+        "weight": "1.5",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "20",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "lordly_padded_mitten",
+        "name": "Lordly Padded Mittens",
+        "culture": "empire",
+        "weight": "1.3",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "18",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "reinforced_padded_mitten",
+        "name": "Reinforced Padded Mittens",
+        "culture": "empire",
+        "weight": "0.9",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "18",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "leather_gloves",
+        "name": "Leather Gloves",
+        "culture": "neutral_culture",
+        "weight": "0.4",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "4",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "padded_vambrace",
+        "name": "Padded Vambraces",
+        "culture": "neutral_culture",
+        "weight": "0.1",
+        "type": "HandArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "7",
+            "leg": "0"
+        }
+    },
+    {
+        "id": "southern_moccasins",
+        "name": "Moccasins",
+        "culture": "aserai",
+        "weight": "0.5",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "2"
+        }
+    },
+    {
+        "id": "wrapped_shoes",
+        "name": "Wrapped Shoes",
+        "culture": "aserai",
+        "weight": "0.8",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "highland_leg_wrappings",
+        "name": "Woodland Leg Wrappings",
+        "culture": "battania",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "8"
+        }
+    },
+    {
+        "id": "rough_tied_boots",
+        "name": "Rough Tied Boots",
+        "culture": "battania",
+        "weight": "0.9",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "battania_leather_boots",
+        "name": "Highborns Leather Boots",
+        "culture": "battania",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "battania_woodland_boots",
+        "name": "Woodland Boots",
+        "culture": "battania",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "battania_fur_boots",
+        "name": "Fur Boots",
+        "culture": "battania",
+        "weight": "1.5",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "highland_boots",
+        "name": "Forester Boots",
+        "culture": "battania",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "wrapped_leather_boots",
+        "name": "Wrapped Leather Boots",
+        "culture": "battania",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "7"
+        }
+    },
+    {
+        "id": "belted_leather_boots",
+        "name": "Belted Leather Boots",
+        "culture": "battania",
+        "weight": "1.1",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "turndown_leather_boots",
+        "name": "Folded Leather Boots",
+        "culture": "battania",
+        "weight": "0.9",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "9"
+        }
+    },
+    {
+        "id": "battania_warlord_boots",
+        "name": "Scaled Boots",
+        "culture": "battania",
+        "weight": "2.6",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "26"
+        }
+    },
+    {
+        "id": "eastern_leather_boots",
+        "name": "Leather Riding Boots",
+        "culture": "khuzait",
+        "weight": "1.1",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "khuzait_curved_boots",
+        "name": "Curved Boots",
+        "culture": "khuzait",
+        "weight": "0.9",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "woven_leather_boots",
+        "name": "Woven Leather Boots",
+        "culture": "khuzait",
+        "weight": "0.7",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "steppe_leather_boots",
+        "name": "Sturdy Leather Boots",
+        "culture": "khuzait",
+        "weight": "0.8",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "reinforced_suede_boots",
+        "name": "Reinforced Suede Boots",
+        "culture": "khuzait",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "20"
+        }
+    },
+    {
+        "id": "leather_boots",
+        "name": "Fur Rimmed Curved Boots",
+        "culture": "khuzait",
+        "weight": "0.8",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "mail_chausses",
+        "name": "Mail Chausses",
+        "culture": "vlandia",
+        "weight": "2.9",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "22"
+        }
+    },
+    {
+        "id": "strapped_mail_chausses",
+        "name": "Strapped Mail Chausses",
+        "culture": "vlandia",
+        "weight": "3.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "23"
+        }
+    },
+    {
+        "id": "leather_cavalier_boots",
+        "name": "Leather Cavalier Boots",
+        "culture": "vlandia",
+        "weight": "0.9",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "mail_cavalier_boots",
+        "name": "Mail Cavalier Boots",
+        "culture": "vlandia",
+        "weight": "1.8",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "12"
+        }
+    },
+    {
+        "id": "sturgia_boots_a",
+        "name": "Simple Leather Boots",
+        "culture": "sturgia",
+        "weight": "1.55",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "sturgia_boots_b",
+        "name": "Tied Leather Boots",
+        "culture": "sturgia",
+        "weight": "1.8",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "6"
+        }
+    },
+    {
+        "id": "sturgia_boots_c",
+        "name": "Tied Boots",
+        "culture": "sturgia",
+        "weight": "1.2",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "sturgia_boots_d",
+        "name": "Wrapped Boots",
+        "culture": "sturgia",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "northern_plated_boots",
+        "name": "Huscarl Plated Boots",
+        "culture": "sturgia",
+        "weight": "2.9",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "18"
+        }
+    },
+    {
+        "id": "fine_town_boots",
+        "name": "Fine Town Boots",
+        "culture": "empire",
+        "weight": "0.5",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "folded_town_boots",
+        "name": "Folded Town Boots",
+        "culture": "empire",
+        "weight": "1.0",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "4"
+        }
+    },
+    {
+        "id": "empire_horseman_boots",
+        "name": "Horsemans Boots",
+        "culture": "empire",
+        "weight": "0.8",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "strapped_leather_boots",
+        "name": "Strapped Leather Boots",
+        "culture": "empire",
+        "weight": "0.9",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "plated_strip_boots",
+        "name": "Splint Boots",
+        "culture": "empire",
+        "weight": "2.7",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "22"
+        }
+    },
+    {
+        "id": "decorated_imperial_boots",
+        "name": "Decorated Plate Boots",
+        "culture": "empire",
+        "weight": "2.3",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "20"
+        }
+    },
+    {
+        "id": "lamellar_plate_boots",
+        "name": "Lamellar Plate Boots",
+        "culture": "empire",
+        "weight": "3.5",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "19"
+        }
+    },
+    {
+        "id": "ladys_shoe",
+        "name": "Ladies Shoes",
+        "culture": "neutral_culture",
+        "weight": "0.6",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "1"
+        }
+    },
+    {
+        "id": "leather_shoes",
+        "name": "Leather Shoes",
+        "culture": "neutral_culture",
+        "weight": "0.7",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "3"
+        }
+    },
+    {
+        "id": "ragged_boots",
+        "name": "Ragged Boots",
+        "culture": "neutral_culture",
+        "weight": "0.8",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    },
+    {
+        "id": "strapped_shoes",
+        "name": "Strapped Shoes",
+        "culture": "neutral_culture",
+        "weight": "0.7",
+        "type": "LegArmor",
+        "armor": {
+            "head": "0",
+            "body": "0",
+            "arm": "0",
+            "leg": "5"
+        }
+    }
+]

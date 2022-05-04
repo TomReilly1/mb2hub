@@ -30,6 +30,16 @@ const routes = [
     name: 'troops',
     component: () => import('../views/TroopsView.vue')
   },
+  {
+    path: '/kingdoms',
+    name: 'kingdoms',
+    component: () => import('../views/KingdomsView.vue')
+  },
+  {
+    path: '/cultures',
+    name: 'cultures',
+    component: () => import('../views/CulturesView.vue')
+  },
 ]
 
 const router = createRouter({

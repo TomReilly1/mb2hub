@@ -129,9 +129,9 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
             </template>
         </Column>
-        <Column field="default_group" header="Group" sortable>
+        <Column field="group" header="Group" sortable>
             <template #body="{data}">
-                {{data.default_group}}
+                {{data.group}}
             </template>
             <template #filter="{filterModel, filterCallback}">
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by Group - `" />
@@ -146,6 +146,7 @@ const initFilters = () => {
             </template>
         </Column>
         <Column field="level" header="Level" sortable></Column>
+        
     </DataTable>
 </div>
 </template>
