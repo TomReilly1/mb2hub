@@ -22,11 +22,13 @@
                             <router-link to="/troops" class="nav-link">Troops
                             </router-link>
                         </li>
-                        <li>
-                            <a class="nav-link" href="#">Kingdoms</a>
+                        <li class="nav-item">
+                            <router-link to="/kingdoms" class="nav-link">Kingdoms
+                            </router-link>
                         </li>
-                        <li>
-                            <a class="nav-link" href="#">Cultures</a>
+                        <li class="nav-item">
+                            <router-link to="/cultures" class="nav-link">Cultures
+                            </router-link>
                         </li>
                     </ul>
                 </div>
@@ -52,13 +54,14 @@
 
     .navbar-brand {
         font-size: 2rem;
+        color: var(--yellow-400) !important;
     }
 
     nav > div {
         font-size: 1.5rem;
     }
 
-    .nav-title a.router-link-exact-active {
-        color: var(--yellow-400);
-    } 
+    .nav-link:hover {
+        color: var(--yellow-200) !important;
+    }
 </style>

@@ -130,10 +130,10 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />
             </template>
         </Column>
-        <Column field="head_ar" header="Head AR" sortable></Column>
-        <Column field="body_ar" header="Body AR" sortable></Column>
-        <Column field="arm_ar" header="Arm AR" sortable></Column>
-        <Column field="leg_ar" header="Leg AR" sortable></Column>
+        <Column field="armor.head" header="Head AR" sortable></Column>
+        <Column field="armor.body" header="Body AR" sortable></Column>
+        <Column field="armor.arm" header="Arm AR" sortable></Column>
+        <Column field="armor.leg" header="Leg AR" sortable></Column>
     </DataTable>
 </div>
 </template>
