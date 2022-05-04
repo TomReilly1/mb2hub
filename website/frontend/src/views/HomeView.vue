@@ -13,7 +13,6 @@
     <div class="todo container">
       <h3>Here are some components I plan on implementing:</h3>
       <ul class="todo list">
-        <li class="todo list items">Add skills</li>
         <li class="todo list items">Add minor factions</li>
         <li class="todo list items">Add clans</li>
         <li class="todo list items">Add melee weapons
@@ -21,6 +20,7 @@
             <li>will be hard to add since melee weapon stats are not stored in game's xml files</li>
           </ul>
         </li>
+        <li class="todo list items">Add troop equipment loadouts</li>
         <li class="todo list items">Add towns</li>
         <li class="todo list items">Add castles</li>
         <li class="todo list items">Add villages</li>
