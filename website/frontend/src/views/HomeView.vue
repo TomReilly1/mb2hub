@@ -1,21 +1,40 @@
 <template>
   <section class="home">
     <h1>Home</h1>
-    <div class="description">
-      <span>Welcome to MB2 Hub!</span>
+    <div class="desc container">
+      <h3>Welcome to MB2 Hub!</h3>
       <p>This site aims to be a reference to data relevent to Mount & Blade II: Bannerlord, aiming more towards the statistical side of things such as armor ratings and troop skill levels.</p>
       <p>This project is a work-in-progress so any suggestions or critiques for this website are welcomed!</p>
-      <span>Hope you enjoy!</span>  
     </div>
-    <!-- <div class="surface-card p-4 shadow-2 border-round">
-      <div class="text-3xl font-medium text-900 mb-3">Card Title</div>
-      <div class="font-medium text-500 mb-3">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
-      <div style="height: 150px" class="border-2 border-dashed surface-border"></div>
-    </div> -->
-    <div class="version-container">
-      <span id="version-text">Current Version:</span>
-      <br>
+    <div class="version container">
+      <h3 id="version-text">Current Version</h3>
       <span id="version-number">1.7.2</span>  
+    </div>
+    <div class="todo container">
+      <h3>Here are some components I plan on implementing:</h3>
+      <ul class="todo list">
+        <li class="todo list items">Add skills</li>
+        <li class="todo list items">Add minor factions</li>
+        <li class="todo list items">Add clans</li>
+        <li class="todo list items">Add melee weapons
+          <ul>
+            <li>will be hard to add since melee weapon stats are not stored in game's xml files</li>
+          </ul>
+        </li>
+        <li class="todo list items">Add towns</li>
+        <li class="todo list items">Add castles</li>
+        <li class="todo list items">Add villages</li>
+        <li class="todo list items">Add lords</li>
+        <li class="todo list items">Add heroes</li>
+        <li class="todo list items">Add perks</li>
+        <li class="todo list items">Add workshops</li>
+
+        <li class="todo list items">Add horses</li>
+        <li class="todo list items">Add harnesses/horse armor</li>
+        <li class="todo list items">Add draught animals</li>
+        <li class="todo list items">Add trading goods</li>
+        <li class="todo list items">Add bandits</li>
+      </ul>
     </div>
   </section>
 
@@ -26,7 +45,7 @@
 </script>
 
 <style scoped>
-    h1 {
+  h1 {
     font-size: 3.5rem;
     text-decoration: underline;
     margin: 0;
@@ -34,19 +53,24 @@
     padding: 2rem 0 2.5rem;
   }
 
+  h3 {
+    font-size: 2.5rem;
+    margin: 0 0 2rem;
+    font-weight: 700;
+  }
+
   .home {
     padding: 0 1rem;
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .home p {
-    font-size: 1.5rem;
-    font-weight: 500;
+  .home p, li {
+    font-size: 1.7rem;
+    color: aliceblue;
   }
 
-  .home > div {
+  .container {
     max-width: 70rem;
     margin: 0 auto 3rem;
     padding: 2rem;
@@ -56,12 +80,22 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
-  .home .version-container {
-    max-width: 20rem;
+  .version.container {
+    max-width: 28rem;
   }
+
+  /* #version-text {
+  
+  } */
 
   #version-number {
     color: var(--green-300);
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  .todo.container ul{
+    text-align: left;
   }
 
 </style>
