@@ -1,19 +1,19 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import bowsData from "@/data/bows_and_crossbows.json";
+import clansData from "@/data/clans.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext';
 
 
 
 onMounted(() => {
-    bows.value = bowsData;
+    clans.value = clansData;
     loading.value = false;
 })
 
 
 
-const bows = ref();
+const clans = ref();
 const loading = ref(true);
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
@@ -25,14 +25,19 @@ const filters = ref({
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
+    'owner': {
+        operator: FilterOperator.AND,
+        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+    },
     'culture': {
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
-    'type': {
+    'kingdom': {
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     }
+
 });
 
 
@@ -51,11 +56,15 @@ const initFilters = () => {
             operator: FilterOperator.AND,
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
+        'owner': {
+            operator: FilterOperator.AND,
+            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        },
         'culture': {
             operator: FilterOperator.AND,
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
-        'type': {
+        'kingdom': {
             operator: FilterOperator.AND,
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         }
@@ -68,7 +77,7 @@ const initFilters = () => {
 
 <template>
 <div class="card">
-    <DataTable :value="bows" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
+    <DataTable :value="clans" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -79,10 +88,10 @@ const initFilters = () => {
             </div>
         </template>
         <template #empty>
-            No bows found.
+            No clans found.
         </template>
         <template #loading>
-            Loading bows data. Please wait.
+            Loading clans data. Please wait.
         </template>
         <Column field="id" header="ID" sortable>
             <template #body="{data}">
@@ -100,6 +109,23 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - `"/>
             </template>
         </Column>
+        <Column field="tier" header="Tier" sortable></Column>
+        <Column field="owner" header="Head of Clan" sortable>
+            <template #body="{data}">
+                {{data.owner}}
+            </template>
+            <template #filter="{filterModel, filterCallback}">
+                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />
+            </template>
+        </Column>
+        <Column field="kingdom" header="Kingdom" sortable>
+            <template #body="{data}">
+                {{data.kingdom}}
+            </template>
+            <template #filter="{filterModel, filterCallback}">
+                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
+            </template>
+        </Column>
         <Column field="culture" header="Culture" sortable>
             <template #body="{data}">
                 {{data.culture}}
@@ -108,30 +134,7 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
             </template>
         </Column>
-        <Column field="weight" header="Weight" sortable></Column>
-        <Column field="type" header="Type" sortable>
-            <template #body="{data}">
-                {{data.type}}
-            </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />
-            </template>
-        </Column>
-        <Column field="subtype" header="Subtype" sortable>
-            <template #body="{data}">
-                {{data.subtype}}
-            </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by subtype - `" />
-            </template>
-        </Column>
-        <Column field="difficulty" header="Difficulty" sortable></Column>
-        <Column field="damage" header="Damage" sortable></Column>
-        <Column field="speed_rating" header="Speed Rating" sortable></Column>
-        <Column field="missile_speed" header="Missile Speed" sortable></Column>
-        <Column field="accuracy" header="Accuracy" sortable></Column>
-        <Column field="fire_on_mount" header="Can Fire on Mount (t/f)" sortable></Column>
-        <Column field="reload_on_mount" header="Can Reload on Mount (t/f)" sortable></Column>
+        <Column field="is_ruling_clan" header="Is Ruling Clan (t/f)" sortable></Column>
     </DataTable>
 </div>
 </template>

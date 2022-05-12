@@ -1,0 +1,659 @@
+[
+    {
+        "id": "clan_empire_north_1",
+        "name": "Osticos",
+        "tier": "6",
+        "owner": "Lucon",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_empire_north_2",
+        "name": "Argoros",
+        "tier": "5",
+        "owner": "Manteos",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_north_3",
+        "name": "Neretzes",
+        "tier": "4",
+        "owner": "Penton",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_north_4",
+        "name": "Impestores",
+        "tier": "4",
+        "owner": "Encurion",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_north_5",
+        "name": "Dolentos",
+        "tier": "3",
+        "owner": "Gyphor",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_north_6",
+        "name": "Chonis",
+        "tier": "2",
+        "owner": "Nicasor",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_north_7",
+        "name": "Phalentes",
+        "tier": "1",
+        "owner": "Tasynor",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_north_8",
+        "name": "Vatatzes",
+        "tier": "3",
+        "owner": "Maritzios",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_north_9",
+        "name": "Serapides",
+        "tier": "2",
+        "owner": "Porphalios",
+        "culture": "empire",
+        "kingdom": "Northern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_1",
+        "name": "Comnos",
+        "tier": "6",
+        "owner": "Garios",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_empire_west_2",
+        "name": "Varros",
+        "tier": "5",
+        "owner": "Apys",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_3",
+        "name": "Dionicos",
+        "tier": "4",
+        "owner": "Crotor",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_4",
+        "name": "Elaches",
+        "tier": "4",
+        "owner": "Tynops",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_5",
+        "name": "Lonalion",
+        "tier": "3",
+        "owner": "Desporion",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_6",
+        "name": "Sorados",
+        "tier": "3",
+        "owner": "Saratis",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_7",
+        "name": "Corenios",
+        "tier": "3",
+        "owner": "Achios",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_8",
+        "name": "Maneolis",
+        "tier": "1",
+        "owner": "Vipon",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_west_9",
+        "name": "Palladios",
+        "tier": "2",
+        "owner": "Vincantios",
+        "culture": "empire",
+        "kingdom": "Western Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_1",
+        "name": "Pethros",
+        "tier": "6",
+        "owner": "Rhagaea",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_empire_south_2",
+        "name": "Leonipardes",
+        "tier": "4",
+        "owner": "Pharon",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_3",
+        "name": "Mestricaros",
+        "tier": "5",
+        "owner": "Oros",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_4",
+        "name": "Hongeros",
+        "tier": "4",
+        "owner": "Turiados",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_5",
+        "name": "Julios",
+        "tier": "3",
+        "owner": "Baranor",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_6",
+        "name": "Vizartos",
+        "tier": "3",
+        "owner": "Sichanis",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_7",
+        "name": "Avlonos",
+        "tier": "3",
+        "owner": "Serandon",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_8",
+        "name": "Prienicos",
+        "tier": "1",
+        "owner": "Abalytos",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_empire_south_9",
+        "name": "Vetranis",
+        "tier": "2",
+        "owner": "Satros",
+        "culture": "empire",
+        "kingdom": "Southern Empire",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_1",
+        "name": "Banu Hulyan",
+        "tier": "6",
+        "owner": "Unqid",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_aserai_2",
+        "name": "Banu Sarran",
+        "tier": "4",
+        "owner": "Adram",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_3",
+        "name": "Banu Qild",
+        "tier": "5",
+        "owner": "Tais",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_4",
+        "name": "Banu Qaraz",
+        "tier": "4",
+        "owner": "Suruq",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_5",
+        "name": "Banu Arbas",
+        "tier": "3",
+        "owner": "Iyalas",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_6",
+        "name": "Banu Atij",
+        "tier": "4",
+        "owner": "Talas",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_7",
+        "name": "Banu Sarmal",
+        "tier": "3",
+        "owner": "Awdhan",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_8",
+        "name": "Banu Habbab",
+        "tier": "1",
+        "owner": "Hashan",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_aserai_9",
+        "name": "Banu Ruwaid",
+        "tier": "2",
+        "owner": "Aqar",
+        "culture": "aserai",
+        "kingdom": "Aserai",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_1",
+        "name": "dey Meroc",
+        "tier": "6",
+        "owner": "Derthert",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_vlandia_2",
+        "name": "dey Tihr",
+        "tier": "4",
+        "owner": "Aldric",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_3",
+        "name": "dey Arromanc",
+        "tier": "4",
+        "owner": "Calatild",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_4",
+        "name": "dey Cortain",
+        "tier": "5",
+        "owner": "Ingalther",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_5",
+        "name": "dey Gunric",
+        "tier": "2",
+        "owner": "Ospir",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_6",
+        "name": "dey Valant",
+        "tier": "3",
+        "owner": "Servic",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_7",
+        "name": "dey Fortes",
+        "tier": "3",
+        "owner": "Belgir",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_8",
+        "name": "dey Molarn",
+        "tier": "3",
+        "owner": "Hecard",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_9",
+        "name": "dey Jelind",
+        "tier": "2",
+        "owner": "Vartin",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_10",
+        "name": "dey Folcun",
+        "tier": "1",
+        "owner": "Ecarand",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_vlandia_11",
+        "name": "dey Rothad",
+        "tier": "4",
+        "owner": "Berican",
+        "culture": "vlandia",
+        "kingdom": "Vlandia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_battania_1",
+        "name": "fen Gruffendoc",
+        "tier": "6",
+        "owner": "Caladog",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_battania_2",
+        "name": "fen Derngil",
+        "tier": "5",
+        "owner": "Ergeon",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_battania_3",
+        "name": "fen Uvain",
+        "tier": "4",
+        "owner": "Melidir",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_battania_4",
+        "name": "fen Penraic",
+        "tier": "3",
+        "owner": "Luichan",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_battania_5",
+        "name": "fen Giall",
+        "tier": "2",
+        "owner": "Aeron",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_battania_6",
+        "name": "fen Eingal",
+        "tier": "3",
+        "owner": "Aradwyr",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_battania_7",
+        "name": "fen Morcar",
+        "tier": "4",
+        "owner": "Pryndor",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_battania_8",
+        "name": "fen Caernacht",
+        "tier": "1",
+        "owner": "Maireas",
+        "culture": "battania",
+        "kingdom": "Battania",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_1",
+        "name": "Urkhunait",
+        "tier": "6",
+        "owner": "Monchug",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_khuzait_2",
+        "name": "Khergit",
+        "tier": "4",
+        "owner": "Mesui",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_3",
+        "name": "Arkit",
+        "tier": "5",
+        "owner": "Tulag",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_4",
+        "name": "Tigrit",
+        "tier": "3",
+        "owner": "Hurunag",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_5",
+        "name": "Harfit",
+        "tier": "3",
+        "owner": "Akrum",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_6",
+        "name": "Baltait",
+        "tier": "4",
+        "owner": "Ilatar",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_7",
+        "name": "Koltit",
+        "tier": "3",
+        "owner": "Kanujan",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_8",
+        "name": "Yanserit",
+        "tier": "1",
+        "owner": "Taslur",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_khuzait_9",
+        "name": "Oburit",
+        "tier": "2",
+        "owner": "Gusukan",
+        "culture": "khuzait",
+        "kingdom": "Khuzait",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_1",
+        "name": "Gundaroving",
+        "tier": "6",
+        "owner": "Raganvad",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": true
+    },
+    {
+        "id": "clan_sturgia_2",
+        "name": "Kuloving",
+        "tier": "5",
+        "owner": "Olek",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_3",
+        "name": "Vagiroving",
+        "tier": "4",
+        "owner": "Godun",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_4",
+        "name": "Ormidoving",
+        "tier": "4",
+        "owner": "Yorig",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_5",
+        "name": "Togaroving",
+        "tier": "3",
+        "owner": "Vyldur",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_6",
+        "name": "Isyaroving",
+        "tier": "3",
+        "owner": "Fafen",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_7",
+        "name": "Vezhoving",
+        "tier": "4",
+        "owner": "Vashorki",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_8",
+        "name": "Ubroving",
+        "tier": "1",
+        "owner": "Tovir",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    },
+    {
+        "id": "clan_sturgia_9",
+        "name": "Kostoroving",
+        "tier": "2",
+        "owner": "Rolan",
+        "culture": "sturgia",
+        "kingdom": "Sturgia",
+        "is_ruling_clan": false
+    }
+]

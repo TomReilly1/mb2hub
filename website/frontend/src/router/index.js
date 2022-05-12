@@ -45,6 +45,16 @@ const routes = [
     name: 'cultures',
     component: () => import('../views/CulturesView.vue')
   },
+  {
+    path: '/lords',
+    name: 'lords',
+    component: () => import('../views/LordsView.vue')
+  },
+  {
+    path: '/clans',
+    name: 'clans',
+    component: () => import('../views/ClansView.vue')
+  },
 ]
 
 const router = createRouter({

@@ -20,11 +20,14 @@ def convertToJSON(prefix, file):
 
 
 if __name__ == "__main__":
+	# CHANGE TO DIRECTORY WHERE PROJECT IS STORED
+	PROJ_DIR = '..'
+
 	# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
 	VERSION = '1.7.2beta'
 	
 	
-	prefix = Path(f"../{VERSION}/xml/")
+	prefix = Path(f"{PROJ_DIR}/mb2hub/{VERSION}/xml/")
 
 	# convertToJSON(prefix, "head_armors.xml")
 	# convertToJSON(prefix, "shoulder_armors.xml")
@@ -38,4 +41,9 @@ if __name__ == "__main__":
 
 	# convertToJSON(prefix, "weapons.xml")
 
+	# convertToJSON(prefix, "settlements.xml")
+
+	# convertToJSON(prefix, "spclans.xml")
+
+	convertToJSON(prefix, "lords.xml")
 
