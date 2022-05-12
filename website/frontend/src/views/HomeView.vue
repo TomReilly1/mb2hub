@@ -14,21 +14,18 @@
       <h3>Here are some components I plan on implementing:</h3>
       <ul class="todo list">
         <li class="todo list items">Add minor factions</li>
-        <li class="todo list items">Add clans</li>
         <li class="todo list items">Add melee weapons
           <ul>
-            <li>will be hard to add since melee weapon stats are not stored in game's xml files</li>
+            <li>will be difficult; melee weapon stats are not hard-coded in xml files</li>
           </ul>
         </li>
         <li class="todo list items">Add troop equipment loadouts</li>
         <li class="todo list items">Add towns</li>
         <li class="todo list items">Add castles</li>
         <li class="todo list items">Add villages</li>
-        <li class="todo list items">Add lords</li>
         <li class="todo list items">Add heroes</li>
         <li class="todo list items">Add perks</li>
         <li class="todo list items">Add workshops</li>
-
         <li class="todo list items">Add horses</li>
         <li class="todo list items">Add harnesses/horse armor</li>
         <li class="todo list items">Add draught animals</li>

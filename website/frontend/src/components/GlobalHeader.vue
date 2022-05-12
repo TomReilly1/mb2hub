@@ -30,6 +30,12 @@
                         <li class="nav-item">
                             <router-link to="/cultures" class="nav-link">Cultures</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link to="/lords" class="nav-link">Lords</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/clans" class="nav-link">Clans</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
