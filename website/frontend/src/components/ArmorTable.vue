@@ -138,6 +138,8 @@ const initFilters = () => {
 .card {
     background-color: var(--bluegray-900);
     border: 0;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .card:hover {

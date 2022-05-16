@@ -30,6 +30,16 @@
                         <li class="nav-item">
                             <router-link to="/cultures" class="nav-link">Cultures</router-link>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Culture-Drop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Table</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="#">Cards</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <router-link to="/lords" class="nav-link">Lords</router-link>
                         </li>
@@ -63,8 +73,12 @@
         color: var(--yellow-400) !important;
     }
 
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
     nav > div {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .nav-link:hover {
