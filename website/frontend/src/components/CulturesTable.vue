@@ -1,26 +1,19 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import cultureData from "@/data/cultures.json";
 
 
+const props = defineProps({culturesArr: Array})
+const loading = ref(true);
 onMounted(() => {
-    cultures.value = cultureData;
     loading.value = false;
 })
-
-
-
-const cultures = ref();
-const loading = ref(true);
-
-
 </script>
 
 <!---------------------------------------------------->
 
 <template>
-<div class="card">
-    <DataTable :value="cultures" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll">
+<div class="table">
+    <DataTable :value="culturesArr" :paginator="true" class="p-datatable" showGridlines :rows="10" dataKey="id" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll">
         <template #empty>
             No culture found.
         </template>
@@ -44,12 +37,14 @@ const loading = ref(true);
     flex-wrap: wrap;
 }
 
-.card {
+.table {
     background-color: var(--bluegray-900);
     border: 0;
+    margin: 0 auto;
+    width: fit-content;
 }
 
-.card:hover {
+.table:hover {
     background-color: unset;
 }
 
