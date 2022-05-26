@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import CulturesView from "@/views/CulturesView.vue";
+import CardView from "@/views/CardView.vue";
 
 const routes = [
   {
@@ -8,6 +9,11 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  // {
+  //   path: '/:id',
+  //   name: 'culturecard',
+  //   component: CardView
+  // },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -39,8 +45,20 @@ const routes = [
   {
     path: '/cultures',
     name: 'cultures',
-    component: CulturesView
+    component: CulturesView,
+    children: [
+      {
+        path: ':id',
+        name: 'culturescard',
+        component: CardView
+      }
+    ]
   },
+  // {
+  //   path: '/cultures/:id',
+  //   name: 'culturecard',
+  //   component: () => import('../views/CulturesView.vue')
+  // },
   {
     path: '/lords',
     name: 'lords',
