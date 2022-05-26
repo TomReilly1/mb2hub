@@ -1,7 +1,7 @@
 <script setup>
 import CulturesTable from "@/components/CulturesTable.vue";
 import DescriptionCard from "@/components/DescriptionCard.vue";
-import cultureData from "@/data/cultures.json";
+import cultureData from `@/data/${endpoint}.json`;
 import { ref, onMounted, onUpdated } from "vue";
 import Dropdown from 'primevue/dropdown';
 import { useRoute } from 'vue-router';
@@ -9,8 +9,8 @@ import { useRoute } from 'vue-router';
 
 
 onMounted(() => {
-  cultures.value = cultureData;
-  console.log(typeof cultures.value);
+  endpoint.value = cultureData;
+  console.log(typeof endpoint.value);
 })
 
 onUpdated(() => {
@@ -18,7 +18,7 @@ onUpdated(() => {
   console.log(cultureCardId.value);
 })
 
-const cultures = ref();
+const endpoint = ref();
 const selectedView = ref('table');
 const cities = ref([
   {name: 'Table', code: 'table'},
@@ -31,8 +31,6 @@ const route = useRoute();
 
 cultureCardId.value = route.params.id;
 
-
-
 </script>
 
 <template>
@@ -42,16 +40,16 @@ cultureCardId.value = route.params.id;
   <section v-if="cultureCardId === undefined">
 
     
-    <!-- <h2>{{ cultureCardId }}</h2> -->
+
     <div class="select view">
       <span>Select view:</span>
       <Dropdown v-model="selectedView" :options="cities" optionLabel="name" optionValue="code" placeholder="Table"/>
     </div>
     <div v-show="selectedView === 'table'">
-      <CulturesTable :cultures-arr="cultures"/>
+      <CulturesTable :endpoint-arr="endpoint"/>
     </div>
     <div v-show="selectedView === 'cards'">
-      <DescriptionCard :objects="cultures" />
+      <DescriptionCard :objects="endpoint" />
     </div>
 
   </section>
