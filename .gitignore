@@ -7,6 +7,7 @@ Untitled*
 1.7.0*
 /MB2_Troops
 MB2_Troops/
+psql
 # 1.7.2*/
 # /1.7.2*
 
@@ -35,5 +36,32 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-### BACKEND
+### Django
 .env
+venv/
+djangovenv/
+
+*.pyc
+*.egg-info/
+*.log
+*.pot
+*.pyc
+__pycache__
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
