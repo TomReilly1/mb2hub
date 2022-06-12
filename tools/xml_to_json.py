@@ -2,8 +2,20 @@ import os, xmltodict, json
 from pathlib import Path
 
 
-def convertToJSON(prefix, file):
-	file_path = prefix / file
+
+# CHANGE TO DIRECTORY WHERE PROJECT IS STORED
+PROJ_DIR = '/home/tom/Projects/mb2hub'
+
+# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
+VERSION = '1.8.0'
+
+
+XML_DIR = f'{PROJ_DIR}/{VERSION}/xml'
+JSON_DIR = f'{PROJ_DIR}/{VERSION}/json'
+
+
+def convertToJSON(file):
+	file_path = Path(f'{XML_DIR}/{file}')
 
 	with open(file_path) as xml_file:
 		
@@ -13,37 +25,32 @@ def convertToJSON(prefix, file):
 
 		json_data = json.dumps(data_dict)
 		
-		name = file.split(".")[0]
-		with open(name + ".json", "w") as json_file:
+		name = file.split('.')[0]
+		with open(f'{JSON_DIR}/{name}.json', 'w') as json_file:
 			json_file.write(json_data)
 			json_file.close()
 
 
-if __name__ == "__main__":
-	# CHANGE TO DIRECTORY WHERE PROJECT IS STORED
-	PROJ_DIR = '..'
+if __name__ == '__main__':
+	# convertToJSON(prefix, "spcultures.xml")
 
-	# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
-	VERSION = '1.7.2beta'
-	
-	
-	prefix = Path(f"{PROJ_DIR}/mb2hub/{VERSION}/xml/")
+	# convertToJSON('spkingdoms.xml')
 
-	# convertToJSON(prefix, "head_armors.xml")
-	# convertToJSON(prefix, "shoulder_armors.xml")
-	# convertToJSON(prefix, "body_armors.xml")
-	# convertToJSON(prefix, "arm_armors.xml")
-	# convertToJSON(prefix, "leg_armors.xml")
+	convertToJSON('head_armors.xml')
+	convertToJSON('shoulder_armors.xml')
+	convertToJSON('body_armors.xml')
+	convertToJSON('arm_armors.xml')
+	convertToJSON('leg_armors.xml')
 
-	# convertToJSON(prefix, "spnpccharacters.xml")
+	convertToJSON('spnpccharacters.xml')
 
-	# convertToJSON(prefix, "sandboxcore_skill_sets.xml")
+	convertToJSON('sandboxcore_skill_sets.xml')
 
-	# convertToJSON(prefix, "weapons.xml")
+	convertToJSON('weapons.xml')
 
-	# convertToJSON(prefix, "settlements.xml")
+	convertToJSON('settlements.xml')
 
-	# convertToJSON(prefix, "spclans.xml")
+	convertToJSON('spclans.xml')
 
-	convertToJSON(prefix, "lords.xml")
+	convertToJSON('lords.xml')
 
