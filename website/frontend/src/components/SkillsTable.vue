@@ -51,7 +51,7 @@ const clearFilters = () => {
 <!---------------------------------------------------->
 
 <template>
-<div class="card">
+<div id="skills-table">
     <DataTable :value="skills" :paginator="true" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
@@ -108,13 +108,25 @@ const clearFilters = () => {
     flex-wrap: wrap;
 }
 
-.card {
+#skills-table {
     background-color: var(--bluegray-900);
-    border: 0;
+    border: 3px solid var(--bluegray-700);
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 98%;
+    box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-.card:hover {
-    background-color: unset;
+a {
+    color: var(--yellow-400);
+}
+
+a:hover {
+    color: var(--yellow-100);
+}
+
+.router-link-active {
+    color: var(--yellow-200)
 }
 
 </style>

@@ -1,18 +1,15 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import armorsData from "@/data/armors.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext';
 
 
-
 onMounted(() => {
-    armor.value = armorsData;
     loading.value = false;
 })
 
 
-const armor = ref();
+const props = defineProps({armorsArr: Array})
 const loading = ref(true);
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
@@ -67,8 +64,8 @@ const initFilters = () => {
 <!---------------------------------------------------->
 
 <template>
-<div class="card">
-    <DataTable :value="armor" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
+<div id="armor-table">
+    <DataTable :value="armorsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -117,10 +114,10 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />
             </template>
         </Column>
-        <Column field="armor.head" header="Head AR" sortable></Column>
-        <Column field="armor.body" header="Body AR" sortable></Column>
-        <Column field="armor.arm" header="Arm AR" sortable></Column>
-        <Column field="armor.leg" header="Leg AR" sortable></Column>
+        <Column field="head_armor" header="Head AR" sortable></Column>
+        <Column field="body_armor" header="Body AR" sortable></Column>
+        <Column field="arm_armor" header="Arm AR" sortable></Column>
+        <Column field="leg_armor" header="Leg AR" sortable></Column>
     </DataTable>
 </div>
 </template>
@@ -135,16 +132,27 @@ const initFilters = () => {
     flex-wrap: wrap;
 }
 
-.card {
+#armor-table {
     background-color: var(--bluegray-900);
-    border: 0;
+    border: 3px solid var(--bluegray-700);
     margin: 0 auto;
     width: fit-content;
+    max-width: 98%;
+    box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-.card:hover {
-    background-color: unset;
+a {
+    color: var(--yellow-400);
 }
+
+a:hover {
+    color: var(--yellow-100);
+}
+
+.router-link-active {
+    color: var(--yellow-200)
+}
+
 
 </style>
 

@@ -55,11 +55,16 @@
 
     a {
         color: var(--yellow-400);
+        height: 100%;
     }
 
     a:hover {
         color: var(--yellow-300);
     }
 
-    
+    i {
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
 </style>
