@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-
 onMounted(() => {
     loading.value = false;
 })
@@ -9,6 +8,12 @@ onMounted(() => {
 
 const props = defineProps({kingdomsArr: Array});
 const loading = ref(true);
+
+
+const formatColor = (color) => {
+    const hexValue = color.slice(-6);
+    return '#' + hexValue;
+};
 </script>
 <!------------------------------------------------------------------->
 <template>
@@ -22,7 +27,45 @@ const loading = ref(true);
         </template>
         <Column field="id" header="ID" sortable></Column>
         <Column field="name" header="Name" sortable></Column>
+        <Column field="title" header="Kingdom Title" sortable></Column>
+        <Column field="ruler_title" header="Ruler Title" sortable></Column>
         <Column field="culture" header="Culture" sortable></Column>
+        <Column field="primary_banner_color" header="Banner Color-1" bodyStyle="text-align: center;">
+            <template #body="{data}">
+                <input type="color" :value="formatColor(data.primary_banner_color)" class="color-data" disabled>
+                <span class="color-text">{{formatColor(data.primary_banner_color)}}</span>
+            </template>
+        </Column>
+        <Column field="secondary_banner_color" header="Banner Color-2" bodyStyle="text-align: center;">
+            <template #body="{data}">
+                <input type="color" :value="formatColor(data.secondary_banner_color)" class="color-data" disabled>
+                <span class="color-text">{{formatColor(data.secondary_banner_color)}}</span>
+            </template>
+        </Column>
+        <Column field="color_1" header="Color-1" bodyStyle="text-align: center;">
+            <template #body="{data}">
+                <input type="color" :value="formatColor(data.color_1)" class="color-data" disabled>
+                <span class="color-text">{{formatColor(data.color_1)}}</span>
+            </template>
+        </Column>
+        <Column field="color_2" header="Color-2" bodyStyle="text-align: center;">
+            <template #body="{data}">
+                <input type="color" :value="formatColor(data.color_2)" class="color-data" disabled>
+                <span class="color-text">{{formatColor(data.color_2)}}</span>
+            </template>
+        </Column>
+        <Column field="alternative_color_1" header="Alt Color-1" bodyStyle="text-align: center;">
+            <template #body="{data}">
+                <input type="color" :value="formatColor(data.alternative_color_1)" class="color-data" disabled>
+                <span class="color-text">{{formatColor(data.alternative_color_1)}}</span>
+            </template>
+        </Column>
+        <Column field="alternative_color_2" header="Alt Color-2" bodyStyle="text-align: center;">
+            <template #body="{data}">
+                <input type="color" :value="formatColor(data.alternative_color_2)" class="color-data" disabled>
+                <span class="color-text">{{formatColor(data.alternative_color_2)}}</span>
+            </template>
+        </Column>
     </DataTable>
 </div>
 </template>
@@ -53,5 +96,25 @@ a:hover {
 
 .router-link-active {
     color: var(--yellow-200)
+}
+
+.color-data {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 75px;
+}
+
+.color-data::after {
+    height: 100%;
+    /* vertical-align: middle; */
+}
+
+.color-text::after {
+    float: left;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 </style>
