@@ -88,7 +88,37 @@ router.get('/cultures/:id', (req,res) => {
 
 //----- KINGDOMS -----//
 router.get('/kingdoms', (req,res) => {
-    db.any('SELECT * FROM kingdoms;')
+    const cols = [
+        'id',
+        'name',
+        'title',
+        'ruler_title',
+        'culture',
+        'primary_banner_color',
+        'secondary_banner_color',
+        'label_color',
+        'color_1',
+        'color_2',
+        'alternative_color_1',
+        'alternative_color_2',
+        'desc_text'
+    ]
+    const cols_str = cols.join();
+
+    function handleColorHexes(color) {
+        if (color.length === 8) {
+            return color.substring(2);
+        }
+        else if (color.length === 10) {
+            return color.substring(4);
+        }
+        else {
+            console.log('no color changes');
+            return color;
+        }
+    }
+
+    db.any(`SELECT ${cols_str} FROM kingdoms;`)
     .then(rows => {
         console.log(rows);
         res.json(rows);
