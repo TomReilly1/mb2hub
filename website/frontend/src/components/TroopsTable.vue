@@ -1,18 +1,15 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import troopsData from "@/data/npcs.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext';
 
 
-
 onMounted(() => {
-    troops.value = troopsData;
     loading.value = false;
 })
 
 
-const troops = ref();
+const props = defineProps({troopsArr: Array});
 const loading = ref(true);
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
@@ -75,8 +72,8 @@ const initFilters = () => {
 <!---------------------------------------------------->
 
 <template>
-<div class="card">
-    <DataTable :value="troops" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','default_group','occupation']">
+<div id="troops-table">
+    <DataTable :value="troopsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','default_group','occupation']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -116,9 +113,9 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
             </template>
         </Column>
-        <Column field="group" header="Group" sortable>
+        <Column field="default_group" header="Group" sortable>
             <template #body="{data}">
-                {{data.group}}
+                {{data.default_group}}
             </template>
             <template #filter="{filterModel, filterCallback}">
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by Group - `" />
@@ -133,7 +130,14 @@ const initFilters = () => {
             </template>
         </Column>
         <Column field="level" header="Level" sortable></Column>
-        
+        <Column field="one_handed" header="One Handed" sortable></Column>
+        <Column field="two_handed" header="Two Handed" sortable></Column>
+        <Column field="polearm" header="Polearm" sortable></Column>
+        <Column field="bow" header="Bow" sortable></Column>
+        <Column field="crossbow" header="Crossbow" sortable></Column>
+        <Column field="throwing" header="Throwing" sortable></Column>
+        <Column field="riding" header="Riding" sortable></Column>
+        <Column field="athletics" header="Athletics" sortable></Column>
     </DataTable>
 </div>
 </template>
@@ -148,13 +152,25 @@ const initFilters = () => {
     flex-wrap: wrap;
 }
 
-.card {
+#troops-table {
     background-color: var(--bluegray-900);
-    border: 0;
+    border: 3px solid var(--bluegray-700);
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 98%;
+    box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-.card:hover {
-    background-color: unset;
+a {
+    color: var(--yellow-400);
+}
+
+a:hover {
+    color: var(--yellow-100);
+}
+
+.router-link-active {
+    color: var(--yellow-200)
 }
 
 </style>
