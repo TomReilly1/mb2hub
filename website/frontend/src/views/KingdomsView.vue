@@ -1,22 +1,30 @@
 <script setup>
-
 import KingdomsTable from "@/components/KingdomsTable.vue";
+import { ref, onMounted } from "vue";
 
+
+const kingdoms = ref(null);
+
+
+onMounted(async () => {
+  async function fetchData() {
+    const res = await fetch(`${process.env.VUE_APP_API_URL}/kingdoms`);
+    const json_arr = await res.json();
+
+    return json_arr;
+  }
+
+  await fetchData().then(data => kingdoms.value = data);
+})
 </script>
 
 <template>
   <div class="kingdoms">
     <h1>Kingdoms</h1>
-    <KingdomsTable />
+    <KingdomsTable :kingdoms-arr="kingdoms"/>
   </div>
 </template>
 
 <style scoped>
-  h1 {
-    font-size: 3.5rem;
-    text-decoration: underline;
-    margin: 0;
-    border: 0;
-    padding: 2rem 0;
-  }
+
 </style>

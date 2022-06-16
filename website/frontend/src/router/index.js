@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import CulturesView from "@/views/CulturesView.vue";
-import CardView from "@/views/CardView.vue";
 
 const routes = [
   {
@@ -32,11 +31,11 @@ const routes = [
     name: 'troops',
     component: () => import('../views/TroopsView.vue')
   },
-  {
-    path: '/skills',
-    name: 'skills',
-    component: () => import('../views/SkillsView.vue')
-  },
+  // {
+  //   path: '/skills',
+  //   name: 'skills',
+  //   component: () => import('../views/SkillsView.vue')
+  // },
   {
     path: '/kingdoms',
     name: 'kingdoms',
@@ -50,15 +49,10 @@ const routes = [
       {
         path: ':id',
         name: 'culturescard',
-        component: CardView
+        component: () => import('../views/CulturesCardView.vue')
       }
     ]
   },
-  // {
-  //   path: '/cultures/:id',
-  //   name: 'culturecard',
-  //   component: () => import('../views/CulturesView.vue')
-  // },
   {
     path: '/lords',
     name: 'lords',

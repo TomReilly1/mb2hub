@@ -1,0 +1,14 @@
+[
+    {
+        "id": "town",
+        "name": "Town"
+    },
+    {
+        "id": "castle",
+        "name": "Castle"
+    },
+    {
+        "id": "village",
+        "name": "Village"
+    }
+]

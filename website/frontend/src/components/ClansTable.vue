@@ -1,20 +1,30 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import clansData from "@/data/clans.json";
+import kingdomsData from "@/data/kingdoms_list.json"
+import culturesData from "@/data/cultures_list.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
+import MultiSelect from 'primevue/multiselect';
 import InputText from 'primevue/inputtext';
-
+import InputNumber from 'primevue/inputnumber';
 
 
 onMounted(() => {
-    clans.value = clansData;
+    kingdoms.value = kingdomsData;
+    cultures.value = culturesData;
+
     loading.value = false;
 })
 
 
-
-const clans = ref();
+const props = defineProps({clansArr: Array})
+const kingdoms = ref();
+const cultures = ref();
+const trueOrFalse = ref([
+    {"id": true, "name": "True"},
+    {"id": false, "name": "False"}
+]);
 const loading = ref(true);
+
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
     'id': {
@@ -25,19 +35,23 @@ const filters = ref({
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
+    'tier': {
+        operator: FilterOperator.AND,
+        constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }],
+    },
     'owner': {
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
     'culture': {
-        operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        value: null, matchMode: FilterMatchMode.IN
     },
     'kingdom': {
-        operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        value: null, matchMode: FilterMatchMode.IN
+    },
+    'is_ruling_clan': {
+        value: null, matchMode: FilterMatchMode.IN
     }
-
 });
 
 
@@ -56,17 +70,22 @@ const initFilters = () => {
             operator: FilterOperator.AND,
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
+        'tier': {
+            operator: FilterOperator.AND,
+            constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }],
+        },
         'owner': {
             operator: FilterOperator.AND,
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
         'culture': {
-            operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+            value: null, matchMode: FilterMatchMode.IN
         },
         'kingdom': {
-            operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+            value: null, matchMode: FilterMatchMode.IN
+        },
+        'is_ruling_clan': {
+            value: null, matchMode: FilterMatchMode.IN
         }
     }
 }
@@ -76,8 +95,8 @@ const initFilters = () => {
 <!---------------------------------------------------->
 
 <template>
-<div class="card">
-    <DataTable :value="clans" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
+<div id="clans-table">
+    <DataTable :value="clansArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','tier','owner','kingdom','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -109,7 +128,15 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - `"/>
             </template>
         </Column>
-        <Column field="tier" header="Tier" sortable></Column>
+        <!-- <Column field="tier" header="Tier" sortable></Column> -->
+        <Column field="tier" header="Tier" sortable dataType="numeric">
+            <template #body="{data}">
+                {{data.tier}}
+            </template>
+            <template #filter="{filterModel}">
+                <InputNumber v-model="filterModel.value"/>
+            </template>
+        </Column>
         <Column field="owner" header="Head of Clan" sortable>
             <template #body="{data}">
                 {{data.owner}}
@@ -118,23 +145,52 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />
             </template>
         </Column>
-        <Column field="kingdom" header="Kingdom" sortable>
+        <Column header="Kingdom" sortable filterField="kingdom" sortField="kingdom" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.kingdom}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select Kingdom:</div>
+                <MultiSelect v-model="filterModel.value" :options="kingdoms" optionLabel="id" optionValue="name" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.name}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
-        <Column field="culture" header="Culture" sortable>
+        <Column header="Culture" sortable filterField="culture" sortField="culture" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.culture}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select Culture:</div>
+                <MultiSelect v-model="filterModel.value" :options="cultures" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
-        <Column field="is_ruling_clan" header="Is Ruling Clan (t/f)" sortable></Column>
+        <!-- <Column field="is_ruling_clan" header="Is Ruling Clan (t/f)" sortable></Column> -->
+        <Column header="Is Ruling Clan?" sortable filterField="is_ruling_clan" sortField="is_ruling_clan" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
+            <template #body="{data}">
+                {{data.is_ruling_clan}}
+            </template>
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">True or False:</div>
+                <MultiSelect v-model="filterModel.value" :options="trueOrFalse" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
+            </template>
+        </Column>
     </DataTable>
 </div>
 </template>
@@ -149,14 +205,27 @@ const initFilters = () => {
     flex-wrap: wrap;
 }
 
-.card {
+#clans-table {
     background-color: var(--bluegray-900);
-    border: 0;
+    border: 3px solid var(--bluegray-700);
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 98%;
+    box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-.card:hover {
-    background-color: unset;
+a {
+    color: var(--yellow-400);
 }
+
+a:hover {
+    color: var(--yellow-100);
+}
+
+.router-link-active {
+    color: var(--yellow-200)
+}
+
 
 </style>
 

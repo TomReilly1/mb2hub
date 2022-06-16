@@ -1,31 +1,24 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import kingdomData from "@/data/kingdoms.json";
 
 
 onMounted(() => {
-    kingdoms.value = kingdomData;
     loading.value = false;
 })
 
 
-
-const kingdoms = ref();
+const props = defineProps({kingdomsArr: Array});
 const loading = ref(true);
-
-
 </script>
-
-<!---------------------------------------------------->
-
+<!------------------------------------------------------------------->
 <template>
-<div class="card">
-    <DataTable :value="kingdoms" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll">
+<div id="kingdom-table">
+    <DataTable :value="kingdomsArr" class="p-datatable-sm" showGridlines dataKey="id" :loading="loading" responsiveLayout="scroll">
         <template #empty>
-            No bows found.
+            No Kingdoms found.
         </template>
         <template #loading>
-            Loading bows data. Please wait.
+            Loading Kingdoms data. Please wait.
         </template>
         <Column field="id" header="ID" sortable></Column>
         <Column field="name" header="Name" sortable></Column>
@@ -33,24 +26,32 @@ const loading = ref(true);
     </DataTable>
 </div>
 </template>
-
-<!---------------------------------------------------->
-
+<!------------------------------------------------------------------->
 <style scoped>
-
 .global-filter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.card {
+#kingdom-table {
     background-color: var(--bluegray-900);
-    border: 0;
+    border: 3px solid var(--bluegray-700);
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 98%;
+    box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-.card:hover {
-    background-color: unset;
+a {
+    color: var(--yellow-400);
 }
 
+a:hover {
+    color: var(--yellow-100);
+}
+
+.router-link-active {
+    color: var(--yellow-200)
+}
 </style>
