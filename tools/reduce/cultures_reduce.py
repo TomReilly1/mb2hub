@@ -1,11 +1,15 @@
-import json
+import os, json
 
+
+# Get current working directory
+PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
+
+# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
 VERSION = '1.8.0'
 
-R_PATH = f"/home/tom/Projects/mb2hub/{VERSION}/json/spcultures.json"
-W_PATH = f"/home/tom/Projects/mb2hub/{VERSION}/json-reduced/cultures.json"
 
-
+R_PATH = f"{PROJ_DIR}/{VERSION}/json/spcultures.json"
+W_PATH = f"{PROJ_DIR}/{VERSION}/json-reduced/cultures.json"
 
 
 def reduceCultures(file_path):
