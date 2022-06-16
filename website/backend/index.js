@@ -1,15 +1,22 @@
-const express = require('express')
-require('dotenv').config()
+const express = require('express');
+const app = express();
+require('dotenv').config();
+const apiRouters = require('./routers/routes');
+var cors = require('cors');
 
-const app = express()
+
+app.use(cors());
+
+
+app.use('/api', apiRouters);
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  res.send('Hello World!');
+});
 
 
-const port = 3000;
+const port = process.env.EXPRESS_PORT;
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`)
-})
+  console.log(`App listening on port ${port}`);
+});
