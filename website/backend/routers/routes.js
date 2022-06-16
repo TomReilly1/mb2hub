@@ -3,14 +3,27 @@ const db = require('../db');
 const router = express.Router();
 const pgdb = require('../db');
 
-//----- ROOT -----//
+//--------------- ROOT ---------------//
 router.get('/', (req,res) => {
     res.send('API router == success');
 });
 
-//----- ARMORS -----//
+//--------------- ARMORS ---------------//
 router.get('/armors', (req,res) => {
-    db.any('SELECT id,name,culture,weight,type,head_armor,body_armor,arm_armor,leg_armor FROM armors;')
+    const cols = [
+        'id',
+        'name',
+        'culture',
+        'weight',
+        'type',
+        'head_armor',
+        'body_armor',
+        'arm_armor',
+        'leg_armor'
+    ]
+    const cols_str = cols.join();
+
+    db.any(`SELECT ${cols_str} FROM armors;`)
     .then(rows => {
         console.log(rows);
         res.json(rows);
@@ -20,7 +33,20 @@ router.get('/armors', (req,res) => {
     })
 });
 
-//----- BOWS -----//
+router.get('/armors/:id', (req,res) => {
+    console.log(`SELECT * FROM kingdoms WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM kingdoms WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+//--------------- BOWS ---------------//
 router.get('/bows', (req,res) => {
     const cols = [
         'id',
@@ -49,9 +75,10 @@ router.get('/bows', (req,res) => {
     })
 });
 
-//----- CLANS -----//
-router.get('/clans', (req,res) => {
-    db.any('SELECT id,name,owner,kingdom,culture,tier,is_ruling_clan FROM clans;')
+router.get('/bows/:id', (req,res) => {
+    console.log(`SELECT * FROM bows WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM bows WHERE id = '${req.params['id']}';`)
     .then(rows => {
         console.log(rows);
         res.json(rows);
@@ -61,7 +88,43 @@ router.get('/clans', (req,res) => {
     })
 });
 
-//----- CULTURES -----//
+//--------------- CLANS ---------------//
+router.get('/clans', (req,res) => {
+    const cols = [
+        'id',
+        'name',
+        'owner',
+        'kingdom',
+        'culture',
+        'tier',
+        'is_ruling_clan'
+    ]
+    const cols_str = cols.join();
+
+    db.any(`SELECT ${cols_str} FROM clans;`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+router.get('/clans/:id', (req,res) => {
+    console.log(`SELECT * FROM clans WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM clans WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+//--------------- CULTURES ---------------//
 router.get('/cultures', (req,res) => {
     db.any('SELECT * FROM cultures;')
     .then(rows => {
@@ -86,7 +149,7 @@ router.get('/cultures/:id', (req,res) => {
     })
 });
 
-//----- KINGDOMS -----//
+//--------------- KINGDOMS ---------------//
 router.get('/kingdoms', (req,res) => {
     const cols = [
         'id',
@@ -117,9 +180,10 @@ router.get('/kingdoms', (req,res) => {
     })
 });
 
-//----- LORDS -----//
-router.get('/lords', (req,res) => {
-    db.any('SELECT id,name,culture,default_group,age,sex FROM lords;')
+router.get('/kingdoms/:id', (req,res) => {
+    console.log(`SELECT * FROM kingdoms WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM kingdoms WHERE id = '${req.params['id']}';`)
     .then(rows => {
         console.log(rows);
         res.json(rows);
@@ -129,7 +193,42 @@ router.get('/lords', (req,res) => {
     })
 });
 
-//----- TROOPS -----//
+//--------------- LORDS ---------------//
+router.get('/lords', (req,res) => {
+    const cols = [
+        'id',
+        'name',
+        'culture',
+        'default_group',
+        'age',
+        'sex'
+    ]
+    const cols_str = cols.join();
+
+    db.any(`SELECT ${cols_str} FROM lords;`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+router.get('/lords/:id', (req,res) => {
+    console.log(`SELECT * FROM lords WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM lords WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+//--------------- TROOPS ---------------//
 router.get('/troops', (req,res) => {
     const cols = [
         'id',
@@ -160,6 +259,20 @@ router.get('/troops', (req,res) => {
         console.log(error);
     })
 });
+
+router.get('/troops/:id', (req,res) => {
+    console.log(`SELECT * FROM troops WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM troops WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
 
 
 module.exports = router;
