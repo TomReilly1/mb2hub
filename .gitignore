@@ -4,13 +4,12 @@ venv/
 toolsvenv
 /toolsvenv
 toolsvenv/
+toolsvenv/*
+toolsvenv/**
 Untitled*
-1.7.0*
 /MB2_Troops
 MB2_Troops/
 psql
-# 1.7.2*/
-# /1.7.2*
 scratch
 
 ####################################################################
