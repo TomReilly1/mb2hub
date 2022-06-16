@@ -1,12 +1,16 @@
-import json
-
-VERSION = '1.7.2beta'
-
-R_PATH = f"/home/tom/Github/mb2hub/{VERSION}/json/spclans.json"
-W_PATH = f"/home/tom/Github/mb2hub/{VERSION}/json-reduced/clans.json"
-TEMPL_PATH = f'../{VERSION}/json-reduced/lords.json'
+import os, json
 
 
+# Get current working directory
+PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
+
+# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
+VERSION = '1.8.0'
+
+
+R_PATH = f"{PROJ_DIR}/{VERSION}/json/spclans.json"
+W_PATH = f"{PROJ_DIR}/{VERSION}/json-reduced/clans.json"
+TEMPL_PATH = f'{PROJ_DIR}/{VERSION}/json-reduced/lords.json'
 
 
 def getLeaderOfClan(leader_id):
@@ -35,9 +39,7 @@ def reduceClans(file_path):
 
 				output_object['id'] = clan['@id']
 				output_object['name'] = clan['@name'].split('}')[1]
-				output_object['tier'] = clan['@tier']
 				output_object['owner'] = getLeaderOfClan(clan['@owner'].split('.')[1])
-				output_object['culture'] = clan['@culture'].split('.')[1]
 				
 				temp = clan['@super_faction'].split('.')[1]
 				if temp == 'empire':
@@ -48,7 +50,10 @@ def reduceClans(file_path):
 					output_object['kingdom'] = 'Southern Empire'
 				else:
 					output_object['kingdom'] = temp.capitalize()
-				
+
+				output_object['culture'] = clan['@culture'].split('.')[1]
+				output_object['tier'] = clan['@tier']
+
 				if clan['@tier'] == '6':
 					output_object['is_ruling_clan'] = True
 				else:

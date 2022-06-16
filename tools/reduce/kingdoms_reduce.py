@@ -1,9 +1,8 @@
-import json
+import os, json
 
 
-
-# CHANGE TO DIRECTORY WHERE PROJECT IS STORED
-PROJ_DIR = '/home/tom/Projects/mb2hub'
+# Get current working directory
+PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
 
 # CHANGE BELOW TO THE CORRECT VERSION (no spaces)
 VERSION = '1.8.0'
