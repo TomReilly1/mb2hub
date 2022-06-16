@@ -105,22 +105,11 @@ router.get('/kingdoms', (req,res) => {
     ]
     const cols_str = cols.join();
 
-    function handleColorHexes(color) {
-        if (color.length === 8) {
-            return color.substring(2);
-        }
-        else if (color.length === 10) {
-            return color.substring(4);
-        }
-        else {
-            console.log('no color changes');
-            return color;
-        }
-    }
-
     db.any(`SELECT ${cols_str} FROM kingdoms;`)
     .then(rows => {
-        console.log(rows);
+        rows.forEach(obj => {
+            console.log(obj['name']);
+        });
         res.json(rows);
     })
     .catch(error => {
