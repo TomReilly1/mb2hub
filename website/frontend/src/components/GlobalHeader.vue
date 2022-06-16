@@ -21,25 +21,24 @@
                         <li class="nav-item">
                             <router-link to="/troops" class="nav-link">Troops</router-link>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <router-link to="/skills" class="nav-link">Skills</router-link>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <router-link to="/kingdoms" class="nav-link">Kingdoms</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to="/cultures" class="nav-link">Cultures</router-link>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Culture-Drop
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Table</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> -->
                                 <li><a class="dropdown-item" href="#">Cards</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <router-link to="/lords" class="nav-link">Lords</router-link>
                         </li>
@@ -73,7 +72,17 @@
         color: var(--yellow-400) !important;
     }
 
-    nav {
+    .navbar {
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-family: 'Domine', serif;
+        font-weight: 900;
+
+/* 
+        font-family: 'Libre Baskerville', serif;
+
+        font-family: 'Merriweather', serif;
+
+        font-family: 'Patua One', cursive; */
         padding: 0.5rem 1rem;
     }
 

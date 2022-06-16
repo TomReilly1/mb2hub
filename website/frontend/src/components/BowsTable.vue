@@ -1,20 +1,39 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import bowsData from "@/data/bows_and_crossbows.json";
+// import bowsData from "@/data/bows_and_crossbows.json";
+import culturesData from "@/data/cultures_list.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
+import MultiSelect from 'primevue/multiselect';
 import InputText from 'primevue/inputtext';
+import InputNumber from 'primevue/inputnumber';
 
 
 
 onMounted(() => {
-    bows.value = bowsData;
+    // bows.value = bowsData;
+    cultures.value = culturesData;
+
     loading.value = false;
 })
 
 
+const props = defineProps({bowsArr: Array})
+// const bows = ref();
+const cultures = ref();
+const bowTypes = ref([
+    {"id": "bow", "name": "Bow"},
+    {"id": "crossbow", "name": "Crossbow"}
+]);
+const bowSubTypes = ref([
+    {"id": "bow", "name": "Bow"},
+    {"id": "crossbow", "name": "Crossbow"},
+    {"id": "long_bow", "name": "Long Bow"},
+    {"id": "crossbow_fast", "name": "Fast Crossbow"}
+]);
 
-const bows = ref();
+
 const loading = ref(true);
+
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
     'id': {
@@ -26,13 +45,26 @@ const filters = ref({
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
     'culture': {
-        operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        value: null, matchMode: FilterMatchMode.IN
     },
     'type': {
+        value: null, matchMode: FilterMatchMode.IN
+    },
+    'subtype': {
+        value: null, matchMode: FilterMatchMode.IN
+    },
+    'difficulty': {
         operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
-    }
+        constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }],
+    },
+
+        // <Column field="difficulty" header="Difficulty" sortable></Column>
+        // <Column field="damage" header="Damage" sortable></Column>
+        // <Column field="speed_rating" header="Speed Rating" sortable></Column>
+        // <Column field="missile_speed" header="Missile Speed" sortable></Column>
+        // <Column field="accuracy" header="Accuracy" sortable></Column>
+        // <Column field="fire_on_mount" header="Can Fire on Mount (t/f)" sortable></Column>
+        // <Column field="reload_on_mount" header="Can Reload on Mount (t/f)" sortable></Column>
 });
 
 
@@ -52,13 +84,18 @@ const initFilters = () => {
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
         'culture': {
-            operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+            value: null, matchMode: FilterMatchMode.IN
         },
         'type': {
+            value: null, matchMode: FilterMatchMode.IN
+        },
+        'subtype': {
+            value: null, matchMode: FilterMatchMode.IN
+        },
+        'difficulty': {
             operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
-        }
+            constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }],
+        },
     }
 }
 
@@ -67,8 +104,8 @@ const initFilters = () => {
 <!---------------------------------------------------->
 
 <template>
-<div class="card">
-    <DataTable :value="bows" :paginator="true" class="p-datatable-customers" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
+<div id="bows-table">
+    <DataTable :value="bowsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -100,32 +137,60 @@ const initFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - `"/>
             </template>
         </Column>
-        <Column field="culture" header="Culture" sortable>
+        <Column header="Culture" sortable filterField="culture" sortField="culture" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}" >
             <template #body="{data}">
                 {{data.culture}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Culture Picker</div>
+                <MultiSelect v-model="filterModel.value" :options="cultures" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
         <Column field="weight" header="Weight" sortable></Column>
-        <Column field="type" header="Type" sortable>
+        <Column header="Type" sortable filterField="type" sortField="type" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.type}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select Type:</div>
+                <MultiSelect v-model="filterModel.value" :options="bowTypes" optionLabel="name" optionValue="name" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.name}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
-        <Column field="subtype" header="Subtype" sortable>
+        <Column header="Subtype" sortable filterField="subtype" sortField="subtype" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.subtype}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by subtype - `" />
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select Subtype:</div>
+                <MultiSelect v-model="filterModel.value" :options="bowSubTypes" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
-        <Column field="difficulty" header="Difficulty" sortable></Column>
+        <Column field="difficulty" header="Difficulty" sortable dataType="numeric">
+            <template #body="{data}">
+                {{data.difficulty}}
+            </template>
+            <template #filter="{filterModel}">
+                <InputNumber v-model="filterModel.value"/>
+            </template>
+        </Column>
         <Column field="damage" header="Damage" sortable></Column>
         <Column field="speed_rating" header="Speed Rating" sortable></Column>
         <Column field="missile_speed" header="Missile Speed" sortable></Column>
@@ -146,15 +211,25 @@ const initFilters = () => {
     flex-wrap: wrap;
 }
 
-.card {
+#bows-table {
     background-color: var(--bluegray-900);
-    border: 0;
+    border: 3px solid var(--bluegray-700);
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 98%;
+    box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-.card:hover {
-    background-color: unset;
+a {
+    color: var(--yellow-400);
+}
+
+a:hover {
+    color: var(--yellow-100);
+}
+
+.router-link-active {
+    color: var(--yellow-200)
 }
 
 </style>
-
-

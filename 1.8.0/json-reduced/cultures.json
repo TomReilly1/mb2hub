@@ -1,0 +1,47 @@
+[
+    {
+        "id": "empire",
+        "name": "Empire",
+        "is_main_culture": "true"
+    },
+    {
+        "id": "aserai",
+        "name": "Aserai",
+        "is_main_culture": "true"
+    },
+    {
+        "id": "sturgia",
+        "name": "Sturgia",
+        "is_main_culture": "true"
+    },
+    {
+        "id": "vlandia",
+        "name": "Vlandia",
+        "is_main_culture": "true"
+    },
+    {
+        "id": "battania",
+        "name": "Battania",
+        "is_main_culture": "true"
+    },
+    {
+        "id": "khuzait",
+        "name": "Khuzait",
+        "is_main_culture": "true"
+    },
+    {
+        "id": "nord",
+        "name": "Nord",
+        "is_main_culture": "false"
+    },
+    {
+        "id": "vakken",
+        "name": "Vakken",
+        "is_main_culture": "false"
+    },
+    {
+        "id": "darshi",
+        "name": "Darshi",
+        "is_main_culture": "false"
+    }
+]

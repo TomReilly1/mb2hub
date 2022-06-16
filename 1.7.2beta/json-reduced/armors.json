@@ -6864,58 +6864,6 @@
         }
     },
     {
-        "id": "dummy_armor_min",
-        "name": "{=Zx4h7jDy}Dummy Min Armor",
-        "culture": "looters",
-        "weight": "10",
-        "type": "BodyArmor",
-        "armor": {
-            "head": "0",
-            "body": "0",
-            "arm": "0",
-            "leg": "0"
-        }
-    },
-    {
-        "id": "dummy_armor_lower_average",
-        "name": "{=K2xGw3Oo}Dummy Lower Average",
-        "culture": "looters",
-        "weight": "20",
-        "type": "BodyArmor",
-        "armor": {
-            "head": "12",
-            "body": "12",
-            "arm": "12",
-            "leg": "12"
-        }
-    },
-    {
-        "id": "dummy_armor_higher_average",
-        "name": "{=gT8WENO3}Dummy Higher Average",
-        "culture": "looters",
-        "weight": "30",
-        "type": "BodyArmor",
-        "armor": {
-            "head": "37",
-            "body": "37",
-            "arm": "37",
-            "leg": "37"
-        }
-    },
-    {
-        "id": "dummy_armor_max",
-        "name": "{=wSUN0Dmo}Dummy Max Armor",
-        "culture": "looters",
-        "weight": "40",
-        "type": "BodyArmor",
-        "armor": {
-            "head": "55",
-            "body": "55",
-            "arm": "55",
-            "leg": "55"
-        }
-    },
-    {
         "id": "burlap_sack_dress",
         "name": "{=IuD9SaQM}Burlap Dress",
         "culture": "looters",

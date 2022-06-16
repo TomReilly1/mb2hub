@@ -1,3 +1,7 @@
+:root {
+    --mbblue1: #2a3d5f;
+}
+
 html, body {
     min-height: 100vh;
 }

@@ -1,16 +1,22 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import lordsData from "@/data/lords.json";
+import culturesData from "@/data/cultures_list.json";
+import sexesData from "@/data/sexes_list.json";
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
+import MultiSelect from 'primevue/multiselect';
 import InputText from 'primevue/inputtext';
+import InputNumber from 'primevue/inputnumber';
 
 onMounted(() => {
-    lords.value = lordsData;
+    cultures.value = culturesData;
+    sexes.value = sexesData;
+
     loading.value = false;
 })
 
-
-const lords = ref();
+const props = defineProps({lordsArr: Array});
+const cultures = ref();
+const sexes = ref();
 const loading = ref(true);
 
 const filters = ref({
@@ -24,12 +30,14 @@ const filters = ref({
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
     'culture': {
+        value: null, matchMode: FilterMatchMode.IN
+    },
+    'age': {
         operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }],
     },
     'sex': {
-        operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        value: null, matchMode: FilterMatchMode.IN
     }
 });
 
@@ -46,12 +54,14 @@ const initFilters = () => {
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
         'culture': {
+            value: null, matchMode: FilterMatchMode.IN
+        },
+        'age': {
             operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+            constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }],
         },
         'sex': {
-            operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+            value: null, matchMode: FilterMatchMode.IN 
         }
     }
 }
@@ -67,8 +77,8 @@ const clearFilters = () => {
 <!---------------------------------------------------->
 
 <template>
-<div class="card">
-    <DataTable :value="lords" :paginator="true" showGridlines :rows="10" dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
+<div id="lords-table">
+    <DataTable :value="lordsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name', 'culture', 'age', 'type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -79,10 +89,10 @@ const clearFilters = () => {
             </div>
         </template>
         <template #empty>
-            No armor found.
+            No lords found.
         </template>
         <template #loading>
-            Loading armor data. Please wait.
+            Loading lords data. Please wait.
         </template>
         <Column field="id" header="ID" sortable>
             <template #body="{data}">
@@ -100,22 +110,43 @@ const clearFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - `"/>
             </template>
         </Column>
-        <Column field="culture" header="Culture" sortable>
+        <Column header="Culture" sortable filterField="culture" sortField="culture" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.culture}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - `"/>
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Culture Picker</div>
+                <MultiSelect v-model="filterModel.value" :options="cultures" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
-        <Column field="group" header="Group" sortable></Column>
-        <Column field="age" header="Age" sortable></Column>
-        <Column field="sex" header="Male/Female" sortable>
+        <Column field="default_group" header="Group" sortable></Column>
+        <Column field="age" header="Age" sortable dataType="numeric">
+            <template #body="{data}">
+                {{data.age}}
+            </template>
+            <template #filter="{filterModel}">
+                <InputNumber v-model="filterModel.value"/>
+            </template>
+        </Column>
+        <Column header="Male/Female" sortable filterField="sex" sortField="sex" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.sex}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - `"/>
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select Sex:</div>
+                <MultiSelect v-model="filterModel.value" :options="sexes" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
     </DataTable>
@@ -132,13 +163,25 @@ const clearFilters = () => {
     flex-wrap: wrap;
 }
 
-.card {
+#lords-table {
     background-color: var(--bluegray-900);
-    border: 0;
+    border: 3px solid var(--bluegray-700);
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 98%;
+    box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-.card:hover {
-    background-color: unset;
+a {
+    color: var(--yellow-400);
+}
+
+a:hover {
+    color: var(--yellow-100);
+}
+
+.router-link-active {
+    color: var(--yellow-200)
 }
 
 </style>

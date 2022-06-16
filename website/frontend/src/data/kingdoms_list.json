@@ -1,0 +1,42 @@
+[
+    {
+        "id": "aserai",
+        "name": "Aserai",
+        "culture": "aserai"
+    },
+    {
+        "id": "battania",
+        "name": "Battania",
+        "culture": "battania"
+    },
+    {
+        "id": "north_empire",
+        "name": "Northern Empire",
+        "culture": "empire"
+    },
+    {
+        "id": "south_empire",
+        "name": "Southern Empire",
+        "culture": "empire"
+    },
+    {
+        "id": "west_empire",
+        "name": "Western Empire",
+        "culture": "empire"
+    },
+    {
+        "id": "khuzait",
+        "name": "Khuzait",
+        "culture": "khuzait"
+    },
+    {
+        "id": "sturgia",
+        "name": "Sturgia",
+        "culture": "sturgia"
+    },
+    {
+        "id": "vlandia",
+        "name": "Vlandia",
+        "culture": "vlandia"
+    }
+]
