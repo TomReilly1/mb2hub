@@ -17,7 +17,7 @@ import GlobalFooter from "@/components/GlobalFooter";
     text-align: center;
     color: var(--yellow-300);
     background-color: var(--bluegray-200);
-    background-image: url('./assets/2022-06-11_23.11.36.png');
+    background-image: url('./assets/background.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
