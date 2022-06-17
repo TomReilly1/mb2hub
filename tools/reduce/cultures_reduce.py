@@ -28,6 +28,11 @@ def reduceCultures(file_path):
 				output_object['is_main_culture'] = culture['@is_main_culture']
 			except:
 				output_object['is_main_culture'] = False
+			try:
+				output_object['desc_text'] = culture['@text'].split('}')[1]
+			except:
+				output_object['desc_text'] = None
+
 
 			output_array.append(output_object)
 
