@@ -1,7 +1,15 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { useRoute } from 'vue-router';
+
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext';
+
+
+
+const route = useRoute();
+const props = defineProps({troopsArr: Array});
+const loading = ref(true);
 
 
 onMounted(() => {
@@ -9,8 +17,6 @@ onMounted(() => {
 })
 
 
-const props = defineProps({troopsArr: Array});
-const loading = ref(true);
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
     'id': {
@@ -34,12 +40,6 @@ const filters = ref({
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     }
 });
-
-
-const clearFilters = () => {
-    initFilters();
-}
-
 
 const initFilters = () => {
     filters.value = {
@@ -67,13 +67,14 @@ const initFilters = () => {
     }
 }
 
+const clearFilters = () => {
+    initFilters();
+}
 </script>
-
 <!---------------------------------------------------->
-
 <template>
-<div id="troops-table">
-    <DataTable :value="troopsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','default_group','occupation']">
+<div id="troops-table" class="concept-table">
+    <DataTable :value="troopsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','default_group','occupation']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -91,7 +92,9 @@ const initFilters = () => {
         </template>
         <Column field="id" header="ID" sortable>
             <template #body="{data}">
-                {{data.id}}
+                <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="id-link">
+                    {{data.id}}
+                </router-link>
             </template>
             <template #filter="{filterModel, filterCallback}">
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by id - `"/>
@@ -141,11 +144,8 @@ const initFilters = () => {
     </DataTable>
 </div>
 </template>
-
 <!---------------------------------------------------->
-
 <style scoped>
-
 .global-filter {
     display: flex;
     justify-content: space-between;
@@ -172,7 +172,4 @@ a:hover {
 .router-link-active {
     color: var(--yellow-200)
 }
-
 </style>
-
-
