@@ -1,5 +1,5 @@
 <script setup>
-import ArmorTable from "@/components/ArmorTable.vue";
+import ArmorsTable from "@/components/ArmorsTable.vue";
 import BowsTable from "@/components/BowsTable.vue";
 import ClansTable from "@/components/ClansTable.vue";
 import CulturesTable from "@/components/CulturesTable.vue";
@@ -51,7 +51,7 @@ watch(route, async () => {
         <h1>{{route.params.concept}}</h1>
     </section>
     <section v-if="route.params.id === undefined">
-        <ArmorTable v-if="route.params.concept === 'armors'" :armors-arr="conceptData"/>
+        <ArmorsTable v-if="route.params.concept === 'armors'" :armors-arr="conceptData"/>
         <BowsTable v-if="route.params.concept === 'bows'" :bows-arr="conceptData"/>
         <ClansTable v-if="route.params.concept === 'clans'" :clans-arr="conceptData"/>
         <CulturesTable v-else-if="route.params.concept === 'cultures'" :cultures-arr="conceptData"/>
