@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const apiRouters = require('./routers/routes');
-var cors = require('cors');
+const cors = require('cors');
+const helmet = require('helmet');
 
 
 app.use(cors());
-
+app.use(helmet());
 
 app.use('/api', apiRouters);
 

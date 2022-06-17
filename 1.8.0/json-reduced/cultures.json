@@ -2,46 +2,97 @@
     {
         "id": "empire",
         "name": "Empire",
-        "is_main_culture": "true"
+        "is_main_culture": "true",
+        "desc_text": "The Calradians are the people of the Empire, though by now they have given their name to the entire continent which they dominate. A thousand years ago, they were an undistinguished tribe living in the hill country between the southern sea and the Battanian woods. One tradition set them apart from their neighbors - the Calradoi had no kings. Their citizenry has always taken an intense interest in the art of self-government, the balance between protecting the liberty of individuals and the needs of the state. Perhaps this is why they had a slight edge in the endless wars between one town and another, keeping armies in the field just a little longer, bouncing back just a little more quickly from a defeat. Some of their neighbors federated with them; others were overrun. Eventually the Calradians formed an empire, which evolved into a monarchy in all but name. Their leaders are no longer distinguished civic elders but great landholders scattered across the continent; the striking force of their armies is no longer citizen-infantry but heavily armored cataphracts in the retinues of the wealthy. But they still take their civic traditions very seriously, believing that the Calradian ideal can unite a continent in peace, if only the \u201dbarbarians\u201d beyond their borders would agree to submit to it."
     },
     {
         "id": "aserai",
         "name": "Aserai",
-        "is_main_culture": "true"
+        "is_main_culture": "true",
+        "desc_text": "The Aserai are the principal inhabitants of the Nahasa, the Bronze Desert, in the south of Calradia. To the outsider it would appear a desolate place, fields of dunes broken by gravel plains and volcanic outcrops. But there is water underground, trapped in depressions or beneath the wadis where the occasional flash flood rumbles by, and in these oases people have settled. They are divided into dozens of clans and sub-clans, each with its elaborate genealogy, but are collectively known as the Banu Asera, the sons of Asera. Their sense of nationhood, such as it is, comes from tracing their lineage to this legendary patriarch. Their wealth and power, which is considerable, comes from controlling the isolated water-sources that allow caravans from distant lands to cross the desert."
     },
     {
         "id": "sturgia",
         "name": "Sturgia",
-        "is_main_culture": "true"
+        "is_main_culture": "true",
+        "desc_text": "The Sturgians come from the northern woods, just south of the icy Byalic Sea. For centuries they lived an isolated existence in the dark forests, their numbers kept in check by the deadly winters. But as the Empire expanded to fill out the Calradian continent, traders ventured into the woods in search of honey, bog iron, and most of all fur. Great towns sprung up on the network of bays and lakes that joined the Sturgian lands to the outside world, attracting fortune-seekers from the coast, the steppes, and the Nordlands. The princes and boyars of this land have now begun to turn their eyes outward, earning themselves for a reputation for their warlike approach to business and their businesslike approach to war."
     },
     {
         "id": "vlandia",
         "name": "Vlandia",
-        "is_main_culture": "true"
+        "is_main_culture": "true",
+        "desc_text": "The first Vlandians arrived from overseas, mercenaries and adventurers, speaking the tongues of many lands, taking the empire's silver to guard the frontiers against the unsubdued tribes of the interior. They took their name from one of their first warlords, Wilund the Bold - Valandion, in Calradic - and became known as the Vlandians. Their heavy cavalry, second to none, ran down the Emperor's foes from the Aserai wastes to the distant steppes. But cash-strapped officials soon began to pay them with land grants and titles instead of silver, perhaps not the most far-sighted of policies. The Vlandians settled, married, planted farms, and seized nearby imperial fortresses as their own. Now they are an independent kingdom, their traditions drawing from both Calradia and their distant homelands."
     },
     {
         "id": "battania",
         "name": "Battania",
-        "is_main_culture": "true"
+        "is_main_culture": "true",
+        "desc_text": "The misty hills of north-western Calradia are dominated by the Battanian clans, the original inhabitants of much of the continent. Their hilltop fortresses have born witness to countless wars fought to resist outside invaders: first the Empire's legions, and more recently the rising Sturgian and Vlandian kingdoms. They are masters of the longbow, the night raid, the sudden wild charge out of the woods. They idolise valour, but especially like it when mixed with a bit of mischief - the cattle thief who can whisk an entire herd into the fog; the champion who dines with a rival tribe, and, regaling his hosts with an anecdote of battle, produces from his bag the skull of one of their kinsmen that he took as a souvenir."
     },
     {
         "id": "khuzait",
         "name": "Khuzait",
-        "is_main_culture": "true"
+        "is_main_culture": "true",
+        "desc_text": "The tribes that live in the great sea of grass east of the Empire have many names: Nachaghan, Arkits, Khergits, Karakhergits. Outsiders, however, usually refer to them collectively as the Khuzaits, after the clan that in the last two generations forged them into a conquering army. When Urkhun the Great accepted the surrender of the trading cities on the edge of the steppe, he ordered his noyans to give up their wandering lifestyle. They were given fiefs and money to build fortresses, and encouraged to turn local farmers into their tenants. Yet the tribes of the Khuzait confederacy still retain many of their nomadic traditions, and felt yurt tents stand next to mud-brick towers in settlements that are half-village, half-encampment."
     },
     {
         "id": "nord",
         "name": "Nord",
-        "is_main_culture": "false"
+        "is_main_culture": "false",
+        "desc_text": null
     },
     {
         "id": "vakken",
         "name": "Vakken",
-        "is_main_culture": "false"
+        "is_main_culture": "false",
+        "desc_text": null
     },
     {
         "id": "darshi",
         "name": "Darshi",
-        "is_main_culture": "false"
+        "is_main_culture": "false",
+        "desc_text": null
+    },
+    {
+        "id": "looters",
+        "name": "Looters",
+        "is_main_culture": false,
+        "desc_text": null
+    },
+    {
+        "id": "sea_raiders",
+        "name": "Sea Raiders",
+        "is_main_culture": false,
+        "desc_text": null
+    },
+    {
+        "id": "mountain_bandits",
+        "name": "Mountain Bandits",
+        "is_main_culture": false,
+        "desc_text": null
+    },
+    {
+        "id": "forest_bandits",
+        "name": "Forest Bandits",
+        "is_main_culture": false,
+        "desc_text": null
+    },
+    {
+        "id": "desert_bandits",
+        "name": "Desert Bandits",
+        "is_main_culture": false,
+        "desc_text": null
+    },
+    {
+        "id": "steppe_bandits",
+        "name": "Steppe Bandits",
+        "is_main_culture": false,
+        "desc_text": null
+    },
+    {
+        "id": "neutral_culture",
+        "name": "Calradian",
+        "is_main_culture": false,
+        "desc_text": null
     }
 ]

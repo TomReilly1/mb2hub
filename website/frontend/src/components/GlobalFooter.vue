@@ -11,15 +11,11 @@
         </div>
     </footer>
 </template>
-
-
-
+<!---------------------------------------------------------->
 <script setup>
     
 </script>
-
-
-
+<!---------------------------------------------------------->
 <style scoped>
     footer {
         position: absolute;
@@ -65,6 +61,12 @@
     i {
         border-radius: 100%;
         background-color: rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.8);
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    i:hover {
+        background-color: var(--bluegray-900);
+        box-shadow: 0 0 0 4px var(--bluegray-900);
     }
 </style>

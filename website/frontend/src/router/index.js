@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
-import CulturesView from "@/views/CulturesView.vue";
+
 
 const routes = [
   {
@@ -8,66 +8,24 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-  // {
-  //   path: '/:id',
-  //   name: 'culturecard',
-  //   component: CardView
-  // },
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
   {
-    path: '/armor',
-    name: 'armor',
-    component: () => import('../views/ArmorView.vue')
+    path: '/table/:concept',
+    name: 'tableview',
+    component: () => import('../views/TableView.vue'),
   },
   {
-    path: '/bows',
-    name: 'bows',
-    component: () => import('../views/BowsView.vue')
-  },
-  {
-    path: '/troops',
-    name: 'troops',
-    component: () => import('../views/TroopsView.vue')
-  },
-  // {
-  //   path: '/skills',
-  //   name: 'skills',
-  //   component: () => import('../views/SkillsView.vue')
-  // },
-  {
-    path: '/kingdoms',
-    name: 'kingdoms',
-    component: () => import('../views/KingdomsView.vue')
-  },
-  {
-    path: '/cultures',
-    name: 'cultures',
-    component: CulturesView,
-    children: [
-      {
-        path: ':id',
-        name: 'culturescard',
-        component: () => import('../views/CulturesCardView.vue')
-      }
-    ]
-  },
-  {
-    path: '/lords',
-    name: 'lords',
-    component: () => import('../views/LordsView.vue')
-  },
-  {
-    path: '/clans',
-    name: 'clans',
-    component: () => import('../views/ClansView.vue')
+    path: '/card/:concept/:id',
+    name: 'cardview',
+    component: () => import('../views/CardView.vue')
   },
 ]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
-export default router
+
+
+export default router;

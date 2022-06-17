@@ -1,29 +1,33 @@
 <script setup>
 import { ref, onMounted } from "vue";
-// import bowsData from "@/data/bows_and_crossbows.json";
-import culturesData from "@/data/cultures_list.json";
+import { useRoute } from 'vue-router';
+
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import MultiSelect from 'primevue/multiselect';
 import InputText from 'primevue/inputtext';
 import InputNumber from 'primevue/inputnumber';
 
+import culturesData from "@/data/cultures_list.json";
+
+
+
+const route = useRoute();
+const props = defineProps({bowsArr: Array});
+const cultures = ref();
+const loading = ref(true);
 
 
 onMounted(() => {
-    // bows.value = bowsData;
     cultures.value = culturesData;
-
     loading.value = false;
 })
 
 
-const props = defineProps({bowsArr: Array})
-// const bows = ref();
-const cultures = ref();
 const bowTypes = ref([
     {"id": "bow", "name": "Bow"},
     {"id": "crossbow", "name": "Crossbow"}
 ]);
+
 const bowSubTypes = ref([
     {"id": "bow", "name": "Bow"},
     {"id": "crossbow", "name": "Crossbow"},
@@ -31,8 +35,6 @@ const bowSubTypes = ref([
     {"id": "crossbow_fast", "name": "Fast Crossbow"}
 ]);
 
-
-const loading = ref(true);
 
 const filters = ref({
     'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
@@ -57,21 +59,8 @@ const filters = ref({
         operator: FilterOperator.AND,
         constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }],
     },
-
-        // <Column field="difficulty" header="Difficulty" sortable></Column>
-        // <Column field="damage" header="Damage" sortable></Column>
-        // <Column field="speed_rating" header="Speed Rating" sortable></Column>
-        // <Column field="missile_speed" header="Missile Speed" sortable></Column>
-        // <Column field="accuracy" header="Accuracy" sortable></Column>
-        // <Column field="fire_on_mount" header="Can Fire on Mount (t/f)" sortable></Column>
-        // <Column field="reload_on_mount" header="Can Reload on Mount (t/f)" sortable></Column>
 });
 
-
-const clearFilters = () => {
-    initFilters();
-}
-        
 const initFilters = () => {
     filters.value = {
         'global': {value: null, matchMode: FilterMatchMode.CONTAINS},
@@ -99,12 +88,13 @@ const initFilters = () => {
     }
 }
 
+const clearFilters = () => {
+    initFilters();
+}
 </script>
-
 <!---------------------------------------------------->
-
 <template>
-<div id="bows-table">
+<div id="bows-table" class="concept-table">
     <DataTable :value="bowsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
@@ -116,14 +106,16 @@ const initFilters = () => {
             </div>
         </template>
         <template #empty>
-            No bows found.
+            No bows data found.
         </template>
         <template #loading>
             Loading bows data. Please wait.
         </template>
         <Column field="id" header="ID" sortable>
             <template #body="{data}">
-                {{data.id}}
+                <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="nav-link">
+                    {{data.id}}
+                </router-link>
             </template>
             <template #filter="{filterModel, filterCallback}">
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by id - `"/>
@@ -195,16 +187,13 @@ const initFilters = () => {
         <Column field="speed_rating" header="Speed Rating" sortable></Column>
         <Column field="missile_speed" header="Missile Speed" sortable></Column>
         <Column field="accuracy" header="Accuracy" sortable></Column>
-        <Column field="fire_on_mount" header="Can Fire on Mount (t/f)" sortable></Column>
-        <Column field="reload_on_mount" header="Can Reload on Mount (t/f)" sortable></Column>
+        <Column field="fire_on_mount" header="Fire on Mount?" sortable></Column>
+        <Column field="reload_on_mount" header="Reload on Mount?" sortable></Column>
     </DataTable>
 </div>
 </template>
-
 <!---------------------------------------------------->
-
 <style scoped>
-
 .global-filter {
     display: flex;
     justify-content: space-between;
@@ -231,5 +220,4 @@ a:hover {
 .router-link-active {
     color: var(--yellow-200)
 }
-
 </style>
