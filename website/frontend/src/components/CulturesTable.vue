@@ -1,28 +1,28 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { useRoute } from 'vue-router';
 
 
+const route = useRoute();
 const props = defineProps({culturesArr: Array})
 const loading = ref(true);
 onMounted(() => {
     loading.value = false;
 })
 </script>
-
-<!------------------------------------------------------------------------------------------------->
-
+<!--------------------------------------------------------------------------------->
 <template>
-<div class="culture-table">
+<div id="cultures-table" class="concept-table">
     <DataTable :value="culturesArr" class="p-datatable-sm" showGridlines rowHover dataKey="id" :loading="loading" responsiveLayout="scroll">
         <template #empty>
-            No culture found.
+            No cultures data found.
         </template>
         <template #loading>
-            Loading culture data. Please wait.
+            Loading cultures data. Please wait.
         </template>
-        <Column field="id" header="ID" class="id-field" sortable>
+        <Column field="id" header="ID" sortable>
             <template #body="{data}">
-                <router-link :to="{name: 'culturescard', params: {id: data.id}}" class="nav-link">
+                <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="nav-link">
                     {{data.id}}
                 </router-link>
             </template>
@@ -32,18 +32,15 @@ onMounted(() => {
     </DataTable>
 </div>
 </template>
-
-<!---------------------------------------------------->
-
+<!--------------------------------------------------------------------------------->
 <style scoped>
-
 .global-filter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.culture-table {
+#cultures-table {
     background-color: var(--bluegray-900);
     border: 3px solid var(--bluegray-700);
     margin: 0 auto;
@@ -63,5 +60,4 @@ a:hover {
 .router-link-active {
     color: var(--yellow-200)
 }
-
 </style>

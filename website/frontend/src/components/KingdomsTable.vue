@@ -1,13 +1,16 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { useRoute } from 'vue-router';
+
+
+const route = useRoute();
+const props = defineProps({kingdomsArr: Array});
+const loading = ref(true);
+
 
 onMounted(() => {
     loading.value = false;
 })
-
-
-const props = defineProps({kingdomsArr: Array});
-const loading = ref(true);
 
 
 const formatColor = (color) => {
@@ -17,15 +20,21 @@ const formatColor = (color) => {
 </script>
 <!------------------------------------------------------------------->
 <template>
-<div id="kingdom-table">
-    <DataTable :value="kingdomsArr" class="p-datatable-sm" showGridlines dataKey="id" :loading="loading" responsiveLayout="scroll">
+<div id="kingdom-table" class="concept-table">
+    <DataTable :value="kingdomsArr" class="p-datatable-sm" rowHover showGridlines dataKey="id" :loading="loading" responsiveLayout="scroll">
         <template #empty>
-            No Kingdoms found.
+            No kingdoms data found.
         </template>
         <template #loading>
-            Loading Kingdoms data. Please wait.
+            Loading kingdoms data. Please wait.
         </template>
-        <Column field="id" header="ID" sortable></Column>
+        <Column field="id" header="ID" headerStyle="justify-content: center; text-align: center;" sortable>
+            <template #body="{data}">
+                <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="id-link">
+                    {{data.id}}
+                </router-link>
+            </template>
+        </Column>
         <Column field="name" header="Name" sortable></Column>
         <Column field="title" header="Kingdom Title" sortable></Column>
         <Column field="ruler_title" header="Ruler Title" sortable></Column>
@@ -116,5 +125,11 @@ a:hover {
     margin: 0;
     border: 0;
     padding: 0;
+}
+
+.center-header {
+    text-align: center;
+    justify-content: center;
+    background-color: aqua !important;
 }
 </style>
