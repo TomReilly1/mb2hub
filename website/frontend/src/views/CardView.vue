@@ -1,8 +1,8 @@
 <script setup>
-import { ref, onMounted, onUpdated, watch, onBeforeMount } from "vue";
+import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
 import CulturesCard from "@/components/CulturesCard.vue";
-
+import KingdomsCard from "@/components/KingdomsCard.vue";
 
 
 console.log('made it to card view');
@@ -36,15 +36,8 @@ onMounted(async () => {
     <section class="heading">
         <h1>{{route.params.concept}}</h1>
     </section>
-    <section v-if="route.params.concept === 'cultures'">
-        <!-- <CulturesCard v-bind="cardData"/> -->
-        <CulturesCard :culture-obj="cardData"/>
-    </section>
-    <section v-else>
-        <div class="card-desc">
-            <p>this is NOT culture</p>
-        </div>
-    </section>
+    <CulturesCard v-if="route.params.concept === 'cultures'" :culture-obj="cardData"/>
+    <KingdomsCard v-if="route.params.concept === 'kingdoms'" :kingdom-obj="cardData"/>
 </template>
 <!------------------------------------------------------->
 <style scoped>
