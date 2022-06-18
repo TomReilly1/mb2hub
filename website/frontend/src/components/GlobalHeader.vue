@@ -38,27 +38,6 @@
               </li>
             </ul>
           </li>
-          <!-- <li class="nav-item">
-              <router-link to="/table/armors" class="nav-link">Armors</router-link>
-          </li>
-          <li class="nav-item">
-              <router-link to="/table/bows" class="nav-link">Bows</router-link>
-          </li>
-          <li class="nav-item">
-              <router-link to="/table/troops" class="nav-link">Troops</router-link>
-          </li>
-          <li class="nav-item">
-              <router-link to="/table/kingdoms" class="nav-link">Kingdoms</router-link>
-          </li>
-          <li class="nav-item">
-              <router-link to="/table/cultures" class="nav-link">Cultures</router-link>
-          </li>
-          <li class="nav-item">
-              <router-link to="/table/lords" class="nav-link">Lords</router-link>
-          </li>
-          <li class="nav-item">
-              <router-link to="/table/clans" class="nav-link">Clans</router-link>
-          </li> -->
         </ul>
       </div>
     </div>
