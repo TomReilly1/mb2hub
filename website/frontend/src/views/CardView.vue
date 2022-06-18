@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
 import ArmorsCard from "@/components/ArmorsCard.vue";
+import BowsCard from "@/components/BowsCard.vue";
 import CulturesCard from "@/components/CulturesCard.vue";
 import KingdomsCard from "@/components/KingdomsCard.vue";
 
@@ -38,6 +39,7 @@ onMounted(async () => {
         <h1>{{route.params.concept}}</h1>
     </section>
     <ArmorsCard v-if="route.params.concept === 'armors'" :armor-obj="cardData"/>
+    <BowsCard v-else-if="route.params.concept === 'bows'" :bow-obj="cardData"/>
     <CulturesCard v-else-if="route.params.concept === 'cultures'" :culture-obj="cardData"/>
     <KingdomsCard v-else-if="route.params.concept === 'kingdoms'" :kingdom-obj="cardData"/>
 </template>
