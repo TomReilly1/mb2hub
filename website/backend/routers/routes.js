@@ -34,9 +34,9 @@ router.get('/armors', (req,res) => {
 });
 
 router.get('/armors/:id', (req,res) => {
-    console.log(`SELECT * FROM kingdoms WHERE id = ${req.params['id']};`);
+    console.log(`SELECT * FROM armors WHERE id = ${req.params['id']};`);
 
-    db.one(`SELECT * FROM kingdoms WHERE id = '${req.params['id']}';`)
+    db.one(`SELECT * FROM armors WHERE id = '${req.params['id']}';`)
     .then(rows => {
         console.log(rows);
         res.json(rows);
