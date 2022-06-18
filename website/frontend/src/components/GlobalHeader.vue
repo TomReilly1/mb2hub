@@ -86,8 +86,8 @@ header {
     transition: color 0.3s;
 }
 .dropdown-menu {
-  border: 2px solid var(--bluegray-400);
-  background-color: var(--bluegray-700) !important;
+  border: 2px solid var(--bluegray-700);
+  background-color: var(--bluegray-800) !important;
 }
 
 nav > div {
