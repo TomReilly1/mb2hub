@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
+import ArmorsCard from "@/components/ArmorsCard.vue";
 import CulturesCard from "@/components/CulturesCard.vue";
 import KingdomsCard from "@/components/KingdomsCard.vue";
 
@@ -36,8 +37,9 @@ onMounted(async () => {
     <section class="heading">
         <h1>{{route.params.concept}}</h1>
     </section>
-    <CulturesCard v-if="route.params.concept === 'cultures'" :culture-obj="cardData"/>
-    <KingdomsCard v-if="route.params.concept === 'kingdoms'" :kingdom-obj="cardData"/>
+    <ArmorsCard v-if="route.params.concept === 'armors'" :armor-obj="cardData"/>
+    <CulturesCard v-else-if="route.params.concept === 'cultures'" :culture-obj="cardData"/>
+    <KingdomsCard v-else-if="route.params.concept === 'kingdoms'" :kingdom-obj="cardData"/>
 </template>
 <!------------------------------------------------------->
 <style scoped>
