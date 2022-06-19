@@ -1,9 +1,6 @@
 <script setup>
-import { useRoute } from 'vue-router';
-
-
-const route = useRoute();
 const props = defineProps({troopObj: Object});
+
 
 const fromatTroopGroup = (troopGroup) => {
     if (troopGroup === 'HorseArcher') {
@@ -14,6 +11,7 @@ const fromatTroopGroup = (troopGroup) => {
         return troopGroup.toLowerCase(); 
     }
 };
+
 
 function calculateLevelTier(levelVal) {
     const tier = (levelVal - 1) / 5;
@@ -46,11 +44,8 @@ function calculateSkillTier(skillType, skillVal) {
     } else if (skillType === 'athletics') {
         tier = skillVal / 180;
     } else {
-        console.log('SKILL NOT NOT MATCHED');
+        throw 'SKILL NOT NOT MATCHED';
     }
-
-    console.log(tier);
-
 
     const red = '#dc3545';
     const orange = '#fd7e14';
@@ -58,7 +53,6 @@ function calculateSkillTier(skillType, skillVal) {
     const green = '#4ad3ab';
     const blue = '#69a5fe';
     const purple = '#b851ff';
-
 
     if (tier == 1) {
         return purple;

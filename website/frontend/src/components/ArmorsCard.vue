@@ -1,8 +1,4 @@
 <script setup>
-import { useRoute } from 'vue-router';
-
-
-const route = useRoute();
 const props = defineProps({armorObj: Object});
 
 
@@ -19,6 +15,7 @@ const formatArmorType = (armorType) => {
     }
 };
 
+
 // type is the 5 types of armor, cover is the 4 coverage areas
 function calculateTier(armorType, armorCover, armorVal) {
     const headMax = {'head': 54};
@@ -26,7 +23,6 @@ function calculateTier(armorType, armorCover, armorVal) {
     const bodyMax = {'body': 57, 'arm': 20, 'leg': 25};
     const armMax = {'arm': 25};
     const legMax = {'leg': 26};
-
 
     let tier;
 
@@ -58,7 +54,6 @@ function calculateTier(armorType, armorCover, armorVal) {
     else if (armorType === 'LegArmor') {
         tier = armorVal / legMax.leg;
     }
-
 
     const red = '#dc3545';
     const orange = '#fd7e14';

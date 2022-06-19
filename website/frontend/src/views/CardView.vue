@@ -10,17 +10,11 @@ import LordsCard from "@/components/LordsCard.vue";
 import TroopsCard from "@/components/TroopsCard.vue";
 
 
-console.log('made it to card view');
-
-
 const cardData = ref();
 const route = useRoute();
 
 
-
 async function fetchData(card_conc, card_id) {
-    console.log('fetch data card view');
-    console.log(route.params.concept, route.params.id);
     const res = await fetch(`${process.env.VUE_APP_API_URL}/${card_conc}/${card_id}`);
     const json_arr = await res.json();
     
@@ -29,14 +23,10 @@ async function fetchData(card_conc, card_id) {
 
 
 onMounted(async () => {
-    console.log(route.params.concept, route.params.id);
-    console.log('on mounted card view');
     await fetchData(route.params.concept, route.params.id).then(data => cardData.value = data);
-    
-    console.log(cardData.value);
 })
 </script>
-<!------------------------------------------------------->
+<!------------------------------------------------------------------------>
 <template>
     <section class="heading">
         <h1>{{route.params.concept}}</h1>
@@ -49,7 +39,7 @@ onMounted(async () => {
     <LordsCard v-else-if="route.params.concept === 'lords'" :lord-obj="cardData"/>
     <TroopsCard v-else-if="route.params.concept === 'troops'" :troop-obj="cardData"/>
 </template>
-<!------------------------------------------------------->
+<!------------------------------------------------------------------------>
 <style scoped>
 h1 {
     text-transform: capitalize;
