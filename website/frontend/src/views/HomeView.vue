@@ -26,20 +26,31 @@
         <h3>Here are some components I plan on implementing:</h3>
         <div class="list-container">
           <ul class="todo-list">
-            <li class="todo-list items">minor factions</li>
-            <li class="todo-list items">troop equipment loadouts</li>
-            <li class="todo-list items">towns</li>
-            <li class="todo-list items">castles</li>
-            <li class="todo-list items">villages</li>
-            <li class="todo-list items">heroes</li>
-            <li class="todo-list items">perks</li>
-            <li class="todo-list items">workshops</li>
-            <li class="todo-list items">horses</li>
-            <li class="todo-list items">harnesses/horse armor</li>
-            <li class="todo-list items">melee weapons</li>
-            <li class="todo-list items">draught animals</li>
-            <li class="todo-list items">trading goods</li>
-            <li class="todo-list items">bandits</li>
+            <li class="todo-list header-items">Concepts
+              <ul>
+                <li class="todo-list items">minor factions</li>
+                <li class="todo-list items">troop equipment loadouts</li>
+                <li class="todo-list items">towns</li>
+                <li class="todo-list items">castles</li>
+                <li class="todo-list items">villages</li>
+                <li class="todo-list items">heroes</li>
+                <li class="todo-list items">perks</li>
+                <li class="todo-list items">workshops</li>
+                <li class="todo-list items">horses</li>
+                <li class="todo-list items">harnesses/horse armor</li>
+                <li class="todo-list items">melee weapons</li>
+                <li class="todo-list items">draught animals</li>
+                <li class="todo-list items">trading goods</li>
+                <li class="todo-list items">bandits</li>
+              </ul>
+            </li>
+            <li class="todo-list header-items">Features
+              <ul>
+                <li class="todo-list items">search bar</li>
+                <li class="todo-list items">general comparison page</li>
+                <li class="todo-list items">percentile rankings</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -69,7 +80,7 @@
   }
 
   .desc-container {
-    max-width: 70rem;
+    max-width: 60rem;
     margin: 0 auto 3rem;
     border: 0;
     padding: 2rem;
@@ -101,7 +112,15 @@
   }
 
   .todo-list {
-    width: fit-content;
+    width: max-content;
     text-align: left;
+  }
+
+  .header-items {
+    font-size: 1.7rem;
+  }
+
+  .items {
+    font-size: 1.3rem;
   }
 </style>
