@@ -149,6 +149,31 @@ router.get('/cultures/:id', (req,res) => {
     })
 });
 
+//--------------- GOODS ---------------//
+router.get('/goods', (req,res) => {
+    db.any('SELECT * FROM goods;')
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+router.get('/goods/:id', (req,res) => {
+    console.log(`SELECT * FROM goods WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM goods WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
 //--------------- KINGDOMS ---------------//
 router.get('/kingdoms', (req,res) => {
     const cols = [
