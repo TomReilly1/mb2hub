@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 # CHANGE TO DIRECTORY WHERE PROJECT IS STORED
-PROJ_DIR = '/home/tom/Projects/mb2hub'
+PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
 
 # CHANGE BELOW TO THE CORRECT VERSION (no spaces)
 VERSION = '1.8.0'
@@ -32,25 +32,26 @@ def convertToJSON(file):
 
 
 if __name__ == '__main__':
-	# convertToJSON(prefix, "spcultures.xml")
+	# convertToJSON("spcultures.xml")
 
 	# convertToJSON('spkingdoms.xml')
 
-	convertToJSON('head_armors.xml')
-	convertToJSON('shoulder_armors.xml')
-	convertToJSON('body_armors.xml')
-	convertToJSON('arm_armors.xml')
-	convertToJSON('leg_armors.xml')
+	# convertToJSON('head_armors.xml')
+	# convertToJSON('shoulder_armors.xml')
+	# convertToJSON('body_armors.xml')
+	# convertToJSON('arm_armors.xml')
+	# convertToJSON('leg_armors.xml')
 
-	convertToJSON('spnpccharacters.xml')
+	# convertToJSON('spnpccharacters.xml')
 
-	convertToJSON('sandboxcore_skill_sets.xml')
+	# convertToJSON('sandboxcore_skill_sets.xml')
 
-	convertToJSON('weapons.xml')
+	# convertToJSON('weapons.xml')
 
-	convertToJSON('settlements.xml')
+	# convertToJSON('settlements.xml')
 
-	convertToJSON('spclans.xml')
+	# convertToJSON('spclans.xml')
 
-	convertToJSON('lords.xml')
+	# convertToJSON('lords.xml')
 
+	convertToJSON('horses_and_others.xml')
