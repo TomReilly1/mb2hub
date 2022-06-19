@@ -22,19 +22,22 @@
                 <router-link to="/table/bows" class="nav-link">Bows</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/table/troops" class="nav-link">Troops</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link to="/table/kingdoms" class="nav-link">Kingdoms</router-link>
+                <router-link to="/table/clans" class="nav-link">Clans</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/table/cultures" class="nav-link">Cultures</router-link>
               </li>
               <li class="nav-item">
+                <router-link to="/table/goods" class="nav-link">Goods</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/table/kingdoms" class="nav-link">Kingdoms</router-link>
+              </li>
+              <li class="nav-item">
                 <router-link to="/table/lords" class="nav-link">Lords</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/table/clans" class="nav-link">Clans</router-link>
+                <router-link to="/table/troops" class="nav-link">Troops</router-link>
               </li>
             </ul>
           </li>
