@@ -10,17 +10,14 @@ import Column from 'primevue/column';
 import ColumnGroup from 'primevue/columngroup';
 import Row from 'primevue/row';
 
-// import 'primevue/resources/themes/saga-blue/theme.css'  //theme
-import 'primevue/resources/primevue.min.css'            //core css
-import 'primeicons/primeicons.css'                      //icons'
-// import 'primevue/resources/themes/bootstrap4-dark-blue/theme.css'
-// import 'primevue/resources/themes/md-light-indigo/theme.css'
+import 'primevue/resources/primevue.min.css'    //core css
+import 'primeicons/primeicons.css'              //icons
 import 'primevue/resources/themes/bootstrap4-dark-blue/theme.css'
+
 
 const app = createApp(App);
 
 
-// createApp(App).use(router).mount('#app')
 app.use(PrimeVue, {ripple: true});
 app.use(router);
 
@@ -31,5 +28,6 @@ app.component('DataTable', DataTable);
 app.component('Column', Column);
 app.component('ColumnGroup', ColumnGroup);
 app.component('Row', Row);
+
 
 app.mount('#app');

@@ -1,7 +1,7 @@
 const express = require('express');
-const db = require('../db');
+const db = require('./db');
 const router = express.Router();
-const pgdb = require('../db');
+
 
 //--------------- ROOT ---------------//
 router.get('/', (req,res) => {
@@ -34,9 +34,9 @@ router.get('/armors', (req,res) => {
 });
 
 router.get('/armors/:id', (req,res) => {
-    console.log(`SELECT * FROM kingdoms WHERE id = ${req.params['id']};`);
+    console.log(`SELECT * FROM armors WHERE id = ${req.params['id']};`);
 
-    db.one(`SELECT * FROM kingdoms WHERE id = '${req.params['id']}';`)
+    db.one(`SELECT * FROM armors WHERE id = '${req.params['id']}';`)
     .then(rows => {
         console.log(rows);
         res.json(rows);
@@ -140,6 +140,31 @@ router.get('/cultures/:id', (req,res) => {
     console.log(`SELECT * FROM cultures WHERE id = ${req.params['id']};`);
 
     db.one(`SELECT * FROM cultures WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+//--------------- GOODS ---------------//
+router.get('/goods', (req,res) => {
+    db.any('SELECT * FROM goods;')
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+router.get('/goods/:id', (req,res) => {
+    console.log(`SELECT * FROM goods WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM goods WHERE id = '${req.params['id']}';`)
     .then(rows => {
         console.log(rows);
         res.json(rows);
