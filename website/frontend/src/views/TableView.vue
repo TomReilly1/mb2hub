@@ -1,4 +1,7 @@
 <script setup>
+import { ref, onMounted, watch } from "vue";
+import { useRoute } from 'vue-router';
+
 import ArmorsTable from "@/components/ArmorsTable.vue";
 import BowsTable from "@/components/BowsTable.vue";
 import ClansTable from "@/components/ClansTable.vue";
@@ -7,8 +10,6 @@ import KingdomsTable from "@/components/KingdomsTable.vue";
 import LordsTable from "@/components/LordsTable.vue";
 import TroopsTable from "@/components/TroopsTable.vue";
 
-import { ref, onMounted, onUpdated, watch } from "vue";
-import { useRoute } from 'vue-router';
 
 
 const conceptData = ref(null);
@@ -25,22 +26,13 @@ async function fetchData(conc) {
 
 onMounted(async () => {
     await fetchData(route.params.concept).then(data => conceptData.value = data);
-    
-    console.log(conceptData.value);
-})
-
-onUpdated(async () => {
-    console.log(route.params.concept);
-    console.log(route.params.id);
 })
 
 
 watch(route, async () => {
-    console.log("CHANGED ROUTE");
-    
     conceptData.value = null;
+
     if (route.params.concept !== undefined && route.params.id === undefined) {
-        console.log("flag");
         await fetchData(route.params.concept).then(data => conceptData.value = data);
     }
 })
