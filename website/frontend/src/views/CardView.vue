@@ -1,21 +1,23 @@
 <script setup>
-import { ref, onMounted, onUpdated, watch, onBeforeMount } from "vue";
+import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
+
+import ArmorsCard from "@/components/ArmorsCard.vue";
+import BowsCard from "@/components/BowsCard.vue";
+import ClansCard from "@/components/ClansCard.vue";
 import CulturesCard from "@/components/CulturesCard.vue";
+import GoodsCard from "@/components/GoodsCard.vue";
+import KingdomsCard from "@/components/KingdomsCard.vue";
+import LordsCard from "@/components/LordsCard.vue";
+import TroopsCard from "@/components/TroopsCard.vue";
 
-
-
-console.log('made it to card view');
 
 
 const cardData = ref();
 const route = useRoute();
 
 
-
 async function fetchData(card_conc, card_id) {
-    console.log('fetch data card view');
-    console.log(route.params.concept, route.params.id);
     const res = await fetch(`${process.env.VUE_APP_API_URL}/${card_conc}/${card_id}`);
     const json_arr = await res.json();
     
@@ -24,29 +26,24 @@ async function fetchData(card_conc, card_id) {
 
 
 onMounted(async () => {
-    console.log(route.params.concept, route.params.id);
-    console.log('on mounted card view');
     await fetchData(route.params.concept, route.params.id).then(data => cardData.value = data);
-    
-    console.log(cardData.value);
 })
 </script>
-<!------------------------------------------------------->
+<!------------------------------------------------------------------------>
 <template>
     <section class="heading">
         <h1>{{route.params.concept}}</h1>
     </section>
-    <section v-if="route.params.concept === 'cultures'">
-        <!-- <CulturesCard v-bind="cardData"/> -->
-        <CulturesCard :culture-obj="cardData"/>
-    </section>
-    <section v-else>
-        <div class="card-desc">
-            <p>this is NOT culture</p>
-        </div>
-    </section>
+    <ArmorsCard v-if="route.params.concept === 'armors'" :armor-obj="cardData"/>
+    <BowsCard v-else-if="route.params.concept === 'bows'" :bow-obj="cardData"/>
+    <ClansCard v-else-if="route.params.concept === 'clans'" :clan-obj="cardData"/>
+    <CulturesCard v-else-if="route.params.concept === 'cultures'" :culture-obj="cardData"/>
+    <GoodsCard v-else-if="route.params.concept === 'goods'" :good-obj="cardData"/>
+    <KingdomsCard v-else-if="route.params.concept === 'kingdoms'" :kingdom-obj="cardData"/>
+    <LordsCard v-else-if="route.params.concept === 'lords'" :lord-obj="cardData"/>
+    <TroopsCard v-else-if="route.params.concept === 'troops'" :troop-obj="cardData"/>
 </template>
-<!------------------------------------------------------->
+<!------------------------------------------------------------------------>
 <style scoped>
 h1 {
     text-transform: capitalize;
