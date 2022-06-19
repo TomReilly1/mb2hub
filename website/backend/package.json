@@ -9,7 +9,7 @@
     "devstart": "nodemon index.js"
   },
   "author": "Thomas Reilly",
-  "license": "MIT",
+  "license": "BSD 3-Clause",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
