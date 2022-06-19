@@ -1,13 +1,13 @@
+<script setup>
+import GlobalHeader from "@/components/GlobalHeader";
+import GlobalFooter from "@/components/GlobalFooter";
+</script>
+<!--------------------------------------------------------------------->
 <template>
     <GlobalHeader />
     <router-view />
     <GlobalFooter />
 </template>
-<!--------------------------------------------------------------------->
-<script setup>
-import GlobalHeader from "@/components/GlobalHeader";
-import GlobalFooter from "@/components/GlobalFooter";
-</script>
 <!--------------------------------------------------------------------->
 <style>
 #app {
@@ -26,20 +26,6 @@ import GlobalFooter from "@/components/GlobalFooter";
     position: relative;
     padding-bottom: 10rem;
 }
-
-/* nav {
-    padding: 30px;
-}
-
-nav a {
-    font-family: 'Libre Baskerville', 'Domine', serif;
-    font-weight: 900;
-    color: var(--yellow-400);
-}
-
-nav a.router-link-exact-active {
-    color: var(--yellow-600);
-} */
 
 h1 {
     color: var(--bluegray-900);
