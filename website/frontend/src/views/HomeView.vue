@@ -7,7 +7,7 @@
     <h1>Home</h1>
     <div class="desc-container">
       <div class="heading home-section">
-        <h3>Welcome to MB2 Hub!</h3>
+        <h2>Welcome to the Bannerlord Hub!</h2>
         <p>
           This site aims to provide easy access to any relevant data for Mount & Blade II: Bannerlord.
           Because Bannerlord is in early access, I will always try to keep up to date on the latest beta version.
@@ -30,7 +30,6 @@
               <ul>
                 <li class="todo-list items">minor factions</li>
                 <li class="todo-list items">troop equipment loadouts</li>
-                <li class="todo-list items">towns</li>
                 <li class="todo-list items">castles</li>
                 <li class="todo-list items">villages</li>
                 <li class="todo-list items">heroes</li>
@@ -40,7 +39,6 @@
                 <li class="todo-list items">harnesses/horse armor</li>
                 <li class="todo-list items">melee weapons</li>
                 <li class="todo-list items">draught animals</li>
-                <li class="todo-list items">trading goods</li>
                 <li class="todo-list items">bandits</li>
               </ul>
             </li>
@@ -61,10 +59,12 @@
 <style scoped>
   hr {
     color: rgba(200, 200, 200, 0.7);
+    margin: 2rem 0;
   }
 
-  h3 {
-    font-size: 2.5rem;
+
+  h2, h3 {
+    font-size: 2.3rem;
     margin: 0 0 2rem;
     font-weight: 700;
   }
@@ -74,7 +74,9 @@
     font-size: 2rem;
   }
 
-  .home p, li {
+  .home p,
+  .header-items,
+  .items {
     font-size: 1.7rem;
     color: var(--bluegray-100);
   }
@@ -90,20 +92,10 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
-  .heading,
-  .version {
-    margin-bottom: 50px;
-  }
-
-  .version,
-  .todo {
-    margin-top: 50px;
-  }
-
   #version-number {
     color: var(--green-300);
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .list-container {
@@ -113,14 +105,25 @@
 
   .todo-list {
     width: max-content;
+    max-width: 100%;
     text-align: left;
   }
 
-  .header-items {
-    font-size: 1.7rem;
+  
+
+@media screen and (max-width: 550px) {
+  h2, h3 {
+    font-size: 1.9rem;
+    margin: 0 0 1rem;
   }
 
-  .items {
-    font-size: 1.3rem;
+  #version-number {
+    font-size: 3.5rem;
   }
+  .home p,
+  .header-items,
+  .items {
+    font-size: 1.2rem;
+  }
+}
 </style>
