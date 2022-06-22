@@ -1,27 +1,10 @@
 ############# GLOBAL/CUSTOM #############
-# /venv
-# venv/
-# toolsvenv
-# /toolsvenv
-# toolsvenv/
-# ./tools/toolsvenv/
-# toolsvenv/**
-# Untitled*
-# /MB2_Troops
-# MB2_Troops/
 psql
 /psql
 psql/
-toolsvenv
-/toolsvenv
-toolsvenv/
-
-
-############# PYTHON #############
-
-
-
-
+venv
+/venv
+venv/
 
 ############## NODE ##############
 
