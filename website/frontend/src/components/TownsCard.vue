@@ -11,7 +11,7 @@ const props = defineProps({townObj: Object});
             </div>
             <hr />
             <div>
-                <h3>History</h3>
+                <h3>Description</h3>
                 <p v-if="townObj.desc_text !== null">{{townObj.desc_text}}</p>
                 <p v-else>N/A</p>
             </div>
