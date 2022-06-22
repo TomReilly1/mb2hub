@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const apiRouters = require('./routes');
+const apiRouter = require('./routes');
 const cors = require('cors');
 const helmet = require('helmet');
 
@@ -9,7 +9,7 @@ const helmet = require('helmet');
 app.use(cors());
 app.use(helmet());
 
-app.use('/api', apiRouters);
+app.use('/api', apiRouter);
 
 
 app.get('/', (req, res) => {

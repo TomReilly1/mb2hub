@@ -253,6 +253,49 @@ router.get('/lords/:id', (req,res) => {
     })
 });
 
+//--------------- TOWNS ---------------//
+router.get('/towns', (req,res) => {
+    const cols = [
+        "id",
+        "name",
+        "owner_id",
+        "owner_name",
+        "culture",
+        "x_position",
+        "y_position",
+        "prosperity",
+        "wall_level",
+        "desc_text",
+        "bound_village_1",
+        "bound_village_2",
+        "bound_village_3",
+        "bound_village_4"
+    ]
+    const cols_str = cols.join();
+
+    db.any(`SELECT ${cols_str} FROM towns;`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+router.get('/towns/:id', (req,res) => {
+    console.log(`SELECT * FROM towns WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM towns WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
 //--------------- TROOPS ---------------//
 router.get('/troops', (req,res) => {
     const cols = [
