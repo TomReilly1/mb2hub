@@ -37,7 +37,7 @@ function formatVillageType(village) {
                         <td>{{villageObj.y_position}}</td>
                     </tr>
                     <tr>
-                        <th>Prosperity</th>
+                        <th>Hearth</th>
                         <td>{{villageObj.hearth}}</td>
                     </tr>
                 </table>
