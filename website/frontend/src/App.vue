@@ -9,6 +9,14 @@ import GlobalFooter from "@/components/GlobalFooter";
     <GlobalFooter />
 </template>
 <!--------------------------------------------------------------------->
+<!-- BOOTSTRAP BREAKPOINTS
+Extra Small         n/a     <576px
+Small	            sm	    ≥576px
+Medium	            md	    ≥768px
+Large	            lg	    ≥992px
+Extra large	        xl	    ≥1200px
+Extra extra large   xxl	    ≥1400px
+ -->
 <style>
 #app {
     font-family: 'Open Sans', 'Poppins', 'Merriweather Sans', Arial, sans-serif;
