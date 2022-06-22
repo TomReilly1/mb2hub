@@ -2,8 +2,8 @@
 import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
 
-import DataTable from 'primevue/datatable';
-import Column from 'primevue/column';
+import DataTable from 'primevue/datatable/sfc';
+import Column from 'primevue/column/sfc';
 
 
 const route = useRoute();

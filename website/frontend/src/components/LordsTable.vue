@@ -2,13 +2,13 @@
 import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
 
-import Button from "primevue/button";
-import DataTable from 'primevue/datatable';
-import Column from 'primevue/column';
+import Button from "primevue/button/sfc";
+import DataTable from 'primevue/datatable/sfc';
+import Column from 'primevue/column/sfc';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
-import MultiSelect from 'primevue/multiselect';
-import InputText from 'primevue/inputtext';
-import InputNumber from 'primevue/inputnumber';
+import MultiSelect from 'primevue/multiselect/sfc';
+import InputText from 'primevue/inputtext/sfc';
+import InputNumber from 'primevue/inputnumber/sfc';
 
 import culturesData from "@/data/cultures_list.json";
 import sexesData from "@/data/sexes_list.json";
