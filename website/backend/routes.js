@@ -341,6 +341,44 @@ router.get('/troops/:id', (req,res) => {
     })
 });
 
+//--------------- VILLAGES ---------------//
+router.get('/villages', (req,res) => {
+    const cols = [
+        "id",
+        "name",
+        "culture",
+        "village_type",
+        "x_position",
+        "y_position",
+        "hearth",
+        "bound_settlement",
+        "desc_text"
+    ]
+    const cols_str = cols.join();
+
+    db.any(`SELECT ${cols_str} FROM villages;`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
+router.get('/villages/:id', (req,res) => {
+    console.log(`SELECT * FROM villages WHERE id = ${req.params['id']};`);
+
+    db.one(`SELECT * FROM villages WHERE id = '${req.params['id']}';`)
+    .then(rows => {
+        console.log(rows);
+        res.json(rows);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+});
+
 
 
 module.exports = router;

@@ -61,6 +61,9 @@
                <li class="nav-item">
                 <router-link to="/table/towns" class="nav-link">Towns</router-link>
               </li>
+              <li class="nav-item">
+                <router-link to="/table/villages" class="nav-link">Villages</router-link>
+              </li>
             </ul>
           </li>
         </ul>
