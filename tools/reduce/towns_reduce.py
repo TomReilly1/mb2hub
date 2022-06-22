@@ -1,7 +1,12 @@
 import os, json
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
 
 # CHANGE TO DIRECTORY WHERE PROJECT IS STORED
-PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
+PROJ_DIR = os.environ['MB2_PROJ_DIR']
 
 # CHANGE BELOW TO THE CORRECT VERSION (no spaces)
 VERSION = '1.8.0'
@@ -22,6 +27,27 @@ def getClanName(clan_id):
 	return 'NONE'
 
 
+def getBoundVillages(town_id):
+	with open(R_PATH, 'r') as file:
+		json_data = json.load(file)
+		json_arr = json_data['Settlements']['Settlement']
+		bound_village_array = []
+
+		for i in json_arr:
+			settlement_type = i['@id'].split('_')[0]
+			if settlement_type != 'village':
+				continue
+
+			bound_town_id = i['Components']['Village']['@bound'].split('.')[1]
+			if  bound_town_id == town_id:
+				bound_village_array.append(i['@id'])
+
+		
+
+	return bound_village_array
+	
+			
+
 with open(R_PATH, 'r') as file:
 	json_data = json.load(file)
 	json_arr = json_data['Settlements']['Settlement']
@@ -31,15 +57,35 @@ with open(R_PATH, 'r') as file:
 		if i['@id'].split('_')[0] == 'town':
 			output_object = {}
 
+
 			output_object['id'] = i['@id']
 			output_object['name'] = i['@name'].split('}')[1]
-			output_object['owner-id'] = i['@owner'].split('.')[1]
-			output_object['owner-name'] = getClanName(output_object['owner-id'])
+			output_object['owner_id'] = i['@owner'].split('.')[1]
+			output_object['owner_name'] = getClanName(output_object['owner_id'])
 			output_object['culture'] = i['@culture'].split('.')[1]
-			output_object['x-position'] = i['@posX']
-			output_object['y-position'] = i['@posY']
+			output_object['x_position'] = i['@posX']
+			output_object['y_position'] = i['@posY']
 			output_object['prosperity'] = i['@prosperity']
-			output_object['wall-level'] = i['Components']['Town']['@level']
+			output_object['wall_level'] = i['Components']['Town']['@level']
+			try:
+				print(i['@text'].split('}')[1])
+				output_object['desc_text'] = i['@text'].split('}')[1]
+			except:
+				output_object['desc_text'] = None
+			bound_villages = getBoundVillages(i['@id'])
+			print(i['@id'], 'number of villages:', len(bound_villages))
+			print(bound_villages)
+			output_object['bound_village_1'] = bound_villages[0]
+			output_object['bound_village_2'] = bound_villages[1]
+			try:
+				output_object['bound_village_3'] = bound_villages[2]
+			except:
+				output_object['bound_village_3'] = None
+			try:
+				output_object['bound_village_4'] = bound_villages[3]
+			except:
+				output_object['bound_village_4'] = None
+
 
 			output_array.append(output_object)
 
