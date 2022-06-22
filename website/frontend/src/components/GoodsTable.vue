@@ -2,8 +2,10 @@
 import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
 
+import Button from "primevue/button";
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
-import MultiSelect from 'primevue/multiselect';
 import InputText from 'primevue/inputtext';
 import InputNumber from 'primevue/inputnumber';
 

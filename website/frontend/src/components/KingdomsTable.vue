@@ -2,6 +2,9 @@
 import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
 
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+
 
 const route = useRoute();
 const props = defineProps({kingdomsArr: Array});
