@@ -31,7 +31,6 @@
                 <li class="todo-list items">minor factions</li>
                 <li class="todo-list items">troop equipment loadouts</li>
                 <li class="todo-list items">castles</li>
-                <li class="todo-list items">villages</li>
                 <li class="todo-list items">heroes</li>
                 <li class="todo-list items">perks</li>
                 <li class="todo-list items">workshops</li>
@@ -47,6 +46,7 @@
                 <li class="todo-list items">search bar</li>
                 <li class="todo-list items">general comparison page</li>
                 <li class="todo-list items">percentile rankings</li>
+                <li class="todo-list items">more linking in tables in cards</li>
               </ul>
             </li>
           </ul>

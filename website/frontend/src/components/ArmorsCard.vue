@@ -1,19 +1,7 @@
 <script setup>
+import { formatArmorType } from "@/composables/formatArmorType";
+
 const props = defineProps({armorObj: Object});
-
-
-const formatArmorType = (armorType) => {
-    if (armorType === 'Cape') {
-        return 'shoulder armor';
-    }
-    else {
-        const arr = armorType.split(/(?=[A-Z])/);
-        const lowerArr = arr.map(e => e.toLowerCase());
-        const lowerStr = lowerArr.join(' ');
-        
-        return lowerStr;
-    }
-};
 
 
 // type is the 5 types of armor, cover is the 4 coverage areas
@@ -138,6 +126,7 @@ function calculateTier(armorType, armorCover, armorVal) {
 .ratings-table {
     background-color: var(--bluegray-800);
     border-radius: 10px;
+    max-width: 96%;
 }
 
 th,
@@ -176,10 +165,11 @@ h4 {
 }
 
 section > div {
+    width: 96%;
     max-width: 40rem;
     margin: 0 auto 3rem;
     padding: 40px;
-    border-radius: 5%;
+    border-radius: 20px;
     background-color: var(--bluegray-900);
     color: var(--yellow-300);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -223,8 +213,4 @@ li, li > * {
 li > span {
     font-weight: 700;
 }
-
-/* hr {
-    margin: 30px 0;
-} */
 </style>
