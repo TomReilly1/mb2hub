@@ -35,6 +35,13 @@ Extra extra large   xxl	    ≥1400px
     padding-bottom: 10rem;
 }
 
+@media screen and (max-width: 500px) {
+    #app {
+        background-size: cover;
+        min-height: calc(100vh + 2rem);
+    }
+}
+
 h1 {
     color: var(--bluegray-900);
     font-size: 4.5rem;

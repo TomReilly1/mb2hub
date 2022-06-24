@@ -8,6 +8,8 @@ import Column from 'primevue/column/sfc';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext/sfc';
 
+import { formatArmorType } from "@/composables/formatArmorType";
+
 
 
 const route = useRoute();
@@ -69,7 +71,7 @@ const clearFilters = () => {
 <!---------------------------------------------------->
 <template>
 <div id="armors-table" class="concept-table">
-    <DataTable :value="armorsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading"   paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
+    <DataTable :value="armorsArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="['id','name','culture','type']">
         <template #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="clearFilters()" />
@@ -80,7 +82,7 @@ const clearFilters = () => {
             </div>
         </template>
         <template #empty>
-            No armor found.
+            No armor data found.
         </template>
         <template #loading>
             Loading armor data. Please wait.
@@ -114,7 +116,7 @@ const clearFilters = () => {
         <Column field="weight" header="Weight" sortable></Column>
         <Column field="type" header="Type" sortable>
             <template #body="{data}">
-                {{data.type}}
+                {{formatArmorType(data.type)}}
             </template>
             <template #filter="{filterModel, filterCallback}">
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by type - `" />

@@ -1,37 +1,60 @@
 <script setup>
-import { ref, onMounted } from "vue";
-import { useRoute } from 'vue-router';
+import { ref, onMounted } from "vue"
+import { useRoute } from 'vue-router'
 
-import DataTable from 'primevue/datatable/sfc';
-import Column from 'primevue/column/sfc';
+import DataTable from 'primevue/datatable/sfc'
+import Column from 'primevue/column/sfc'
+import MultiSelect from 'primevue/multiselect/sfc';
 
-
-const route = useRoute();
+const route = useRoute()
 const props = defineProps({culturesArr: Array})
-const loading = ref(true);
+const loading = ref(true)
+
+
 onMounted(() => {
-    loading.value = false;
+    loading.value = false
 })
+
+
+const columns = ref ([
+    {field: 'id', header: 'ID'},
+    {field: 'name', header: 'Name'},
+    {field: 'is_main_culture', header: 'Is Main Culture?'}
+])
+
+const selectedColumns = ref(columns.value)
+
+const onToggle = (val) => {
+    selectedColumns.value = columns.value.filter(col => val.includes(col))
+}
+
+
 </script>
 <!--------------------------------------------------------------------------------->
 <template>
 <div id="cultures-table" class="concept-table">
     <DataTable :value="culturesArr" class="p-datatable-sm" showGridlines rowHover dataKey="id" :loading="loading" responsiveLayout="scroll">
+        <template #header>
+            <div style="text-align:left">
+                <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle"
+                    placeholder="Select Columns" style="width: 20em; color: lightskyblue;"/>
+            </div>
+        </template>
         <template #empty>
             No cultures data found.
         </template>
         <template #loading>
             Loading cultures data. Please wait.
         </template>
-        <Column field="id" header="ID" sortable>
+        <Column v-if="selectedColumns.find(o => o.field === 'id')" field="id" header="ID" sortable>
             <template #body="{data}">
                 <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="nav-link">
                     {{data.id}}
                 </router-link>
             </template>
         </Column>
-        <Column field="name" header="Name" sortable></Column>
-        <Column field="is_main_culture" header="Is Main Culture?" sortable></Column>
+        <Column v-if="selectedColumns.find(o => o.field === 'name')" field="name" header="Name" sortable></Column>
+        <Column v-if="selectedColumns.find(o => o.field === 'is_main_culture')" field="is_main_culture" header="Is Main Culture?" sortable></Column>
     </DataTable>
 </div>
 </template>

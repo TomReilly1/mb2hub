@@ -31,10 +31,11 @@ h2 {
 }
 
 .card-desc {
+    width: 96%;
     max-width: 40rem;
     margin: 0 auto 3rem;
     padding: 40px;
-    border-radius: 5%;
+    border-radius: 20px;
     background-color: var(--bluegray-900);
     color: var(--yellow-300);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
