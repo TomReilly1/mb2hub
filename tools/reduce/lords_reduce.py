@@ -1,11 +1,15 @@
 import os, json
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 # CHANGE TO DIRECTORY WHERE PROJECT IS STORED
-PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
+PROJ_DIR = os.environ['MB2_PROJ_DIR']
 
 # CHANGE BELOW TO THE CORRECT VERSION (no spaces)
-VERSION = '1.8.0'
+VERSION = os.environ['VERSION']
 
 
 R_PATH = f"{PROJ_DIR}/{VERSION}/json/lords.json"

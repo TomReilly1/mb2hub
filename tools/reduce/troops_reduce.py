@@ -1,12 +1,15 @@
 import os, json, re
+from dotenv import load_dotenv
 
 
+load_dotenv()
 
-# CHANGE TO DIRECTORY WHERE PROJECT IS STORED (e.g. 'C:\\Users\\Bob\\Documents\\Projects\\mb2hub')
-PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
 
-# CHANGE BELOW TO THE CORRECT VERSION (e.g. '1.7.2')
-VERSION = '1.8.0'
+# CHANGE TO DIRECTORY WHERE PROJECT IS STORED
+PROJ_DIR = os.environ['MB2_PROJ_DIR']
+
+# CHANGE BELOW TO THE CORRECT VERSION (no spaces)
+VERSION = os.environ['VERSION']
 
 
 R_PATH = f'{PROJ_DIR}/{VERSION}/json/spnpccharacters.json'

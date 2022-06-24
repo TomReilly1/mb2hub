@@ -9,7 +9,7 @@ load_dotenv()
 PROJ_DIR = os.environ['MB2_PROJ_DIR']
 
 # CHANGE BELOW TO THE CORRECT VERSION (no spaces)
-VERSION = '1.8.0'
+VERSION = os.environ['VERSION']
 
 
 R_PATH = f"{PROJ_DIR}/{VERSION}/json/settlements.json"
