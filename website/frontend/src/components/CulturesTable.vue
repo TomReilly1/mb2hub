@@ -35,9 +35,8 @@ const onToggle = (val) => {
 <div id="cultures-table" class="concept-table">
     <DataTable :value="culturesArr" class="p-datatable-sm" showGridlines rowHover dataKey="id" :loading="loading" responsiveLayout="scroll">
         <template #header>
-            <div style="text-align:left">
-                <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle"
-                    placeholder="Select Columns" style="width: 20em; color: lightskyblue;"/>
+            <div>
+                <MultiSelect :modelValue="selectedColumns" :options="columns" optionLabel="header" @update:modelValue="onToggle" placeholder="Select Columns"/>
             </div>
         </template>
         <template #empty>
@@ -46,15 +45,15 @@ const onToggle = (val) => {
         <template #loading>
             Loading cultures data. Please wait.
         </template>
-        <Column v-if="selectedColumns.find(o => o.field === 'id')" field="id" header="ID" sortable>
+        <Column v-if="selectedColumns.find(col => col.field === 'id')" field="id" header="ID" sortable>
             <template #body="{data}">
                 <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="nav-link">
                     {{data.id}}
                 </router-link>
             </template>
         </Column>
-        <Column v-if="selectedColumns.find(o => o.field === 'name')" field="name" header="Name" sortable></Column>
-        <Column v-if="selectedColumns.find(o => o.field === 'is_main_culture')" field="is_main_culture" header="Is Main Culture?" sortable></Column>
+        <Column v-if="selectedColumns.find(col => col.field === 'name')" field="name" header="Name" sortable></Column>
+        <Column v-if="selectedColumns.find(col => col.field === 'is_main_culture')" field="is_main_culture" header="Is Main Culture?" sortable></Column>
     </DataTable>
 </div>
 </template>
