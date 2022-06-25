@@ -173,14 +173,6 @@ const clearFilters = () => {
                 <InputNumber v-model="filterModel.value"/>
             </template>
         </Column>
-        <!-- <Column field="wall_level" header="Wall Level" dataType="numeric" sortable>
-            <template #body="{data}">
-                {{data.wall_level}}
-            </template>
-            <template #filter="{filterModel}">
-                <InputNumber v-model="filterModel.value"/>
-            </template>
-        </Column> -->
         <Column header="Wall Level" sortable filterField="wall_level" sortField="wall_level" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.wall_level}}
