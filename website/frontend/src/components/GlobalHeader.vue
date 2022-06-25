@@ -1,4 +1,17 @@
 <script setup>
+import { onMounted } from "vue";
+
+
+onMounted(() => {
+  const navLinks = document.getElementsByClassName('route');
+  const navbar = document.getElementById('navbar');
+
+  for (let link of navLinks) {
+    link.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    })
+  }
+})
 </script>
 <!------------------------------------------------------------------------------------>
 <template>
@@ -14,21 +27,21 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="equipment-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
             <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/armors" class="nav-link">Armors</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/bows" class="nav-link">Bows</router-link>
               </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="people-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">People</a>
+            <a class="nav-link dropdown-toggle" href="#" id="people-nav-drop" role="button" data-bs-toggle="dropdown" aria-expsanded="false">People</a>
             <ul class="dropdown-menu" aria-labelledby="people-nav-drop">
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/lords" class="nav-link">Lords</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/troops" class="nav-link">Troops</router-link>
               </li>
             </ul>
@@ -36,13 +49,13 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="politics-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Politics</a>
             <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/clans" class="nav-link">Clans</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/cultures" class="nav-link">Cultures</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/kingdoms" class="nav-link">Kingdoms</router-link>
               </li>
             </ul>
@@ -50,7 +63,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="trading-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trading</a>
             <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/goods" class="nav-link">Goods</router-link>
               </li>
             </ul>
@@ -58,10 +71,10 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="settlements-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Settlements</a>
             <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-               <li class="nav-item">
+               <li class="nav-item route">
                 <router-link to="/table/towns" class="nav-link">Towns</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item route">
                 <router-link to="/table/villages" class="nav-link">Villages</router-link>
               </li>
             </ul>
