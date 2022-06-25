@@ -9,7 +9,7 @@
       <div class="heading home-section">
         <h2>Welcome to the Bannerlord Hub!</h2>
         <p>
-          This site aims to provide easy access to any relevant data for Mount & Blade II: Bannerlord.
+          This website aims to provide easy access to any relevant data for Mount & Blade II: Bannerlord.
           Because Bannerlord is in early access, I will always try to keep up to date on the latest beta version.
         </p>
         <p>
@@ -31,7 +31,7 @@
                 <li class="todo-list items">minor factions</li>
                 <li class="todo-list items">troop equipment loadouts</li>
                 <li class="todo-list items">castles</li>
-                <li class="todo-list items">heroes</li>
+                <li class="todo-list items">companions</li>
                 <li class="todo-list items">perks</li>
                 <li class="todo-list items">workshops</li>
                 <li class="todo-list items">horses</li>
@@ -46,7 +46,7 @@
                 <li class="todo-list items">search bar</li>
                 <li class="todo-list items">general comparison page</li>
                 <li class="todo-list items">percentile rankings</li>
-                <li class="todo-list items">more linking in tables in cards</li>
+                <li class="todo-list items">better/more linking in tables and cards</li>
               </ul>
             </li>
           </ul>
