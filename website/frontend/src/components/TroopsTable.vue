@@ -148,7 +148,7 @@ const clearFilters = () => {
 </div>
 </template>
 <!---------------------------------------------------->
-<style scoped>
+<style lang="scss" scoped>
 .global-filter {
     display: flex;
     justify-content: space-between;
@@ -175,4 +175,10 @@ a:hover {
 .router-link-active {
     color: var(--yellow-200)
 }
+
+.id-link {
+    text-decoration: none;
+}
+
+
 </style>
