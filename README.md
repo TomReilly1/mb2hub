@@ -45,9 +45,9 @@ Here are the technologies I used to power this project:
   - [ ] draught animals
   - [ ] bandits
 - Features:
-  - [ ] search bar
   - [ ] general comparison page
   - [ ] percentile rankings
+  - [ ] better/more linking in tables and cards
 
 
 
