@@ -1,0 +1,52 @@
+[
+    {
+        "id": "armors",
+        "name": "Armors",
+        "concept": "armors"
+    },
+    {
+        "id": "bows",
+        "name": "Bows",
+        "concept": "bows"
+    },
+    {
+        "id": "clans",
+        "name": "Clans",
+        "concept": "clans"
+    },
+    {
+        "id": "cultures",
+        "name": "Cultures",
+        "concept": "cultures"
+    },
+    {
+        "id": "goods",
+        "name": "Goods",
+        "concept": "goods"
+    },
+    {
+        "id": "kingdoms",
+        "name": "kingdoms",
+        "concept": "kingdoms"
+    },
+    {
+        "id": "lords",
+        "name": "Lords",
+        "concept": "Lords"
+    },
+    {
+        "id": "towns",
+        "name": "Towns",
+        "concept": "towns"
+    },
+    {
+        "id": "troops",
+        "name": "Troops",
+        "concept": "troops"
+    },
+    {
+        "id": "villages",
+        "name": "Villages",
+        "concept": "villages"
+    }
+]

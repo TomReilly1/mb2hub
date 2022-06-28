@@ -14,7 +14,7 @@ VERSION = os.environ['VERSION']
 
 
 def reduceJSON(read_path):
-	output_json = []
+	output_arr = []
 
 	with open(read_path) as f:
 		data = json.load(f)
@@ -33,25 +33,22 @@ def reduceJSON(read_path):
 				curr_obj['head_armor'] = i['ItemComponent']['Armor']['@head_armor']
 			except:
 				curr_obj['head_armor'] = "0"
-
 			try:
 				curr_obj['body_armor'] = i['ItemComponent']['Armor']['@body_armor']
 			except:
 				curr_obj['body_armor'] = "0"
-			
 			try:
 				curr_obj['arm_armor'] = i['ItemComponent']['Armor']['@arm_armor']
 			except:
 				curr_obj['arm_armor'] = "0"
-			
 			try:
 				curr_obj['leg_armor'] = i['ItemComponent']['Armor']['@leg_armor']
 			except:
 				curr_obj['leg_armor'] = "0"
 
-			output_json.append(curr_obj)
+			output_arr.append(curr_obj)
 
-	return output_json
+	return output_arr
 
 
 def writeReducedJSON(write_path, json_dict):
@@ -60,23 +57,21 @@ def writeReducedJSON(write_path, json_dict):
 
 
 
-
 if __name__ == "__main__":
+	W_PATH = f'{PROJ_DIR}/{VERSION}/json-reduced/armors.json'
+
 	R_PATH_HEAD = f'{PROJ_DIR}/{VERSION}/json/head_armors.json'
-	W_PATH_HEAD = f'{PROJ_DIR}/{VERSION}/json-reduced/head_armors.json'
 	R_PATH_SHOULDER = f'{PROJ_DIR}/{VERSION}/json/shoulder_armors.json'
-	W_PATH_SHOULDER = f'{PROJ_DIR}/{VERSION}/json-reduced/shoulder_armors.json'
 	R_PATH_BODY = f'{PROJ_DIR}/{VERSION}/json/body_armors.json'
-	W_PATH_BODY = f'{PROJ_DIR}/{VERSION}/json-reduced/body_armors.json'
 	R_PATH_ARM = f'{PROJ_DIR}/{VERSION}/json/arm_armors.json'
-	W_PATH_ARM = f'{PROJ_DIR}/{VERSION}/json-reduced/arm_armors.json'
 	R_PATH_LEG = f'{PROJ_DIR}/{VERSION}/json/leg_armors.json'
-	W_PATH_LEG = f'{PROJ_DIR}/{VERSION}/json-reduced/leg_armors.json'
 
-	print(R_PATH_HEAD)
 
-	writeReducedJSON(W_PATH_HEAD, reduceJSON(R_PATH_HEAD))
-	writeReducedJSON(W_PATH_SHOULDER, reduceJSON(R_PATH_SHOULDER))
-	writeReducedJSON(W_PATH_BODY, reduceJSON(R_PATH_BODY))
-	writeReducedJSON(W_PATH_ARM, reduceJSON(R_PATH_ARM))
-	writeReducedJSON(W_PATH_LEG, reduceJSON(R_PATH_LEG))
+	final_arr = reduceJSON(R_PATH_HEAD)
+	final_arr += reduceJSON(R_PATH_SHOULDER)
+	final_arr += reduceJSON(R_PATH_BODY)
+	final_arr += reduceJSON(R_PATH_ARM)
+	final_arr += reduceJSON(R_PATH_LEG)
+
+
+	writeReducedJSON(W_PATH, final_arr)
