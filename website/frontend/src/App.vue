@@ -1,6 +1,20 @@
 <script setup>
 import GlobalHeader from "@/components/GlobalHeader";
 import GlobalFooter from "@/components/GlobalFooter";
+
+
+// SORUCE: https://dev.to/nirazanbasnet/dont-use-100vh-for-mobile-responsive-3o97
+
+// Detect the height of the app by using JS
+// Setting the height of the page (using javascript) with the window.innerheight property.
+
+const documentHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+}
+window.addEventListener('resize', documentHeight);
+documentHeight();
+
 </script>
 <!--------------------------------------------------------------------->
 <template>
@@ -17,7 +31,20 @@ Large	            lg	    ≥992px
 Extra large	        xl	    ≥1200px
 Extra extra large   xxl	    ≥1400px
  -->
-<style>
+<style lang="scss">
+:root {
+    --doc-height: 100%;
+}
+
+html,
+body {
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    height: 100vh; /* fallback for Js load */
+    height: var(--doc-height);
+}
+
 #app {
     font-family: 'Open Sans', 'Poppins', 'Merriweather Sans', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -57,6 +84,39 @@ h1 {
 }
 
 /***** Primevue Custom Styles *****/
+.navbar-concepts .p-dropdown-items-wrapper {
+    width: auto;
+}
+
+.navbar-concepts .p-dropdown-item-group {
+    padding: 10px 0 0 15px !important;
+    color: var(--yellow-300) !important;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.navbar-concepts .p-dropdown-item,
+.navbar-concepts .p-dropdown-item:visited {
+    margin: 0.5rem 0 !important;
+    padding: 0 !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar-concepts .p-dropdown-item.p-highlight a {
+    color: var(--bluegray-900) !important;
+}
+
+.navbar-item.navbar-concept .p-dropdown.p-component.p-inputwrapper .p-dropdown-label.p-inputtext {
+    font-size: 1.3rem;
+    color: var(--bluegray-300);
+    padding-right: 0;
+}
+
+.navbar-item.navbar-concept .p-dropdown.p-component.p-inputwrapper .p-dropdown-label.p-inputtext.p-placeholder {
+    color: var(--bluegray-300);
+}
+
 .p-dropdown-item.p-highlight {
     color: var(--bluegray-900) !important;
     background-color: var(--yellow-300) !important;
@@ -138,5 +198,13 @@ h1 {
 
 th.p-sortable-column.p-highlight .p-column-header-content .p-column-title {
     color: var(--yellow-300);
+}
+
+.p-autocomplete.p-component.p-inputwrapper > #srch-page-bar.p-autocomplete-input.p-inputtext.p-component {
+    width: 100%;
+}
+
+.p-autocomplete.p-component.p-inputwrapper > #navbar-search-bar.p-autocomplete-input.p-inputtext.p-component {
+    width: 100%;
 }
 </style>

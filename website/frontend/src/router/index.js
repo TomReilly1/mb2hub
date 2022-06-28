@@ -9,6 +9,11 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/search',
+    name: 'search',
+    component: () => import('../views/SearchView.vue'),
+  },
+  {
     path: '/table/:concept',
     name: 'tableview',
     component: () => import('../views/TableView.vue'),

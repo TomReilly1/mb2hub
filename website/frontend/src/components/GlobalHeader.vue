@@ -1,103 +1,162 @@
 <script setup>
-import { onMounted } from "vue";
-
+import { ref, onMounted } from "vue";
+import Dropdown from "primevue/dropdown";
+import SearchBar from "@/components/SearchBar.vue";
 
 onMounted(() => {
-  const navLinks = document.getElementsByClassName('route');
-  const navbar = document.getElementById('navbar');
+    const navLinks = document.getElementsByClassName('route');
+    const navbar = document.getElementById('navbar');
 
-  for (let link of navLinks) {
-    link.addEventListener('click', () => {
-      navbar.classList.toggle('show');
-    })
-  }
+    for (let link of navLinks) {
+        link.addEventListener('click', () => {
+        navbar.classList.toggle('show');
+        })
+    }
 })
+
+
+const selectedLink = ref();
+
+const groupedLinks = ref([
+    {
+        label: 'Equipment',
+        items: [
+            {label: 'Armors', value: 'armors'},
+            {label: 'Bows', value: 'bows'}
+        ]
+    },
+    {
+        label: 'People',
+        items: [
+            {label: 'Lords', value: 'lords'},
+            {label: 'Troops', value: 'troops'}
+        ]
+    },
+    {
+        label: 'Politics',
+        items: [
+            {label: 'Clans', value: 'clans'},
+            {label: 'Cultures', value: 'cultures'},
+            {label: 'Kingdoms', value: 'kingdoms'}
+        ]
+    },
+    {
+        label: 'Trading',
+        items: [
+            {label: 'Goods', value: 'goods'}
+        ]
+    },
+    {
+        label: 'Settlements',
+        items: [
+            {label: 'Towns', value: 'towns'},
+            {label: 'Villages', value: 'villages'}
+        ]
+    }
+]);
+
+const resetDropdown = (e) => {
+    const navbar = document.querySelector('.navbar-concept');
+    const drpdwn = navbar.querySelector('.p-dropdown.p-component.p-inputwrapper');
+    const spn = drpdwn.querySelector('span.p-dropdown-label.p-inputtext');
+
+
+    drpdwn.classList.toggle('p-inputwrapper-filled');
+    spn.classList.toggle('p-placeholder');
+    spn.textContent = 'Select concept';
+}
+
 </script>
 <!------------------------------------------------------------------------------------>
 <template>
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark" aria-label="Global Navbar">
-    <div class="container-fluid">
-      <router-link to="/" class="navbar-logo">MB2 Hub</router-link>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbar" style="">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="equipment-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
-            <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-              <li class="nav-item route">
-                <router-link to="/table/armors" class="nav-link">Armors</router-link>
-              </li>
-              <li class="nav-item route">
-                <router-link to="/table/bows" class="nav-link">Bows</router-link>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="people-nav-drop" role="button" data-bs-toggle="dropdown" aria-expsanded="false">People</a>
-            <ul class="dropdown-menu" aria-labelledby="people-nav-drop">
-              <li class="nav-item route">
-                <router-link to="/table/lords" class="nav-link">Lords</router-link>
-              </li>
-              <li class="nav-item route">
-                <router-link to="/table/troops" class="nav-link">Troops</router-link>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="politics-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Politics</a>
-            <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-              <li class="nav-item route">
-                <router-link to="/table/clans" class="nav-link">Clans</router-link>
-              </li>
-              <li class="nav-item route">
-                <router-link to="/table/cultures" class="nav-link">Cultures</router-link>
-              </li>
-              <li class="nav-item route">
-                <router-link to="/table/kingdoms" class="nav-link">Kingdoms</router-link>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="trading-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trading</a>
-            <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-              <li class="nav-item route">
-                <router-link to="/table/goods" class="nav-link">Goods</router-link>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="settlements-nav-drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Settlements</a>
-            <ul class="dropdown-menu" aria-labelledby="equipment-nav-drop">
-               <li class="nav-item route">
-                <router-link to="/table/towns" class="nav-link">Towns</router-link>
-              </li>
-              <li class="nav-item route">
-                <router-link to="/table/villages" class="nav-link">Villages</router-link>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar">
+        <div class="navbar-item navbar-title">
+            <router-link to="/" class="navbar-logo">MB2 Hub</router-link>
+        </div>
+
+        <div class="navbar-item navbar-concept">
+            <Dropdown v-model="selectedLink" :options="groupedLinks" optionLabel="label" optionGroupLabel="label" optionGroupChildren="items" @change="resetDropdown($event)" scroll-height="250px" panelClass="navbar-concepts" placeholder="Select concept">
+                <template #optiongroup="slotProps">
+                    <div class="flex align-items-center">
+                        {{slotProps.option.label}}
+                    </div>
+                </template>
+                <template #option="slotProps">
+                    <router-link :to="`/table/${slotProps.option.value}`" class="dropdown-item">{{slotProps.option.label}}</router-link>
+                </template>
+            </Dropdown>
+        </div>
+
+        <div class="navbar-item navbar-search">
+            <SearchBar />
+        </div>
+    </nav>
 </header>
 </template>
 <!------------------------------------------------------------------------------------>
-<style scoped>
+<style lang="scss" scoped>
+a.dropdown-item {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-decoration: none;
+}
+
+a.dropdown-item:visited {
+    color: var(--bluegray-100);
+}
+
+
 header {
     background-color: var(--bluegray-900);
     box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0.5rem 1rem;
+    width: 100%;
+    height: 4rem;
+}
+
+.navbar-item {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar-item.navbar-concept,
+.navbar-item.navbar-title {
+    width: 210px;
+}
+
+.navbar-item.navbar-search {
+    justify-content: end;
+    width: calc(100% - 420px);
 }
 
 .container-fluid {
   padding: 0 !important;
+}
+
+.navbar-item.navbar-concept .p-dropdown.p-component.p-inputwrapper {
+    border: 0;
+    background-color: var(--bluegray-900);
+    transition: background-color 0.6s, box-shadow 0.6s;
+}
+
+.navbar-item.navbar-concept .p-dropdown.p-component.p-inputwrapper:hover {
+    border: 0;
+    background-color: var(--bluegray-800);
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
@@ -110,13 +169,13 @@ header {
 }
 
 .dropdown-menu {
-  border: 2px solid var(--bluegray-700);
-  background-color: var(--bluegray-900);
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: min-content;
-  min-width: 8rem;
-  padding: 10px;
+    border: 2px solid var(--bluegray-700);
+    background-color: var(--bluegray-900);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: min-content;
+    min-width: 8rem;
+    padding: 10px;
 }
 
 nav > div {
@@ -138,31 +197,44 @@ nav a {
     color: var(--yellow-200) !important;
 }
 
-@media screen and (max-width: 910px) {
-    nav > div {
-        font-size: 1.2rem;
+@media screen and (max-width: 754px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+        width: 100%;
+        height: fit-content;
     }
-}
-@media screen and (max-width: 860px) {
-    nav > div {
-        font-size: 1.1rem;
+
+    .navbar-item {
+        margin: 0.5rem 0;
     }
-}
-@media screen and (max-width: 820px) {
-    nav > div {
-        font-size: 1rem;
+
+    .navbar-item.navbar-concept,
+    .navbar-item.navbar-title {
+        display: flex;
+        width: fit-content;
     }
-}
-@media screen and (max-width: 768px) {
-    nav > div {
-        font-size: 1rem;
+
+    .navbar-item.navbar-title {
+        justify-content: end;
+        // margin-left: 15px;
     }
-    .dropdown-menu {
-        position: relative;
-        left: calc(50% - 6rem);
-        width: 12rem;
-        max-width: 12rem;
-        text-align: center;
+
+    .navbar-item.navbar-concept {
+        justify-content: start;
+        // margin-right: 15px;
+    }
+
+    .navbar-item.navbar-search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-logo {
+        font-size: 1.8rem;
     }
 }
 </style>

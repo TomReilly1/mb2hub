@@ -1,11 +1,43 @@
 const express = require('express');
+require('dotenv').config();
 const db = require('./db');
 const router = express.Router();
+const MeiliSearch = require('meilisearch')
 
 
 //--------------- ROOT ---------------//
 router.get('/', (req,res) => {
-    res.send('API router == success');
+    res.send('Main API router --> success');
+});
+
+//--------------- SEARCH ---------------//
+router.get('/search', async (req,res) => {
+    console.log('req query searchstr == ' + req.query.searchstr);
+    const srchstr = req.query.searchstr;
+    console.log('srchstr == ' + srchstr);
+
+    const client = new MeiliSearch({
+        host: `http://127.0.0.1:7700`,
+        apiKey: process.env.MASTER_KEY,
+    });
+
+    const indx = client.index('mb2_reduced');
+
+    // const response = await indx.search('Vlandian', {
+    //     limit: 5
+    // });
+    const response = await indx.search(srchstr, {
+        limit: 5
+    });
+
+    console.log(response);
+
+    res.json(response);
+
+    // indx.search('botman').then((res) => console.log(res))
+
+
+    // res.send('Search API router --> success');
 });
 
 //--------------- ARMORS ---------------//
