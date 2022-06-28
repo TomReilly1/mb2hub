@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --mbblue1: #2c3b53;
     --mbblue2: #1e2b3f;
     --mbblue3: #28313f;
@@ -15,4 +15,29 @@ body {
 html {
     height: fill-available;
     height: -webkit-fill-available;
+} */
+
+
+/* SOURCE: https://dev.to/nirazanbasnet/dont-use-100vh-for-mobile-responsive-3o97 */
+:root {
+    --doc-height: 100%;
 }
+
+html,
+body {
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    height: 100vh; /* fallback for Js load */
+    height: var(--doc-height);
+}
+
+/* body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+html {
+    height: -webkit-fill-available;
+} */
