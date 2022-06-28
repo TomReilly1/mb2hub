@@ -41,6 +41,11 @@ h2 {
     padding: 0;
 }
 
+h3 {
+    font-size: 2rem;
+    margin: 0 0 15px;
+}
+
 section > div {
     width: 96%;
     max-width: 40rem;
