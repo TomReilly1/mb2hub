@@ -5,6 +5,7 @@ psql/
 venv
 /venv
 venv/
+mb2hub_deployment.sh
 
 ############## NODE ##############
 
