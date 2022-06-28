@@ -43,7 +43,6 @@
             </li>
             <li class="todo-list header-items">Features
               <ul>
-                <li class="todo-list items">search bar</li>
                 <li class="todo-list items">general comparison page</li>
                 <li class="todo-list items">percentile rankings</li>
                 <li class="todo-list items">better/more linking in tables and cards</li>
