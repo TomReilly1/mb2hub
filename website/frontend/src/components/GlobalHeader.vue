@@ -104,6 +104,7 @@ a.dropdown-item {
     margin: 0;
     padding: 0 0 0 20px;
     text-decoration: none;
+    color: var(--bluegray-100);
 }
 
 a.dropdown-item:visited {
