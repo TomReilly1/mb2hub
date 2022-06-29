@@ -7,15 +7,26 @@ import DataTable from 'primevue/datatable/sfc';
 import Column from 'primevue/column/sfc';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import InputText from 'primevue/inputtext/sfc';
+import MultiSelect from 'primevue/multiselect/sfc';
+
+import culturesData from "@/data/cultures_list.json";
 
 
 
 const route = useRoute();
 const props = defineProps({troopsArr: Array});
 const loading = ref(true);
+const cultures = ref();
+const defaultGroups = ref ([
+    {'id': 'Infantry', 'name': 'Infantry'},
+    {'id': 'Ranged', 'name': 'Ranged'},
+    {'id': 'Cavalry', 'name': 'Cavalry'},
+    {'id': 'HorseArcher', 'name': 'Horse Archer'}
+]);
 
 
 onMounted(() => {
+    cultures.value = culturesData;
     loading.value = false;
 })
 
@@ -31,12 +42,10 @@ const filters = ref({
         constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
     },
     'culture': {
-        operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        value: null, matchMode: FilterMatchMode.IN
     },
-    'group': {
-        operator: FilterOperator.AND,
-        constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+    'default_group': {
+        value: null, matchMode: FilterMatchMode.IN
     },
     'occupation': {
         operator: FilterOperator.AND,
@@ -56,12 +65,10 @@ const initFilters = () => {
             constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
         },
         'culture': {
-            operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+            value: null, matchMode: FilterMatchMode.IN
         },
-        'group': {
-            operator: FilterOperator.AND,
-            constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
+        'default_group': {
+            value: null, matchMode: FilterMatchMode.IN
         },
         'occupation': {
             operator: FilterOperator.AND,
@@ -111,20 +118,34 @@ const clearFilters = () => {
                 <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - `"/>
             </template>
         </Column>
-        <Column field="culture" header="Culture" sortable>
+        <Column header="Culture" sortable filterField="culture" sortField="culture" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.culture}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by culture - `" />
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select Culture</div>
+                <MultiSelect v-model="filterModel.value" :options="cultures" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
-        <Column field="default_group" header="Group" sortable>
+        <Column header="Group" sortable filterField="default_group" sortField="default_group" :showFilterMatchModes="false" :filterMenuStyle="{'width':'14rem'}">
             <template #body="{data}">
                 {{data.default_group}}
             </template>
-            <template #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by Group - `" />
+            <template #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select Group</div>
+                <MultiSelect v-model="filterModel.value" :options="defaultGroups" optionLabel="name" optionValue="id" placeholder="Any" class="p-column-filter">
+                    <template #option="slotProps">
+                        <div class="p-multiselect-representative-option">
+                            {{slotProps.option.id}}
+                        </div>
+                    </template>
+                </MultiSelect>
             </template>
         </Column>
         <Column field="occupation" header="Occupation" sortable>
@@ -179,6 +200,4 @@ a:hover {
 .id-link {
     text-decoration: none;
 }
-
-
 </style>
