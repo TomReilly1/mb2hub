@@ -196,14 +196,14 @@ function logSelectedValue(event, flag) {
 <template>
 <div class="chart-section">
     <h3>Comparison Chart</h3>
-    <AutoComplete v-model="selectedTroop1" :suggestions="filteredTroops1" @complete="searchTroop($event, 0)" @item-select="logSelectedValue($event, 0)" :dropdown="true" field="name" forceSelection>
+    <AutoComplete v-model="selectedTroop1" :suggestions="filteredTroops1" @complete="searchTroop($event, 0)" @item-select="logSelectedValue($event, 0)" :dropdown="true" field="name" forceSelection spellcheck="false" placeholder="Select a troop...">
         <template #item="slotProps">
             <div class="country-item">
                 <div class="ml-2">{{slotProps.item.name}}</div>
             </div>
         </template>
     </AutoComplete>
-    <AutoComplete v-model="selectedTroop2" :suggestions="filteredTroops2" @complete="searchTroop($event, 1)" @item-select="logSelectedValue($event, 1)" :dropdown="true" field="name" forceSelection>
+    <AutoComplete v-model="selectedTroop2" :suggestions="filteredTroops2" @complete="searchTroop($event, 1)" @item-select="logSelectedValue($event, 1)" :dropdown="true" field="name" forceSelection spellcheck="false" placeholder="Select a troop...">
         <template #item="slotProps">
             <div class="country-item">
                 <div class="ml-2">{{slotProps.item.name}}</div>
