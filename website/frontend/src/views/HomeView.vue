@@ -39,7 +39,7 @@ const todoItems = ref([
                 Because Bannerlord is in early access, I will always try to keep up to date on the latest beta version.
             </p>
             <p>
-                I am always looking to add more to this project, so any <a href="https://github.com/TomReilly1">suggestions are welcome!</a>
+                I am always looking to add more to this project, so any <a href="https://github.com/TomReilly1/mb2hub">suggestions are welcome!</a>
             </p>
         </div>
 
