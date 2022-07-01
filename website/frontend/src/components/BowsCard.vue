@@ -77,7 +77,7 @@ const calculateTier = (ratingType, ratingVal) => {
             <hr />
             <div>
                 <h3>Ratings</h3>
-                <div class="btn-container">
+                <!-- <div class="btn-container">
                     <button type="button" id="bow-help-btn" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="pi pi-question-circle"></i>
                     </button>
@@ -93,7 +93,7 @@ const calculateTier = (ratingType, ratingVal) => {
                         <li><h6 class="dropdown-header">Difficulty</h6></li>
                         <li><span>The Bow skill level required to wield the bow</span></li>
                     </ul>
-                </div>
+                </div> -->
                 <table class="ratings-table">
                     <tr>
                         <th>Damage</th>
