@@ -33,18 +33,36 @@ Here are the technologies I used to power this project:
 ## Roadmap
 
 - Concepts:
-  - [ ] minor factions
-  - [ ] troop equipment loadouts
-  - [ ] castles
-  - [ ] heroes
-  - [ ] perks
-  - [ ] workshops
-  - [ ] horses
-  - [ ] harnesses/horse armor
-  - [ ] melee weapons
-  - [ ] draught animals
-  - [ ] bandits
+  - Animals
+    - [x] mounts
+    - [ ] draught animals
+  - Equipment
+    - [x] armor
+    - [x] bows
+    - [ ] harnesses/horse armor
+    - [ ] melee weapons
+    - [ ] troop equipment loadouts
+  - People
+    - [ ] bandits
+    - [x] lords
+    - [x] troops
+    - [ ] wanderers
+  - Politics
+    - [ ] clans
+    - [x] cultures
+    - [x] kingdoms
+    - [ ] minor factions
+  - Settlements
+    - [ ] castles
+    - [x] towns
+    - [ ] workshops
+    - [x] villages
+  - Misc
+    - [ ] perks
 - Features:
+  - [x] add table views
+  - [x] add card views
+  - [x] search engine
   - [ ] general comparison page
   - [ ] percentile rankings
   - [ ] better/more linking in tables and cards
