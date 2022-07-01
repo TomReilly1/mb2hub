@@ -9,6 +9,7 @@ import CulturesCard from "@/components/CulturesCard.vue";
 import GoodsCard from "@/components/GoodsCard.vue";
 import KingdomsCard from "@/components/KingdomsCard.vue";
 import LordsCard from "@/components/LordsCard.vue";
+import MountsCard from "@/components/MountsCard.vue";
 import TownsCard from "@/components/TownsCard.vue";
 import TroopsCard from "@/components/TroopsCard.vue";
 import VillagesCard from "@/components/VillagesCard.vue";
@@ -43,6 +44,7 @@ onMounted(async () => {
     <GoodsCard v-else-if="route.params.concept === 'goods'" :good-obj="cardData"/>
     <KingdomsCard v-else-if="route.params.concept === 'kingdoms'" :kingdom-obj="cardData"/>
     <LordsCard v-else-if="route.params.concept === 'lords'" :lord-obj="cardData"/>
+    <MountsCard v-else-if="route.params.concept === 'mounts'" :mount-obj="cardData"/>
     <TownsCard v-else-if="route.params.concept === 'towns'" :town-obj="cardData"/>
     <TroopsCard v-else-if="route.params.concept === 'troops'" :troop-obj="cardData"/>
     <VillagesCard v-else-if="route.params.concept === 'villages'" :village-obj="cardData"/>

@@ -36,7 +36,7 @@ onMounted(() => {
 
 async function getSearchResults() {
     const temp = selectedConcept.value;
-    const santzStr = temp.replace(/[^a-z -_]/gi, '');
+    const santzStr = temp.replace(/[^a-z ]/gi, '');
     console.log('santzStr == ' + santzStr);
     const paramsObj = {searchstr: santzStr};
     const searchParams = new URLSearchParams(paramsObj);

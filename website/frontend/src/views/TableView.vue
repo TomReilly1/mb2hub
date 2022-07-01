@@ -9,6 +9,7 @@ import CulturesTable from "@/components/CulturesTable.vue";
 import GoodsTable from "@/components/GoodsTable.vue";
 import KingdomsTable from "@/components/KingdomsTable.vue";
 import LordsTable from "@/components/LordsTable.vue";
+import MountsTable from "@/components/MountsTable.vue";
 import TownsTable from "@/components/TownsTable.vue";
 import TroopsTable from "@/components/TroopsTable.vue";
 import VillagesTable from "@/components/VillagesTable.vue";
@@ -55,6 +56,7 @@ watch(route, async () => {
         <GoodsTable v-else-if="route.params.concept === 'goods'" :goods-arr="conceptData"/>
         <KingdomsTable v-else-if="route.params.concept === 'kingdoms'" :kingdoms-arr="conceptData"/>
         <LordsTable v-else-if="route.params.concept === 'lords'" :lords-arr="conceptData"/>
+        <MountsTable v-else-if="route.params.concept === 'mounts'" :mounts-arr="conceptData"/>
         <TownsTable v-else-if="route.params.concept === 'towns'" :towns-arr="conceptData"/>
         <div v-else-if="route.params.concept === 'troops'">
             <TroopsTable :troops-arr="conceptData"/>

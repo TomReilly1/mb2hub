@@ -11,7 +11,6 @@ const todoItems = ref([
       'companions',
       'perks',
       'workshops',
-      'horses',
       'harnesses/horse armor',
       'melee weapons',
       'draught animals',
@@ -40,7 +39,7 @@ const todoItems = ref([
                 Because Bannerlord is in early access, I will always try to keep up to date on the latest beta version.
             </p>
             <p>
-                This project is a work-in-progress so any suggestions are welcomed!
+                I am always looking to add more to this project, so any <a href="hhtps://github.com/TomReilly1">suggestions are welcome!</a>
             </p>
         </div>
 
@@ -69,7 +68,7 @@ const todoItems = ref([
         <hr />
 
         <div class="tools home-section">
-            <h3>Built with...</h3>
+            <h3>Built with:</h3>
             <div>
                 <ul>
                     <li>
@@ -114,6 +113,15 @@ h2, h3 {
     font-size: 2.3rem;
     margin: 0 0 2rem;
     font-weight: 700;
+}
+
+p a {
+    text-decoration: none;
+    color: var(--yellow-300);
+}
+
+p a:hover {
+    color: var(--yellow-200);
 }
 
 .home {
@@ -167,6 +175,7 @@ h2, h3 {
     text-align: left;
     list-style: none;
     margin-top: 0;
+    padding: 0;
 }
 
 .tools.home-section li {

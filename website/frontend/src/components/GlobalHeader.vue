@@ -19,6 +19,12 @@ const selectedLink = ref();
 
 const groupedLinks = ref([
     {
+        label: 'Animals',
+        items: [
+            {label: 'Mounts', value: 'mounts'}
+        ]
+    },
+    {
         label: 'Equipment',
         items: [
             {label: 'Armors', value: 'armors'},
