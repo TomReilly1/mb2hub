@@ -78,11 +78,10 @@ const chartOptions = ref({
     plugins: {
         legend: {
             labels: {
-                // color: 'rgb(129, 206, 255)',
                 color: 'rgb(149, 163, 184)',
                 font: function(context) {
                     let width = context.chart.width;
-                    let size = width / 30;
+                    let size = width / 26;
                     return {
                         size: size,
                         weight: 600
@@ -212,6 +211,7 @@ function logSelectedValue(event, flag) {
     </AutoComplete>
     <div class="chart-container">
         <Chart type="radar" :data="chartData" :options="chartOptions" />
+        <small>Note: each level on the chart increments by 20</small>
     </div>
 </div>
 
@@ -223,7 +223,8 @@ h3 {
     font-size: 2.3rem;
     font-weight: bold;
     // text-decoration: underline;
-    padding: 2rem 0 1rem;
+    margin: 0;
+    padding: 20px;
 }
 
 .chart-section {
@@ -241,7 +242,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0 5px 25px;
 }
 
 .p-autocomplete {
@@ -249,7 +250,7 @@ h3 {
 }
 
 .p-chart {
-    min-width: 350px;
+    // min-width: 340px;
     width: 100%;
     margin: 1rem 0 0;
 }
