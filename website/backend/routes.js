@@ -2,7 +2,8 @@ const express = require('express');
 require('dotenv').config();
 const db = require('./db');
 const router = express.Router();
-const MeiliSearch = require('meilisearch')
+const { MeiliSearch } = require('meilisearch');
+const dataCols = require('./datacols.json');
 
 
 //--------------- ROOT ---------------//
@@ -13,8 +14,10 @@ router.get('/', (req,res) => {
 //--------------- SEARCH ---------------//
 router.get('/search', async (req,res) => {
     console.log('req query searchstr == ' + req.query.searchstr);
-    const srchstr = req.query.searchstr;
-    console.log('srchstr == ' + srchstr);
+    const temp = req.query.searchstr;
+    const santzStr = temp.replace(/[^a-z ]/gi, '');
+    console.log('santzStr == ' + santzStr);
+
 
     const client = new MeiliSearch({
         host: `http://127.0.0.1:7700`,
@@ -23,41 +26,39 @@ router.get('/search', async (req,res) => {
 
     const indx = client.index('mb2_reduced');
 
-    // const response = await indx.search('Vlandian', {
-    //     limit: 5
-    // });
-    const response = await indx.search(srchstr, {
+    const response = await indx.search(santzStr, {
         limit: 5
     });
 
     console.log(response);
-
     res.json(response);
-
-    // indx.search('botman').then((res) => console.log(res))
-
-
-    // res.send('Search API router --> success');
 });
 
-//--------------- ARMORS ---------------//
-router.get('/armors', (req,res) => {
-    const cols = [
-        'id',
-        'name',
-        'culture',
-        'weight',
-        'type',
-        'head_armor',
-        'body_armor',
-        'arm_armor',
-        'leg_armor'
-    ]
+//--------------- CONCEPTS ---------------//
+router.get('/:concept', (req,res) => {
+    let flag = false;
+    let cols;
+
+    console.log(req.params.concept);
+
+    for (let i of dataCols) {
+        if (i.concept === req.params.concept) {
+            cols = i.data;
+            flag = true;
+            break;
+        }
+    }
+
+    if (flag === false) {
+        console.error('NOT FOUND');
+        res.redirect('/error');
+    }
+
     const cols_str = cols.join();
 
-    db.any(`SELECT ${cols_str} FROM armors;`)
+    db.any(`SELECT ${cols_str} FROM ${req.params.concept};`)
     .then(rows => {
-        console.log(rows);
+        // console.log(rows);
         res.json(rows);
     })
     .catch(error => {
@@ -65,345 +66,36 @@ router.get('/armors', (req,res) => {
     })
 });
 
-router.get('/armors/:id', (req,res) => {
-    console.log(`SELECT * FROM armors WHERE id = ${req.params['id']};`);
+router.get('/:concept/:id', (req,res) => {
+    console.log(req.params.concept);
+    console.log(req.params.id);
 
-    db.one(`SELECT * FROM armors WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
 
-//--------------- BOWS ---------------//
-router.get('/bows', (req,res) => {
-    const cols = [
-        'id',
-        'name',
-        'culture',
-        'weight',
-        'type',
-        'subtype',
-        'difficulty',
-        'speed_rating',
-        'missile_speed',
-        'accuracy',
-        'damage',
-        'fire_on_mount',
-        'reload_on_mount'
-    ]
+    let flag = false;
+    let cols;
+
+
+    for (let i of dataCols) {
+        if (i.concept === req.params.concept) {
+            cols = i.data;
+            flag = true;
+            break;
+        }
+    }
+
+
+    if (flag === false) {
+        console.error('NOT FOUND');
+        res.redirect('/error');
+    }
+
+
     const cols_str = cols.join();
 
-    db.any(`SELECT ${cols_str} FROM bows;`)
+
+    db.one(`SELECT ${cols_str} FROM ${req.params.concept} WHERE id = '${req.params['id']}';`)
     .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/bows/:id', (req,res) => {
-    console.log(`SELECT * FROM bows WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM bows WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- CLANS ---------------//
-router.get('/clans', (req,res) => {
-    const cols = [
-        'id',
-        'name',
-        'owner',
-        'kingdom',
-        'culture',
-        'tier',
-        'is_ruling_clan'
-    ]
-    const cols_str = cols.join();
-
-    db.any(`SELECT ${cols_str} FROM clans;`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/clans/:id', (req,res) => {
-    console.log(`SELECT * FROM clans WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM clans WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- CULTURES ---------------//
-router.get('/cultures', (req,res) => {
-    db.any('SELECT * FROM cultures;')
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/cultures/:id', (req,res) => {
-    console.log(`SELECT * FROM cultures WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM cultures WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- GOODS ---------------//
-router.get('/goods', (req,res) => {
-    db.any('SELECT * FROM goods;')
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/goods/:id', (req,res) => {
-    console.log(`SELECT * FROM goods WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM goods WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- KINGDOMS ---------------//
-router.get('/kingdoms', (req,res) => {
-    const cols = [
-        'id',
-        'name',
-        'title',
-        'ruler_title',
-        'culture',
-        'primary_banner_color',
-        'secondary_banner_color',
-        'label_color',
-        'color_1',
-        'color_2',
-        'alternative_color_1',
-        'alternative_color_2',
-        'desc_text'
-    ]
-    const cols_str = cols.join();
-
-    db.any(`SELECT ${cols_str} FROM kingdoms;`)
-    .then(rows => {
-        rows.forEach(obj => {
-            console.log(obj['name']);
-        });
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/kingdoms/:id', (req,res) => {
-    console.log(`SELECT * FROM kingdoms WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM kingdoms WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- LORDS ---------------//
-router.get('/lords', (req,res) => {
-    const cols = [
-        'id',
-        'name',
-        'culture',
-        'default_group',
-        'age',
-        'sex'
-    ]
-    const cols_str = cols.join();
-
-    db.any(`SELECT ${cols_str} FROM lords;`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/lords/:id', (req,res) => {
-    console.log(`SELECT * FROM lords WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM lords WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- TOWNS ---------------//
-router.get('/towns', (req,res) => {
-    const cols = [
-        "id",
-        "name",
-        "owner_id",
-        "owner_name",
-        "culture",
-        "x_position",
-        "y_position",
-        "prosperity",
-        "wall_level",
-        "desc_text",
-        "bound_village_1",
-        "bound_village_2",
-        "bound_village_3",
-        "bound_village_4"
-    ]
-    const cols_str = cols.join();
-
-    db.any(`SELECT ${cols_str} FROM towns;`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/towns/:id', (req,res) => {
-    console.log(`SELECT * FROM towns WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM towns WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- TROOPS ---------------//
-router.get('/troops', (req,res) => {
-    const cols = [
-        'id',
-        'name',
-        'culture',
-        'default_group',
-        'occupation',
-        'level',
-        'upgrade_target_1',
-        'upgrade_target_2',
-        'one_handed',
-        'two_handed',
-        'polearm',
-        'bow',
-        'crossbow',
-        'throwing',
-        'riding',
-        'athletics'
-    ]
-    const cols_str = cols.join();
-
-    db.any(`SELECT ${cols_str} FROM troops;`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/troops/:id', (req,res) => {
-    console.log(`SELECT * FROM troops WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM troops WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-//--------------- VILLAGES ---------------//
-router.get('/villages', (req,res) => {
-    const cols = [
-        "id",
-        "name",
-        "culture",
-        "village_type",
-        "x_position",
-        "y_position",
-        "hearth",
-        "bound_settlement",
-        "desc_text"
-    ]
-    const cols_str = cols.join();
-
-    db.any(`SELECT ${cols_str} FROM villages;`)
-    .then(rows => {
-        console.log(rows);
-        res.json(rows);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-});
-
-router.get('/villages/:id', (req,res) => {
-    console.log(`SELECT * FROM villages WHERE id = ${req.params['id']};`);
-
-    db.one(`SELECT * FROM villages WHERE id = '${req.params['id']}';`)
-    .then(rows => {
-        console.log(rows);
+        // console.log(rows);
         res.json(rows);
     })
     .catch(error => {
@@ -412,5 +104,8 @@ router.get('/villages/:id', (req,res) => {
 });
 
 
+router.get('/error', (req,res) => {
+    res.send('404 (ERROR) not found')
+})
 
 module.exports = router;

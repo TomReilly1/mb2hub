@@ -1,0 +1,164 @@
+[
+    {
+        "concept": "armors",
+        "data": [
+            "id",
+            "name",
+            "culture",
+            "weight",
+            "type",
+            "head_armor",
+            "body_armor",
+            "arm_armor",
+            "leg_armor"
+        ]
+    },
+    {
+        "concept": "bows",
+        "data": [
+            "id",
+            "name",
+            "culture",
+            "weight",
+            "type",
+            "subtype",
+            "difficulty",
+            "speed_rating",
+            "missile_speed",
+            "accuracy",
+            "damage",
+            "fire_on_mount",
+            "reload_on_mount"
+        ]
+    },
+    {
+        "concept": "clans",
+        "data": [
+            "id",
+            "name",
+            "owner",
+            "kingdom",
+            "culture",
+            "tier",
+            "is_ruling_clan"
+        ]
+    },
+    {
+        "concept": "cultures",
+        "data": [
+            "id",
+            "name",
+            "is_main_culture"
+        ]
+    },
+    {
+        "concept": "goods",
+        "data": [
+            "id",
+            "name",
+            "plural",
+            "value",
+            "weight",
+            "is_food",
+            "morale_bonus"
+        ]
+    },
+    {
+        "concept": "kingdoms",
+        "data": [
+            "id",
+            "name",
+            "title",
+            "ruler_title",
+            "culture",
+            "primary_banner_color",
+            "secondary_banner_color",
+            "label_color",
+            "color_1",
+            "color_2",
+            "alternative_color_1",
+            "alternative_color_2",
+            "desc_text"
+        ]
+    },
+    {
+        "concept": "lords",
+        "data": [
+            "id",
+            "name",
+            "culture",
+            "default_group",
+            "age",
+            "sex"
+        ]
+    },
+    {
+        "concept": "mounts",
+        "data": [
+            "id",
+            "name",
+            "culture",
+            "subtype",
+            "difficulty",
+            "is_merchandise",
+            "maneuver",
+            "speed",
+            "charge_damage",
+            "health"
+        ]
+    },
+    {
+        "concept": "towns",
+        "data": [
+            "id",
+            "name",
+            "owner_id",
+            "owner_name",
+            "culture",
+            "x_position",
+            "y_position",
+            "prosperity",
+            "wall_level",
+            "desc_text",
+            "bound_village_1",
+            "bound_village_2",
+            "bound_village_3",
+            "bound_village_4"
+        ]
+    },
+    {
+        "concept": "troops",
+        "data": [
+            "id",
+            "name",
+            "culture",
+            "default_group",
+            "occupation",
+            "level",
+            "upgrade_target_1",
+            "upgrade_target_2",
+            "one_handed",
+            "two_handed",
+            "polearm",
+            "bow",
+            "crossbow",
+            "throwing",
+            "riding",
+            "athletics"
+        ]
+    },
+    {
+        "concept": "troops",
+        "data": [
+            "id",
+            "name",
+            "culture",
+            "village_type",
+            "x_position",
+            "y_position",
+            "hearth",
+            "bound_settlement",
+            "desc_text"
+        ]
+    }
+]
