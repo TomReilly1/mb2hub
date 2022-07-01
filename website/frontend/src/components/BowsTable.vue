@@ -116,7 +116,7 @@ const clearFilters = () => {
         </template>
         <Column field="id" header="ID" sortable>
             <template #body="{data}">
-                <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="nav-link">
+                <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="id-link">
                     {{data.id}}
                 </router-link>
             </template>
