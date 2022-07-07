@@ -48,7 +48,8 @@
         "data": [
             "id",
             "name",
-            "is_main_culture"
+            "is_main_culture",
+            "desc_text"
         ]
     },
     {
@@ -148,7 +149,7 @@
         ]
     },
     {
-        "concept": "troops",
+        "concept": "villages",
         "data": [
             "id",
             "name",
