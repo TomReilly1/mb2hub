@@ -6,6 +6,7 @@ venv
 /venv
 venv/
 mb2hub_deployment.sh
+backend_deploy.sh
 meili_update.sh
 deployment_workflow.txt
 
