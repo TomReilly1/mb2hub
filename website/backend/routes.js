@@ -3,21 +3,17 @@ require('dotenv').config();
 const db = require('./db');
 const router = express.Router();
 const { MeiliSearch } = require('meilisearch');
-const dataCols = require('./datacols.json');
 
 
 //--------------- ROOT ---------------//
 router.get('/', (req,res) => {
-    res.send('Main API router --> success');
+    res.send('API router --> success');
 });
 
 //--------------- SEARCH ---------------//
 router.get('/search', async (req,res) => {
-    console.log('req query searchstr == ' + req.query.searchstr);
     const temp = req.query.searchstr;
     const santzStr = temp.replace(/[^a-z ]/gi, '');
-    console.log('santzStr == ' + santzStr);
-
 
     const client = new MeiliSearch({
         host: `http://127.0.0.1:7700`,
@@ -30,82 +26,51 @@ router.get('/search', async (req,res) => {
         limit: 5
     });
 
-    console.log(response);
+
     res.json(response);
 });
 
 //--------------- CONCEPTS ---------------//
-router.get('/:concept', (req,res) => {
-    let flag = false;
-    let cols;
-
-    console.log(req.params.concept);
-
-    for (let i of dataCols) {
-        if (i.concept === req.params.concept) {
-            cols = i.data;
-            flag = true;
-            break;
-        }
+router.get('/:concept', async (req,res) => {
+    const l_concept = req.params.concept;
+    if (l_concept.match(/^[a-z]+$/) === null) { 
+        // :concept contains char other than lowercase alphabet
+        res.status(460).send('460 (ERROR) not found');
     }
 
-    if (flag === false) {
-        console.error('NOT FOUND');
-        res.redirect('/error');
-    }
 
-    const cols_str = cols.join();
-
-    db.any(`SELECT ${cols_str} FROM ${req.params.concept};`)
+    db.any(`SELECT * FROM ${l_concept};`)
     .then(rows => {
-        // console.log(rows);
         res.json(rows);
     })
-    .catch(error => {
-        console.log(error);
+    .catch(() => {
+        res.status(470).send('470 (ERROR) no match');
     })
 });
+
 
 router.get('/:concept/:id', (req,res) => {
-    console.log(req.params.concept);
-    console.log(req.params.id);
-
-
-    let flag = false;
-    let cols;
-
-
-    for (let i of dataCols) {
-        if (i.concept === req.params.concept) {
-            cols = i.data;
-            flag = true;
-            break;
-        }
+    const l_concept = req.params.concept;
+    if (l_concept.match(/^[a-z]+$/) === null) {
+        // :concept contains char other than lowercase alphabet
+        res.status(460).send('460 (ERROR) not found');
+    }
+    const l_id = req.params.id;
+    if (l_id.match(/^[0-9A-Za-z_]+$/) === null) {
+        // :id contains char other than alphanumeric or underscore
+        res.status(460).send('460 (ERROR) not found');
     }
 
 
-    if (flag === false) {
-        console.error('NOT FOUND');
-        res.redirect('/error');
-    }
-
-
-    const cols_str = cols.join();
-
-
-    db.one(`SELECT ${cols_str} FROM ${req.params.concept} WHERE id = '${req.params['id']}';`)
+    db.one(`SELECT * FROM ${l_concept} WHERE id = '${l_id}';`)
     .then(rows => {
-        // console.log(rows);
         res.json(rows);
     })
-    .catch(error => {
-        console.log(error);
+    .catch(() => {
+        res.status(470).send('470 (ERROR) no match');
     })
 });
 
 
-router.get('/error', (req,res) => {
-    res.send('404 (ERROR) not found')
-})
 
 module.exports = router;
