@@ -55,6 +55,7 @@ const groupedLinks = ref([
     {
         label: 'Settlements',
         items: [
+            {label: 'Castles', value: 'castles'},
             {label: 'Towns', value: 'towns'},
             {label: 'Villages', value: 'villages'}
         ]

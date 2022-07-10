@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, watch } from "vue";
 import { useRoute } from 'vue-router';
+import router from "@/router";
 
 import ConceptTable from "@/components/ConceptTable.vue";
 import TroopsCompare from "@/components/TroopsCompare.vue";
@@ -13,14 +14,25 @@ const route = useRoute();
 
 async function fetchData(conc) {
     const res = await fetch(`${process.env.VUE_APP_API_URL}/${conc}`);
-    const json_arr = await res.json();
-    
-    return json_arr;
+    if (res.status === 404) {
+        router.push('/404');
+    } else {
+        const json_arr = await res.json();
+        return json_arr;
+    }
 }
 
 
 onMounted(async () => {
-    await fetchData(route.params.concept).then(data => conceptData.value = data);
+    // await fetchData(route.params.concept).then(data => conceptData.value = data);
+
+    const concept = route.params.concept;
+    await fetch(`${process.env.VUE_APP_API_URL}/${concept}`)
+        .then(res => res.json())
+        .then(data => conceptData.value = data)
+        .catch(() => {
+            router.push('/404');
+        });
 })
 
 

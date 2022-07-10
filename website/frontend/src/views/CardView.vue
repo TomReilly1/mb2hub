@@ -1,9 +1,11 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute } from 'vue-router';
+import router from "@/router";
 
 import ArmorsCard from "@/components/ArmorsCard.vue";
 import BowsCard from "@/components/BowsCard.vue";
+import CastlesCard from "@/components/CastlesCard.vue";
 import ClansCard from "@/components/ClansCard.vue";
 import CulturesCard from "@/components/CulturesCard.vue";
 import GoodsCard from "@/components/GoodsCard.vue";
@@ -22,14 +24,24 @@ const route = useRoute();
 
 async function fetchData(card_conc, card_id) {
     const res = await fetch(`${process.env.VUE_APP_API_URL}/${card_conc}/${card_id}`);
+    console.log(res);
     const json_arr = await res.json();
-    
+    console.log(json_arr);
     return json_arr;
 }
 
 
 onMounted(async () => {
-    await fetchData(route.params.concept, route.params.id).then(data => cardData.value = data);
+    // await fetchData(route.params.concept, route.params.id).then(data => cardData.value = data);
+
+    const concept = route.params.concept;
+    const id = route.params.id;
+    await fetch(`${process.env.VUE_APP_API_URL}/${concept}/${id}`)
+        .then(res => res.json())
+        .then(data => cardData.value = data)
+        .catch(() => {
+            router.push('/404');
+        });
 })
 </script>
 <!------------------------------------------------------------------------>
@@ -39,6 +51,7 @@ onMounted(async () => {
     </section>
     <ArmorsCard v-if="route.params.concept === 'armors'" :armor-obj="cardData"/>
     <BowsCard v-else-if="route.params.concept === 'bows'" :bow-obj="cardData"/>
+    <CastlesCard v-else-if="route.params.concept === 'castles'" :castle-obj="cardData"/>
     <ClansCard v-else-if="route.params.concept === 'clans'" :clan-obj="cardData"/>
     <CulturesCard v-else-if="route.params.concept === 'cultures'" :culture-obj="cardData"/>
     <GoodsCard v-else-if="route.params.concept === 'goods'" :good-obj="cardData"/>
@@ -51,6 +64,10 @@ onMounted(async () => {
 </template>
 <!------------------------------------------------------------------------>
 <style scoped>
+:deep(hr) {
+    margin: 30px 0;
+}
+
 h1 {
     text-transform: capitalize;
 }
@@ -72,7 +89,8 @@ div {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-div > p{
+:deep(p) {
     font-size: 1.2rem;
+    margin: 0;
 }
 </style>

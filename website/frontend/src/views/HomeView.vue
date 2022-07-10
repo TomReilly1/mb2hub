@@ -7,7 +7,6 @@ const todoItems = ref([
     'items': [
       'minor factions',
       'troop equipment loadouts',
-      'castles',
       'companions',
       'perks',
       'workshops',
@@ -22,7 +21,9 @@ const todoItems = ref([
     'items': [
       'general comparison page',
       'percentile rankings',
-      'better/more linking in tables and cards'
+      'better/more linking in tables and cards',
+      'development news',
+      'map of Calradia'
     ]
   }
 ]); 
