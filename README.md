@@ -12,14 +12,14 @@
 <!-- ABOUT -->
 ## About The Project
 
-MB2 Hub aims to be a online reference for any data or statistics that pertain to Mount&Blade II: Bannerlord. This project is a work-in-progress, so I am continously trying to add more concepts and functionality. Because Bannerlord is in early access and moves at a relatively quick pace, I will try to keep the webiste updated to the beta version. 
+MB2 Hub aims to be a online reference for any data or statistics that pertain to Mount&Blade II: Bannerlord. This project is a work-in-progress, so I am continously trying to add more concepts and functionality. Also, because Bannerlord is in early access and moves at a relatively quick pace, I will try to keep the webiste updated to the beta version. 
 
 
 
 <!-- TOOLS -->
 ## Built With
 
-Here are the technologies I used to power this project:
+Here are the technologies I am using to power this project:
 
 * [Vue.js](https://vuejs.org/)
 * [Bootstrap](https://getbootstrap.com/)
@@ -53,7 +53,7 @@ Here are the technologies I used to power this project:
     - [x] kingdoms
     - [ ] minor factions
   - Settlements
-    - [ ] castles
+    - [x] castles
     - [x] towns
     - [ ] workshops
     - [x] villages

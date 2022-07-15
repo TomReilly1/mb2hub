@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import SearchView from '@/views/SearchView.vue';
 
 
 const routes = [
@@ -9,9 +8,9 @@ const routes = [
         component: () => import('@/views/HomeView.vue'),
     },
     {
-        path: '/search',
-        name: 'search',
-        component: SearchView,
+        path: '/news',
+        name: 'news',
+        component: () => import('@/views/NewsView.vue'),
     },
     {
         path: '/table/:concept',
