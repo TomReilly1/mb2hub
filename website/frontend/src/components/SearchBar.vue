@@ -1,6 +1,7 @@
 <script setup>
 import {ref, onMounted} from "vue";
 import AutoComplete from 'primevue/autocomplete';
+import router from "@/router";
 
 
 const resultsList = ref('concept list');
@@ -106,10 +107,15 @@ function setSearchBarAlert(matchFound, status='match found') {
 
 
 const directToCardPage = (e) => {
+    console.log(e);
+    console.log(e.value.concept);
+
     if (e.value.concept === 'concepts') {
         window.location.href = `https://mb2hub.com/table/${e.value.id}`; // or ${e.value.concept}
+        // router.push(`/table/${e.value.id}`);
     } else {
         window.location.href = `https://mb2hub.com/card/${e.value.concept}/${e.value.id}`;
+        // router.push(`/card/${e.value.concept}/${e.value.id}`);
     }
 }
 </script>

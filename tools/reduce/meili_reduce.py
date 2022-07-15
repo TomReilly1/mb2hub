@@ -38,8 +38,9 @@ def bundleReducedMeiliData():
     for root, dirs, files in os.walk(REDUCED_DIR):
         for file in files:
             json_path = os.path.join(root, file)
-            filename = file.split('.')[0]
+            file_name = file.split('.')[0]
             
+
             with open(json_path, 'r') as json_file:
                 json_arr = json.load(json_file)
                 new_arr = []
@@ -49,10 +50,11 @@ def bundleReducedMeiliData():
 
                     new_obj['id'] = obj['id']
                     new_obj['name'] = obj['name']
-                    new_obj['concept'] = filename
+                    new_obj['concept'] = file_name
 
                     new_arr.append(new_obj)
 
+                print(new_arr)
                 master_json += new_arr
 
     writeToJson(master_json, 'mb2_reduced.json')
