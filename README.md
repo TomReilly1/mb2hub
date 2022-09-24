@@ -4,9 +4,12 @@
   <h3>A Bannerlord reference</h3>
   <a href="https://mb2hub.com" style="color: gold;">https://mb2hub.com</a>
 </div>
-<br />
+
 <br />
 
+![mb2hub_main](https://user-images.githubusercontent.com/87573030/192105082-79d7672f-bde1-465e-9e6e-be7b10f2bfab.png)
+
+<br />
 
 
 <!-- ABOUT -->
