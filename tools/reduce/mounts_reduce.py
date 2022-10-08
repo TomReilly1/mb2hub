@@ -25,7 +25,6 @@ def reduceGoods(file_path):
 
         for horse in json_arr:
             try:
-                print(horse['@id'])
                 horse_type = horse['@Type']
                 horse_catg = horse['@item_category']
                 
@@ -38,9 +37,7 @@ def reduceGoods(file_path):
             except:
                 continue
 
-
             output_object = {}
-
 
             output_object['id'] = horse['@id']
             output_object['name'] = horse['@name'].split('}')[1]
@@ -67,13 +64,10 @@ def reduceGoods(file_path):
                 output_object['health'] = base_health + int(horse_stats['@extra_health'])
             except:
                 output_object['health'] = base_health
-
     
             output_array.append(output_object)
 
-
     return output_array
-
 
 
 def writeReducedJson(arr):
@@ -81,7 +75,10 @@ def writeReducedJson(arr):
         json.dump(arr, file)
 
 
-
-if __name__ == "__main__":
+def main():
     json_array = reduceGoods(R_PATH)
     writeReducedJson(json_array)
+
+
+if __name__ == "__main__":
+    main()

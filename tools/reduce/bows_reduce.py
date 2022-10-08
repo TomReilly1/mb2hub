@@ -68,7 +68,10 @@ def writeReducedJson(arr):
 		json.dump(arr, file)
 
 
-if __name__ == '__main__':
+def main():
 	json_array = reduceBows()
 	writeReducedJson(json_array)
 
+
+if __name__ == '__main__':
+	main()
