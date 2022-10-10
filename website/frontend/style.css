@@ -1,0 +1,7 @@
+html, body {
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    height: 100vh;
+    background-color: var(--gray-900);
+}
