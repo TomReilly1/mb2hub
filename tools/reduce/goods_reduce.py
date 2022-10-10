@@ -49,7 +49,7 @@ def reduceGoods(file_path):
 			if 'ItemComponent' in good:
 				output_object['morale_bonus'] = int(good['ItemComponent']['Trade']['@morale_bonus'])
 			else:
-				output_object['morale_bonus'] = None
+				output_object['morale_bonus'] = 0
 
 			output_array.append(output_object)
 
