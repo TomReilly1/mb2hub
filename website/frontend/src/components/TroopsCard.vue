@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({troopObj: Object});
 
 
-const fromatTroopGroup = (troopGroup) => {
+const fromatTroopGroup = (troopGroup: string) => {
     if (troopGroup === 'HorseArcher') {
         return 'horse archer';
     } else if (troopGroup === 'Infantry'){
@@ -13,7 +13,7 @@ const fromatTroopGroup = (troopGroup) => {
 };
 
 
-function calculateLevelTier(levelVal) {
+function calculateLevelTier(levelVal :number) {
     const tier = (levelVal - 1) / 5;
 
     if (tier === 1) {
@@ -28,7 +28,7 @@ function calculateLevelTier(levelVal) {
 }
 
 
-function calculateSkillTier(skillType, skillVal) {
+function calculateSkillTier(skillType: string, skillVal: number) {
     let tier;
 
     if (skillType === 'one_handed' || skillType === 'two_handed') {

@@ -1,14 +1,10 @@
-<script setup>
-const props = defineProps({goodObj: Object});
+<script lang="ts" setup>
+import type goodsIntr from "../interfaces/goodsIntr";
 
 
-function formatBonus(bonus) {
-    if (bonus === null || bonus === undefined) {
-        return 0;
-    } else {
-        return bonus;
-    }
-}
+const props = defineProps<{
+    goodObj: goodsIntr
+}>()
 </script>
 <!------------------------------------------------------->
 <template>
@@ -34,8 +30,11 @@ function formatBonus(bonus) {
                     </tr>
                     <tr>
                         <th>Morale Boost</th>
-                        <td>
-                            {{formatBonus(goodObj.morale_bonus)}}
+                        <td v-if="goodObj.morale_bonus === null">
+                            0
+                        </td>
+                        <td v-else>
+                            {{goodObj.morale_bonus}}
                         </td>
                     </tr>
                 </table>
