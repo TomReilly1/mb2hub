@@ -11,7 +11,7 @@ meili_update.sh
 deployment_workflow.txt
 .env.development
 .env.production
-
+frontend_old
 
 ############## NODE ##############
 
