@@ -3,23 +3,25 @@ import { ref, onMounted } from "vue"
 import Dropdown from "primevue/dropdown"
 import SearchBar from "@/components/SearchBar.vue"
 
-onMounted(() => {
-    const navLinks = document.getElementsByClassName('route')
-    const navbar = document.getElementById('navbar')
 
-    for (let link of navLinks) {
-        link.addEventListener('click', () => {
-            navbar.classList.toggle('show')
-        })
+onMounted(() => {
+    const navLinks: HTMLCollectionOf<Element> = document.getElementsByClassName('route')
+    const navbar: HTMLElement | null = document.getElementById('navbar')
+
+    if (navbar) {
+        for (let link of navLinks) {
+            link.addEventListener('click', () => {
+                navbar.classList.toggle('show')
+            })
+        }
     }
 })
 
 
-const selectedLink = ref();
-
+const selectedLink = ref()
 const groupedLinks = ref<{
     label: string
-    items: {label: string, value: string}[];
+    items: {label: string, value: string}[]
 }[]>
 ([
     {
@@ -67,15 +69,24 @@ const groupedLinks = ref<{
 ]);
 
 const resetDropdown = () => {
-    const navbar = document.querySelector('.navbar-concept')
-    const drpdwn = navbar.querySelector('.p-dropdown.p-component.p-inputwrapper')
-    const spn = drpdwn.querySelector('span.p-dropdown-label.p-inputtext')
+    const navbarConcepts = document.querySelector('.navbar-concept')
+    // const dropdown = navbarConcepts.querySelector('.p-dropdown.p-component.p-inputwrapper')
+    // const span = dropdown.querySelector('span.p-dropdown-label.p-inputtext')
 
+    if (navbarConcepts) {
+        const dropdown = navbarConcepts.querySelector('.p-dropdown.p-component.p-inputwrapper')
 
-
-    drpdwn.classList.toggle('p-inputwrapper-filled')
-    spn.classList.toggle('p-placeholder')
-    spn.textContent = 'Select concept'
+        if (dropdown) {
+            dropdown.classList.toggle('p-inputwrapper-filled')
+            
+            const span = dropdown.querySelector('span.p-dropdown-label.p-inputtext')
+            if (span) {
+                span.classList.toggle('p-placeholder')
+                span.textContent = 'Select concept'
+            }
+        }
+        
+    }
 }
 
 </script>
