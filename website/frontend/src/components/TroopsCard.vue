@@ -1,78 +1,78 @@
 <script setup lang="ts">
-const props = defineProps({troopObj: Object});
+const props = defineProps({troopObj: Object})
 
 
 const fromatTroopGroup = (troopGroup: string) => {
     if (troopGroup === 'HorseArcher') {
-        return 'horse archer';
+        return 'horse archer'
     } else if (troopGroup === 'Infantry'){
-        return troopGroup.toLowerCase();
+        return troopGroup.toLowerCase()
     } else {
-        return troopGroup.toLowerCase(); 
+        return troopGroup.toLowerCase()
     }
 };
 
 
 function calculateLevelTier(levelVal :number) {
-    const tier = (levelVal - 1) / 5;
+    const tier = (levelVal - 1) / 5
 
     if (tier === 1) {
-        return `${tier}st tier`;
+        return `${tier}st tier`
     } else if (tier === 2) {
-        return `${tier}nd tier`;
+        return `${tier}nd tier`
     } else if (tier === 3) {
-        return `${tier}rd tier`;
+        return `${tier}rd tier`
     } else {
-        return `${tier}th tier`;
+        return `${tier}th tier`
     }
 }
 
 
 function calculateSkillTier(skillType: string, skillVal: number) {
-    let tier;
+    let tier: number
 
     if (skillType === 'one_handed' || skillType === 'two_handed') {
-        tier = skillVal / 220;
+        tier = skillVal / 220
     } else if (skillType === 'polearm' || skillType === 'bow') {
-        tier = skillVal / 260;
+        tier = skillVal / 260
     } else if (skillType === 'crossbow') {
-        tier = skillVal / 140;
+        tier = skillVal / 140
     } else if (skillType === 'throwing') {
-        tier = skillVal / 150;
+        tier = skillVal / 150
     } else if (skillType === 'riding') {
-        tier = skillVal / 200;
+        tier = skillVal / 200
     } else if (skillType === 'athletics') {
-        tier = skillVal / 180;
+        tier = skillVal / 180
     } else {
-        throw 'SKILL NOT NOT MATCHED';
+        throw new Error("could not determine skill type")
     }
 
-    const red = '#dc3545';
-    const orange = '#fd7e14';
-    const yellow = '#f8ff15';
-    const green = '#4ad3ab';
-    const blue = '#69a5fe';
-    const purple = '#b851ff';
+    const red = '#dc3545'
+    const orange = '#fd7e14'
+    const yellow = '#f8ff15'
+    const green = '#4ad3ab'
+    const blue = '#69a5fe'
+    const purple = '#b851ff'
 
     if (tier == 1) {
-        return purple;
+        return purple
     } else if (tier > 0.80) {
-        return blue;
+        return blue
     } else if (tier > 0.60) {
-        return green;
+        return green
     } else if (tier > 0.40) {
-        return yellow;
+        return yellow
     } else if (tier > 0.20) {
-        return orange;
+        return orange
     } else {
-        return red;
+        return red
     }
 }
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="troopObj !== null && troopObj !== undefined" class="card-desc">
+        <div v-if="troopObj" class="card-desc">
             <div>
                 <h2>{{troopObj.name || 'Nothing passed yet'}}</h2>
                 <p v-if="troopObj.occupation === 'Soldier'">

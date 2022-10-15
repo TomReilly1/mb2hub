@@ -1,10 +1,10 @@
-<script setup>
-const props = defineProps({cultureObj: Object});
+<script setup lang="ts">
+const props = defineProps({cultureObj: Object})
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="cultureObj !== null && cultureObj !== undefined" class="card-desc">
+        <div v-if="cultureObj" class="card-desc">
             <div>
                 <h2>{{cultureObj.name || 'Nothing passed yet'}}</h2>
                 <span v-if="cultureObj.is_main_culture">The {{cultureObj.name}} culture is a main culture of Calradia.</span>

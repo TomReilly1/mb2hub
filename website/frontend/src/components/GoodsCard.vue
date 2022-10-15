@@ -1,15 +1,17 @@
-<script lang="ts" setup>
-import type goodsIntr from "../interfaces/goodsIntr";
+<script setup lang="ts">
+import type { goods } from "@/interfaces/indexIntr"
 
 
 const props = defineProps<{
-    goodObj: goodsIntr
+    goodObj: goods
 }>()
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="goodObj !== null && goodObj !== undefined" class="card-desc">
+        <!-- <div v-if="goodObj !== null && goodObj !== undefined" class="card-desc"> -->
+        <div v-if="goodObj" class="card-desc">
+
             <div>
                 <h2>{{goodObj.name}}</h2>
                 <p>

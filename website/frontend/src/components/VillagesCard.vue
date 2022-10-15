@@ -1,14 +1,14 @@
-<script setup>
-const props = defineProps({villageObj: Object});
+<script setup lang="ts">
+const props = defineProps({villageObj: Object})
 
-function formatVillageType(village) {
+function formatVillageType(village: string) {
     return village.replaceAll('_', ' ');
 }
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="villageObj !== null && villageObj !== undefined" class="card-desc">
+        <div v-if="villageObj" class="card-desc">
             <div>
                 <h2>{{villageObj.name}}</h2>
                 <p>

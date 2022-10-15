@@ -1,10 +1,10 @@
-<script setup>
-const props = defineProps({castleObj: Object});
+<script setup lang="ts">
+const props = defineProps({castleObj: Object})
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="castleObj !== null && castleObj !== undefined" class="card-desc">
+        <div v-if="castleObj" class="card-desc">
             <div>
                 <h2>{{castleObj.name}}</h2>
                 <p>{{castleObj.name}} is a castle of the {{castleObj.culture}}, ruled by the {{castleObj.owner_name}} clan.</p>

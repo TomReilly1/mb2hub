@@ -1,70 +1,72 @@
-<script setup>
-import { ref } from "vue";
+<script setup lang="ts">
+import { ref } from "vue"
 
 
-const props = defineProps({bowObj: Object});
-const strSubtype = ref('blank');
+const props = defineProps({bowObj: Object})
+const strSubtype = ref('blank')
 
 
-const formatBowSubtype = (subtype) => {
+const formatBowSubtype = (subtype: string) => {
     if (subtype === 'crossbow_light') {
-        strSubtype.value = 'light crossbow';
-        return 'light crossbow';
+        strSubtype.value = 'light crossbow'
+        return 'light crossbow'
     }
     else if (subtype === 'long_bow'){
-        strSubtype.value = 'longbow';
-        return 'longbow';
+        strSubtype.value = 'longbow'
+        return 'longbow'
     }
     else {
-        strSubtype.value = subtype;
+        strSubtype.value = subtype
         return subtype
     }
 };
 
-const calculateTier = (ratingType, ratingVal) => {
-    const dmgMax = 100;
-    const speedMax = 94;
-    const mslMax = 97;
-    const accMax = 100;
+const calculateTier = (ratingType: string, ratingVal: number) => {
+    const dmgMax = 100
+    const speedMax = 94
+    const mslMax = 97
+    const accMax = 100
 
-    let tier;
+    let tier: number
 
     if (ratingType === 'damage') {
-        tier = ratingVal / dmgMax;
+        tier = ratingVal / dmgMax
     } else if (ratingType === 'speed_rating') {
-        tier = ratingVal / speedMax;
+        tier = ratingVal / speedMax
     } else if (ratingType === 'missile_speed') {
-        tier = ratingVal / mslMax;
+        tier = ratingVal / mslMax
     } else if (ratingType === 'accuracy') {
-        tier = ratingVal / accMax;
+        tier = ratingVal / accMax
+    } else {
+        throw new Error("rating type cannot be defined")
     }
 
-    const red = '#dc3545';
-    const orange = '#fd7e14';
-    const yellow = '#f8ff15';
-    const green = '#4ad3ab';
-    const blue = '#69a5fe';
+    const red = '#dc3545'
+    const orange = '#fd7e14'
+    const yellow = '#f8ff15'
+    const green = '#4ad3ab'
+    const blue = '#69a5fe'
     const purple = '#7f5bff'
 
     if (tier == 1) {
-        return purple;
+        return purple
     } else if (tier > 0.80) {
-        return blue;
+        return blue
     } else if (tier > 0.60) {
-        return green;
+        return green
     } else if (tier > 0.40) {
-        return yellow;
+        return yellow
     } else if (tier > 0.20) {
-        return orange;
+        return orange
     } else {
-        return red;
+        return red
     }
 }
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="bowObj !== null && bowObj !== undefined" class="card-desc">
+        <div v-if="bowObj" class="card-desc">
             <div>
                 <h2>{{bowObj.name || 'Nothing passed yet'}}</h2>
                 <p>

@@ -1,74 +1,91 @@
-<script setup>
-import { formatArmorType } from "@/composables/formatArmorType";
+<script setup lang="ts">
+import type {armors} from '@/interfaces/indexIntr'
 
-const props = defineProps({armorObj: Object});
+const props = defineProps<{
+    armorObj: armors
+}>()
 
+
+function formatArmorType(armorType: string) {
+    if(armorType) {
+        if (armorType === 'Cape') {
+            return 'shoulder armor'
+        } else {
+            const arr: string[] = armorType.split(/(?=[A-Z])/)
+            const lowerArr: string[] = arr.map(e => e.toLowerCase())
+            const lowerStr: string = lowerArr.join(' ')
+            
+            return lowerStr
+        }
+    }
+}
 
 // type is the 5 types of armor, cover is the 4 coverage areas
-function calculateTier(armorType, armorCover, armorVal) {
-    const headMax = {'head': 54};
-    const shoulderMax = {'body': 22, 'arm': 12};
-    const bodyMax = {'body': 57, 'arm': 20, 'leg': 25};
-    const armMax = {'arm': 25};
-    const legMax = {'leg': 26};
+function calculateTier(armorType: string, armorCover: string, armorVal: number) {
+    const headMax = {'head': 54}
+    const shoulderMax = {'body': 22, 'arm': 12}
+    const bodyMax = {'body': 57, 'arm': 20, 'leg': 25}
+    const armMax = {'arm': 25}
+    const legMax = {'leg': 26}
 
-    let tier;
+    let tier: number
 
     if (armorType === 'HeadArmor') {
-        tier = armorVal / headMax.head;
-    }
-    else if (armorType === 'Cape') {
+        tier = armorVal / headMax.head
+    } else if (armorType === 'Cape') {
         if (armorCover === 'body') {
-            tier = armorVal / shoulderMax.body;
+            tier = armorVal / shoulderMax.body
+        } else if (armorCover === 'arm') {
+            tier = armorVal / shoulderMax.arm
+        } else {
+            throw new Error("armor cover could not be determined")
         }
-        else if (armorCover === 'arm') {
-            tier = armorVal / shoulderMax.arm;
-        }
-    }
-    else if (armorType === 'BodyArmor') {
+    } else if (armorType === 'BodyArmor') {
         if (armorCover === 'body') {
-            tier = armorVal / bodyMax.body;
-        }
-        else if (armorCover === 'arm') {
-            tier = armorVal / bodyMax.arm;
-        }
-        else if (armorCover === 'leg') {
-            tier = armorVal / bodyMax.leg;
+            tier = armorVal / bodyMax.body
+        } else if (armorCover === 'arm') {
+            tier = armorVal / bodyMax.arm
+        } else if (armorCover === 'leg') {
+            tier = armorVal / bodyMax.leg
+        } else {
+            throw new Error("armor cover could not be determined")
         }
     }
     else if (armorType === 'HandArmor') {
-        tier = armorVal / armMax.arm;
+        tier = armorVal / armMax.arm
     }
     else if (armorType === 'LegArmor') {
-        tier = armorVal / legMax.leg;
+        tier = armorVal / legMax.leg
+    } else {
+        throw new Error("armor type could not be determined")
     }
 
-    const red = '#dc3545';
-    const orange = '#fd7e14';
-    const yellow = '#f8ff15';
-    const green = '#4ad3ab';
-    const blue = '#69a5fe';
+    const red = '#dc3545'
+    const orange = '#fd7e14'
+    const yellow = '#f8ff15'
+    const green = '#4ad3ab'
+    const blue = '#69a5fe'
     const purple = '#7f5bff'
 
     if (tier == 1) {
-        return purple;
+        return purple
     } else if (tier > 0.80) {
-        return blue;
+        return blue
     } else if (tier > 0.60) {
-        return green;
+        return green
     } else if (tier > 0.40) {
-        return yellow;
+        return yellow
     } else if (tier > 0.20) {
-        return orange;
+        return orange
     } else {
-        return red;
+        return red
     }
 }
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="armorObj !== null && armorObj !== undefined" class="card-desc">
+        <div v-if="armorObj" class="card-desc">
             <div>
                 <h2>{{armorObj.name || 'Nothing passed yet'}}</h2>
                 <span>

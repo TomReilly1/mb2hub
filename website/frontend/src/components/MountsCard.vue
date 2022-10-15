@@ -1,75 +1,77 @@
-<script setup>
-import { ref } from "vue";
+<script setup lang="ts">
+import { ref } from "vue"
 
 
-const props = defineProps({mountObj: Object});
-const strSubtype = ref('blank');
+const props = defineProps({mountObj: Object})
+const strSubtype = ref('blank')
 
 
-const formatBowSubtype = (subtype) => {
+const formatBowSubtype = (subtype: string) => {
     if (subtype === 'crossbow_light') {
-        strSubtype.value = 'light crossbow';
-        return 'light crossbow';
+        strSubtype.value = 'light crossbow'
+        return 'light crossbow'
     }
     else if (subtype === 'long_bow'){
-        strSubtype.value = 'longbow';
-        return 'longbow';
+        strSubtype.value = 'longbow'
+        return 'longbow'
     }
     else {
-        strSubtype.value = subtype;
+        strSubtype.value = subtype
         return subtype
     }
 };
 
-const calculateTier = (ratingType, ratingVal) => {
-    const speedMax = 68;
-    const speedmin = 44;
-    const speedComp = speedMax - speedmin;
-    const mnvrMax = 82;
-    const mnvrMin = 55;
-    const mnvrComp = mnvrMax - mnvrMin;
-    const hlthMax = 300;
-    const hlthMin = 200;
-    const hlthComp = hlthMax - hlthMin;
+const calculateTier = (ratingType: string, ratingVal: number) => {
+    const speedMax = 68
+    const speedmin = 44
+    const speedComp = speedMax - speedmin
+    const mnvrMax = 82
+    const mnvrMin = 55
+    const mnvrComp = mnvrMax - mnvrMin
+    const hlthMax = 300
+    const hlthMin = 200
+    const hlthComp = hlthMax - hlthMin
 
 
-    let tier;
+    let tier: number
 
 
     if (ratingType === 'maneuver') {
-        tier = (ratingVal-mnvrMin) / mnvrComp;
+        tier = (ratingVal-mnvrMin) / mnvrComp
     } else if (ratingType === 'speed') {
-        tier = (ratingVal-speedmin) / speedComp;
+        tier = (ratingVal-speedmin) / speedComp
     } else if (ratingType === 'health') {
-        tier = (ratingVal-hlthMin) / hlthComp;
+        tier = (ratingVal-hlthMin) / hlthComp
+    } else {
+        throw new Error("could not determine rating type")
     }
 
-    const red = '#dc3545';
-    const orange = '#fd7e14';
-    const yellow = '#f8ff15';
-    const green = '#4ad3ab';
-    const blue = '#69a5fe';
+    const red = '#dc3545'
+    const orange = '#fd7e14'
+    const yellow = '#f8ff15'
+    const green = '#4ad3ab'
+    const blue = '#69a5fe'
     const purple = '#7f5bff'
 
     if (tier == 1) {
-        return purple;
+        return purple
     } else if (tier > 0.80) {
-        return blue;
+        return blue
     } else if (tier > 0.60) {
-        return green;
+        return green
     } else if (tier > 0.40) {
-        return yellow;
+        return yellow
     } else if (tier > 0.20) {
-        return orange;
+        return orange
     } else {
-        return red;
+        return red
     }
 }
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="mountObj !== null && mountObj !== undefined" class="card-desc">
+        <div v-if="mountObj" class="card-desc">
             <div>
                 <h2>{{mountObj.name}}</h2>
                 <p>
