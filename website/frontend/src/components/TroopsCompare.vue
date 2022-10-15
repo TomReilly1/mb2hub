@@ -1,12 +1,15 @@
-<script setup>
-import { ref, toRef } from 'vue';
+<script setup lang="ts">
+import { ref, toRef } from 'vue'
 
-import AutoComplete from 'primevue/autocomplete';
-import Chart from "primevue/chart";
+import AutoComplete from 'primevue/autocomplete'
+import type AutoCompleteDropdownClickEvent from 'primevue/autocomplete'
+import Chart from "primevue/chart"
 
 
-const props = defineProps({troopsArr: Array});
-
+// const props = defineProps({troopsArr: Array})
+const props = defineProps<{
+    troopsArr: object[]
+}>()
 
 const chartTroop1 = ref({
     'one_handed': 30,
@@ -17,7 +20,7 @@ const chartTroop1 = ref({
     'throwing': 10,
     'riding': 30,
     'athletics': 10
-});
+})
 const chartTroop2 = ref({
     'one_handed': 10,
     'two_handed':20,
@@ -27,7 +30,29 @@ const chartTroop2 = ref({
     'throwing': 20,
     'riding': 10,
     'athletics': 20
-});
+})
+
+interface troopIntr {
+    one_handed: number
+    two_handed: number
+    polearm: number
+    bow: number
+    crossbow: number
+    throwing: number
+    riding: number
+    athletics: number
+}
+interface chartIntr {
+    label: string,
+    backgroundColor: String,
+    borderColor: String,
+    pointBackgroundColor: String,
+    pointBorderColor: String,
+    pointHoverBackgroundColor: String,
+    pointHoverBorderColor: String,
+    data: number[]
+}
+
 
 const chartData = ref({
     labels: ['One Handed', 'Two Handed', 'Polearm', 'Bow', 'Crossbow', 'Throwing', 'Riding', 'Athletics'],
@@ -71,7 +96,7 @@ const chartData = ref({
             ]
         }
     ]
-});
+})
 
 const chartOptions = ref({
     resizeDelay: 20,
@@ -79,9 +104,9 @@ const chartOptions = ref({
         legend: {
             labels: {
                 color: 'rgb(149, 163, 184)',
-                font: function(context) {
-                    let width = context.chart.width;
-                    let size = width / 26;
+                font: function(context: any) {
+                    let width = context.chart.width
+                    let size = width / 26
                     return {
                         size: size,
                         weight: 600
@@ -104,9 +129,9 @@ const chartOptions = ref({
                 color: 'rgb(255, 205, 54)',
                 backdropColor: 'rgba(50, 57, 67, 1)',
                 backdropPadding: 2,
-                font: function(context) {
-                    let width = context.chart.width;
-                    let size = width / 48;
+                font: function(context: any) {
+                    let width = context.chart.width
+                    let size = width / 48
                     return {
                         size: size,
                         weight: 600
@@ -117,9 +142,9 @@ const chartOptions = ref({
             suggestedMax: 100,
             pointLabels: {
                 color: '#fff',
-                font: function(context) {
-                    let width = context.chart.width;
-                    let size = width / 40;
+                font: function(context: any) {
+                    let width = context.chart.width
+                    let size = width / 40
                     return {
                         size: size,
                         weight: 600
@@ -134,59 +159,59 @@ const chartOptions = ref({
             }
         }
     }
-});
+})
 
 
-const troops = toRef(props, 'troopsArr');
-const selectedTroop1 = ref();
-const filteredTroops1 = ref();
-const selectedTroop2 = ref();
-const filteredTroops2 = ref();
+const troops = toRef(props, 'troopsArr')
+const selectedTroop1 = ref()
+const filteredTroops1 = ref()
+const selectedTroop2 = ref()
+const filteredTroops2 = ref()
 
 
-const searchTroop = (event, flag) => {
+const searchTroop = (event: AutoCompleteDropdownClickEvent, flag: number) => {
     setTimeout(() => {
         if (flag === 0) {
             if (!event.query.trim().length) {
-                filteredTroops1.value = [...troops.value];
+                filteredTroops1.value = [...troops.value]
             }
             else {
                 filteredTroops1.value = troops.value.filter((trp) => {
-                    return trp.name.toLowerCase().startsWith(event.query.toLowerCase());
-                });
+                    return trp.name.toLowerCase().startsWith(event.query.toLowerCase())
+                })
             }
         } else if (flag === 1) {
             if (!event.query.trim().length) {
-                filteredTroops2.value = [...troops.value];
+                filteredTroops2.value = [...troops.value]
             }
             else {
                 filteredTroops2.value = troops.value.filter((trp) => {
-                    return trp.name.toLowerCase().startsWith(event.query.toLowerCase());
-                });
+                    return trp.name.toLowerCase().startsWith(event.query.toLowerCase())
+                })
             }
         }
-    }, 250);
-};
+    }, 250)
+}
 
-function logSelectedValue(event, flag) {
-    const labels = chartData.value.labels;
-    const datasets = chartData.value.datasets[flag];
+function logSelectedValue(event: AutoCompleteDropdownClickEvent, flag: number) {
+    const labels: string[] = chartData.value.labels
+    const datasets: chartIntr = chartData.value.datasets[flag]
 
     if (flag === 0) {
-        chartTroop1.value = Object.assign({}, event.value);
-        datasets.label = selectedTroop1.value.name;
+        chartTroop1.value = Object.assign({}, event.value)
+        datasets.label = selectedTroop1.value.name
         for (let i of labels) {
-            const label = i.replaceAll(' ', '_').toLowerCase();
-            const labelIndex = labels.indexOf(i);
-            datasets.data[labelIndex] = chartTroop1.value[label];
+            const label: string = i.replaceAll(' ', '_').toLowerCase()
+            const labelIndex: number = labels.indexOf(i)
+            datasets.data[labelIndex] = chartTroop1.value[label]
         }
     } else if (flag === 1) {
-        chartTroop2.value = Object.assign({}, event.value);
-        datasets.label = selectedTroop2.value.name;
+        chartTroop2.value = Object.assign({}, event.value)
+        datasets.label = selectedTroop2.value.name
         for (let i of labels) {
-            const label = i.replaceAll(' ', '_').toLowerCase();
-            const labelIndex = labels.indexOf(i);
-            datasets.data[labelIndex] = chartTroop2.value[label];
+            const label = i.replaceAll(' ', '_').toLowerCase()
+            const labelIndex = labels.indexOf(i)
+            datasets.data[labelIndex] = chartTroop2.value[label]
         }
     }
 }
@@ -217,12 +242,12 @@ function logSelectedValue(event, flag) {
 
 </template>
 <!------------------------------------------------------------------------->
-<style lang="scss" scoped>
+<style scoped>
 h3 {
     color: var(--yellow-300);
     font-size: 2.3rem;
     font-weight: bold;
-    // text-decoration: underline;
+    /* text-decoration: underline; */
     margin: 0;
     padding: 20px;
 }
@@ -250,7 +275,7 @@ h3 {
 }
 
 .p-chart {
-    // min-width: 340px;
+    /* min-width: 340px; */
     width: 100%;
     margin: 1rem 0 0;
 }

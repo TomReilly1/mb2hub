@@ -12,7 +12,7 @@
     </footer>
 </template>
 <!---------------------------------------------------------->
-<script setup>
+<script setup lang="ts">
     
 </script>
 <!---------------------------------------------------------->
@@ -22,9 +22,9 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: var(--bluegrey-900);
-        height: 10rem;
+        height: 8rem;
         width: 100%;
+        margin: 30px 0 0;
     }
 
     .footer {
@@ -32,6 +32,8 @@
         display: flex;
         justify-content: center;
         align-items: middle;
+        background-color: var(--gray-900);
+        margin: 30px 0 0;
     }
 
     ul {

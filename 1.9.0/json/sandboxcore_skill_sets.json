@@ -1,0 +1,1639 @@
+{
+    "SkillSets": {
+        "SkillSet": [
+            {
+                "@id": "infantry_heavyinfantry_level1_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "20"
+                    }
+                ]
+            },
+            {
+                "@id": "infantry_heavyinfantry_level6_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "5"
+                    }
+                ]
+            },
+            {
+                "@id": "infantry_heavyinfantry_level11_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "20"
+                    }
+                ]
+            },
+            {
+                "@id": "infantry_heavyinfantry_level16_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "70"
+                    }
+                ]
+            },
+            {
+                "@id": "infantry_heavyinfantry_level21_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "45"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "45"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "60"
+                    }
+                ]
+            },
+            {
+                "@id": "infantry_heavyinfantry_level26_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "80"
+                    }
+                ]
+            },
+            {
+                "@id": "infantry_heavyinfantry_level31_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "170"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "220"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "50"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "25"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "40"
+                    }
+                ]
+            },
+            {
+                "@id": "infantry_heavyinfantry_highestlevel_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "185"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "80"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "80"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "240"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "200"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "80"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "190"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "240"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_level1_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "10"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_level6_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "10"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_level11_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "5"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_level16_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "10"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_level21_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "110"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "110"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "150"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "15"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_level26_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "80"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "60"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_level31_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "200"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "200"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "25"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "45"
+                    }
+                ]
+            },
+            {
+                "@id": "cavalry_lightcavalry_heavycavalry_highestlevel_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "175"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "240"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "240"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "110"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "200"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_level1_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "10"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_level6_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "20"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_level11_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "40"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_level16_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_level21_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_level26_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "80"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "160"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_level31_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "210"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "210"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "110"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "110"
+                    }
+                ]
+            },
+            {
+                "@id": "ranged_skirmisher_highestlevel_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "220"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "240"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "240"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "120"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "180"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "130"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_level1_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "0"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "0"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_level6_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "5"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "5"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_level11_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "20"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "10"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "55"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "5"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_level16_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "45"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "30"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "70"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "25"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_level21_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "45"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "110"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "40"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "110"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "150"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "15"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "15"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_level26_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "80"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "50"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "50"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "60"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_level31_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "200"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "60"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "220"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "30"
+                    }
+                ]
+            },
+            {
+                "@id": "horsearcher_highestlevel_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "140"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "220"
+                    },
+                    {
+                        "@id": "Crossbow",
+                        "@value": "210"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "150"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "260"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "130"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "70"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_1_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "120"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "200"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_2_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "200"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_3_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "180"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_4_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "180"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_5_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "150"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_6_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "150"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_7_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "130"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_8_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "130"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_9_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "130"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_10_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "100"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_11_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "100"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_12_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "15"
+                    }
+                ]
+            },
+            {
+                "@id": "custombattle_commander_13_template_skills",
+                "skill": [
+                    {
+                        "@id": "Athletics",
+                        "@value": "90"
+                    },
+                    {
+                        "@id": "Bow",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "OneHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Polearm",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Riding",
+                        "@value": "160"
+                    },
+                    {
+                        "@id": "Throwing",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "TwoHanded",
+                        "@value": "100"
+                    },
+                    {
+                        "@id": "Tactics",
+                        "@value": "70"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -16,7 +16,6 @@ R_PATH = f"{PROJ_DIR}/{VERSION}/json/horses_and_others.json"
 W_PATH = f"{PROJ_DIR}/{VERSION}/json-reduced/goods.json"
 
 
-
 def reduceGoods(file_path):
 	output_array = []
 
@@ -32,9 +31,7 @@ def reduceGoods(file_path):
 			except:
 				continue
 
-
 			output_object = {}
-
 
 			output_object['id'] = good['@id']
 			
@@ -44,16 +41,15 @@ def reduceGoods(file_path):
 
 			output_object['value'] = int(good['@value'])
 			output_object['weight'] = int(good['@weight'])
-			
-			try:
-				print(good['ItemComponent']['Trade']['@morale_bonus'])
-				if '@IsFood' in good:
-					output_object['is_food'] = True
-					output_object['morale_bonus'] = int(good['ItemComponent']['Trade']['@morale_bonus'])
-			except:
+
+			if '@IsFood' in good:
+				output_object['is_food'] = good['@IsFood']
+			else:
 				output_object['is_food'] = False
-				output_object['morale_bonus'] = None
-			
+			if 'ItemComponent' in good:
+				output_object['morale_bonus'] = int(good['ItemComponent']['Trade']['@morale_bonus'])
+			else:
+				output_object['morale_bonus'] = 0
 
 			output_array.append(output_object)
 
@@ -65,7 +61,9 @@ def writeReducedJson(arr):
 		json.dump(arr, file)
 
 
-
-if __name__ == "__main__":
+def main():
 	json_array = reduceGoods(R_PATH)
 	writeReducedJson(json_array)
+
+if __name__ == "__main__":
+	main()

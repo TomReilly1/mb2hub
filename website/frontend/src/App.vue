@@ -1,6 +1,7 @@
-<script setup>
-import GlobalHeader from "@/components/GlobalHeader";
-import GlobalFooter from "@/components/GlobalFooter";
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import GlobalHeader from '@/components/GlobalHeader.vue'
+import GlobalFooter from '@/components/GlobalFooter.vue'
 
 
 // SORUCE: https://dev.to/nirazanbasnet/dont-use-100vh-for-mobile-responsive-3o97
@@ -9,49 +10,27 @@ import GlobalFooter from "@/components/GlobalFooter";
 // Setting the height of the page (using javascript) with the window.innerheight property.
 
 const documentHeight = () => {
-    const doc = document.documentElement;
-    doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
 }
-window.addEventListener('resize', documentHeight);
-documentHeight();
-
+window.addEventListener('resize', documentHeight)
+documentHeight()
 </script>
-<!--------------------------------------------------------------------->
+<!---------------------------------------------------------------------------->
 <template>
     <GlobalHeader />
     <router-view />
     <GlobalFooter />
 </template>
-<!--------------------------------------------------------------------->
-<!-- BOOTSTRAP BREAKPOINTS
-Extra Small         n/a     <576px
-Small	            sm	    ≥576px
-Medium	            md	    ≥768px
-Large	            lg	    ≥992px
-Extra large	        xl	    ≥1200px
-Extra extra large   xxl	    ≥1400px
- -->
-<style lang="scss">
-:root {
-    --doc-height: 100%;
-}
-
-html,
-body {
-    padding: 0 !important;
-    border: 0 !important;
-    margin: 0 !important;
-    height: 100vh; /* fallback for Js load */
-    height: var(--doc-height);
-}
-
+<!---------------------------------------------------------------------------->
+<style>
 #app {
     font-family: 'Open Sans', 'Poppins', 'Merriweather Sans', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: var(--yellow-300);
-    background-color: var(--bluegray-200);
+    background-color: var(--gray-900);
     background-image: url('./assets/background.webp');
     background-attachment: fixed;
     background-position: center;
@@ -59,7 +38,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
 }
 
 @media screen and (max-width: 500px) {

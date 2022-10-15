@@ -1,23 +1,29 @@
-<script setup>
-import { ref, onMounted } from "vue";
-import Dropdown from "primevue/dropdown";
-import SearchBar from "@/components/SearchBar.vue";
+<script setup lang="ts">
+import { ref, onMounted } from "vue"
+import Dropdown from "primevue/dropdown"
+import SearchBar from "@/components/SearchBar.vue"
+
 
 onMounted(() => {
-    const navLinks = document.getElementsByClassName('route');
-    const navbar = document.getElementById('navbar');
+    const navLinks: HTMLCollectionOf<Element> = document.getElementsByClassName('route')
+    const navbar: HTMLElement | null = document.getElementById('navbar')
 
-    for (let link of navLinks) {
-        link.addEventListener('click', () => {
-        navbar.classList.toggle('show');
-        })
+    if (navbar) {
+        for (let link of navLinks) {
+            link.addEventListener('click', () => {
+                navbar.classList.toggle('show')
+            })
+        }
     }
 })
 
 
-const selectedLink = ref();
-
-const groupedLinks = ref([
+const selectedLink = ref()
+const groupedLinks = ref<{
+    label: string
+    items: {label: string, value: string}[]
+}[]>
+([
     {
         label: 'Animals',
         items: [
@@ -62,15 +68,25 @@ const groupedLinks = ref([
     }
 ]);
 
-const resetDropdown = (e) => {
-    const navbar = document.querySelector('.navbar-concept');
-    const drpdwn = navbar.querySelector('.p-dropdown.p-component.p-inputwrapper');
-    const spn = drpdwn.querySelector('span.p-dropdown-label.p-inputtext');
+const resetDropdown = () => {
+    const navbarConcepts = document.querySelector('.navbar-concept')
+    // const dropdown = navbarConcepts.querySelector('.p-dropdown.p-component.p-inputwrapper')
+    // const span = dropdown.querySelector('span.p-dropdown-label.p-inputtext')
 
+    if (navbarConcepts) {
+        const dropdown = navbarConcepts.querySelector('.p-dropdown.p-component.p-inputwrapper')
 
-    drpdwn.classList.toggle('p-inputwrapper-filled');
-    spn.classList.toggle('p-placeholder');
-    spn.textContent = 'Select concept';
+        if (dropdown) {
+            dropdown.classList.toggle('p-inputwrapper-filled')
+            
+            const span = dropdown.querySelector('span.p-dropdown-label.p-inputtext')
+            if (span) {
+                span.classList.toggle('p-placeholder')
+                span.textContent = 'Select concept'
+            }
+        }
+        
+    }
 }
 
 </script>
@@ -83,7 +99,7 @@ const resetDropdown = (e) => {
         </div>
 
         <div class="navbar-item navbar-concept">
-            <Dropdown v-model="selectedLink" :options="groupedLinks" optionLabel="label" optionGroupLabel="label" optionGroupChildren="items" @change="resetDropdown($event)" scroll-height="250px" panelClass="navbar-concepts" placeholder="Select concept">
+            <Dropdown v-model="selectedLink" :options="groupedLinks" optionLabel="label" optionGroupLabel="label" optionGroupChildren="items" @change="resetDropdown()" scroll-height="250px" panelClass="navbar-concepts" placeholder="Select concept">
                 <template #optiongroup="slotProps">
                     <div class="flex align-items-center">
                         {{slotProps.option.label}}
@@ -102,7 +118,7 @@ const resetDropdown = (e) => {
 </header>
 </template>
 <!------------------------------------------------------------------------------------>
-<style lang="scss" scoped>
+<style scoped>
 a.dropdown-item {
     display: flex;
     align-items: center;
@@ -227,12 +243,12 @@ nav a {
 
     .navbar-item.navbar-title {
         justify-content: end;
-        // margin-left: 15px;
+        /* margin-left: 15px; */
     }
 
     .navbar-item.navbar-concept {
         justify-content: start;
-        // margin-right: 15px;
+        /* margin-right: 15px; */
     }
 
     .navbar-item.navbar-search {

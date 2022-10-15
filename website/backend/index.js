@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 
 
 
-const port = process.env.EXPRESS_PORT;
+const port = process.env.EXPRESS_PORT || 4000;
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
 });

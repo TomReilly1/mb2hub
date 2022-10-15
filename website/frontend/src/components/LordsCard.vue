@@ -1,21 +1,21 @@
-<script setup>
-const props = defineProps({lordObj: Object});
+<script setup lang="ts">
+const props = defineProps({lordObj: Object})
 
 
-const fromatTroopGroup = (troopGroup) => {
+const fromatTroopGroup = (troopGroup: string) => {
     if (troopGroup === 'HorseArcher') {
-        return 'horse archer';
+        return 'horse archer'
     } else if (troopGroup === 'Infantry'){
-        return troopGroup.toLowerCase();
+        return troopGroup.toLowerCase()
     } else {
-        return troopGroup.toLowerCase(); 
+        return troopGroup.toLowerCase()
     }
 };
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="lordObj !== null && lordObj !== undefined" class="card-desc">
+        <div v-if="lordObj" class="card-desc">
             <div>
                 <h2>{{lordObj.name || 'Nothing passed yet'}}</h2>
                 <p v-if="lordObj.sex === 'male'">

@@ -1,13 +1,16 @@
 import os, xmltodict, json
 from pathlib import Path
+from dotenv import load_dotenv
 
+
+load_dotenv()
 
 
 # CHANGE TO DIRECTORY WHERE PROJECT IS STORED
-PROJ_DIR = os.environ.get('MB2_PROJ_DIR')
+PROJ_DIR = os.environ['MB2_PROJ_DIR']
 
 # CHANGE BELOW TO THE CORRECT VERSION (no spaces)
-VERSION = '1.8.0'
+VERSION = os.environ['VERSION']
 
 
 XML_DIR = f'{PROJ_DIR}/{VERSION}/xml'
@@ -32,26 +35,26 @@ def convertToJSON(file):
 
 
 if __name__ == '__main__':
-	# convertToJSON("spcultures.xml")
+	convertToJSON("spcultures.xml")
 
-	# convertToJSON('spkingdoms.xml')
+	convertToJSON('spkingdoms.xml')
 
-	# convertToJSON('head_armors.xml')
-	# convertToJSON('shoulder_armors.xml')
-	# convertToJSON('body_armors.xml')
-	# convertToJSON('arm_armors.xml')
-	# convertToJSON('leg_armors.xml')
+	convertToJSON('head_armors.xml')
+	convertToJSON('shoulder_armors.xml')
+	convertToJSON('body_armors.xml')
+	convertToJSON('arm_armors.xml')
+	convertToJSON('leg_armors.xml')
 
-	# convertToJSON('spnpccharacters.xml')
+	convertToJSON('spnpccharacters.xml')
 
-	# convertToJSON('sandboxcore_skill_sets.xml')
+	convertToJSON('sandboxcore_skill_sets.xml')
 
-	# convertToJSON('weapons.xml')
+	convertToJSON('weapons.xml')
 
-	# convertToJSON('settlements.xml')
+	convertToJSON('settlements.xml')
 
-	# convertToJSON('spclans.xml')
+	convertToJSON('spclans.xml')
 
-	# convertToJSON('lords.xml')
+	convertToJSON('lords.xml')
 
 	convertToJSON('horses_and_others.xml')

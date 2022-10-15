@@ -11,16 +11,28 @@
   "author": "Thomas Reilly",
   "license": "BSD-3-Clause",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@prisma/client": "^4.4.0",
+>>>>>>> vite-transition
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "helmet": "^5.1.0",
     "jsdom": "^20.0.0",
+<<<<<<< HEAD
     "meilisearch": "^0.25.1",
+=======
+>>>>>>> vite-transition
     "pg-promise": "^10.11.1"
   },
   "devDependencies": {
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "nodemon": "^2.0.19"
+=======
+    "nodemon": "^2.0.19",
+    "prisma": "^4.4.0"
+>>>>>>> vite-transition
   }
 }

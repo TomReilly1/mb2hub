@@ -1,111 +1,92 @@
+<<<<<<< HEAD
 <script setup>
 import {ref, onMounted} from "vue";
 import AutoComplete from 'primevue/autocomplete';
 import router from "@/router";
+=======
+<script setup lang="ts">
+import {ref} from "vue"
+import AutoComplete, { type AutoCompleteItemUnselectEvent } from 'primevue/autocomplete'
+import router from "@/router"
+
+import type {searchObj} from "@/interfaces/indexIntr"
+>>>>>>> vite-transition
 
 
-const resultsList = ref('concept list');
-const selectedConcept = ref('');
-const searchAlertSmall = ref('');
-
-
-onMounted(() => {
-    const searchBar = document.getElementById('navbar-search-bar');
-    
-    searchBar.addEventListener('keydown', (e) => {
-        console.log('key == ' + e.key);
-        console.log('code == ' + e.code);
-        console.log('code == ' + e.repeat);
-
-        if (e.repeat !== true && e.code === 'Enter' && e.key === 'Enter') {
-            for (let result of resultsList.value) {
-                console.log(selectedConcept.value);
-                console.log(result.name);
-                if (selectedConcept.value === result.name) {
-                    console.log('IT IS A MATCH');
-                    if (result.concept === 'concepts') {
-                        window.location.href = `https://mb2hub.com/table/${result.id}`; // or ${result.concept}
-                    } else {
-                        window.location.href = `https://mb2hub.com/card/${result.concept}/${result.id}`;
-                    }
-                }
-            }
-        }
-    });
-});
+const resultsList = ref<searchObj[]>([])
+const selectedConcept = ref<string>('')
+const searchAlertSmall = ref<string>('')
 
 
 async function getSearchResults() {
-    const temp = selectedConcept.value;
-    const santzStr = temp.replace(/[^a-z ]/gi, '');
-    console.log('santzStr == ' + santzStr);
-    const paramsObj = {searchstr: santzStr};
-    const searchParams = new URLSearchParams(paramsObj);
-    const searchStr = searchParams.toString(); 
-    console.log('searchStr == ' + searchStr);
+    const temp: string = selectedConcept.value
+    const santzStr: string = temp.replace(/[^a-z ]/gi, '')
+    const paramsObj: {searchstr: string} = {searchstr: santzStr}
+    const searchParams = new URLSearchParams(paramsObj)
+    const searchStr: string = searchParams.toString()
 
-    const res = await fetch(`${process.env.VUE_APP_API_URL}/search?${searchStr}`);
-    console.log(res);
-    const json = await res.json();
-    console.log(json);
-    console.log(json.hits);
-
-    if (json.nbHits === 0) {
-        resultsList.value = [];
+    const res: Response = await fetch(`${import.meta.env.VITE_API_URL}/search?${searchStr}`)
+    const json_arr: searchObj[] = await res.json()
+    if (json_arr.length === 0) {
+        resultsList.value = []
         setSearchBarAlert(false, 'Search was successful, but no matches found.')
     } else {
-        resultsList.value = json.hits;
-        setSearchBarAlert(true);
+        resultsList.value = json_arr
+        setSearchBarAlert(true)
     }
-    
 }
 
 
-const searchConcept = (event) => {
-    console.log('Reached searchConcept() function');
+const searchConcept = async () => {
     setTimeout(async () => {
-        console.log('Reached setTimeout() function');
         if (selectedConcept.value === '') {
-            resultsList.value = '';
-            console.log('selectedConcept is empty');
-            setSearchBarAlert(false, 'The selected input is empty');
+            resultsList.value = []
+            console.log('selectedConcept is empty')
+            setSearchBarAlert(false, 'The selected input is empty')
         } else if (selectedConcept.value === undefined) {
-            console.log('selectedConcept is undefined');
-            setSearchBarAlert(false, 'The selected input is undefined');
+            console.log('selectedConcept is undefined')
+            setSearchBarAlert(false, 'The selected input is undefined')
         } else if (selectedConcept.value === null) {
-            console.log('selectedConcept is null');
-            setSearchBarAlert(false, 'The selected input is null');
+            console.log('selectedConcept is null')
+            setSearchBarAlert(false, 'The selected input is null')
         } else {
-            await getSearchResults();
+            getSearchResults()
         }
-    }, 1000);
+    }, 2000);
 };
 
 
-function setSearchBarAlert(matchFound, status='match found') {
-    const searchBar = document.getElementById('navbar-search-bar');
-    const searchAlert = document.getElementById('navbar-search-alert');
+function setSearchBarAlert(matchFound: boolean, status: string = 'match found') {
+    const searchBar: HTMLElement | null = document.getElementById('navbar-search-bar')
+    if (searchBar === null) {
+        throw 'searchBar element is null'
+    }
+    const searchAlert = document.getElementById('navbar-search-alert')
+        if (searchAlert === null) {
+        throw 'searchAlert element is null'
+    }
 
-    searchAlertSmall.value = status;
+    searchAlertSmall.value = status
 
     if (matchFound || status.includes('empty')) {
         if (searchBar.classList.contains('p-invalid')) {
-            searchBar.classList.remove("p-invalid");
+            searchBar.classList.remove("p-invalid")
         }
-        if (searchAlert.style.visibility !== "hidden" || searchAlert.style.visibility === "visible") {
-             searchAlert.style.visibility = "hidden";
+        if (searchAlert.style.visibility !== "hidden") {
+             searchAlert.style.visibility = "hidden"
         }
     } else {
         if (!searchBar.classList.contains('p-invalid')) {
-            searchBar.classList.add("p-invalid");
+            searchBar.classList.add("p-invalid")
         }
         if (searchAlert.style.visibility === "hidden" || searchAlert.style.visibility !== "visible") {
-             searchAlert.style.visibility = "visible";
+             searchAlert.style.visibility = "visible"
         }
     }
 }
 
 
+<<<<<<< HEAD
 const directToCardPage = (e) => {
     console.log(e);
     console.log(e.value.concept);
@@ -117,18 +98,31 @@ const directToCardPage = (e) => {
         window.location.href = `https://mb2hub.com/card/${e.value.concept}/${e.value.id}`;
         // router.push(`/card/${e.value.concept}/${e.value.id}`);
     }
+=======
+const directToCardPage = (e: AutoCompleteItemUnselectEvent) => {
+    selectedConcept.value = ''
+
+    router.push({
+        name: 'cardview',
+        params: {
+            'concept': e.value.concept,
+            'id': e.value.id
+        },
+        replace: true
+    })
+>>>>>>> vite-transition
 }
 </script>
 <!---------------------------------------------------------------------------->
 <template>
 <div class="search-container">
     <i class="pi pi-search" style="font-size: 1.4rem; padding: 0 10px;"></i>
-    <AutoComplete id="navbar-search-bar" aria-describedby="navbar-search-alert" v-model="selectedConcept" :suggestions="resultsList" @complete="searchConcept($event)" @item-select="directToCardPage($event)" field="name" placeholder="Search..."/>
+    <AutoComplete id="navbar-search-bar" aria-describedby="navbar-search-alert" v-model="selectedConcept" :suggestions="resultsList" @complete="searchConcept()" @item-select="directToCardPage($event)" field="name" placeholder="Search..."/>
     <small id="navbar-search-alert" class="p-error">{{searchAlertSmall}}</small>
 </div>
 </template>
 <!---------------------------------------------------------------------------->
-<style lang="scss" scoped>
+<style scoped>
 .search-container {
     display: flex;
     flex-direction: row;

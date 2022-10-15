@@ -1,16 +1,20 @@
-<script setup>
-const props = defineProps({kingdomObj: Object});
+<script setup lang="ts">
+import type { kingdoms } from "@/interfaces/indexIntr"
 
 
-const formatColor = (color) => {
-    const hexValue = color.slice(-6);
-    return '#' + hexValue;
-};
+const props = defineProps<{
+    kingdomObj: kingdoms
+}>()
+
+const formatColor = (color: string) => {
+    const hexValue = color.slice(-6)
+    return '#' + hexValue
+}
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="kingdomObj !== null && kingdomObj !== undefined" class="card-desc">
+        <div v-if="kingdomObj" class="card-desc">
             <div>
                 <h2>{{kingdomObj.name || 'Nothing passed yet'}}</h2>
                 <span>

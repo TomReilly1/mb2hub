@@ -1,47 +1,42 @@
-<script setup>
-import { ref, onMounted } from "vue";
-import { useRoute } from 'vue-router';
-import router from "@/router";
+<script setup lang="ts">
+import { ref, onMounted } from "vue"
+import { useRoute, onBeforeRouteUpdate } from 'vue-router'
+import router from "@/router"
 
-import ArmorsCard from "@/components/ArmorsCard.vue";
-import BowsCard from "@/components/BowsCard.vue";
-import CastlesCard from "@/components/CastlesCard.vue";
-import ClansCard from "@/components/ClansCard.vue";
-import CulturesCard from "@/components/CulturesCard.vue";
-import GoodsCard from "@/components/GoodsCard.vue";
-import KingdomsCard from "@/components/KingdomsCard.vue";
-import LordsCard from "@/components/LordsCard.vue";
-import MountsCard from "@/components/MountsCard.vue";
-import TownsCard from "@/components/TownsCard.vue";
-import TroopsCard from "@/components/TroopsCard.vue";
-import VillagesCard from "@/components/VillagesCard.vue";
-
-
-
-const cardData = ref();
-const route = useRoute();
+import ArmorsCard from "@/components/ArmorsCard.vue"
+import BowsCard from "@/components/BowsCard.vue"
+import CastlesCard from "@/components/CastlesCard.vue"
+import ClansCard from "@/components/ClansCard.vue"
+import CulturesCard from "@/components/CulturesCard.vue"
+import GoodsCard from "@/components/GoodsCard.vue"
+import KingdomsCard from "@/components/KingdomsCard.vue"
+import LordsCard from "@/components/LordsCard.vue"
+import MountsCard from "@/components/MountsCard.vue"
+import TownsCard from "@/components/TownsCard.vue"
+import TroopsCard from "@/components/TroopsCard.vue"
+import VillagesCard from "@/components/VillagesCard.vue"
 
 
-async function fetchData(card_conc, card_id) {
-    const res = await fetch(`${process.env.VUE_APP_API_URL}/${card_conc}/${card_id}`);
-    console.log(res);
-    const json_arr = await res.json();
-    console.log(json_arr);
-    return json_arr;
-}
+const cardData = ref()
+const route = useRoute()
 
 
 onMounted(async () => {
-    // await fetchData(route.params.concept, route.params.id).then(data => cardData.value = data);
-
-    const concept = route.params.concept;
-    const id = route.params.id;
-    await fetch(`${process.env.VUE_APP_API_URL}/${concept}/${id}`)
+    await fetch(`${import.meta.env.VITE_API_URL}/${route.params.concept}/${route.params.id}`)
         .then(res => res.json())
         .then(data => cardData.value = data)
         .catch(() => {
-            router.push('/404');
-        });
+            router.push('/404')
+        })
+})
+
+onBeforeRouteUpdate(async (to, from) => {
+    await fetch(`${import.meta.env.VITE_API_URL}/${to.params.concept}/${to.params.id}`)
+        .then(res => res.json())
+        .then(data => cardData.value = data)
+        .catch(() => {
+            router.push('/404')
+        })
 })
 </script>
 <!------------------------------------------------------------------------>

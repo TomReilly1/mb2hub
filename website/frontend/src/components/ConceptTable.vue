@@ -1,92 +1,111 @@
-<script setup>
-import { ref, watch } from "vue";
-import { useRoute } from 'vue-router';
+<script setup lang="ts">
+import { ref, watch, onMounted } from "vue"
+import { useRoute, type RouteLocationNormalizedLoaded } from 'vue-router'
 
-import Button from "primevue/button/sfc";
-import DataTable from 'primevue/datatable/sfc';
-import Column from 'primevue/column/sfc';
-import { FilterMatchMode, FilterOperator } from 'primevue/api';
-import MultiSelect from 'primevue/multiselect/sfc';
-import InputText from 'primevue/inputtext/sfc';
-import InputNumber from 'primevue/inputnumber/sfc';
+import Button from "primevue/button"
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+import { FilterMatchMode, FilterOperator } from 'primevue/api'
+import MultiSelect from 'primevue/multiselect'
+import InputText from 'primevue/inputtext'
+import InputNumber from 'primevue/inputnumber'
+import Skeleton from "primevue/skeleton"
 
+interface dataColsIntr {
+    dataHeader: string
+    dataType: string
+}
 
-
-const route = useRoute();
-const props = defineProps({dataArr: Array});
+const route: RouteLocationNormalizedLoaded = useRoute()
+const props = defineProps<{
+    dataArr: object[]
+}>()
 const trueOrFalse = ref([
     {"label": "True", "val": true},
     {"label": "False", "val": false}
-]);
-const loading = ref(true);
-const objRefnce = ref();
-const filters = ref();
-const globalFilters = ref();
-
+])
+const loading = ref<boolean>(true)
+const objRefnce = ref<dataColsIntr[]>()
+const dummyData = ref(new Array(6))
+const filters = ref()
+const globalFilters = ref()
 
 
 const initFilters = () => {
-    // need to remove desc_text from table due to large size
-    const temp = props.dataArr[0];
-    if ('desc_text' in temp) {
-        delete temp.desc_text;
+    if (props.dataArr[0] === undefined) {
+        return
     }
-    objRefnce.value = temp;
 
-    let filtersToAdd = {};
+    // need to remove desc_text from table due to large size
+    const temp: any = props.dataArr[0]
+    if (temp.desc_text !== undefined) {
+        delete temp.desc_text
+    }
+
+    if (temp.desc_text) {
+        delete temp.desc_text
+    }
+
+    let dataColsArr: dataColsIntr[] = []
+    for (const key in temp) {
+        const typeOf: string = typeof temp[key]
+        dataColsArr.push({
+            'dataHeader': key,
+            'dataType': typeOf
+        })
+    }
+    objRefnce.value = dataColsArr
+
+    let filtersToAdd: any = {}
     let globalFiltArr = []
     filtersToAdd['global'] = {value: null, matchMode: FilterMatchMode.CONTAINS}
 
-    for (let key in objRefnce.value) {
-        if (typeof objRefnce.value[key] === 'boolean') {
+    for (let key in temp) {
+        if (typeof temp[key] === 'boolean') {
             filtersToAdd[key] = { value: null, matchMode: FilterMatchMode.IN }
             globalFiltArr.push(key);
         }
-        else if (typeof objRefnce.value[key] === 'number') {
+        else if (typeof temp[key] === 'number') {
             filtersToAdd[key] = {
                 operator: FilterOperator.AND,
                 constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }]
             }
         }
-        else if (typeof objRefnce.value[key] === 'string' && !key.includes('color')) {
+        else if (typeof temp[key] === 'string' && !key.includes('color')) {
             filtersToAdd[key] = {
                 operator: FilterOperator.AND,
                 constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }]
             }
-            globalFiltArr.push(key);
+            globalFiltArr.push(key)
         }
     }
     
-    filters.value = filtersToAdd;
-    globalFilters.value = globalFiltArr;
+    filters.value = filtersToAdd
+    globalFilters.value = globalFiltArr
 }
 
 
-function valueToHeader(value) {
-    const valArr = value.split('_');
+function valueToHeader(value: string) {
+    const valArr = value.split('_')
     const upperArr = valArr.map((e) => {
-        return e.substring(0,1).toUpperCase() + e.substring(1);
+        return e.substring(0,1).toUpperCase() + e.substring(1)
     })
-    return upperArr.join(' ');
+    return upperArr.join(' ')
 }
 
-function handleDataType(value) {
-    if (typeof value === 'number') {
-        return 'numeric';
-    } else {
-        return 'text';
-    } 
+function handleBodyStyle(header: string) {
+    return (header.includes('color')) ? 'text-align: center' : ''
 }
 
-const handleMatchModeVis = (value) => {
-    if (typeof value === 'boolean') {
-        return false;
-    } else {
-        return true;
-    } 
+function handleDataType(value: string) {
+    return (typeof value === 'number') ? 'numeric' : 'text'
 }
 
-function handleMatchModeType(value) {
+const handleMatchModeVis = (value: string) => {
+    return typeof value !== 'boolean'
+}
+
+function handleMatchModeType(value: string) {
     if (typeof value === 'number') {
         return [
             {label: 'Equals', value: FilterMatchMode.EQUALS},
@@ -108,15 +127,21 @@ function handleMatchModeType(value) {
     } 
 }
 
+const formatColor = (color: string) => {
+    const hexValue = color.slice(-6)
+    return '#' + hexValue
+}
+
 
 watch(() => props.dataArr, () => {
-    loading.value = false;
-    initFilters();
+    loading.value = false
+    initFilters()
+    console.log(props.dataArr)
 })
 </script>
 <!---------------------------------------------------->
 <template>
-<div v-if="filters !== null || filters !== undefined || dataArr !== null || dataArr !== undefined" id="data-table" class="concept-table">
+<div id="data-table" class="concept-table">
     <DataTable :value="dataArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="globalFilters">
         <template v-if="filters !== undefined" #header>
             <div class="flex justify-content-between global-filter">
@@ -133,20 +158,25 @@ watch(() => props.dataArr, () => {
         <template #loading>
             Loading data. Please wait.
         </template>
-        <Column v-for="(colVal, colKey) in objRefnce" :field="colKey" :header="valueToHeader(colKey)" :datatype="handleDataType(colVal)" :showFilterMatchModes="handleMatchModeVis(colVal)" :filterMatchModeOptions="handleMatchModeType(colVal)" sortable>
+        <!-- <Column v-for="(colVal, colKey) in objRefnce" :header="valueToHeader(colKey)" :datatype="handleDataType(colVal)" :showFilterMatchModes="handleMatchModeVis(colVal)" :filterMatchModeOptions="handleMatchModeType(colVal)" sortable> -->
+        <Column v-for="col in objRefnce" :field="col.dataHeader" :header="valueToHeader(col.dataHeader)" :datatype="handleDataType(col.dataType)" :showFilterMatchModes="handleMatchModeVis(col.dataHeader)" :filterMatchModeOptions="handleMatchModeType(col.dataHeader)" :bodyStyle="handleBodyStyle(col.dataHeader)" sortable>
             <!-- data -->
-            <template v-if="colKey === 'id'" #body="{data}">
+            <template v-if="col.dataHeader === 'id'" #body="{data}">
                 <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="id-link">
-                    {{data[colKey]}}
+                    {{data[col.dataHeader]}}
                 </router-link>
             </template>
+            <template v-else-if="col.dataHeader.includes('color')" #body="{data}" bodyStyle="display: flex; justify-content: center;">
+                <input type="color" :value="formatColor(data[col.dataHeader])" class="color-input" disabled>
+            </template>
             <template v-else #body="{data}">
-                <span v-if="data[colKey] === null">N/A</span>
-                <span v-else>{{data[colKey]}}</span>
+                <span v-if="data[col.dataHeader] === null">N/A</span>
+                <span v-else-if="data[col.dataHeader] === ''">EMPTY</span>
+                <span v-else>{{data[col.dataHeader]}}</span>
             </template>
             <!-- filter -->
-            <template v-if="typeof colVal === 'boolean'" #filter="{filterModel}">
-                <div class="mb-3 font-bold">Select {{colKey}}:</div>
+            <template v-if="col.dataType === 'boolean'" #filter="{filterModel}">
+                <div class="mb-3 font-bold">Select {{col.dataHeader}}:</div>
                 <MultiSelect v-model="filterModel.value" :options="trueOrFalse" optionLabel="label" optionValue="val" placeholder="Any" class="p-column-filter">
                     <template #option="slotProps">
                         <div class="p-multiselect-representative-option">
@@ -155,11 +185,11 @@ watch(() => props.dataArr, () => {
                     </template>
                 </MultiSelect>
             </template>
-            <template v-else-if="typeof colVal === 'number'" #filter="{filterModel}">
+            <template v-else-if="col.dataType === 'number'" #filter="{filterModel}">
                 <InputNumber v-model="filterModel.value" :placeholder="`Filter numerically - `"/>
             </template>
-            <template v-else-if="typeof colVal === 'string' || objRefnce[colKey] === null" #filter="{filterModel, filterCallback}">
-                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by ${colKey} - `"/>
+            <template v-else-if="col.dataType === 'string' || objRefnce[col.dataHeader] === null" #filter="{filterModel, filterCallback}">
+                <InputText type="text" v-model="filterModel.value" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by ${col.dataHeader} - `"/>
             </template>
         </Column>
     </DataTable>
@@ -192,5 +222,10 @@ a:hover {
 
 .router-link-active {
     color: var(--yellow-200)
+}
+
+.color-input {
+    width: 100px;
+    padding: 0;
 }
 </style>

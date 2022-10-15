@@ -1,7 +1,11 @@
-<script setup>
-import { ref } from "vue";
+<script setup lang="ts">
+import { ref } from "vue"
 
-const todoItems = ref([
+const todoItems = ref<{
+    header: string,
+    items: string[]
+}[]>
+([
   {
     'header': 'Concepts',
     'items': [
@@ -26,7 +30,7 @@ const todoItems = ref([
       'map of Calradia'
     ]
   }
-]); 
+])
 </script>
 <!---------------------------------------------------------------------------->
 <template>
@@ -48,7 +52,7 @@ const todoItems = ref([
 
         <div class="version home-section">
             <h3 id="version-text">Current Version</h3>
-            <span id="version-number">1.8.0</span>  
+            <span id="version-number">1.9.0</span>  
         </div>
 
         <hr />

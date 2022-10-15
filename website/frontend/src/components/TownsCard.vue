@@ -1,10 +1,10 @@
-<script setup>
-const props = defineProps({townObj: Object});
+<script setup lang="ts">
+const props = defineProps({townObj: Object})
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="townObj !== null && townObj !== undefined" class="card-desc">
+        <div v-if="townObj" class="card-desc">
             <div>
                 <h2>{{townObj.name}}</h2>
                 <p>{{townObj.name}} is a town of the {{townObj.culture}}, ruled by the {{townObj.owner_name}} clan.</p>

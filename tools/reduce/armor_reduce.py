@@ -56,8 +56,7 @@ def writeReducedJSON(write_path, json_dict):
 		json.dump(json_dict, file)
 
 
-
-if __name__ == "__main__":
+def main():
 	W_PATH = f'{PROJ_DIR}/{VERSION}/json-reduced/armors.json'
 
 	R_PATH_HEAD = f'{PROJ_DIR}/{VERSION}/json/head_armors.json'
@@ -75,3 +74,7 @@ if __name__ == "__main__":
 
 
 	writeReducedJSON(W_PATH, final_arr)
+
+
+if __name__ == "__main__":
+	main()

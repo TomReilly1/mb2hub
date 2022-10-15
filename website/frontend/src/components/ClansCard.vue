@@ -1,22 +1,22 @@
-<script setup>
-const props = defineProps({clanObj: Object});
+<script setup lang="ts">
+const props = defineProps({clanObj: Object})
 
-function formatClanTier(tier) {
+function formatClanTier(tier: number) {
     if (tier === 1) {
-        return `${tier}st tier`;
+        return `${tier}st tier`
     } else if (tier === 2) {
-        return `${tier}nd tier`;
+        return `${tier}nd tier`
     } else if (tier === 3) {
-        return `${tier}rd tier`;
+        return `${tier}rd tier`
     } else {
-        return `${tier}th tier`;
+        return `${tier}th tier`
     }
 }
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="clanObj !== null && clanObj !== undefined" class="card-desc">
+        <div v-if="clanObj" class="card-desc">
             <div>
                 <h2>{{clanObj.name}}</h2>
                 <p>
