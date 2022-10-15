@@ -93,6 +93,10 @@ function valueToHeader(value: string) {
     return upperArr.join(' ')
 }
 
+function handleBodyStyle(header: string) {
+    return (header.includes('color')) ? 'text-align: center' : ''
+}
+
 function handleDataType(value: string) {
     return (typeof value === 'number') ? 'numeric' : 'text'
 }
@@ -123,6 +127,11 @@ function handleMatchModeType(value: string) {
     } 
 }
 
+const formatColor = (color: string) => {
+    const hexValue = color.slice(-6)
+    return '#' + hexValue
+}
+
 
 watch(() => props.dataArr, () => {
     loading.value = false
@@ -132,8 +141,7 @@ watch(() => props.dataArr, () => {
 </script>
 <!---------------------------------------------------->
 <template>
-<!-- <div v-if="filters !== null || filters !== undefined || dataArr !== null || dataArr !== undefined" id="data-table" class="concept-table"> -->
-<div v-if="!loading" id="data-table" class="concept-table">
+<div id="data-table" class="concept-table">
     <DataTable :value="dataArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="globalFilters">
         <template v-if="filters !== undefined" #header>
             <div class="flex justify-content-between global-filter">
@@ -151,15 +159,19 @@ watch(() => props.dataArr, () => {
             Loading data. Please wait.
         </template>
         <!-- <Column v-for="(colVal, colKey) in objRefnce" :header="valueToHeader(colKey)" :datatype="handleDataType(colVal)" :showFilterMatchModes="handleMatchModeVis(colVal)" :filterMatchModeOptions="handleMatchModeType(colVal)" sortable> -->
-        <Column v-for="col in objRefnce" :field="col.dataHeader" :header="valueToHeader(col.dataHeader)" :datatype="handleDataType(col.dataType)" :showFilterMatchModes="handleMatchModeVis(col.dataHeader)" :filterMatchModeOptions="handleMatchModeType(col.dataHeader)" sortable>
+        <Column v-for="col in objRefnce" :field="col.dataHeader" :header="valueToHeader(col.dataHeader)" :datatype="handleDataType(col.dataType)" :showFilterMatchModes="handleMatchModeVis(col.dataHeader)" :filterMatchModeOptions="handleMatchModeType(col.dataHeader)" :bodyStyle="handleBodyStyle(col.dataHeader)" sortable>
             <!-- data -->
             <template v-if="col.dataHeader === 'id'" #body="{data}">
                 <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="id-link">
                     {{data[col.dataHeader]}}
                 </router-link>
             </template>
+            <template v-else-if="col.dataHeader.includes('color')" #body="{data}" bodyStyle="display: flex; justify-content: center;">
+                <input type="color" :value="formatColor(data[col.dataHeader])" class="color-input" disabled>
+            </template>
             <template v-else #body="{data}">
                 <span v-if="data[col.dataHeader] === null">N/A</span>
+                <span v-else-if="data[col.dataHeader] === ''">EMPTY</span>
                 <span v-else>{{data[col.dataHeader]}}</span>
             </template>
             <!-- filter -->
@@ -181,42 +193,6 @@ watch(() => props.dataArr, () => {
             </template>
         </Column>
     </DataTable>
-</div>
-<div v-else id="data-table" class="concept-table">
-    <DataTable :value="dummyData">
-        <Column>
-            <template #header>
-                <Skeleton width="5rem" height="0.8rem" />
-            </template>
-            <template #body>
-                <Skeleton size="30px" />
-            </template>
-        </Column>
-        <Column>
-            <template #header>
-                <Skeleton width="5rem" height="0.8rem"/>
-            </template>
-            <template #body>
-                <Skeleton size="30px" />
-            </template>
-        </Column>
-        <Column>
-            <template #header>
-                <Skeleton width="5rem" height="0.8rem"/>
-            </template>
-            <template #body>
-                <Skeleton size="30px" />
-            </template>
-        </Column>
-        <Column>
-            <template #header>
-                <Skeleton width="5rem" height="0.8rem"/>
-            </template>
-            <template #body>
-                <Skeleton size="30px" />
-            </template>
-        </Column>
-    </DataTable >
 </div>
 </template>
 <!---------------------------------------------------->
@@ -246,5 +222,10 @@ a:hover {
 
 .router-link-active {
     color: var(--yellow-200)
+}
+
+.color-input {
+    width: 100px;
+    padding: 0;
 }
 </style>
