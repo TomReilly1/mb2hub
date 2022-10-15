@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
-import { useRoute } from 'vue-router'
+import { useRoute, onBeforeRouteUpdate } from 'vue-router'
 import router from "@/router"
 
 import ArmorsCard from "@/components/ArmorsCard.vue"
@@ -27,7 +27,16 @@ onMounted(async () => {
         .then(data => cardData.value = data)
         .catch(() => {
             router.push('/404')
-        });
+        })
+})
+
+onBeforeRouteUpdate(async (to, from) => {
+    await fetch(`${import.meta.env.VITE_API_URL}/${to.params.concept}/${to.params.id}`)
+        .then(res => res.json())
+        .then(data => cardData.value = data)
+        .catch(() => {
+            router.push('/404')
+        })
 })
 </script>
 <!------------------------------------------------------------------------>

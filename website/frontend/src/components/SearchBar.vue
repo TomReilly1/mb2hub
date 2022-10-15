@@ -1,75 +1,37 @@
 <script setup lang="ts">
-import {ref, onMounted} from "vue"
+import {ref} from "vue"
 import AutoComplete, { type AutoCompleteItemUnselectEvent } from 'primevue/autocomplete'
 import router from "@/router"
 
-import type searchObjIntr from "../interfaces/searchObjIntr";
+import type {searchObj} from "@/interfaces/indexIntr"
 
 
-const resultsList = ref<searchObjIntr[]>([])
+const resultsList = ref<searchObj[]>([])
 const selectedConcept = ref<string>('')
 const searchAlertSmall = ref<string>('')
-
-
-onMounted(() => {
-    const searchBar = document.getElementById('navbar-search-bar')
-    if (searchBar === null) {
-        throw 'searchBar element is null'
-    }
-    
-    searchBar.addEventListener('keydown', (e) => {
-        console.log('key == ' + e.key)
-        console.log('code == ' + e.code)
-        console.log('code == ' + e.repeat)
-
-        if (e.repeat !== true && e.code === 'Enter' && e.key === 'Enter') {
-            for (let result of resultsList.value) {
-                console.log(selectedConcept.value)
-                console.log(result.name)
-                if (selectedConcept.value === result.name) {
-                    console.log('IT IS A MATCH')
-                    if (result.concept === 'concepts') {
-                        window.location.href = `https://mb2hub.com/table/${result.id}` // or ${result.concept}
-                    } else {
-                        window.location.href = `https://mb2hub.com/card/${result.concept}/${result.id}`
-                    }
-                }
-            }
-        }
-    });
-});
 
 
 async function getSearchResults() {
     const temp: string = selectedConcept.value
     const santzStr: string = temp.replace(/[^a-z ]/gi, '')
-    console.log('santzStr == ' + santzStr)
     const paramsObj: {searchstr: string} = {searchstr: santzStr}
     const searchParams = new URLSearchParams(paramsObj)
     const searchStr: string = searchParams.toString()
-    console.log('searchStr == ' + searchStr)
 
     const res: Response = await fetch(`${import.meta.env.VITE_API_URL}/search?${searchStr}`)
-    console.log(res)
-    const json = await res.json()
-    console.log(json)
-    console.log(json.hits)
-
-    if (json.nbHits === 0) {
+    const json_arr: searchObj[] = await res.json()
+    if (json_arr.length === 0) {
         resultsList.value = []
         setSearchBarAlert(false, 'Search was successful, but no matches found.')
     } else {
-        resultsList.value = json.hits
+        resultsList.value = json_arr
         setSearchBarAlert(true)
     }
-    
 }
 
 
-const searchConcept = () => {
-    console.log('Reached searchConcept() function')
+const searchConcept = async () => {
     setTimeout(async () => {
-        console.log('Reached setTimeout() function')
         if (selectedConcept.value === '') {
             resultsList.value = []
             console.log('selectedConcept is empty')
@@ -81,9 +43,9 @@ const searchConcept = () => {
             console.log('selectedConcept is null')
             setSearchBarAlert(false, 'The selected input is null')
         } else {
-            await getSearchResults()
+            getSearchResults()
         }
-    }, 1000);
+    }, 2000);
 };
 
 
@@ -97,9 +59,7 @@ function setSearchBarAlert(matchFound: boolean, status: string = 'match found') 
         throw 'searchAlert element is null'
     }
 
-    
     searchAlertSmall.value = status
-
 
     if (matchFound || status.includes('empty')) {
         if (searchBar.classList.contains('p-invalid')) {
@@ -120,16 +80,16 @@ function setSearchBarAlert(matchFound: boolean, status: string = 'match found') 
 
 
 const directToCardPage = (e: AutoCompleteItemUnselectEvent) => {
-    console.log(e)
-    console.log(e.value.concept)
+    selectedConcept.value = ''
 
-    if (e.value.concept === 'concepts') {
-        // window.location.href = `https://mb2hub.com/table/${e.value.id}`; // or ${e.value.concept}
-        router.push(`/table/${e.value.id}`)
-    } else {
-        window.location.href = `https://mb2hub.com/card/${e.value.concept}/${e.value.id}`
-        // router.push(`/card/${e.value.concept}/${e.value.id}`);
-    }
+    router.push({
+        name: 'cardview',
+        params: {
+            'concept': e.value.concept,
+            'id': e.value.id
+        },
+        replace: true
+    })
 }
 </script>
 <!---------------------------------------------------------------------------->
