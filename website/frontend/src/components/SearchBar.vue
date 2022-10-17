@@ -1,16 +1,9 @@
-<<<<<<< HEAD
-<script setup>
-import {ref, onMounted} from "vue";
-import AutoComplete from 'primevue/autocomplete';
-import router from "@/router";
-=======
 <script setup lang="ts">
 import {ref} from "vue"
 import AutoComplete, { type AutoCompleteItemUnselectEvent } from 'primevue/autocomplete'
 import router from "@/router"
 
 import type {searchObj} from "@/interfaces/indexIntr"
->>>>>>> vite-transition
 
 
 const resultsList = ref<searchObj[]>([])
@@ -86,19 +79,6 @@ function setSearchBarAlert(matchFound: boolean, status: string = 'match found') 
 }
 
 
-<<<<<<< HEAD
-const directToCardPage = (e) => {
-    console.log(e);
-    console.log(e.value.concept);
-
-    if (e.value.concept === 'concepts') {
-        window.location.href = `https://mb2hub.com/table/${e.value.id}`; // or ${e.value.concept}
-        // router.push(`/table/${e.value.id}`);
-    } else {
-        window.location.href = `https://mb2hub.com/card/${e.value.concept}/${e.value.id}`;
-        // router.push(`/card/${e.value.concept}/${e.value.id}`);
-    }
-=======
 const directToCardPage = (e: AutoCompleteItemUnselectEvent) => {
     selectedConcept.value = ''
 
@@ -110,7 +90,6 @@ const directToCardPage = (e: AutoCompleteItemUnselectEvent) => {
         },
         replace: true
     })
->>>>>>> vite-transition
 }
 </script>
 <!---------------------------------------------------------------------------->
