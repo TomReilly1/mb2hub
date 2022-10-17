@@ -5,8 +5,9 @@ psql/
 venv
 /venv
 venv/
-mb2hub_deployment.sh
-backend_deploy.sh
+fullstack_deployment.sh
+frontend_deployment.sh
+backend_deployment.sh
 meili_update.sh
 deployment_workflow.txt
 .env.development
