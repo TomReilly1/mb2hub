@@ -17,7 +17,7 @@ router.get('/search', async (req,res) => {
         res.status(480).send('480 (ERROR) not found')
     }
     const santzStr = l_search.replace(/[^a-z ]/gi, '')
-    const qryStr = `SELECT * FROM mb2_global_view WHERE id ILIKE '%${santzStr}%' OR name ILIKE '%${santzStr}%' LIMIT 30;`
+    const qryStr = `SELECT * FROM mb2_global_view WHERE name ILIKE '%${santzStr}%' ORDER BY name LIMIT 30;`
 
     db.any(qryStr)
     .then(rows => {
