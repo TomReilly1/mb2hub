@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mb2hub-frontend:
+    image: mb2hub-frontend:latest
+    ports:
+      - 3000:3000
+  mb2hub-backend:
+    image: mb2hub-backend:latest
+    ports:
+      - 3665:3665
