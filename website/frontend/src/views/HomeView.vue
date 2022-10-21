@@ -89,15 +89,15 @@ const todoItems = ref<{
                         </a>
                     </li>
                     <li>
-                        <a href="https://expressjs.com/">
+                        <a href="https://nodejs.org/">
                             <img src="@/assets/express_logo.jpg" alt="Express.js logo" />
-                            <span>Express.js</span>
+                            <span>Node.js</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.meilisearch.com/">
-                            <img src="@/assets/meili_logo.svg" alt="Meilisearch logo" />
-                            <span>Meilisearch</span>
+                        <a href="https://expressjs.com/">
+                            <img src="@/assets/express_logo.jpg" alt="Express.js logo" />
+                            <span>Express.js</span>
                         </a>
                     </li>
                 </ul>

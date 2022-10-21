@@ -25,9 +25,11 @@ MB2 Hub aims to be a online reference for any data or statistics that pertain to
 Here are the technologies I am using to power this project:
 
 * [Vue.js](https://vuejs.org/)
-* [Bootstrap](https://getbootstrap.com/)
+* [Vite](https://vitejs.dev/)
 * [Primevue](https://www.primefaces.org/primevue/)
+* [Node.js](https://nodejs.org/)
 * [Express.js](https://expressjs.com/)
+* [Prisma](https://www.prisma.io/)
 * [NGINX](https://www.nginx.com/)
 
 
@@ -51,7 +53,7 @@ Here are the technologies I am using to power this project:
     - [x] troops
     - [ ] wanderers
   - Politics
-    - [ ] clans
+    - [x] clans
     - [x] cultures
     - [x] kingdoms
     - [ ] minor factions
