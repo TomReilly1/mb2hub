@@ -1,0 +1,712 @@
+[
+    {
+        "id": "heavy_round_shield",
+        "name": "Heavy Round Shield",
+        "culture": "sturgia",
+        "weight": "4.7",
+        "thrust_speed": "86",
+        "speed_rating": "86",
+        "weapon_length": "70",
+        "hit_points": "500"
+    },
+    {
+        "id": "leather_round_shield",
+        "name": "Large Round Shield",
+        "culture": "sturgia",
+        "weight": "6.9",
+        "thrust_speed": "89",
+        "speed_rating": "89",
+        "weapon_length": "70",
+        "hit_points": "480"
+    },
+    {
+        "id": "strapped_round_shield",
+        "name": "Reinforced Large Round Shield",
+        "culture": "sturgia",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "490"
+    },
+    {
+        "id": "sturgia_old_shield_a",
+        "name": "Iron Rimmed Large Round Shield",
+        "culture": "sturgia",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "480"
+    },
+    {
+        "id": "sturgia_old_shield_b",
+        "name": "Simple Large Round Shield",
+        "culture": "sturgia",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "280"
+    },
+    {
+        "id": "sturgia_old_shield_c",
+        "name": "Reinforced Large Round Shield",
+        "culture": "sturgia",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "430"
+    },
+    {
+        "id": "oval_shield",
+        "name": "Wooden Oval Shield",
+        "culture": "aserai",
+        "weight": "2.1",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "132",
+        "hit_points": "250"
+    },
+    {
+        "id": "desert_round_shield",
+        "name": "Reinforced Desert Round Shield",
+        "culture": "aserai",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "300"
+    },
+    {
+        "id": "bound_desert_round_shield",
+        "name": "Desert Round Shield",
+        "culture": "aserai",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "245"
+    },
+    {
+        "id": "curved_round_shield",
+        "name": "Curved Round Shield",
+        "culture": "aserai",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "66",
+        "hit_points": "290"
+    },
+    {
+        "id": "studded_round_shield",
+        "name": "Iron Round Shield",
+        "culture": "aserai",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "520"
+    },
+    {
+        "id": "steel_round_shield",
+        "name": "Steel Round Shield",
+        "culture": "khuzait",
+        "weight": "4",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "520"
+    },
+    {
+        "id": "bound_adarga",
+        "name": "Wooden Adarga",
+        "culture": "aserai",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "240"
+    },
+    {
+        "id": "battania_targe_b",
+        "name": "Targe",
+        "culture": "battania",
+        "weight": "2.5",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "330"
+    },
+    {
+        "id": "battania_shield_targe_a",
+        "name": "Reinforced Targe",
+        "culture": "battania",
+        "weight": "2.5",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "380"
+    },
+    {
+        "id": "large_adarga",
+        "name": "Large Adarga",
+        "culture": "aserai",
+        "weight": "7.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "370"
+    },
+    {
+        "id": "battania_large_shield_a",
+        "name": "Bronze Reinforced Highland Large Shield",
+        "culture": "battania",
+        "weight": "3.5",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "430"
+    },
+    {
+        "id": "battania_large_shield_b",
+        "name": "Iron Reinforced Highland Large Shield",
+        "culture": "battania",
+        "weight": "3.5",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "480"
+    },
+    {
+        "id": "battania_large_shield_c",
+        "name": "Highland Large Shield",
+        "culture": "battania",
+        "weight": "3.5",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "390"
+    },
+    {
+        "id": "old_kite_shield",
+        "name": "Makeshift Kite Shield",
+        "culture": "neutral",
+        "weight": "4.2",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "170",
+        "hit_points": "170"
+    },
+    {
+        "id": "worn_kite_shield",
+        "name": "Worn Kite Shield",
+        "culture": "neutral",
+        "weight": "3.7",
+        "thrust_speed": "82",
+        "speed_rating": "83",
+        "weapon_length": "128",
+        "hit_points": "180"
+    },
+    {
+        "id": "leather_bound_kite_shield",
+        "name": "Leather Bound Kite Shield",
+        "culture": "neutral",
+        "weight": "6.3",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "128",
+        "hit_points": "215"
+    },
+    {
+        "id": "reinforced_kite_shield",
+        "name": "Reinforced Kite Shield",
+        "culture": "neutral",
+        "weight": "5.8",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "128",
+        "hit_points": "350"
+    },
+    {
+        "id": "stronger_reinforced_kite_shield",
+        "name": "Reinforced Oaken Kite Shield",
+        "culture": "neutral",
+        "weight": "5.8",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "128",
+        "hit_points": "430"
+    },
+    {
+        "id": "pavise_shield",
+        "name": "Pavise Shield",
+        "culture": "vlandia",
+        "weight": "7.0",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "118",
+        "hit_points": "560"
+    },
+    {
+        "id": "old_horsemans_kite_shield",
+        "name": "Wooden Kite Shield",
+        "culture": "neutral",
+        "weight": "3.6",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "78",
+        "hit_points": "190"
+    },
+    {
+        "id": "worn_horsemans_kite_shield",
+        "name": "Makeshift Horseman Kite Shield",
+        "culture": "neutral",
+        "weight": "4.0",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "78",
+        "hit_points": "195"
+    },
+    {
+        "id": "bound_horsemans_kite_shield",
+        "name": "Cavalry Kite Shield",
+        "culture": "neutral",
+        "weight": "5.5",
+        "thrust_speed": "82",
+        "speed_rating": "94",
+        "weapon_length": "78",
+        "hit_points": "225"
+    },
+    {
+        "id": "reinforced_horsemans_kite_shield",
+        "name": "Reinforced Cavalry Small Shield",
+        "culture": "neutral",
+        "weight": "5.8",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "78",
+        "hit_points": "265"
+    },
+    {
+        "id": "battered_horsemans_kite_shield",
+        "name": "Simple Horseman Kite Shield",
+        "culture": "neutral",
+        "weight": "3.6",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "78",
+        "hit_points": "170"
+    },
+    {
+        "id": "light_horsemans_kite_shield",
+        "name": "Light Cavalry Kite Shield",
+        "culture": "neutral",
+        "weight": "1.9",
+        "thrust_speed": "82",
+        "speed_rating": "103",
+        "weapon_length": "78",
+        "hit_points": "205"
+    },
+    {
+        "id": "heavy_horsemans_kite_shield",
+        "name": "Reinforced Cavalry Kite Shield",
+        "culture": "neutral",
+        "weight": "4.9",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "78",
+        "hit_points": "430"
+    },
+    {
+        "id": "battered_kite_shield",
+        "name": "Simple Kite Shield",
+        "culture": "neutral",
+        "weight": "4.2",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "175"
+    },
+    {
+        "id": "reinforced_flat_kite_shield",
+        "name": "Reinforced Flat Kite Shield",
+        "culture": "neutral",
+        "weight": "4.6",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "280"
+    },
+    {
+        "id": "studded_bound_kite_shield",
+        "name": "Studded Bound Kite Shield",
+        "culture": "neutral",
+        "weight": "4.8",
+        "thrust_speed": "82",
+        "speed_rating": "91",
+        "weapon_length": "110",
+        "hit_points": "270"
+    },
+    {
+        "id": "fortified_kite_shield",
+        "name": "Fortified Kite Shield",
+        "culture": "neutral",
+        "weight": "5.4",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "530"
+    },
+    {
+        "id": "horsemans_heater_shield",
+        "name": "Small Cavalry Heater Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "97",
+        "weapon_length": "65",
+        "hit_points": "210"
+    },
+    {
+        "id": "small_heater_shield",
+        "name": "Small Heater Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "250"
+    },
+    {
+        "id": "jousting_shield",
+        "name": "Knights Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "90",
+        "hit_points": "285"
+    },
+    {
+        "id": "heater_shield_with_cutout",
+        "name": "Heater Shield with Cutout",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "80",
+        "hit_points": "235"
+    },
+    {
+        "id": "flat_heater_shield",
+        "name": "Flat Heater Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "93",
+        "weapon_length": "90",
+        "hit_points": "310"
+    },
+    {
+        "id": "heavy_heater_shield",
+        "name": "Heavy Heater Shield",
+        "culture": "vlandia",
+        "weight": "3.3",
+        "thrust_speed": "82",
+        "speed_rating": "87",
+        "weapon_length": "100",
+        "hit_points": "510"
+    },
+    {
+        "id": "small_flat_heater_shield",
+        "name": "Small Flat Heater Shield",
+        "culture": "vlandia",
+        "weight": "2.5",
+        "thrust_speed": "82",
+        "speed_rating": "95",
+        "weapon_length": "70",
+        "hit_points": "220"
+    },
+    {
+        "id": "wide_heater_shield",
+        "name": "Wide Heater Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "90",
+        "hit_points": "450"
+    },
+    {
+        "id": "bracketed_heater_shield",
+        "name": "Bracketed Heater Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "95",
+        "hit_points": "370"
+    },
+    {
+        "id": "tall_heater_shield",
+        "name": "Tall Heater Shield",
+        "culture": "vlandia",
+        "weight": "2.1",
+        "thrust_speed": "82",
+        "speed_rating": "85",
+        "weapon_length": "105",
+        "hit_points": "540"
+    },
+    {
+        "id": "adarga",
+        "name": "Adarga",
+        "culture": "aserai",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "200"
+    },
+    {
+        "id": "studded_adarga",
+        "name": "Studded Adarga",
+        "culture": "aserai",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "260"
+    },
+    {
+        "id": "ornate_adarga",
+        "name": "Ornate Adarga",
+        "culture": "aserai",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "420"
+    },
+    {
+        "id": "desert_oval_shield",
+        "name": "Desert Oval Shield",
+        "culture": "aserai",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "340"
+    },
+    {
+        "id": "southern_oval_shield",
+        "name": "Reinforced Oval Shield",
+        "culture": "aserai",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "360"
+    },
+    {
+        "id": "emirs_oval_shield",
+        "name": "Decorated Oval Shield",
+        "culture": "aserai",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "410"
+    },
+    {
+        "id": "highland_scouts_shield",
+        "name": "Decorated Round Shield",
+        "culture": "battania",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "400"
+    },
+    {
+        "id": "highland_riders_shield",
+        "name": "Highland Round Shield",
+        "culture": "battania",
+        "weight": "4.7",
+        "thrust_speed": "120",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "440"
+    },
+    {
+        "id": "tribal_steppe_shield",
+        "name": "Tribal Steppe Shield",
+        "culture": "khuzait",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "440"
+    },
+    {
+        "id": "decorated_steppe_shield",
+        "name": "Round Steppe Shield",
+        "culture": "khuzait",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "300"
+    },
+    {
+        "id": "noyans_shield",
+        "name": "Decorated Eastern Shield",
+        "culture": "neutral",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "480"
+    },
+    {
+        "id": "steppe_guardian_shield",
+        "name": "Eastern Cavalry Shield",
+        "culture": "neutral",
+        "weight": "2.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "60",
+        "hit_points": "380"
+    },
+    {
+        "id": "eastern_wicker_shield",
+        "name": "Wicker Square Shield",
+        "culture": "khuzait",
+        "weight": "2.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "90",
+        "hit_points": "260"
+    },
+    {
+        "id": "stronger_eastern_wicker_shield",
+        "name": "Reinforced Wicker Square Shield",
+        "culture": "khuzait",
+        "weight": "2.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "90",
+        "hit_points": "370"
+    },
+    {
+        "id": "footmans_wicker_shield",
+        "name": "Wicker Shield",
+        "culture": "khuzait",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "95",
+        "hit_points": "300"
+    },
+    {
+        "id": "stronger_footmans_wicker_shield",
+        "name": "Reinforced Wicker Shield",
+        "culture": "khuzait",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "95",
+        "hit_points": "340"
+    },
+    {
+        "id": "northern_scouts_shield",
+        "name": "Sturdy Cavalry Kite Shield",
+        "culture": "sturgia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "101",
+        "weapon_length": "78",
+        "hit_points": "300"
+    },
+    {
+        "id": "northern_horsemans_shield",
+        "name": "Reinforced Cavalry Shield",
+        "culture": "sturgia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "78",
+        "hit_points": "320"
+    },
+    {
+        "id": "viking_round_shield",
+        "name": "Norse Round Shield",
+        "culture": "sturgia",
+        "weight": "3.5",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "70",
+        "hit_points": "430"
+    },
+    {
+        "id": "northern_round_shield",
+        "name": "Round Shield",
+        "culture": "sturgia",
+        "weight": "3.3",
+        "thrust_speed": "82",
+        "speed_rating": "87",
+        "weapon_length": "70",
+        "hit_points": "280"
+    },
+    {
+        "id": "western_riders_kite_shield",
+        "name": "Horseman Kite Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "85",
+        "hit_points": "275"
+    },
+    {
+        "id": "ironrim_riders_kite_shield",
+        "name": "Reinforced Iron Rimmed Kite Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "85",
+        "hit_points": "290"
+    },
+    {
+        "id": "chivalric_kite_shield",
+        "name": "Knights Kite Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "550"
+    },
+    {
+        "id": "western_kite_shield",
+        "name": "Kite Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "300"
+    },
+    {
+        "id": "ironrim_kite_shield",
+        "name": "Iron Rimmed Kite Shield",
+        "culture": "vlandia",
+        "weight": "4.7",
+        "thrust_speed": "82",
+        "speed_rating": "82",
+        "weapon_length": "110",
+        "hit_points": "270"
+    }
+]
