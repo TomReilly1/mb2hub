@@ -29,7 +29,6 @@ Here are the technologies I am using to power this project:
 * [Primevue](https://www.primefaces.org/primevue/)
 * [Node.js](https://nodejs.org/)
 * [Express.js](https://expressjs.com/)
-* [Prisma](https://www.prisma.io/)
 * [NGINX](https://www.nginx.com/)
 
 
@@ -69,7 +68,7 @@ Here are the technologies I am using to power this project:
   - [x] add card views
   - [x] search engine
   - [ ] general comparison page
-  - [ ] percentile rankings
+  - [x] percentile rankings
   - [ ] better/more linking in tables and cards
 
 
