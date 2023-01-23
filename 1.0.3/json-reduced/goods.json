@@ -1,1 +1,200 @@
-[{"id": "wool", "name": "Wool", "plural": "loads of wool", "value": 40, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "silver", "name": "Silver Ore", "plural": "loads of silver ore", "value": 130, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "jewelry", "name": "Jewelry", "plural": "items of jewelry", "value": 600, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "salt", "name": "Salt", "plural": "sacks of salt", "value": 40, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "spice", "name": "Spice", "plural": "sacks of spice", "value": 300, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "cotton", "name": "Raw Silk", "plural": "bolts of silk", "value": 80, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "flax", "name": "Flax", "plural": "sacks of flax", "value": 15, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "clay", "name": "Clay", "plural": "loads of clay", "value": 18, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "pottery", "name": "Pottery", "plural": "crates of pottery", "value": 200, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "linen", "name": "Linen", "plural": "rolls of linen", "value": 200, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "leather", "name": "Leather", "plural": "crates of leather", "value": 250, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "velvet", "name": "Velvet", "plural": "rolls of velvet", "value": 500, "weight": 10, "is_food": false, "morale_bonus": 0}, {"id": "cheese", "name": "Cheese", "plural": "barrels of cheese", "value": 40, "weight": 10, "is_food": "true", "morale_bonus": 1}, {"id": "butter", "name": "Butter", "plural": "casks of butter", "value": 25, "weight": 10, "is_food": "true", "morale_bonus": 1}, {"id": "fish", "name": "Fish", "plural": "barrels of fish", "value": 15, "weight": 10, "is_food": "true", "morale_bonus": 1}, {"id": "grape", "name": "Grapes", "plural": "sacks of grapes", "value": 20, "weight": 10, "is_food": "true", "morale_bonus": 1}, {"id": "date_fruit", "name": "Date Fruit", "plural": "sacks of date fruit", "value": 50, "weight": 10, "is_food": "true", "morale_bonus": 2}, {"id": "olives", "name": "Olives", "plural": "barrels of olives", "value": 30, "weight": 10, "is_food": "true", "morale_bonus": 2}, {"id": "beer", "name": "Beer", "plural": "casks of beer", "value": 100, "weight": 10, "is_food": "true", "morale_bonus": 2}, {"id": "wine", "name": "Wine", "plural": "amphorae of wine", "value": 75, "weight": 10, "is_food": "false", "morale_bonus": 3}, {"id": "oil", "name": "Oil", "plural": "amphorae of oil", "value": 210, "weight": 10, "is_food": "false", "morale_bonus": 0}, {"id": "fur", "name": "Fur", "plural": "packs of fur", "value": 400, "weight": 10, "is_food": false, "morale_bonus": 0}]
+[
+    {
+        "id": "wool",
+        "name": "Wool",
+        "plural": "loads of wool",
+        "value": 40,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "silver",
+        "name": "Silver Ore",
+        "plural": "loads of silver ore",
+        "value": 130,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "jewelry",
+        "name": "Jewelry",
+        "plural": "items of jewelry",
+        "value": 600,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "salt",
+        "name": "Salt",
+        "plural": "sacks of salt",
+        "value": 40,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "spice",
+        "name": "Spice",
+        "plural": "sacks of spice",
+        "value": 300,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "cotton",
+        "name": "Raw Silk",
+        "plural": "bolts of silk",
+        "value": 80,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "flax",
+        "name": "Flax",
+        "plural": "sacks of flax",
+        "value": 15,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "clay",
+        "name": "Clay",
+        "plural": "loads of clay",
+        "value": 18,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "pottery",
+        "name": "Pottery",
+        "plural": "crates of pottery",
+        "value": 200,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "linen",
+        "name": "Linen",
+        "plural": "rolls of linen",
+        "value": 200,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "leather",
+        "name": "Leather",
+        "plural": "crates of leather",
+        "value": 250,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "velvet",
+        "name": "Velvet",
+        "plural": "rolls of velvet",
+        "value": 500,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    },
+    {
+        "id": "cheese",
+        "name": "Cheese",
+        "plural": "barrels of cheese",
+        "value": 40,
+        "weight": 10,
+        "is_food": "true",
+        "morale_bonus": 1
+    },
+    {
+        "id": "butter",
+        "name": "Butter",
+        "plural": "casks of butter",
+        "value": 25,
+        "weight": 10,
+        "is_food": "true",
+        "morale_bonus": 1
+    },
+    {
+        "id": "fish",
+        "name": "Fish",
+        "plural": "barrels of fish",
+        "value": 15,
+        "weight": 10,
+        "is_food": "true",
+        "morale_bonus": 1
+    },
+    {
+        "id": "grape",
+        "name": "Grapes",
+        "plural": "sacks of grapes",
+        "value": 20,
+        "weight": 10,
+        "is_food": "true",
+        "morale_bonus": 1
+    },
+    {
+        "id": "date_fruit",
+        "name": "Date Fruit",
+        "plural": "sacks of date fruit",
+        "value": 50,
+        "weight": 10,
+        "is_food": "true",
+        "morale_bonus": 2
+    },
+    {
+        "id": "olives",
+        "name": "Olives",
+        "plural": "barrels of olives",
+        "value": 30,
+        "weight": 10,
+        "is_food": "true",
+        "morale_bonus": 2
+    },
+    {
+        "id": "beer",
+        "name": "Beer",
+        "plural": "casks of beer",
+        "value": 100,
+        "weight": 10,
+        "is_food": "true",
+        "morale_bonus": 2
+    },
+    {
+        "id": "wine",
+        "name": "Wine",
+        "plural": "amphorae of wine",
+        "value": 75,
+        "weight": 10,
+        "is_food": "false",
+        "morale_bonus": 3
+    },
+    {
+        "id": "oil",
+        "name": "Oil",
+        "plural": "amphorae of oil",
+        "value": 210,
+        "weight": 10,
+        "is_food": "false",
+        "morale_bonus": 0
+    },
+    {
+        "id": "fur",
+        "name": "Fur",
+        "plural": "packs of fur",
+        "value": 400,
+        "weight": 10,
+        "is_food": false,
+        "morale_bonus": 0
+    }
+]
