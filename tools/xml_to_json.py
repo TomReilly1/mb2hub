@@ -51,6 +51,8 @@ if __name__ == '__main__':
 
 	convertToJSON('weapons.xml')
 
+	convertToJSON('shields.xml')
+
 	convertToJSON('settlements.xml')
 
 	convertToJSON('spclans.xml')
