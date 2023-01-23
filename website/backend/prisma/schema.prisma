@@ -1,0 +1,166 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model armors {
+  id          String  @id
+  name        String
+  culture     String
+  weight      Float
+  type        String
+  head_armor  Int
+  body_armor  Int
+  arm_armor   Int
+  leg_armor   Int
+}
+
+model bows {
+  id              String  @id
+  name            String  @unique
+  culture         String
+  weight          Float
+  type            String
+  subtype         String
+  difficulty      Int
+  speed_rating    Int
+  missile_speed   Int
+  accuracy        Int
+  damage          Int
+  fire_on_mount   Boolean
+  reload_on_mount Boolean
+}
+
+model castles {
+  id              String @id
+  name            String @unique
+  owner_id        String
+  owner_name      String
+  culture         String
+  x_position      Float
+  y_position      Float
+  prosperity      Int
+  wall_level      Int
+  bound_village_1 String?
+  bound_village_2 String?
+}
+
+model clans {
+  id              String @id
+  name            String @unique
+  owner           String
+  kingdom         String
+  culture         String
+  tier            Int
+  is_ruling_clan  Boolean
+}
+
+model cultures {
+  id              String @id
+  name            String @unique
+  is_main_culture Boolean
+  desc_text       String?
+}
+
+model goods {
+  id            String @id
+  name          String @unique
+  plural        String
+  value         Int
+  weight        Int
+  is_food       Boolean
+  morale_bonus  Int
+}
+
+model kingdoms {
+  id                      String @id
+  name                    String @unique
+  title                   String
+  ruler_title             String
+  culture                 String
+  primary_banner_color    String
+  secondary_banner_color  String
+  label_color             String
+  color_1                 String
+  color_2                 String
+  alternative_color_1     String
+  alternative_color_2     String
+  desc_text               String?
+}
+
+model lords {
+  id              String @id
+  name            String
+  culture         String
+  default_group   String
+  age             Int?
+  sex             String
+}
+
+model mounts {
+  id              String @id
+  name            String @unique
+  culture         String
+  subtype         String
+  difficulty      Int
+  is_merchandise  Boolean
+  maneuver        Int
+  speed           Int
+  charge_damage   Int
+  health          Int
+}
+
+model towns {
+  id              String @id
+  name            String @unique
+  owner_id        String
+  owner_name      String
+  culture         String
+  x_position      Float
+  y_position      Float
+  prosperity      Int
+  wall_level      Int
+  bound_village_1 String
+  bound_village_2 String
+  bound_village_3 String?
+  bound_village_4 String?
+  desc_text       String?
+}
+
+model troops {
+  id                String @id
+  name              String @unique
+  culture           String
+  default_group     String
+  occupation        String
+  level             Int
+  upgrade_target_1  String?
+  upgrade_target_2  String?
+  one_handed        Int
+  two_handed        Int
+  polearm           Int
+  bow               Int
+  crossbow          Int
+  throwing          Int
+  riding            Int
+  athletics         Int
+}
+
+model villages {
+  id                String @id
+  name              String @unique
+  culture           String
+  village_type      String
+  x_position        Float
+  y_position        Float
+  hearth            Int
+  bound_settlement  String
+  desc_text         String?
+}
