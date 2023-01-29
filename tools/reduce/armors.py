@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from helper_json import *
+from helper_json import read_json, write_json
 
 
 load_dotenv()
@@ -27,7 +27,12 @@ def add_armor_type(read_path):
         curr_obj['name'] = i['@name'].split('}')[1]
         curr_obj['culture'] = i['@culture'].split('.')[1]
         curr_obj['weight'] = i['@weight']
-        curr_obj['type'] = i['@Type']
+        if i['@Type'] == 'Cape':
+            curr_obj['type'] = 'ShoulderArmor'
+        elif i['@Type'] == 'HandArmor':
+            curr_obj['type'] = 'ArmArmor'
+        else:
+            curr_obj['type'] = i['@Type']
 
         try:
             curr_obj['head_armor'] = i['ItemComponent']['Armor']['@head_armor']
