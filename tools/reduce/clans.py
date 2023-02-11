@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from helper_json import *
+from helper_json import read_json, write_json
 
 
 load_dotenv()
@@ -13,6 +13,15 @@ W_PATH = f"{PROJ_DIR}/{VERSION}/json-reduced/clans.json"
 LORD_PATH = f'{PROJ_DIR}/{VERSION}/json-reduced/lords.json'
 
 
+def get_clan_leader(leader_id):
+    json_arr = read_json(LORD_PATH)
+
+    for lord in json_arr:
+        if lord['id'] == leader_id:
+            return lord['name']
+
+    print('LORD NOT FOUND')
+
 def reduce_clans():
     json_arr = read_json(R_PATH)['Factions']['Faction']
     output_array = []
@@ -23,18 +32,11 @@ def reduce_clans():
 
             output_object['id'] = clan['@id']
             output_object['name'] = clan['@name'].split('}')[1]
-            output_object['owner'] = get_clan_leader(clan['@owner'].split('.')[1], LORD_PATH)
-            
-            temp = clan['@super_faction'].split('.')[1]
-            if temp == 'empire':
-                output_object['kingdom'] = 'Northern Empire'
-            elif temp == 'empire_w':
-                output_object['kingdom'] = 'Western Empire'
-            elif temp == 'empire_s':
-                output_object['kingdom'] = 'Southern Empire'
-            else:
-                output_object['kingdom'] = temp.capitalize()
-
+            output_object['owner_lord'] = {
+                'id': clan['@owner'].split('.')[1],
+                'name': get_clan_leader(clan['@owner'].split('.')[1])
+            }
+            output_object['kingdom'] = clan['@super_faction'].split('.')[1]
             output_object['culture'] = clan['@culture'].split('.')[1]
             output_object['tier'] = clan['@tier']
 
@@ -44,7 +46,7 @@ def reduce_clans():
                 output_object['is_ruling_clan'] = False
 
             output_array.append(output_object)
- 
+
     write_json(W_PATH, output_array)
 
 

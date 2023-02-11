@@ -11,6 +11,13 @@ VERSION = os.environ['VERSION']
 R_PATH = f"{PROJ_DIR}/{VERSION}/json/settlements.json"
 W_PATH = f"{PROJ_DIR}/{VERSION}/json-reduced/villages.json"
 
+
+def get_bound_settlement_name(json_arr, settlement_id):
+    for i in json_arr:
+        if  i['@id'] == settlement_id:
+            return i['@name'].split('}')[1]
+
+    raise Exception(f'Bound settlement not found for "{settlement_id}"')
             
 def reduce_villages():
     json_arr = read_json(R_PATH)['Settlements']['Settlement']
@@ -28,7 +35,13 @@ def reduce_villages():
             output_object['x_position'] = i['@posX']
             output_object['y_position'] = i['@posY']
             output_object['hearth'] = vilg_prefix['@hearth']
-            output_object['bound_settlement'] = vilg_prefix['@bound'].split('.')[1]
+            # output_object['bound_settlement_json'] = vilg_prefix['@bound'].split('.')[1]
+            bound_settlement_id = vilg_prefix['@bound'].split('.')[1]
+            output_object['bound_settlement'] = {
+                'id': bound_settlement_id,
+                'name': get_bound_settlement_name(json_arr, bound_settlement_id)
+            
+            }
             output_object['desc_text'] = i['@text'].split('}')[1] if i.get('@text') else None
 
             output_array.append(output_object)

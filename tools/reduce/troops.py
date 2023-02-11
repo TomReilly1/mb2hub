@@ -1,7 +1,7 @@
 import os
 import re
 from dotenv import load_dotenv
-from helper_json import *
+from helper_json import read_json, write_json
 
 
 load_dotenv()
@@ -12,6 +12,64 @@ VERSION = os.environ['VERSION']
 R_PATH = f'{PROJ_DIR}/{VERSION}/json/spnpccharacters.json'
 W_PATH = f'{PROJ_DIR}/{VERSION}/json-reduced/troops.json'
 SKILL_TEMPLATE_PATH = f'{PROJ_DIR}/{VERSION}/json/sandboxcore_skill_sets.json'
+NOBLE_TROOP_PATH = f'{PROJ_DIR}/{VERSION}/nobleTroops.json'
+
+
+def get_skill_template(skill_template):
+    json_data = read_json(SKILL_TEMPLATE_PATH)
+    json_arr =  json_data['SkillSets']['SkillSet']
+
+    for template in json_arr:
+        if template['@id'] == skill_template:
+            return template['skill']
+
+    raise Exception('TEMPLATE NOT FOUND')
+
+def get_troop_name(json_arr, troop_id):
+    for troop in json_arr:
+        if troop['@id'] == troop_id:
+            return troop['@name'].split('}')[1]
+
+    print('TROOP NOT FOUND')
+
+
+def get_upgrade_targets(json_arr, troop):
+    output_upgrade_target_array = []
+
+    # need to check if there is 0, 1, or 2 upgrade targets
+    # None/null indicates 0, dict indicates 1, list indicates 2
+    if troop.get('upgrade_targets'):
+        target = troop['upgrade_targets']['upgrade_target']
+        if isinstance(target, dict):
+            target_id = target['@id'].split('.')[1]
+            output_upgrade_target_array.append({'id': target_id})
+        elif isinstance(target, list):
+            target_id_1 = target[0]['@id'].split('.')[1]
+            target_id_2 = target[1]['@id'].split('.')[1]
+            output_upgrade_target_array.append({'id': target_id_1})
+            output_upgrade_target_array.append({'id': target_id_2})
+        else:
+            raise Exception('Unkown upgrade_target data structure')
+
+    for troop in output_upgrade_target_array:
+        l_id = troop['id']
+        troop['name'] = get_troop_name(json_arr, l_id)
+
+    return output_upgrade_target_array
+
+def check_nobility(troop_id: str, occupation: str) -> bool:
+    if occupation != 'Soldier':
+        print('NOT noble')
+        return False
+
+    noble_troop_list = read_json(NOBLE_TROOP_PATH)
+
+    if troop_id in noble_troop_list:
+        print('IS noble')
+        return True
+    else:
+        print('NOT noble')
+        return False
 
 
 def reduce_troops():
@@ -19,8 +77,7 @@ def reduce_troops():
     output_array = []
 
     for troop in json_arr:
-        flag = troop.get('@occupation')
-        if not flag:
+        if not troop.get('@occupation'):
             continue
 
         troop_occupations = ('Soldier', 'CaravanGuard', 'Mercenary')
@@ -39,58 +96,28 @@ def reduce_troops():
         output_object['default_group'] = troop['@default_group']
         output_object['occupation'] = troop['@occupation']
         output_object['level'] = troop['@level']
-        
-        # need to check if there is 0, 1, or 2 upgrade targets
-        # None/null indicates 0, dict indicates 1, list indicates 2
-        output_object['upgrade_targets'] = []
-        if troop.get('upgrade_targets'):
-            if isinstance(troop['upgrade_targets']['upgrade_target'], dict):
-                target = troop['upgrade_targets']['upgrade_target']['@id'].split('.')[1]
-                output_object['upgrade_targets'].append(target)
-            elif isinstance(troop['upgrade_targets']['upgrade_target'], list):
-                target_1 = troop['upgrade_targets']['upgrade_target'][0]['@id'].split('.')[1]
-                output_object['upgrade_targets'].append(target_1)
-                target_2 = troop['upgrade_targets']['upgrade_target'][1]['@id'].split('.')[1]
-                output_object['upgrade_targets'].append(target_2)
-            else:
-                raise Exception('Unkown upgrade_target data structure')
-            
+        output_object['is_noble'] = check_nobility(troop['@id'], troop['@occupation'])
+        output_object['upgrade_targets'] = get_upgrade_targets(json_arr, troop)
 
+        skills_list = ('OneHanded', 'TwoHanded', 'Polearm', 'Bow',
+                        'Crossbow', 'Throwing', 'Riding', 'Athletics')
+        skill_values = None
 
-        skills_list = ('OneHanded', 'TwoHanded', 'Polearm', 'Bow', 'Crossbow', 'Throwing', 'Riding', 'Athletics')
         if troop['skills'] is None:
             skill_template = troop['@skill_template'].split('.')[1]
-            template_skills = get_skill_template(skill_template, SKILL_TEMPLATE_PATH)
-
-            for skill_from_list in skills_list:
-                skill = []
-                skill = re.findall('[A-Z][^A-Z]*', skill_from_list)
-                skill = '_'.join(skill).lower()
-                output_object[skill] = '0'
-
-                for skill_from_temp in template_skills:
-                    if skill_from_list == skill_from_temp['@id']:
-                        output_object[skill] = skill_from_temp['@value']
-                        break
+            skill_values = get_skill_template(skill_template)
         else:
-            json_skills = troop['skills']['skill']
-            for skill_from_list in skills_list:
-                skill = []
-                skill = re.findall('[A-Z][^A-Z]*', skill_from_list)
-                skill = '_'.join(skill).lower()
-                output_object[skill] = '0'
+            skill_values = troop['skills']['skill']
 
-                for skill_from_json in json_skills:
-                    if skill_from_list == skill_from_json['@id']:
-                        output_object[skill] = skill_from_json['@value']
-                        break
+        for i in skills_list:
+            temp = re.findall('[A-Z][^A-Z]*', i)
+            skill = '_'.join(temp).lower()
+            output_object[skill] = '0'
 
-        # # want to move Athletics and Riding to the end
-        # riding = output_object.pop('Riding')
-        # output_object['Riding'] = riding
-        # athletics = output_object.pop('Athletics')
-        # output_object['Athletics'] = athletics
-
+            for j in skill_values:
+                if i == j['@id']:
+                    output_object[skill] = j['@value']
+                    break
 
         output_array.append(output_object)
 
