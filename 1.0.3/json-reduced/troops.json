@@ -6,9 +6,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_tribesman",
-            "aserai_mameluke_soldier"
+            {
+                "id": "aserai_tribesman",
+                "name": "Aserai Tribesman"
+            },
+            {
+                "id": "aserai_mameluke_soldier",
+                "name": "Aserai Mamluke Soldier"
+            }
         ],
         "one_handed": "20",
         "two_handed": "10",
@@ -26,9 +33,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_skirmisher",
-            "aserai_footman"
+            {
+                "id": "aserai_skirmisher",
+                "name": "Aserai Light Archer"
+            },
+            {
+                "id": "aserai_footman",
+                "name": "Aserai Footman"
+            }
         ],
         "one_handed": "40",
         "two_handed": "20",
@@ -46,8 +60,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_infantry"
+            {
+                "id": "aserai_infantry",
+                "name": "Aserai Infantry"
+            }
         ],
         "one_handed": "70",
         "two_handed": "15",
@@ -65,8 +83,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_archer"
+            {
+                "id": "aserai_archer",
+                "name": "Aserai Archer"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -84,8 +106,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_master_archer"
+            {
+                "id": "aserai_master_archer",
+                "name": "Aserai Master Archer"
+            }
         ],
         "one_handed": "100",
         "two_handed": "40",
@@ -103,6 +129,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "50",
@@ -120,8 +147,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_veteran_infantry"
+            {
+                "id": "aserai_veteran_infantry",
+                "name": "Aserai Veteran Infantry"
+            }
         ],
         "one_handed": "100",
         "two_handed": "80",
@@ -139,6 +170,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "90",
@@ -156,9 +188,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_mameluke_regular",
-            "aserai_mameluke_axeman"
+            {
+                "id": "aserai_mameluke_regular",
+                "name": "Aserai Mamluke Regular"
+            },
+            {
+                "id": "aserai_mameluke_axeman",
+                "name": "Aserai Mamluke Axeman"
+            }
         ],
         "one_handed": "50",
         "two_handed": "15",
@@ -176,8 +215,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_mameluke_cavalry"
+            {
+                "id": "aserai_mameluke_cavalry",
+                "name": "Aserai Mamluke Cavalry"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -195,8 +238,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_mameluke_heavy_cavalry"
+            {
+                "id": "aserai_mameluke_heavy_cavalry",
+                "name": "Aserai Mamluke Heavy Cavalry"
+            }
         ],
         "one_handed": "100",
         "two_handed": "45",
@@ -214,6 +261,7 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -231,8 +279,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "aserai_mameluke_guard"
+            {
+                "id": "aserai_mameluke_guard",
+                "name": "Aserai Mamluke Guard"
+            }
         ],
         "one_handed": "70",
         "two_handed": "70",
@@ -250,8 +302,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "mamluke_palace_guard"
+            {
+                "id": "mamluke_palace_guard",
+                "name": "Aserai Mamluke Palace Guard"
+            }
         ],
         "one_handed": "60",
         "two_handed": "100",
@@ -269,6 +325,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "80",
         "two_handed": "130",
@@ -286,8 +343,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": true,
         "upgrade_targets": [
-            "aserai_tribal_horseman"
+            {
+                "id": "aserai_tribal_horseman",
+                "name": "Aserai Tribal Horseman"
+            }
         ],
         "one_handed": "20",
         "two_handed": "5",
@@ -305,8 +366,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": true,
         "upgrade_targets": [
-            "aserai_faris"
+            {
+                "id": "aserai_faris",
+                "name": "Aserai Faris"
+            }
         ],
         "one_handed": "30",
         "two_handed": "10",
@@ -324,8 +389,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": true,
         "upgrade_targets": [
-            "aserai_veteran_faris"
+            {
+                "id": "aserai_veteran_faris",
+                "name": "Aserai Veteran Faris"
+            }
         ],
         "one_handed": "70",
         "two_handed": "15",
@@ -343,8 +412,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": true,
         "upgrade_targets": [
-            "aserai_vanguard_faris"
+            {
+                "id": "aserai_vanguard_faris",
+                "name": "Aserai Vanguard Faris"
+            }
         ],
         "one_handed": "130",
         "two_handed": "60",
@@ -362,6 +435,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "31",
+        "is_noble": true,
         "upgrade_targets": [],
         "one_handed": "170",
         "two_handed": "60",
@@ -379,9 +453,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_clanwarrior",
-            "battanian_woodrunner"
+            {
+                "id": "battanian_clanwarrior",
+                "name": "Battanian Clan Warrior"
+            },
+            {
+                "id": "battanian_woodrunner",
+                "name": "Battanian Wood Runner"
+            }
         ],
         "one_handed": "20",
         "two_handed": "10",
@@ -399,8 +480,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_trained_warrior"
+            {
+                "id": "battanian_trained_warrior",
+                "name": "Battanian Trained Warrior"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -418,9 +503,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_picked_warrior",
-            "battanian_scout"
+            {
+                "id": "battanian_picked_warrior",
+                "name": "Battanian Picked Warrior"
+            },
+            {
+                "id": "battanian_scout",
+                "name": "Battanian Scout"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -438,8 +530,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_oathsworn"
+            {
+                "id": "battanian_oathsworn",
+                "name": "Battanian Oathsworn"
+            }
         ],
         "one_handed": "110",
         "two_handed": "60",
@@ -457,6 +553,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -474,8 +571,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_horseman"
+            {
+                "id": "battanian_horseman",
+                "name": "Battanian Horseman"
+            }
         ],
         "one_handed": "100",
         "two_handed": "45",
@@ -493,6 +594,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -510,6 +612,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -527,9 +630,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_raider",
-            "battanian_skirmisher"
+            {
+                "id": "battanian_raider",
+                "name": "Battanian Raider"
+            },
+            {
+                "id": "battanian_skirmisher",
+                "name": "Battanian Skirmisher"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -547,8 +657,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_falxman"
+            {
+                "id": "battanian_falxman",
+                "name": "Battanian Falxman"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -566,8 +680,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_veteran_skirmisher"
+            {
+                "id": "battanian_veteran_skirmisher",
+                "name": "Battanian Veteran Skirmisher"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -585,6 +703,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "120",
         "two_handed": "80",
@@ -602,8 +721,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_veteran_falxman"
+            {
+                "id": "battanian_veteran_falxman",
+                "name": "Battanian Veteran Falxman"
+            }
         ],
         "one_handed": "60",
         "two_handed": "100",
@@ -621,9 +744,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "battanian_wildling",
-            "battanian_mounted_skirmisher"
+            {
+                "id": "battanian_wildling",
+                "name": "Battanian Wildling"
+            },
+            {
+                "id": "battanian_mounted_skirmisher",
+                "name": "Battanian Mounted Skirmisher"
+            }
         ],
         "one_handed": "60",
         "two_handed": "45",
@@ -641,6 +771,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "100",
@@ -658,8 +789,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": true,
         "upgrade_targets": [
-            "battanian_highborn_warrior"
+            {
+                "id": "battanian_highborn_warrior",
+                "name": "Battanian Highborn Warrior"
+            }
         ],
         "one_handed": "20",
         "two_handed": "40",
@@ -677,8 +812,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": true,
         "upgrade_targets": [
-            "battanian_hero"
+            {
+                "id": "battanian_hero",
+                "name": "Battanian Hero"
+            }
         ],
         "one_handed": "30",
         "two_handed": "90",
@@ -696,8 +835,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": true,
         "upgrade_targets": [
-            "battanian_fian"
+            {
+                "id": "battanian_fian",
+                "name": "Battanian Fian"
+            }
         ],
         "one_handed": "60",
         "two_handed": "110",
@@ -715,8 +858,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": true,
         "upgrade_targets": [
-            "battanian_fian_champion"
+            {
+                "id": "battanian_fian_champion",
+                "name": "Battanian Fian Champion"
+            }
         ],
         "one_handed": "80",
         "two_handed": "130",
@@ -734,6 +881,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "31",
+        "is_noble": true,
         "upgrade_targets": [],
         "one_handed": "90",
         "two_handed": "220",
@@ -751,9 +899,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_infantryman",
-            "imperial_archer"
+            {
+                "id": "imperial_infantryman",
+                "name": "Imperial Infantryman"
+            },
+            {
+                "id": "imperial_archer",
+                "name": "Imperial Archer"
+            }
         ],
         "one_handed": "20",
         "two_handed": "10",
@@ -771,8 +926,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_trained_infantryman"
+            {
+                "id": "imperial_trained_infantryman",
+                "name": "Imperial Trained Infantryman"
+            }
         ],
         "one_handed": "40",
         "two_handed": "20",
@@ -790,8 +949,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": true,
         "upgrade_targets": [
-            "imperial_equite"
+            {
+                "id": "imperial_equite",
+                "name": "Imperial Equite"
+            }
         ],
         "one_handed": "60",
         "two_handed": "5",
@@ -809,8 +972,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": true,
         "upgrade_targets": [
-            "imperial_heavy_horseman"
+            {
+                "id": "imperial_heavy_horseman",
+                "name": "Imperial Heavy Horseman"
+            }
         ],
         "one_handed": "70",
         "two_handed": "10",
@@ -828,8 +995,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": true,
         "upgrade_targets": [
-            "imperial_cataphract"
+            {
+                "id": "imperial_cataphract",
+                "name": "Imperial Cataphract"
+            }
         ],
         "one_handed": "110",
         "two_handed": "15",
@@ -847,8 +1018,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": true,
         "upgrade_targets": [
-            "imperial_elite_cataphract"
+            {
+                "id": "imperial_elite_cataphract",
+                "name": "Imperial Elite Cataphract"
+            }
         ],
         "one_handed": "130",
         "two_handed": "50",
@@ -866,6 +1041,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "31",
+        "is_noble": true,
         "upgrade_targets": [],
         "one_handed": "200",
         "two_handed": "60",
@@ -883,9 +1059,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_veteran_infantryman",
-            "imperial_menavliaton"
+            {
+                "id": "imperial_veteran_infantryman",
+                "name": "Imperial Veteran Infantryman"
+            },
+            {
+                "id": "imperial_menavliaton",
+                "name": "Imperial Menavliaton"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -903,8 +1086,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_legionary"
+            {
+                "id": "imperial_legionary",
+                "name": "Imperial Legionary"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -922,6 +1109,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -939,8 +1127,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_trained_archer"
+            {
+                "id": "imperial_trained_archer",
+                "name": "Imperial Trained Archer"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -958,6 +1150,7 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "40",
@@ -975,9 +1168,16 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_veteran_archer",
-            "imperial_crossbowman"
+            {
+                "id": "imperial_veteran_archer",
+                "name": "Imperial Veteran Archer"
+            },
+            {
+                "id": "imperial_crossbowman",
+                "name": "Imperial Crossbowman"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -995,9 +1195,16 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_palatine_guard",
-            "bucellarii"
+            {
+                "id": "imperial_palatine_guard",
+                "name": "Imperial Palatine Guard"
+            },
+            {
+                "id": "bucellarii",
+                "name": "Imperial Bucellarii"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -1015,6 +1222,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "30",
@@ -1032,8 +1240,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_elite_menavliaton"
+            {
+                "id": "imperial_elite_menavliaton",
+                "name": "Imperial Elite Menavliaton"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -1051,6 +1263,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -1068,8 +1281,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "imperial_sergeant_crossbowman"
+            {
+                "id": "imperial_sergeant_crossbowman",
+                "name": "Imperial Sergeant Crossbowman"
+            }
         ],
         "one_handed": "100",
         "two_handed": "45",
@@ -1087,6 +1304,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -1104,9 +1322,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_tribal_warrior",
-            "khuzait_footman"
+            {
+                "id": "khuzait_tribal_warrior",
+                "name": "Khuzait Tribal Warrior"
+            },
+            {
+                "id": "khuzait_footman",
+                "name": "Khuzait Footman"
+            }
         ],
         "one_handed": "20",
         "two_handed": "5",
@@ -1124,9 +1349,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_hunter",
-            "khuzait_spearman"
+            {
+                "id": "khuzait_hunter",
+                "name": "Khuzait Hunter"
+            },
+            {
+                "id": "khuzait_spearman",
+                "name": "Khuzait Spearman"
+            }
         ],
         "one_handed": "40",
         "two_handed": "5",
@@ -1144,9 +1376,16 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_raider",
-            "khuzait_horseman"
+            {
+                "id": "khuzait_raider",
+                "name": "Khuzait Raider"
+            },
+            {
+                "id": "khuzait_horseman",
+                "name": "Khuzait Horseman"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -1164,8 +1403,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": true,
         "upgrade_targets": [
-            "khuzait_qanqli"
+            {
+                "id": "khuzait_qanqli",
+                "name": "Khuzait Qanqli"
+            }
         ],
         "one_handed": "20",
         "two_handed": "10",
@@ -1183,8 +1426,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_archer"
+            {
+                "id": "khuzait_archer",
+                "name": "Khuzait Archer"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -1202,8 +1449,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_spear_infantry"
+            {
+                "id": "khuzait_spear_infantry",
+                "name": "Khuzait Spear Infantry"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -1221,8 +1472,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_horse_archer"
+            {
+                "id": "khuzait_horse_archer",
+                "name": "Khuzait Horse Archer"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -1240,8 +1495,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_lancer"
+            {
+                "id": "khuzait_lancer",
+                "name": "Khuzait Lancer"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -1259,8 +1518,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": true,
         "upgrade_targets": [
-            "khuzait_torguud"
+            {
+                "id": "khuzait_torguud",
+                "name": "Khuzait Torguud"
+            }
         ],
         "one_handed": "45",
         "two_handed": "30",
@@ -1278,8 +1541,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_marksman"
+            {
+                "id": "khuzait_marksman",
+                "name": "Khuzait Marksman"
+            }
         ],
         "one_handed": "90",
         "two_handed": "45",
@@ -1297,8 +1564,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_darkhan"
+            {
+                "id": "khuzait_darkhan",
+                "name": "Khuzait Darkhan"
+            }
         ],
         "one_handed": "100",
         "two_handed": "45",
@@ -1316,8 +1587,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_heavy_horse_archer"
+            {
+                "id": "khuzait_heavy_horse_archer",
+                "name": "Khuzait Heavy Horse Archer"
+            }
         ],
         "one_handed": "100",
         "two_handed": "45",
@@ -1335,8 +1610,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "khuzait_heavy_lancer"
+            {
+                "id": "khuzait_heavy_lancer",
+                "name": "Khuzait Heavy Lancer"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -1354,8 +1633,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": true,
         "upgrade_targets": [
-            "khuzait_kheshig"
+            {
+                "id": "khuzait_kheshig",
+                "name": "Khuzait Kheshig"
+            }
         ],
         "one_handed": "55",
         "two_handed": "45",
@@ -1373,6 +1656,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -1390,6 +1674,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -1407,6 +1692,7 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -1424,6 +1710,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -1441,8 +1728,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": true,
         "upgrade_targets": [
-            "khuzait_khans_guard"
+            {
+                "id": "khuzait_khans_guard",
+                "name": "Khuzait Khan's Guard"
+            }
         ],
         "one_handed": "50",
         "two_handed": "50",
@@ -1460,6 +1751,7 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "31",
+        "is_noble": true,
         "upgrade_targets": [],
         "one_handed": "60",
         "two_handed": "60",
@@ -1477,9 +1769,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_warrior",
-            "sturgian_woodsman"
+            {
+                "id": "sturgian_warrior",
+                "name": "Sturgian Warrior"
+            },
+            {
+                "id": "sturgian_woodsman",
+                "name": "Sturgian Woodsman"
+            }
         ],
         "one_handed": "20",
         "two_handed": "10",
@@ -1497,8 +1796,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_soldier"
+            {
+                "id": "sturgian_soldier",
+                "name": "Sturgian Soldier"
+            }
         ],
         "one_handed": "40",
         "two_handed": "20",
@@ -1516,9 +1819,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_spearman",
-            "sturgian_berzerker"
+            {
+                "id": "sturgian_spearman",
+                "name": "Sturgian Spearman"
+            },
+            {
+                "id": "sturgian_berzerker",
+                "name": "Sturgian Line Breaker"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -1536,6 +1846,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "140",
         "two_handed": "60",
@@ -1553,6 +1864,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -1570,8 +1882,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": true,
         "upgrade_targets": [
-            "varyag"
+            {
+                "id": "varyag",
+                "name": "Varyag"
+            }
         ],
         "one_handed": "60",
         "two_handed": "20",
@@ -1589,8 +1905,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": true,
         "upgrade_targets": [
-            "varyag_veteran"
+            {
+                "id": "varyag_veteran",
+                "name": "Varyag Veteran"
+            }
         ],
         "one_handed": "100",
         "two_handed": "30",
@@ -1608,8 +1928,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": true,
         "upgrade_targets": [
-            "druzhinnik"
+            {
+                "id": "druzhinnik",
+                "name": "Sturgian Druzhinnik"
+            }
         ],
         "one_handed": "110",
         "two_handed": "35",
@@ -1627,8 +1951,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": true,
         "upgrade_targets": [
-            "druzhinnik_champion"
+            {
+                "id": "druzhinnik_champion",
+                "name": "Sturgian Druzhinnik Champion"
+            }
         ],
         "one_handed": "130",
         "two_handed": "60",
@@ -1646,6 +1974,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "31",
+        "is_noble": true,
         "upgrade_targets": [],
         "one_handed": "200",
         "two_handed": "60",
@@ -1663,9 +1992,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_brigand",
-            "sturgian_hunter"
+            {
+                "id": "sturgian_brigand",
+                "name": "Sturgian Brigand"
+            },
+            {
+                "id": "sturgian_hunter",
+                "name": "Sturgian Hunter"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -1683,8 +2019,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_archer"
+            {
+                "id": "sturgian_archer",
+                "name": "Sturgian Archer"
+            }
         ],
         "one_handed": "60",
         "two_handed": "30",
@@ -1702,8 +2042,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_veteran_bowman"
+            {
+                "id": "sturgian_veteran_bowman",
+                "name": "Sturgian Veteran Bowman"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -1721,6 +2065,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "120",
         "two_handed": "60",
@@ -1738,8 +2083,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_hardened_brigand"
+            {
+                "id": "sturgian_hardened_brigand",
+                "name": "Sturgian Hardened Brigand"
+            }
         ],
         "one_handed": "80",
         "two_handed": "40",
@@ -1757,8 +2106,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_horse_raider"
+            {
+                "id": "sturgian_horse_raider",
+                "name": "Sturgian Horse Raider"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -1776,6 +2129,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -1793,8 +2147,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_ulfhednar"
+            {
+                "id": "sturgian_ulfhednar",
+                "name": "Sturgian Heroic Line Breaker"
+            }
         ],
         "one_handed": "100",
         "two_handed": "110",
@@ -1812,9 +2170,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "sturgian_shock_troop",
-            "sturgian_veteran_warrior"
+            {
+                "id": "sturgian_shock_troop",
+                "name": "Sturgian Heavy Spearman"
+            },
+            {
+                "id": "sturgian_veteran_warrior",
+                "name": "Sturgian Heavy Axeman"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -1832,6 +2197,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "80",
         "two_handed": "150",
@@ -1849,9 +2215,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_levy_crossbowman",
-            "vlandian_footman"
+            {
+                "id": "vlandian_levy_crossbowman",
+                "name": "Vlandian Levy Crossbowman"
+            },
+            {
+                "id": "vlandian_footman",
+                "name": "Vlandian Footman"
+            }
         ],
         "one_handed": "20",
         "two_handed": "10",
@@ -1869,9 +2242,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_spearman",
-            "vlandian_light_cavalry"
+            {
+                "id": "vlandian_spearman",
+                "name": "Vlandian Spearman"
+            },
+            {
+                "id": "vlandian_light_cavalry",
+                "name": "Vlandian Light Cavalry"
+            }
         ],
         "one_handed": "40",
         "two_handed": "20",
@@ -1889,9 +2269,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_billman",
-            "vlandian_swordsman"
+            {
+                "id": "vlandian_billman",
+                "name": "Vlandian Billman"
+            },
+            {
+                "id": "vlandian_swordsman",
+                "name": "Vlandian Swordsman"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -1909,9 +2296,16 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_voulgier",
-            "vlandian_pikeman"
+            {
+                "id": "vlandian_voulgier",
+                "name": "Vlandian Voulgier"
+            },
+            {
+                "id": "vlandian_pikeman",
+                "name": "Vlandian Pikeman"
+            }
         ],
         "one_handed": "90",
         "two_handed": "100",
@@ -1929,6 +2323,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "80",
         "two_handed": "130",
@@ -1946,6 +2341,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "80",
         "two_handed": "130",
@@ -1963,8 +2359,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_swordsman"
+            {
+                "id": "vlandian_swordsman",
+                "name": "Vlandian Swordsman"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -1982,8 +2382,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_sergeant"
+            {
+                "id": "vlandian_sergeant",
+                "name": "Vlandian Sergeant"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -2001,6 +2405,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -2018,8 +2423,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_cavalry"
+            {
+                "id": "vlandian_cavalry",
+                "name": "Vlandian Cavalry"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -2037,8 +2446,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_vanguard"
+            {
+                "id": "vlandian_vanguard",
+                "name": "Vlandian Vanguard"
+            }
         ],
         "one_handed": "80",
         "two_handed": "45",
@@ -2056,6 +2469,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -2073,8 +2487,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_crossbowman"
+            {
+                "id": "vlandian_crossbowman",
+                "name": "Vlandian Crossbowman"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -2092,8 +2510,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_hardened_crossbowman"
+            {
+                "id": "vlandian_hardened_crossbowman",
+                "name": "Vlandian Hardened Crossbowman"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -2111,8 +2533,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "vlandian_sharpshooter"
+            {
+                "id": "vlandian_sharpshooter",
+                "name": "Vlandian Sharpshooter"
+            }
         ],
         "one_handed": "100",
         "two_handed": "45",
@@ -2130,6 +2556,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -2147,8 +2574,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": true,
         "upgrade_targets": [
-            "vlandian_gallant"
+            {
+                "id": "vlandian_gallant",
+                "name": "Vlandian Gallant"
+            }
         ],
         "one_handed": "45",
         "two_handed": "10",
@@ -2166,8 +2597,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": true,
         "upgrade_targets": [
-            "vlandian_knight"
+            {
+                "id": "vlandian_knight",
+                "name": "Vlandian Knight"
+            }
         ],
         "one_handed": "100",
         "two_handed": "30",
@@ -2185,8 +2620,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": true,
         "upgrade_targets": [
-            "vlandian_champion"
+            {
+                "id": "vlandian_champion",
+                "name": "Vlandian Champion"
+            }
         ],
         "one_handed": "100",
         "two_handed": "60",
@@ -2204,8 +2643,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "26",
+        "is_noble": true,
         "upgrade_targets": [
-            "vlandian_banner_knight"
+            {
+                "id": "vlandian_banner_knight",
+                "name": "Vlandian Banner Knight"
+            }
         ],
         "one_handed": "130",
         "two_handed": "60",
@@ -2223,6 +2666,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "31",
+        "is_noble": true,
         "upgrade_targets": [],
         "one_handed": "220",
         "two_handed": "60",
@@ -2240,8 +2684,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "ghilman_tier_2"
+            {
+                "id": "ghilman_tier_2",
+                "name": "Ghilman"
+            }
         ],
         "one_handed": "40",
         "two_handed": "20",
@@ -2259,8 +2707,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "ghilman_tier_3"
+            {
+                "id": "ghilman_tier_3",
+                "name": "Ghulam"
+            }
         ],
         "one_handed": "60",
         "two_handed": "40",
@@ -2278,6 +2730,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "90",
         "two_handed": "50",
@@ -2295,8 +2748,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "legion_of_the_betrayed_tier_2"
+            {
+                "id": "legion_of_the_betrayed_tier_2",
+                "name": "Principes"
+            }
         ],
         "one_handed": "40",
         "two_handed": "20",
@@ -2314,8 +2771,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "legion_of_the_betrayed_tier_3"
+            {
+                "id": "legion_of_the_betrayed_tier_3",
+                "name": "Triarii"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -2333,6 +2794,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "50",
@@ -2350,8 +2812,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "skolderbrotva_tier_2"
+            {
+                "id": "skolderbrotva_tier_2",
+                "name": "Skolder Warrior Broda"
+            }
         ],
         "one_handed": "40",
         "two_handed": "20",
@@ -2369,8 +2835,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "skolderbrotva_tier_3"
+            {
+                "id": "skolderbrotva_tier_3",
+                "name": "Skolder Veteran Broda"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -2388,6 +2858,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "110",
         "two_handed": "60",
@@ -2405,8 +2876,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "company_of_the_boar_tier_2"
+            {
+                "id": "company_of_the_boar_tier_2",
+                "name": "Boar Veteran"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -2424,8 +2899,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "company_of_the_boar_tier_3"
+            {
+                "id": "company_of_the_boar_tier_3",
+                "name": "Boar Champion"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -2443,6 +2922,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "60",
@@ -2460,8 +2940,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "beni_zilal_tier_2"
+            {
+                "id": "beni_zilal_tier_2",
+                "name": "Beni Zilal Soldier"
+            }
         ],
         "one_handed": "30",
         "two_handed": "5",
@@ -2479,8 +2963,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "beni_zilal_tier_3"
+            {
+                "id": "beni_zilal_tier_3",
+                "name": "Beni Zilal Royal Guard"
+            }
         ],
         "one_handed": "30",
         "two_handed": "10",
@@ -2498,6 +2986,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "60",
         "two_handed": "15",
@@ -2515,8 +3004,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "wolfskins_tier_2"
+            {
+                "id": "wolfskins_tier_2",
+                "name": "Seasoned Wolf"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -2534,8 +3027,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "wolfskins_tier_3"
+            {
+                "id": "wolfskins_tier_3",
+                "name": "Chosen Wolf"
+            }
         ],
         "one_handed": "80",
         "two_handed": "40",
@@ -2553,6 +3050,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "110",
         "two_handed": "50",
@@ -2570,8 +3068,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "hidden_hand_tier_2"
+            {
+                "id": "hidden_hand_tier_2",
+                "name": "Hidden Hand"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -2589,8 +3091,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "hidden_hand_tier_3"
+            {
+                "id": "hidden_hand_tier_3",
+                "name": "Puppeteer"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -2608,6 +3114,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "65",
@@ -2625,8 +3132,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "lakepike_tier_2"
+            {
+                "id": "lakepike_tier_2",
+                "name": "Lake Rat Veteran"
+            }
         ],
         "one_handed": "40",
         "two_handed": "40",
@@ -2644,8 +3155,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "lakepike_tier_3"
+            {
+                "id": "lakepike_tier_3",
+                "name": "Lake Rat Wrecker "
+            }
         ],
         "one_handed": "30",
         "two_handed": "40",
@@ -2663,6 +3178,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "60",
@@ -2680,8 +3196,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "brotherhood_of_woods_tier_2"
+            {
+                "id": "brotherhood_of_woods_tier_2",
+                "name": "Sapling"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -2699,8 +3219,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "brotherhood_of_woods_tier_3"
+            {
+                "id": "brotherhood_of_woods_tier_3",
+                "name": "Arboreal"
+            }
         ],
         "one_handed": "110",
         "two_handed": "45",
@@ -2718,6 +3242,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "90",
         "two_handed": "45",
@@ -2735,8 +3260,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "6",
+        "is_noble": false,
         "upgrade_targets": [
-            "embers_of_flame_tier_2"
+            {
+                "id": "embers_of_flame_tier_2",
+                "name": "Flame"
+            }
         ],
         "one_handed": "50",
         "two_handed": "15",
@@ -2754,8 +3283,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "embers_of_flame_tier_3"
+            {
+                "id": "embers_of_flame_tier_3",
+                "name": "Blaze"
+            }
         ],
         "one_handed": "110",
         "two_handed": "45",
@@ -2773,6 +3306,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "45",
@@ -2790,8 +3324,12 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "jawwal_tier_2"
+            {
+                "id": "jawwal_tier_2",
+                "name": "Jawwal Camel Rider"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -2809,8 +3347,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "jawwal_tier_3"
+            {
+                "id": "jawwal_tier_3",
+                "name": "Jawwal Bedouin"
+            }
         ],
         "one_handed": "40",
         "two_handed": "60",
@@ -2828,6 +3370,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "80",
         "two_handed": "60",
@@ -2845,8 +3388,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "karakhuzaits_tier_2"
+            {
+                "id": "karakhuzaits_tier_2",
+                "name": "Karakhergit Rider"
+            }
         ],
         "one_handed": "20",
         "two_handed": "15",
@@ -2864,8 +3411,12 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "karakhuzaits_tier_3"
+            {
+                "id": "karakhuzaits_tier_3",
+                "name": "Karakhergit Elder"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -2883,6 +3434,7 @@
         "default_group": "HorseArcher",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "45",
@@ -2900,8 +3452,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "forest_people_tier_2"
+            {
+                "id": "forest_people_tier_2",
+                "name": "Expert Forester"
+            }
         ],
         "one_handed": "40",
         "two_handed": "15",
@@ -2919,8 +3475,12 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "forest_people_tier_3"
+            {
+                "id": "forest_people_tier_3",
+                "name": "Veteran Forester"
+            }
         ],
         "one_handed": "0",
         "two_handed": "30",
@@ -2938,6 +3498,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "90",
         "two_handed": "45",
@@ -2955,8 +3516,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [
-            "eleftheroi_tier_2"
+            {
+                "id": "eleftheroi_tier_2",
+                "name": "Expert Eleftheroi"
+            }
         ],
         "one_handed": "20",
         "two_handed": "15",
@@ -2974,8 +3539,12 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "eleftheroi_tier_3"
+            {
+                "id": "eleftheroi_tier_3",
+                "name": "Veteran Eleftheroi"
+            }
         ],
         "one_handed": "70",
         "two_handed": "40",
@@ -2993,6 +3562,7 @@
         "default_group": "Cavalry",
         "occupation": "Soldier",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "60",
@@ -3010,8 +3580,12 @@
         "default_group": "Ranged",
         "occupation": "Mercenary",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "sword_sisters_sister_t4"
+            {
+                "id": "sword_sisters_sister_t4",
+                "name": "Sword Sister"
+            }
         ],
         "one_handed": "65",
         "two_handed": "30",
@@ -3029,9 +3603,16 @@
         "default_group": "Ranged",
         "occupation": "Mercenary",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "sword_sisters_sister_t5",
-            "sword_sisters_sister_infantry_t5"
+            {
+                "id": "sword_sisters_sister_t5",
+                "name": "Gallant Sword Sister"
+            },
+            {
+                "id": "sword_sisters_sister_infantry_t5",
+                "name": "Veteran Sword Sister"
+            }
         ],
         "one_handed": "110",
         "two_handed": "45",
@@ -3049,6 +3630,7 @@
         "default_group": "HorseArcher",
         "occupation": "Mercenary",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "120",
         "two_handed": "45",
@@ -3066,6 +3648,7 @@
         "default_group": "Ranged",
         "occupation": "Mercenary",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "45",
@@ -3083,9 +3666,16 @@
         "default_group": "Infantry",
         "occupation": "Mercenary",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "eastern_mounted_mercenary_t4",
-            "eastern_mercenary_t4"
+            {
+                "id": "eastern_mounted_mercenary_t4",
+                "name": "Outrider"
+            },
+            {
+                "id": "eastern_mercenary_t4",
+                "name": "Mercenary Maceman"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -3103,8 +3693,12 @@
         "default_group": "Infantry",
         "occupation": "Mercenary",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "eastern_mercenary_t5"
+            {
+                "id": "eastern_mercenary_t5",
+                "name": "Elite Mercenary Maceman"
+            }
         ],
         "one_handed": "100",
         "two_handed": "80",
@@ -3122,6 +3716,7 @@
         "default_group": "Infantry",
         "occupation": "Mercenary",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "140",
         "two_handed": "110",
@@ -3139,8 +3734,12 @@
         "default_group": "HorseArcher",
         "occupation": "Mercenary",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "eastern_mounted_mercenary_t5"
+            {
+                "id": "eastern_mounted_mercenary_t5",
+                "name": "Veteran Outrider"
+            }
         ],
         "one_handed": "100",
         "two_handed": "30",
@@ -3158,6 +3757,7 @@
         "default_group": "HorseArcher",
         "occupation": "Mercenary",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "150",
         "two_handed": "60",
@@ -3175,9 +3775,16 @@
         "default_group": "Infantry",
         "occupation": "Mercenary",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [
-            "western_mercenary_t4",
-            "western_crossbow_t4"
+            {
+                "id": "western_mercenary_t4",
+                "name": "Hired Pike"
+            },
+            {
+                "id": "western_crossbow_t4",
+                "name": "Hired Crossbow"
+            }
         ],
         "one_handed": "70",
         "two_handed": "30",
@@ -3195,8 +3802,12 @@
         "default_group": "Infantry",
         "occupation": "Mercenary",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "western_mercenary_t5"
+            {
+                "id": "western_mercenary_t5",
+                "name": "Hired Elite Pike"
+            }
         ],
         "one_handed": "90",
         "two_handed": "60",
@@ -3214,6 +3825,7 @@
         "default_group": "Infantry",
         "occupation": "Mercenary",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "130",
@@ -3231,8 +3843,12 @@
         "default_group": "Ranged",
         "occupation": "Mercenary",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [
-            "western_crossbow_t5"
+            {
+                "id": "western_crossbow_t5",
+                "name": "Elite Hired Crossbow"
+            }
         ],
         "one_handed": "90",
         "two_handed": "45",
@@ -3250,6 +3866,7 @@
         "default_group": "Ranged",
         "occupation": "Mercenary",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "140",
         "two_handed": "70",
@@ -3267,6 +3884,7 @@
         "default_group": "Infantry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "80",
@@ -3284,6 +3902,7 @@
         "default_group": "Infantry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "80",
@@ -3301,6 +3920,7 @@
         "default_group": "Infantry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "80",
@@ -3318,6 +3938,7 @@
         "default_group": "Infantry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "80",
@@ -3335,6 +3956,7 @@
         "default_group": "Infantry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "80",
@@ -3352,6 +3974,7 @@
         "default_group": "Infantry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "80",
@@ -3369,6 +3992,7 @@
         "default_group": "Ranged",
         "occupation": "CaravanGuard",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3386,6 +4010,7 @@
         "default_group": "Ranged",
         "occupation": "CaravanGuard",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3403,6 +4028,7 @@
         "default_group": "Ranged",
         "occupation": "CaravanGuard",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3420,6 +4046,7 @@
         "default_group": "Ranged",
         "occupation": "CaravanGuard",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "160",
         "two_handed": "80",
@@ -3437,6 +4064,7 @@
         "default_group": "Ranged",
         "occupation": "CaravanGuard",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3454,6 +4082,7 @@
         "default_group": "Ranged",
         "occupation": "CaravanGuard",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "60",
         "two_handed": "40",
@@ -3471,6 +4100,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "110",
         "two_handed": "150",
@@ -3488,6 +4118,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "110",
         "two_handed": "15",
@@ -3505,6 +4136,7 @@
         "default_group": "HorseArcher",
         "occupation": "CaravanGuard",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "15",
@@ -3522,6 +4154,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "90",
         "two_handed": "150",
@@ -3539,6 +4172,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "110",
         "two_handed": "15",
@@ -3556,6 +4190,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "21",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "110",
         "two_handed": "15",
@@ -3573,6 +4208,7 @@
         "default_group": "HorseArcher",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -3590,6 +4226,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -3607,6 +4244,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "60",
@@ -3624,6 +4262,7 @@
         "default_group": "HorseArcher",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "120",
         "two_handed": "70",
@@ -3641,6 +4280,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "120",
         "two_handed": "70",
@@ -3658,6 +4298,7 @@
         "default_group": "Cavalry",
         "occupation": "CaravanGuard",
         "level": "26",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "130",
         "two_handed": "80",
@@ -3675,6 +4316,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "15",
@@ -3692,6 +4334,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3709,6 +4352,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "40",
@@ -3726,6 +4370,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "40",
@@ -3743,6 +4388,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "15",
@@ -3760,6 +4406,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3777,6 +4424,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "40",
@@ -3794,6 +4442,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "40",
@@ -3811,6 +4460,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "15",
@@ -3828,6 +4478,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3845,6 +4496,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "40",
@@ -3862,6 +4514,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "40",
@@ -3879,6 +4532,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "15",
@@ -3896,6 +4550,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3913,6 +4568,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "40",
@@ -3930,6 +4586,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "40",
@@ -3947,6 +4604,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "15",
@@ -3964,6 +4622,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -3981,6 +4640,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "40",
@@ -3998,6 +4658,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "40",
@@ -4015,6 +4676,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "15",
@@ -4032,6 +4694,7 @@
         "default_group": "Ranged",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "70",
         "two_handed": "40",
@@ -4049,6 +4712,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "11",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "40",
         "two_handed": "40",
@@ -4066,6 +4730,7 @@
         "default_group": "Infantry",
         "occupation": "Soldier",
         "level": "16",
+        "is_noble": false,
         "upgrade_targets": [],
         "one_handed": "100",
         "two_handed": "40",
