@@ -1,32 +1,19 @@
-const express = require('express');
-const app = express();
-require('dotenv').config();
-const apiRouter = require('./routes');
-const cors = require('cors');
-const helmet = require('helmet');
+const express = require('express')
+const app = express()
+require('dotenv').config()
+const cors = require('cors')
+const helmet = require('helmet')
+const indexRouter = require('./routers/indexRouter')
 
 
-app.use(cors());
-app.use(helmet());
+app.use(cors())
+app.use(helmet())
 
-app.use('/api', apiRouter);
+app.use('/api', indexRouter)
 
-
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
-
-
-// app.all('*', (req,res) =>{
-//   res.status(404).send('<h1>404 (ALL) Page not found</h1>')
-// })
-app.use((req, res, next) => {
-    res.status(404).send("Sorry can't find that!")
+app.get('*', (req, res) => {
+    res.status(404).json({message: 'unkown route'})
 })
 
 
-
-const port = process.env.EXPRESS_PORT || 4000;
-app.listen(port, () => {
-    console.log(`App listening on port ${port}`);
-});
+module.exports = app
