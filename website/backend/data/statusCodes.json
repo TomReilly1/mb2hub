@@ -1,0 +1,10 @@
+{
+    "460": "Error 460: invalid url parameters",
+    "461": "Error 461: url parameters does not exist",
+    "465": "Error 465: invalid url query parameter name(s)",
+    "466": "Error 466: invalid url query value(s)",
+    "470": "Error 470: match not found for concept",
+    "471": "Error 471: match not found for item in concept",
+    "480": "Error 480: data was null",
+    "499": "Error 499: unhandled error" 
+}
