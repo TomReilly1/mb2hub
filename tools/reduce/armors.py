@@ -63,6 +63,8 @@ def add_armor_type(read_path: str) -> list:
     for i in json_arr:
         curr_obj = {}
 
+        if 'dummy' in i['@id']:
+            continue
         curr_obj['id'] = i['@id']
         curr_obj['name'] = i['@name'].split('}')[1]
         curr_obj['culture'] = i['@culture'].split('.')[1]
