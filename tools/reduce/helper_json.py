@@ -3,10 +3,10 @@ import json
 
 def read_json(r_path):
     try:
-        file = open(r_path, 'r')
+        file = open(file=r_path, mode='r', encoding='utf-8')
         json_data = json.load(file)
-    except FileNotFoundError:
-        raise Exception(f'Error: [read_json] file not found on the path "{r_path}"')
+    except FileNotFoundError as exc:
+        raise Exception(f'Error: [read_json] file not found on the path "{r_path}"') from exc
     finally:
         file.close()
 
@@ -15,22 +15,22 @@ def read_json(r_path):
 
 def write_json(w_path, output_array):
     try:
-        file = open(w_path, 'w')
+        file = open(file=w_path, mode='w', encoding='utf-8')
         json.dump(output_array, file)
         print(f'File successfully written on path {w_path}')
-    except:
-        raise Exception(f'Error: [write_json] could not write file on path "{w_path}"')
-    finally:
-        file.close()
+    except Exception as exc:
+        raise Exception(f'Error: [write_json] could not write file on path "{w_path}"') from exc
+    # finally:
+    #     file.close()
 
 
 def get_clan_name(clan_id, path):
     json_arr = read_json(path)
-    
+
     for i in json_arr:
         if i['id'] == clan_id:
             return i['name']
-    
+
     raise Exception('Error: clan not found in via "get_clan_name"')
 
 
