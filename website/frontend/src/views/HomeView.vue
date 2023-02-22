@@ -24,7 +24,6 @@ const todoItems = ref<{
     'header': 'Features',
     'items': [
       'general comparison page',
-      'percentile rankings',
       'better/more linking in tables and cards',
       'development news',
       'map of Calradia'
@@ -40,8 +39,7 @@ const todoItems = ref<{
         <div class="heading home-section">
             <h2>Welcome to the Bannerlord Hub!</h2>
             <p>
-                This website aims to provide easy access to any relevant data for Mount & Blade II: Bannerlord.
-                Because Bannerlord is in early access, I will always try to keep up to date on the latest beta version.
+                This website aims to provide easy access to any relevant data for Mount & Blade II: Bannerlord. I will always try to keep up to date on the latest stable version.
             </p>
             <p>
                 I am always looking to add more to this project, so any <a href="https://github.com/TomReilly1/mb2hub">suggestions are welcome!</a>
@@ -90,7 +88,7 @@ const todoItems = ref<{
                     </li>
                     <li>
                         <a href="https://nodejs.org/">
-                            <img src="@/assets/express_logo.jpg" alt="Express.js logo" />
+                            <img src="@/assets/node_logo.svg" alt="Node.js logo" />
                             <span>Node.js</span>
                         </a>
                     </li>
