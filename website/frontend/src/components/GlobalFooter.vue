@@ -3,7 +3,7 @@
         <div class="footer">
             <ul>
                 <li>
-                    <a href="https://www.github.com/TomReilly1">
+                    <a href="https://www.github.com/TomReilly1/mb2hub">
                         <i class="pi pi-github" style="font-size: 2rem"></i>
                     </a>
                 </li>
