@@ -10,6 +10,13 @@ import MultiSelect from 'primevue/multiselect'
 import InputText from 'primevue/inputtext'
 import InputNumber from 'primevue/inputnumber'
 import Skeleton from "primevue/skeleton"
+import type * as intr from "@/interfaces/indexIntr"
+
+import ConceptTableColumnId from "@/components/ConceptTableColumnId.vue"
+import ConceptTableColumnColor from "@/components/ConceptTableColumnColor.vue"
+import ConceptTableColumnArray from "@/components/ConceptTableColumnArray.vue"
+import ConceptTableColumnObject from "@/components/ConceptTableColumnObject.vue"
+
 
 interface dataColsIntr {
     dataHeader: string
@@ -26,7 +33,6 @@ const trueOrFalse = ref([
 ])
 const loading = ref<boolean>(true)
 const objRefnce = ref<dataColsIntr[]>()
-const dummyData = ref(new Array(6))
 const filters = ref()
 const globalFilters = ref()
 
@@ -36,19 +42,56 @@ const initFilters = () => {
         return
     }
 
-    // need to remove desc_text from table due to large size
-    const temp: any = props.dataArr[0]
-    if (temp.desc_text !== undefined) {
-        delete temp.desc_text
+    console.log('initFilters reached')
+
+    let temp: any = {}
+    switch (route.params.concept) {
+        case 'armors':
+            temp = temp as intr.armors
+            break;
+        case 'bows':
+            temp = temp as intr.bows
+            break;
+        case 'castles':
+            temp = temp as intr.castles
+            break;
+        case 'cultures':
+            temp = temp as intr.cultures
+            break;
+        case 'goods':
+            temp = temp as intr.goods
+            break;
+        case 'kingdoms':
+            temp = temp as intr.kingdoms
+            break;
+        case 'lords':
+            temp = temp as intr.lords
+            break;
+        case 'mounts':
+            temp = temp as intr.mounts
+            break;
+        case 'troops':
+            temp = temp as intr.troops
+            break;
+        case 'villages':
+            temp = temp as intr.villages
+            break;
+        default:
+            console.log('interface not found')
+            break;
     }
 
+    temp = props.dataArr[0]
+
+    // need to remove desc_text from table due to large size
     if (temp.desc_text) {
         delete temp.desc_text
     }
 
     let dataColsArr: dataColsIntr[] = []
     for (const key in temp) {
-        const typeOf: string = typeof temp[key]
+        const typeOf: string = generateColumnDataType(key, temp[key])
+
         dataColsArr.push({
             'dataHeader': key,
             'dataType': typeOf
@@ -65,7 +108,7 @@ const initFilters = () => {
             filtersToAdd[key] = { value: null, matchMode: FilterMatchMode.IN }
             globalFiltArr.push(key);
         }
-        else if (typeof temp[key] === 'number') {
+        else if (typeof temp[key] === 'number' || key.includes('_armor')) {
             filtersToAdd[key] = {
                 operator: FilterOperator.AND,
                 constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }]
@@ -127,11 +170,43 @@ function handleMatchModeType(value: string) {
     } 
 }
 
-const formatColor = (color: string) => {
-    const hexValue = color.slice(-6)
-    return '#' + hexValue
+const generateColumnDataType = (key: string, val: any) => {
+    const l_valType: string = typeof val 
+    
+    if (key.includes('_armor')) {
+        return 'number'
+    } else if (key.includes('color')) {
+        return 'color'
+    } else if (Array.isArray(val)) {
+        return 'array'
+    } else if (l_valType === 'object') {
+        return 'object'
+    } else {
+        return l_valType
+    }
 }
 
+// const getConceptFromObject = (dataHeader: string, id: string) => {
+//     switch (dataHeader) {
+//         case 'owner_clan':
+//             return 'clans'
+//         case 'owner_lord':
+//             return 'lords'
+//         case 'bound_settlement':
+//             return getSettlementType(id)
+//         case 'bound_villages':
+//             return 'villages'
+//         case 'upgrade_targets':
+//             return 'troops'
+//         default:
+//             throw Error('Error: could not generate concept based off object data header')
+//             break
+//     }
+// }
+
+const getSettlementType = (input: string) => {
+    return (input.includes('castle')) ? 'castles' : 'towns'
+}
 
 watch(() => props.dataArr, () => {
     loading.value = false
@@ -142,7 +217,7 @@ watch(() => props.dataArr, () => {
 <!---------------------------------------------------->
 <template>
 <div id="data-table" class="concept-table">
-    <DataTable :value="dataArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="globalFilters">
+    <DataTable :value="dataArr" :paginator="true" class="p-datatable-sm" showGridlines :rows="10" rowHover dataKey="id" v-model:filters="filters" filterDisplay="menu" :loading="loading" paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[10,25,50]" responsiveLayout="scroll" :globalFilterFields="globalFilters" >
         <template v-if="filters !== undefined" #header>
             <div class="flex justify-content-between global-filter">
                 <Button type="button" icon="pi pi-filter-slash" label="Clear" class="p-button-outlined" @click="initFilters()" />
@@ -158,16 +233,19 @@ watch(() => props.dataArr, () => {
         <template #loading>
             Loading data. Please wait.
         </template>
-        <!-- <Column v-for="(colVal, colKey) in objRefnce" :header="valueToHeader(colKey)" :datatype="handleDataType(colVal)" :showFilterMatchModes="handleMatchModeVis(colVal)" :filterMatchModeOptions="handleMatchModeType(colVal)" sortable> -->
-        <Column v-for="col in objRefnce" :field="col.dataHeader" :header="valueToHeader(col.dataHeader)" :datatype="handleDataType(col.dataType)" :showFilterMatchModes="handleMatchModeVis(col.dataHeader)" :filterMatchModeOptions="handleMatchModeType(col.dataHeader)" :bodyStyle="handleBodyStyle(col.dataHeader)" sortable>
+        <Column v-for="col in objRefnce" :field="col.dataHeader" :header="valueToHeader(col.dataHeader)" :datatype="handleDataType(col.dataType)" :showFilterMatchModes="handleMatchModeVis(col.dataHeader)" :filterMatchModeOptions="handleMatchModeType(col.dataHeader)" :bodyStyle="handleBodyStyle(col.dataHeader)" :sortable="col.dataType !== 'array' && col.dataType !== 'object'">
             <!-- data -->
             <template v-if="col.dataHeader === 'id'" #body="{data}">
-                <router-link :to="{name: 'cardview', params: {concept: route.params.concept, id: data.id}}" class="id-link">
-                    {{data[col.dataHeader]}}
-                </router-link>
+                <ConceptTableColumnId :concept="(route.params.concept as string)" :id="data.id" :data="data[col.dataHeader]" />
             </template>
-            <template v-else-if="col.dataHeader.includes('color')" #body="{data}" bodyStyle="display: flex; justify-content: center;">
-                <input type="color" :value="formatColor(data[col.dataHeader])" class="color-input" disabled>
+            <template v-else-if="col.dataType === 'color'" #body="{data}" bodyStyle="display: flex; justify-content: center;">
+                <ConceptTableColumnColor :color-data="data[col.dataHeader]" />
+            </template>
+            <template v-else-if="col.dataType === 'array'" #body="{data}">
+                <ConceptTableColumnObject v-for="obj in data[col.dataHeader]" :header="col.dataHeader" :obj="obj" :arr="data[col.dataHeader]"/>
+            </template>
+            <template v-else-if="col.dataType === 'object'" #body="{data}">
+                <ConceptTableColumnObject :header="col.dataHeader" :obj="data[col.dataHeader]"/>
             </template>
             <template v-else #body="{data}">
                 <span v-if="data[col.dataHeader] === null">N/A</span>
@@ -212,11 +290,11 @@ watch(() => props.dataArr, () => {
     box-shadow: 0 0 1px 2px #3f4b5b;
 }
 
-a {
+:deep(a) {
     color: var(--yellow-400);
 }
 
-a:hover {
+:deep(a:hover) {
     color: var(--yellow-100);
 }
 
