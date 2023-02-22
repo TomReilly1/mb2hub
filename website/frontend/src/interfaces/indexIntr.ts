@@ -1,20 +1,41 @@
+export interface basicObj {
+    id: string
+    name: string
+}
+
+export interface card {
+    cardData: Record<string, any>
+    rankData: rankings
+}
+
+export interface rankings {
+    attributes: Record<string, rankingFormats>
+    totalRecords: number
+}
+
+
 export interface searchObj {
-    name: string,
-    concept: string,
-    id: string,
+    name: string
+    concept: string
+    id: string
+}
+
+export interface rankingFormats {
+    standard: number
+    percent: number
 }
 
 //---Tables---//
 export interface armors {
-    id: string,
-    name: string,
-    culture: string,
-    weight: number,
-    type: string,
-    head_armor: number,
-    body_armor: number,
-    arm_armor: number,
-    leg_armor: number,
+    id: string
+    name: string
+    culture: string
+    weight: number
+    type: string
+    head_armor: number
+    body_armor: number
+    arm_armor: number
+    leg_armor: number
 }
 
 export interface bows {
@@ -23,34 +44,32 @@ export interface bows {
     culture: string
     weight: number
     type: string
-    subtype:         string
-    difficulty      :number
-    speed_rating    :number
-    missile_speed   :number
-    accuracy        :number
-    damage          :number
-    fire_on_mount   :boolean
-    reload_on_mount :boolean
+    subtype: string
+    difficulty: number
+    speed_rating: number
+    missile_speed: number
+    accuracy: number
+    damage: number
+    fire_on_mount: boolean
+    reload_on_mount: boolean
 }
 
 export interface castles {
     id: string
     name: string
-    owner_id: string
-    owner_name: string
+    owner_clan: basicObj
     culture: string
     x_position: number
     y_position: number
     prosperity: number
     wall_level: number
-    bound_village_1: string
-    bound_village_2: string
+    bound_villages: basicObj[]
 }
 
 export interface clans {
     id: string
     name: string
-    owner: string
+    owner_lord: basicObj
     kingdom: string
     culture: string
     tier: number
@@ -112,20 +131,27 @@ export interface mounts {
     health: number
 }
 
+export interface shields {
+    id: string
+    name: string
+    culture: string
+    weight: number
+    thrust_speed: number
+    speed_rating: number
+    weapon_length: number
+    hit_points: number
+}
+
 export interface towns {
     id: string
     name: string
-    owner_id: string
-    owner_name: string
+    owner_clan: basicObj
     culture: string
     x_position: number
     y_position: number
     prosperity: number
     wall_level: number
-    bound_village_1: string
-    bound_village_2: string
-    bound_village_3: string
-    bound_village_4: string
+    bound_villages: basicObj[]
     desc_text: string
 }
 
@@ -136,8 +162,8 @@ export interface troops {
     default_group: string
     occupation: string
     level: number
-    upgrade_target_1: string
-    upgrade_target_2: string
+    is_noble: boolean
+    upgrade_targets: basicObj
     one_handed: number
     two_handed: number
     polearm: number
@@ -156,6 +182,6 @@ export interface villages {
     x_position: number
     y_position: number
     hearth: number
-    bound_settlement: string
+    bound_settlement: basicObj
     desc_text: string
 }

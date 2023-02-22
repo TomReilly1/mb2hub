@@ -5,10 +5,11 @@ import AutoComplete from 'primevue/autocomplete'
 import type AutoCompleteDropdownClickEvent from 'primevue/autocomplete'
 import Chart from "primevue/chart"
 
+import type { troops as troopsIntr } from "@/interfaces/indexIntr"
 
-// const props = defineProps({troopsArr: Array})
+
 const props = defineProps<{
-    troopsArr: object[]
+    troopsArr: troopsIntr[]
 }>()
 
 const chartTroop1 = ref({
@@ -32,16 +33,16 @@ const chartTroop2 = ref({
     'athletics': 20
 })
 
-interface troopIntr {
-    one_handed: number
-    two_handed: number
-    polearm: number
-    bow: number
-    crossbow: number
-    throwing: number
-    riding: number
-    athletics: number
-}
+// interface troopSkillIntr {
+//     one_handed: number
+//     two_handed: number
+//     polearm: number
+//     bow: number
+//     crossbow: number
+//     throwing: number
+//     riding: number
+//     athletics: number
+// }
 interface chartIntr {
     label: string,
     backgroundColor: String,

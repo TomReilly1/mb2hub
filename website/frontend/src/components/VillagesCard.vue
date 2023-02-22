@@ -1,46 +1,54 @@
 <script setup lang="ts">
-const props = defineProps({villageObj: Object})
+import { computed } from "vue"
+import CardRatings from "@/components/CardRatings.vue"
+import type { card as cardIntr, villages as villagesIntr } from "@/interfaces/indexIntr"
 
-function formatVillageType(village: string) {
-    return village.replaceAll('_', ' ');
-}
+const props = defineProps<{
+    dataObj: cardIntr | undefined
+}>()
+
+const villageObj = computed(() => {
+    return props.dataObj?.cardData as villagesIntr | undefined
+})
+
+const settlementType = computed(() => {
+    if (villageObj.value?.bound_settlement.id) {
+        return (villageObj.value.bound_settlement.id.includes('castle')) ? 'castles' : 'towns'
+    } else {
+        return 'undefined'
+    }
+})
+
+const formatVillageType = computed(() => {
+    return villageObj.value?.village_type.replace(/([_])/, ' ')
+})
 </script>
 <!------------------------------------------------------->
 <template>
     <section>
-        <div v-if="villageObj" class="card-desc">
+        <div v-if="villageObj && villageObj.bound_settlement" class="card-desc">
             <div>
-                <h2>{{villageObj.name}}</h2>
+                <h2>{{ villageObj.name }}</h2>
                 <p>
-                    <span>{{villageObj.name}} is a</span>
-                    <span v-if="villageObj.id.includes('castle')"> castle </span>
-                    <span v-else> town </span>
-                    <span>village of the {{villageObj.culture}}. It operates as a {{formatVillageType(villageObj.village_type)}}.</span>
+                    {{ villageObj.name }} is a village of the {{ villageObj.culture }} culture.
+                    It operates as a {{ formatVillageType }}.
+                    It is bound to the settlement, 
+                    <router-link v-if="settlementType" :to="{ name: 'cardview', params: {concept: settlementType, id: villageObj.bound_settlement.id} }">
+                        {{ villageObj.bound_settlement.name }}
+                    </router-link>
                 </p>
             </div>
             <hr />
             <div>
                 <h3>Description</h3>
-                <p v-if="villageObj.desc_text !== null">{{villageObj.desc_text}}</p>
-                <p v-else>N/A</p>
+                <p>
+                    {{ villageObj.desc_text || 'N/A' }}
+                </p>
             </div>
             <hr />
             <div>
-                <h3>Stats</h3>
-                <table class="ratings-table">
-                    <tr>
-                        <th>X-Position</th>
-                        <td>{{villageObj.x_position}}</td>
-                    </tr>
-                    <tr>
-                        <th>Y-Position</th>
-                        <td>{{villageObj.y_position}}</td>
-                    </tr>
-                    <tr>
-                        <th>Hearth</th>
-                        <td>{{villageObj.hearth}}</td>
-                    </tr>
-                </table>
+                <CardRatings :data-obj="dataObj" />
+                <slot></slot>
             </div>
         </div>
     </section>
@@ -104,16 +112,6 @@ section > div > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-span {
-    color: var(--bluegray-100);
-    font-size: 1.5rem;
-}
-
-p {
-    color: var(--bluegray-100);
-    font-size: 1.2rem;
 }
 
 input {
