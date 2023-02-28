@@ -1,0 +1,52 @@
+[
+    {
+        "id": "sumpter_horse",
+        "name": "Sumpter Horse",
+        "culture": "neutral",
+        "value": 110,
+        "maneuver": 41,
+        "speed": 34,
+        "charge_damage": 4,
+        "health": 260
+    },
+    {
+        "id": "mule",
+        "name": "Mule",
+        "culture": "neutral",
+        "value": 120,
+        "maneuver": 48,
+        "speed": 31,
+        "charge_damage": 3,
+        "health": 200
+    },
+    {
+        "id": "pack_camel",
+        "name": "Pack Camel",
+        "culture": "aserai",
+        "value": 220,
+        "maneuver": 39,
+        "speed": 35,
+        "charge_damage": 4,
+        "health": 230
+    },
+    {
+        "id": "saddle_horse",
+        "name": "Saddle Horse",
+        "culture": "neutral",
+        "value": 140,
+        "maneuver": 52,
+        "speed": 37,
+        "charge_damage": 12,
+        "health": 260
+    },
+    {
+        "id": "old_horse",
+        "name": "Work Horse",
+        "culture": "neutral",
+        "value": 130,
+        "maneuver": 50,
+        "speed": 35,
+        "charge_damage": 4,
+        "health": 220
+    }
+]

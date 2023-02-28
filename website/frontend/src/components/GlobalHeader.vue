@@ -27,6 +27,7 @@ const groupedLinks = ref<{
     {
         label: 'Animals',
         items: [
+            {label: 'Draught Animals', value: 'draught_animals'},
             {label: 'Mounts', value: 'mounts'}
         ]
     },

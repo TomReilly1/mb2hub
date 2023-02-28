@@ -3,13 +3,14 @@ import { ref, onBeforeMount } from "vue"
 import { useRoute, onBeforeRouteUpdate } from 'vue-router'
 import router from "@/router"
 
-import CardKey from "@/components/CardKey.vue";
+import CardKey from "@/components/CardKey.vue"
 
 import ArmorsCard from "@/components/ArmorsCard.vue"
 import BowsCard from "@/components/BowsCard.vue"
 import CastlesCard from "@/components/CastlesCard.vue"
 import ClansCard from "@/components/ClansCard.vue"
 import CulturesCard from "@/components/CulturesCard.vue"
+import DraughtAnimalsCard from "@/components/DraughtAnimalsCard.vue"
 import GoodsCard from "@/components/GoodsCard.vue"
 import KingdomsCard from "@/components/KingdomsCard.vue"
 import LordsCard from "@/components/LordsCard.vue"
@@ -19,7 +20,9 @@ import TownsCard from "@/components/TownsCard.vue"
 import TroopsCard from "@/components/TroopsCard.vue"
 import VillagesCard from "@/components/VillagesCard.vue"
 
-import type {card as cardIntr} from "@/interfaces/indexIntr"
+import formatHeader from "@/composables/formatHeader"
+
+import type { card as cardIntr } from "@/interfaces/indexIntr"
 
 
 const dataObj = ref<cardIntr>()
@@ -51,7 +54,7 @@ async function fetchData(concept: string | string[], id: string | string[]) {
 <!------------------------------------------------------------------------>
 <template>
     <section class="heading">
-        <h1>{{route.params.concept}}</h1>
+        <h1>{{ formatHeader(route.params.concept as string) }}</h1>
     </section>
     <ArmorsCard v-if="route.params.concept === 'armors'" :data-obj="dataObj">
         <slot><CardKey /></slot>
@@ -64,6 +67,7 @@ async function fetchData(concept: string | string[], id: string | string[]) {
     </CastlesCard>
     <ClansCard v-else-if="route.params.concept === 'clans'" :data-obj="dataObj"/>
     <CulturesCard v-else-if="route.params.concept === 'cultures'" :data-obj="dataObj"/>
+    <DraughtAnimalsCard v-else-if="route.params.concept === 'draught_animals'" :data-obj="dataObj"/>
     <GoodsCard v-else-if="route.params.concept === 'goods'" :data-obj="dataObj">
         <slot><CardKey /></slot>
     </GoodsCard>

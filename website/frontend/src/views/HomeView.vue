@@ -16,7 +16,6 @@ const todoItems = ref<{
       'workshops',
       'harnesses/horse armor',
       'melee weapons',
-      'draught animals',
       'bandits',
     ]
   },
