@@ -49,7 +49,7 @@ const todoItems = ref<{
 
         <div class="version home-section">
             <h3 id="version-text">Current Version</h3>
-            <span id="version-number">1.9.0</span>  
+            <span id="version-number">1.0.3</span>  
         </div>
 
         <hr />
