@@ -83,6 +83,16 @@ export interface cultures {
     desc_text: string
 }
 
+export interface draughtAnimals {
+    id: string
+    name: string
+    culture: string
+    maneuver: number
+    speed: number
+    charge_damage: number
+    health: number
+}
+
 export interface goods {
     id: string
     name: string
