@@ -15,7 +15,7 @@
 <!-- ABOUT -->
 ## About The Project
 
-MB2 Hub aims to be a online reference for any data or statistics that pertain to Mount&Blade II: Bannerlord. This project is a work-in-progress, so I am continously trying to add more concepts and functionality. Also, because Bannerlord is in early access and moves at a relatively quick pace, I will try to keep the webiste updated to the beta version. 
+MB2 Hub aims to be a online reference for any data or statistics that pertain to Mount&Blade II: Bannerlord. This project is a work-in-progress, so I am continously trying to add more concepts and functionality. I will always try to keep the website updated with data from the latest stable release. 
 
 
 
