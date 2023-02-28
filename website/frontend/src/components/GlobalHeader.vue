@@ -34,7 +34,8 @@ const groupedLinks = ref<{
         label: 'Equipment',
         items: [
             {label: 'Armors', value: 'armors'},
-            {label: 'Bows', value: 'bows'}
+            {label: 'Bows', value: 'bows'},
+            {label: 'Shields', value: 'shields'}
         ]
     },
     {
@@ -144,7 +145,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
     width: 100%;
     height: 4rem;
 }
