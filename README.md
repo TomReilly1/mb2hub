@@ -39,12 +39,13 @@ Here are the technologies I am using to power this project:
 - Concepts:
   - Animals
     - [x] mounts
-    - [ ] draught animals
+    - [x] draught animals
   - Equipment
     - [x] armor
     - [x] bows
     - [ ] harnesses/horse armor
     - [ ] melee weapons
+    - [x] shields
     - [ ] troop equipment loadouts
   - People
     - [ ] bandits
